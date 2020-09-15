@@ -293,7 +293,7 @@ body {
 
 .landing-page__stories-carousel__carousel {
   height: 60%;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   position: relative;
   top: 30%;
@@ -400,7 +400,7 @@ body {
   width: 400px;
   background-color: rgba(255, 255, 255, 0.5);
   position: relative;
-  top: -156px;
+  top: -160px;
   left: 100px;
 }
 
@@ -415,7 +415,7 @@ body {
 
 .landing-page__my-story__title {
   padding-bottom: 20px;
-  font-size: 45px;
+  font-size: 32px;
 }
 
 .landing-page__my-story__cta {

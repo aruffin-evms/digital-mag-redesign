@@ -7,7 +7,6 @@ const storyLink = document.getElementById('storyLink')
 const gridStories  = document.querySelectorAll('.landing-page__featured-stories__grid-item__wrapper')
 const gridLinks = document.querySelectorAll('.landing-page__featured-stories__link')
 const gridItemTitles = document.getElementsByTagName('h3')
-// const gridLinkstyleString = "text-decoration: underline;"
 
 const colors = {
   evmsRust: '#c7531e'
