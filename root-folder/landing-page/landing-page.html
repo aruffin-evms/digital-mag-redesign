@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="landing-page.css">
   <script defer src="landing-page.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="//cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
   <title>Landing page</title>
 </head>
 <body>
@@ -28,7 +30,7 @@
             <div class="landing-page__featured-stories__grid-item__wrapper">
               <a href="" id="gridStory" class="landing-page__featured-stories__link">
               <figure class="landing-page__featured-stories__grid-item__story-image__wrapper landing-page__featured-stories__grid-item--one__image-wrapper">
-                <img src="../assets/landing-page-street-health.jpg" alt="" id="gridImages" class="landing-page__featured-stories__grid-item__story-image">
+                <img src="../assets/landing-page-street-health.jpg" alt="" id="gridImages" class="landing-page__featured-stories__grid-item__story-image fade-in-left">
               </figure>
               <label for="" class="landing-page__featured-stories__grid-item__category">FEATURE</label>
               <h3 class="landing-page__featured-stories__grid-item__title">Students take healthcare to the street</h3>
@@ -64,13 +66,14 @@
       </div>
     </section>
     <!-- todo: rename section -->
-    <section class="landing-page__stretched-image">
+    <section class="landing-page__stretched-image animate-vertical">
       <figure class="landing-page__stretched-image__image-wrapper">
         <img src="../assets/landing-page-stretched-image.jpg" alt="" class="landing-page__stretched-image__image">
       </figure>
       <div id="qouteDrawer" class="landing-page__stretched-image__qoute">
         <div class="landing-page__stretched-image__qoute__wrapper">
-          <p id="qouteText" class="landing-page__stretched-image__qoute__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsa!</p>
+          <p id="qouteText" class="landing-page__stretched-image__qoute__copy">Fero cus ditatem dentotat. Menis dolor rem arum idi ut laut laut parunt, aut fugit fuga. Itati utemqui antibusam, Occaerumquia volorest et, sed quis volor adia quo et eventur autetur? Quiberum</p>
+          <p id="qouteSource" class="landing-page__stretched-image__qoute__source">Photograph by Eric Lusher</p>
         </div>
       </div>
     </section>
@@ -79,7 +82,7 @@
         <div class="landing-page__subscribe__column landing-page__subscribe__column-left">
           <div class="landing-page__subscribe__content">
             <figure class="landing-page__subscribe__poster-wrapper">
-              <img src="../assets/landing-page-poster.jpg" alt="" class="landing-page__subscribe__poster">
+              <img src="../assets/landing-page-poster.jpg" alt="" class="landing-page__subscribe__poster animate-vertical">
             </figure> 
           </div>
         </div>
@@ -87,14 +90,17 @@
           <div class="landing-page__subscribe__content">
           <h3 class="landing-page__subscribe__title">Read the Print</h3>
           <p class="landing-page__subscribe__description">The award-winning EVMS Magazine is published four times a year. Subscribe to be notified when the next digital issue is published and/or to receive complimentary copies of the print version.</p>
-          <a href="" class="landing-page__subscribe__cta">Subscribe</a>
+          <a href="" class="landing-page__subscribe__cta animate-vertical">Subscribe</a>
           <a href="" class="landing-page__subscribe__pdf-download" download="">Download a PDF</a>
         </div>
         </div>
       </div>
     </section>
-    <section class="landing-page__stories-carousel">
+    <section class="landing-page__stories-carousel animate-vertical">
       <div class="landing-page__stories-carousel__carousel">
+        <div class="landing-page__stories-carousel__carousel__wrapper">
+          <span id="backArrow" class="landing-page__stories-carousel__back material-icons">arrow_back_ios</span>
+          <span id="forwardArrow" class="landing-page__stories-carousel__forward material-icons">arrow_forward_ios</span>
         <div class="landing-page__stories-carousel__carousel-item">
           <figure class="landing-page__stories-carousel__image-wrapper">
             <img src="" alt="" class="landing-page__stories-carousel__image">
@@ -116,20 +122,39 @@
           <p class="landing-page__stories-carousel__label">Alumni Profile</p>
           <p class="landing-page__stories-carousel__title">Young alum is the voice behind local coalition</p>
         </div>
+        <div class="landing-page__stories-carousel__carousel-item">
+          <figure class="landing-page__stories-carousel__image-wrapper">
+            <img src="" alt="" class="landing-page__stories-carousel__image">
+          </figure>
+          <p class="landing-page__stories-carousel__label">Alumni Profile</p>
+          <p class="landing-page__stories-carousel__title">Young alum is the voice behind local coalition</p>
+        </div>
+        <div class="landing-page__stories-carousel__carousel-item">
+          <figure class="landing-page__stories-carousel__image-wrapper">
+            <img src="" alt="" class="landing-page__stories-carousel__image">
+          </figure>
+          <p class="landing-page__stories-carousel__label">Alumni Profile</p>
+          <p class="landing-page__stories-carousel__title">Young alum is the voice behind local coalition</p>
+        </div>
       </div>
+    </div>
     </section>
     <section class="landing-page__story-qoute">
       <div class="landing-page__story-qoute__wrapper">
-        <div class="landing-page__story-qoute__qoutation-mark landing-page__story-qoute__qoutation-mark--top"></div>
+        <div class="landing-page__story-qoute__qoutation-mark landing-page__story-qoute__qoutation-mark--top">
+          <span class="qoutation-mark--top material-icons">format_quote</span>
+        </div>
           <div class="landing-page__story-qoute__qoutation-mark__horizontal-line--bottom"></div>
           <div class="landing-page__story-qoute__content">
-            <p class="landing-page__story-qoute__qoute">When you reach the end of your rope, tie a knot and hang on. I would rather be a little nobody, then to be a evil somebody. I have always found that mercy bears richer fruits than strict justice.</p>
+            <p class="landing-page__story-qoute__qoute animate-left">When you reach the end of your rope, tie a knot and hang on. I would rather be a little nobody, then to be a evil somebody. I have always found that mercy bears richer fruits than strict justice.</p>
           </div>
           <div class="landing-page__story-qoute__qoutation-mark__horizontal-line--top"></div>
-        <div class="landing-page__story-qoute__qoutation-mark landing-page__story-qoute__qoutation-mark--bottom"></div>
+        <div class="landing-page__story-qoute__qoutation-mark landing-page__story-qoute__qoutation-mark--bottom">
+          <span class="qoutation-mark--bottom material-icons">format_quote</span>
+        </div>
       </div>
     </section>
-    <section class="landing-page__my-story">
+    <section class="landing-page__my-story animate-vertical">
       <figure class="landing-page__my-story__image-wrapper">
         <img src="../assets/landing-page-my-story.jpg" alt="" class="landing-page__my-story__image">
       </figure>
@@ -143,8 +168,8 @@
     </section>
     <section class="landing-page__more-stories">
       <div class="landing-page__more-stories__wrapper">
-        <a href="" class="landing-page__more-stories__story">
-          <div class="landing-page__more-stories__content">
+        <a href="" class="landing-page__more-stories__story animate-left">
+          <div class="landing-page__more-stories__content ">
             <figure class="landing-page__more-stories__image-wrapper">
               <img src="../assets/landing-page-alzheimers-crisis.jpg" alt="" class="landing-page__more-stories__image">
             </figure>
@@ -153,8 +178,8 @@
             <p class="landing-page__more-stories__description">Tio. Ut expligenis mil ipsae. Intore sinustotatem id esti aut quis et fugit ipsus,</p>
           </div>
         </a>
-        <a href="" class="landing-page__more-stories__story">
-          <div class="landing-page__more-stories__content">
+        <a href="" class="landing-page__more-stories__story animate-right">
+          <div class="landing-page__more-stories__content ">
             <figure class="landing-page__more-stories__image-wrapper">
               <img src="../assets/landing-page-scholarships.jpg" alt="" class="landing-page__more-stories__image">
             </figure>
@@ -174,16 +199,16 @@
     <section class="landing-page__infograph">
       <div class="landing-page__infograph__wrapper">
         <figure class="landing-page__infograph__asset-wrapper">
-          <img src="" alt="" class="landing-page__infograph__asset">
+          <img src="" alt="" class="landing-page__infograph__asset animate-vertical">
         </figure>
-        <label for="" class="landing-page__infograph__label">Picture This</label>
-        <h3 class="landing-page__infograph__title">Economic Powerhouse Emerges</h3>
-        <p class="landing-page__infograph__description">Cimodisquam acea eum qui dem que. Imusam nis volo et la volorem poritat empedit, experum sint faccae modi vel</p>
-        <a href="" class="landing-page__infograph__cta">Read the Infographic</a>
+        <label for="" class="landing-page__infograph__label animate-vertical">Picture This</label>
+        <h3 class="landing-page__infograph__title animate-vertical">Economic Powerhouse Emerges</h3>
+        <p class="landing-page__infograph__description animate-vertical">Cimodisquam acea eum qui dem que. Imusam nis volo et la volorem poritat empedit, experum sint faccae modi vel</p>
+        <a href="" class="landing-page__infograph__cta animate-vertical">Read the Infographic</a>
     </div>
     </section>
     <div class="landing-page__hairline"></div>
-    <section class="landing-page__archived-articles">
+    <section class="landing-page__archived-articles animate-vertical">
       <div class="landing-page__archived-articles__wrapper">
         <div class="landing-page__archived-articles__callout">
           <div class="landing-page__archived-articles__callout__wrapper">

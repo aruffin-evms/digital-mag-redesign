@@ -1,6 +1,7 @@
 const qouteDrawer = document.getElementById('qouteDrawer')
 const qouteDrawerInitialHeight = qouteDrawer.style.height;
 const qouteText = document.getElementById('qouteText')
+const qouteSource = document.getElementById('qouteSource')
 
 const storyLink = document.getElementById('storyLink')
 
@@ -11,6 +12,22 @@ const gridItemTitles = document.getElementsByTagName('h3')
 const colors = {
   evmsRust: '#c7531e'
 }
+
+const backArrow = document.getElementById('backArrow')
+const forwardArrow = document.getElementById('forwardArrow')
+
+const carousel = document.querySelector('.landing-page__stories-carousel__carousel__wrapper')
+
+const scrollDistance = 130;
+
+// todo: create function that checks scroll position for looping carousel
+backArrow.addEventListener('click', function() {
+  carousel.scrollLeft -= scrollDistance
+})
+
+forwardArrow.addEventListener('click', function() {
+  carousel.scrollLeft += scrollDistance
+})
 
 qouteDrawer.addEventListener('click', function() {
   if(qouteDrawer.style.height === qouteDrawerInitialHeight) {
@@ -26,6 +43,8 @@ qouteDrawer.addEventListener('click', function() {
 function showQouteText(display) {
   qouteText.style.display = display
   qouteText.style.animation = '1.5s fadeIn'
+  qouteSource.style.display = display
+  qouteSource.style.animation = '1.5s fadeIn'
 
   if(qouteText.style.display === 'none') {
     qouteText.style.animation = '1s fadeOut'
@@ -43,3 +62,59 @@ gridStories.forEach(function(story) {
     }
   })
 })
+
+// intersection observer for page animations
+// animate-vertical
+// aniamte-left 
+// animate-right
+const slideElementsUp = document.querySelectorAll('.animate-vertical');
+
+const config = {
+  threshold: [0.7]
+}
+
+observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('slide-up');
+    } else {
+      // entry.target.classList.remove('slide-up');
+    }
+  });
+});
+
+slideElementsUp.forEach(element => {
+  observer.observe(element);
+}, config);
+
+const slideElementsLeft = document.querySelectorAll('.animate-left');
+
+observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('slide-left');
+    } else {
+      // entry.target.classList.remove('slide-up');
+    }
+  });
+});
+
+slideElementsLeft.forEach(element => {
+  observer.observe(element);
+}, config);
+
+const slideElementsRight = document.querySelectorAll('.animate-right');
+
+observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('slide-right');
+    } else {
+      // entry.target.classList.remove('slide-up');
+    }
+  });
+});
+
+slideElementsRight.forEach(element => {
+  observer.observe(element);
+}, config);
