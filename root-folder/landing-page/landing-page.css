@@ -14,17 +14,17 @@ body {
 /* fonts for page */
 @font-face {
   font-family: 'GT-Super';
-  src: url('/root-folder/fonts/GT-Super-Display-Super.woff')
+  src: url('/root-folder/fonts/GT-Super-Display-Super.woff') format('woff');
 }
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff');
+  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Calluna';
-  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff');
+  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff') format('woff');
 }
 
 @keyframes fadeIn {
@@ -109,7 +109,7 @@ body {
 .landing-page__hero__callout {
   height: 200px;
   width: 400px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   position: relative;
   top: -200px;
   left: 100px;
@@ -199,8 +199,8 @@ body {
   cursor: pointer;
 }
 
-.landing-page__featured-stories__grid-item__wrapper:hover {
-  background-color: rgba(0, 0, 0, 0.09);
+.landing-page__featured-stories__grid-item__content-wrapper:hover {
+  transition: 1s all;
 }
 
 .landing-page__featured-stories__link {
@@ -276,7 +276,7 @@ body {
   bottom: 100%;
   margin: 0 auto;
   transition: height 1s;
-  border-bottom: 20px solid #c7531e;
+  border-bottom: 15px solid #c7531e;
 }
 
 .landing-page__stretched-image__qoute__copy {
@@ -303,7 +303,7 @@ body {
   top: -80px;
   z-index: 10;
   background-color: white;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); */
 }
 
 .landing-page__subscribe__column {
@@ -366,6 +366,13 @@ body {
   text-decoration: none;
   padding-top: 20px;
   font-family: 'Benton Sans Reg';
+  max-width: 150px;
+  margin: 0 auto;
+  transition: .3s all;
+}
+
+.landing-page__subscribe__pdf-download:hover {
+  box-shadow: inset 0 -1px 0 #c7531e;
 }
 
 .landing-page__stories-carousel {
@@ -520,7 +527,7 @@ body {
 .landing-page__my-story__callout {
   height: min-content;
   width: 400px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   position: relative;
   top: -180px;
   left: 100px;
@@ -635,6 +642,13 @@ body {
 .landing-page__email-banner__cta {
   color: #c7531e;
   text-decoration: none;
+  max-width: 150px;
+  margin: 0 auto;
+  transition: .3s all;
+}
+
+.landing-page__email-banner__cta:hover {
+  box-shadow: inset 0 -1px 0 #c7531e;
 }
 
 .landing-page__infograph {
