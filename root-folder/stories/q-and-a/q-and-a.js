@@ -5,7 +5,7 @@
 const slideElementsUp = document.querySelectorAll('.animate-vertical');
 
 const config = {
-  threshold: [0.7]
+  threshold: [0.9]
 }
 
 observer = new IntersectionObserver((entries) => {
