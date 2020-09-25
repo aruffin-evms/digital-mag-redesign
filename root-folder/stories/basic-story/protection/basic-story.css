@@ -383,8 +383,9 @@ section {
 aside {
   float: right;
   width: 20%;
-  margin: 2% 5%;
+  margin: 2% 5% 2% 0;
 }
+
 
 .subLead {
   color: #c7531e;
@@ -412,6 +413,28 @@ aside {
 
 .clear {
   clear: both;
+}
+
+.diySection{
+  margin: 24em 0 0;
+}
+
+.diySection hr{
+  width: 60px;
+  height: 10px;
+  color: #c7531e;
+  background-color: #c7531e;
+  border: 0;
+  margin: 12% 0 3%;
+}
+
+.diySection p{
+  margin: 2% 0 5%;
+}
+
+.steps{
+  color: #c7531e;
+  font-family: 'Benton Sans Reg';
 }
 
 @media (max-width: 480px) {
