@@ -5,18 +5,18 @@
 
 /* fonts for page */
 @font-face {
-  font-family: 'GT-Super';
-  src: url('/root-folder/fonts/GT-Super-Display-Super.woff') format('woff');
+  font-family: "GT-Super";
+  src: url("/root-folder/fonts/GT-Super-Display-Super.woff") format("woff");
 }
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff') format('woff');
+  src: url("/root-folder/fonts/GT-Super-Display-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Calluna';
-  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff') format('woff');
+  font-family: "Calluna";
+  src: url("/root-folder/fonts/Calluna-Regular-webfont.woff") format("woff");
 }
 
 .background {
@@ -25,7 +25,8 @@
   top: 0;
   left: 0;
   z-index: 0;
-} 
+  opacity: .4;
+}
 
 .pandemic-landing {
   height: auto;
@@ -35,12 +36,12 @@
   justify-content: center;
   padding-bottom: 30px;
   background-color: #fafafa;
-  position: relative;
+  overflow-y: scroll;
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px) {
   .pandemic-landing {
-    height: 100vh;
+    min-height: 100vh;
     padding-bottom: 0;
   }
 }
@@ -58,9 +59,9 @@
   margin: 20px 0 0 0;
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px) {
   .pandemic-landing__wrapper {
-    height: 80%;
+    height: min-content;
     width: 80%;
     margin: 0;
   }
@@ -78,7 +79,7 @@
   margin-left: 15px;
 }
 
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   .pandemic-landing__intro {
     width: 40%;
     text-align: center;
@@ -90,17 +91,17 @@
   text-transform: uppercase;
   font-size: 24px;
   color: #c7531e;
-  font-family: 'Calluna';
+  font-family: "Calluna";
   font-weight: bold;
 }
 
 .pandemic-landing__intro__title {
-  font-size: 60px; 
-  font-family: 'GT-Super';
+  font-size: 60px;
+  font-family: "GT-Super";
   color: #1f7f9b;
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px) {
   .pandemic-landing__intro__title {
     font-size: 90px;
   }
@@ -116,7 +117,7 @@
   margin: 40px 0 0 0;
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px) {
   .pandemic-landing__content {
     width: 60%;
     margin: 0;
@@ -131,7 +132,13 @@
   height: auto;
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 900px) {
+  .pandemic-landing__content-wrapper {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
   .pandemic-landing__content-wrapper {
     flex-wrap: nowrap;
   }
@@ -167,10 +174,10 @@
   margin: 20px 0 0;
 }
 
-@media(min-width: 900px) {
+@media (min-width: 1200px) {
   .pandemic-landing__ctas {
     width: 80%;
-    margin: 0;
+    margin: 0 0 0 30px;
   }
 }
 
@@ -180,7 +187,7 @@
   color: black;
 }
 
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   .pandemic-landing__cta {
     padding: 15px 40px;
   }
