@@ -25,6 +25,7 @@
   top: 0;
   left: 0;
   z-index: 0;
+  opacity: .4;
 }
 
 .pandemic-landing {
@@ -35,11 +36,12 @@
   justify-content: center;
   padding-bottom: 30px;
   background-color: #fafafa;
+  overflow-y: scroll;
 }
 
 @media (min-width: 900px) {
   .pandemic-landing {
-    height: 100vh;
+    min-height: 100vh;
     padding-bottom: 0;
   }
 }
@@ -59,7 +61,7 @@
 
 @media (min-width: 900px) {
   .pandemic-landing__wrapper {
-    height: 80%;
+    height: min-content;
     width: 80%;
     margin: 0;
   }
@@ -130,6 +132,12 @@
   height: auto;
 }
 
+@media(min-width: 900px) {
+  .pandemic-landing__content-wrapper {
+    margin-left: 15px;
+  }
+}
+
 @media (min-width: 1200px) {
   .pandemic-landing__content-wrapper {
     flex-wrap: nowrap;
@@ -166,10 +174,10 @@
   margin: 20px 0 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .pandemic-landing__ctas {
     width: 80%;
-    margin: 0;
+    margin: 0 0 0 30px;
   }
 }
 
