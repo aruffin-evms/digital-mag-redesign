@@ -10,7 +10,7 @@ section {
 /* fonts for page */
 @font-face {
   font-family: 'GT-Super';
-  src: url('/root-folder/fonts/GT-Super-Display-Super.woff') format('woff');
+  src: url('../../../fonts/GT-Super-Display-Super.woff') format('woff');
 
   /* would suggest adding to each 
   src: url('webfont.woff2') format('woff2'), /* Super Modern Browsers 
@@ -19,12 +19,12 @@ section {
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff') format('woff');
+  src: url('../../../fonts/GT-Super-Display-Bold') format('woff');
 }
 
 @font-face {
   font-family: 'Calluna';
-  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff') format('woff');
+  src: url('../../../fonts/Calluna-Regular-webfont.woff') format('woff');
 }
 
 @keyframes slideUp {
@@ -75,6 +75,14 @@ section {
   animation: slideRight 1.5s;
 }
 
+h1,h2,h3{
+  font-family: 'GT-Super';
+}
+
+h3{
+  font-size: 1em;
+}
+
 .basic-story__hero-wrapper {
   height: 60vh;
   width: 100%;
@@ -91,7 +99,7 @@ section {
   text-transform: uppercase;
   font-size: 4em;
   float: left;
-  margin-top: -.4em;
+  margin-top: -.3em;
   padding: 0 .1em 0 0;
 }
 
@@ -116,6 +124,7 @@ section {
 .basic-story__social-share__title {
   text-transform: uppercase;
   font-size: 12px;
+  font-family: 'Benton Sans Reg';
 }
 
 /* [start] social icons */
@@ -207,6 +216,7 @@ section {
   width: 100%;
   margin: 15px auto 48px;
   padding-left: 10px;
+  font-family: 'Calluna';
 }
 
 /* [end] image with caption */
@@ -386,9 +396,9 @@ aside {
   margin: 2% 5% 2% 2%;
 }
 
-
 .subLead {
   color: #c7531e;
+  font-family: 'GT-Super';
 }
 
 .photoSub {
@@ -397,22 +407,7 @@ aside {
 
 .photoSub p {
   font-size: .8em;
-}
-
-.bottomStory {
-  float: left;
-  width: 50%;
-
-}
-
-.bottomImg {
-  width: 280px;
-  float: left;
-  padding: 1%;
-}
-
-.clear {
-  clear: both;
+  font-family: 'Benton Sans Reg';
 }
 
 .diySection{
@@ -430,12 +425,37 @@ aside {
 
 .diySection p{
   margin: 2% 0 5%;
+  font-family: 'Calluna';
 }
 
 .steps{
   color: #c7531e;
   font-family: 'Benton Sans Reg';
 }
+
+/* end sidebar */ 
+
+/* bottom story */
+
+
+
+.bottomStory {
+  float: left;
+  width: 50%;
+
+}
+
+.bottomImg {
+  width: 280px;
+  float: left;
+  padding: 1%;
+}
+
+.clear {
+  clear: both;
+}
+
+/* end bottom story */
 
 @media (max-width: 480px) {
   body {
