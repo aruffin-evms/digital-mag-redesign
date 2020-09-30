@@ -1,11 +1,10 @@
 # digital-mag-redesign
 
-updated: 7:09
+updated: 7:19
  
 click to view page
 
 <ul>
-  <li><a href="./root-folder/stories/basic-story/protection/provider_protection.html">Provider story</a></li>
   <li><a href="./root-folder/pivoting-landing-page/pivoting.html">Pivoting landing page</a></li>
   <li><a href="./root-folder/stories/basic-story/alumna/alumna.html">EVMS alumna battles COVID-19 in New York City</a></li>
   <li><a href="./root-folder/stories/basic-story/pandemic/pandemic.html">EVMS training preps surgeon</a></li>
