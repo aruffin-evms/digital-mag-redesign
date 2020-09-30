@@ -71,6 +71,7 @@
 .basic-story__hero-wrapper {
   height: 60vh;
   width: 100%;
+  background-color: gray;
 }
 
 .basic-story__hero__image {
