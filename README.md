@@ -1,6 +1,6 @@
 # digital-mag-redesign
 
-update: 5:26
+update: 5:36
  
 click to view page
 
@@ -12,4 +12,10 @@ click to view page
   <li><a href="./root-folder/stories/basic-story/protection/provider_protection.html">Students transition from patient care to provider protection</a></li>
   <li><a href="./root-folder/stories/basic-story/textbook/stolen.html">“Stolen” textbook, passion for art fuel career in art therapy</a></li>
   <li><a href="./root-folder/stories/q-and-a/q-and-a.html">Q&A</a></li>
+  <li><a href="./root-folder/stories/basic-story/ryans/ryans.html">Ryans deliver on the promise to foster groundbreaking research</a></li>
+  <li><a href="./root-folder/stories/basic-story/teleheatlth/telehealth.html">Telehealth to the Rescue</a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
 </ul>
