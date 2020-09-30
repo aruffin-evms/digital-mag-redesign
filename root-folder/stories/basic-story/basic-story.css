@@ -71,6 +71,7 @@
 .basic-story__hero-wrapper {
   height: 60vh;
   width: 100%;
+  background-color: gray;
 }
 
 .basic-story__hero__image {
@@ -369,11 +370,11 @@
 /* [end] subscribe module */  
 
 /* sidebar start */
-main{
+/* main{
   float:left; 
 
   width:80%;
-}
+} */
 aside{
 
   width:15%;
