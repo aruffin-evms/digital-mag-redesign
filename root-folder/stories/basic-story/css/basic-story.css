@@ -121,6 +121,7 @@ h3{
   font-size: 3em;
 }
 
+
 .basic-story__social-share__title {
   text-transform: uppercase;
   font-size: 12px;
@@ -129,16 +130,37 @@ h3{
 
 /* [start] social icons */
 .basic-story__social-share__social-icons {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 5px;
-  width: 9em;
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  line-height: .5;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-size: 2.5em;
+  margin: 0;
 }
 
-.basic-story__social-share__social-icon {
-  font-size: 28px !important;
+.fb{
+  background-image: url(../images/facebook.svg); 
 }
+
+.ig{
+  background-image: url(../images/instagram.svg); 
+}
+.in{
+  background-image: url(../images/LinkedIn.svg); 
+}
+.tw{
+  background-image: url(../images/twitter.svg); 
+}
+
+
+
 
 /* [end] social icons */
 
@@ -196,6 +218,11 @@ h3{
 
 .basic-story__content__story__p {
   padding: 17px 0;
+  font-family: 'Calluna';
+}
+
+.basic-story__content__story__span {
+  color: #c7531e;
   font-family: 'Calluna';
 }
 
