@@ -6,7 +6,7 @@
 /* fonts for page */
 @font-face {
   font-family: 'GT-Super';
-  src: url('/root-folder/fonts/GT-Super-Display-Super.woff') format('woff');
+  src: url('../../../fonts/GT-Super-Display-Super.woff') format('woff');
 
   /* would suggest adding to each 
   src: url('webfont.woff2') format('woff2'), /* Super Modern Browsers 
@@ -15,12 +15,12 @@
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff') format('woff');
+  src: url('../../../fonts/GT-Super-Display-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Calluna';
-  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff') format('woff');
+  src: url('../../../fonts/Calluna-Regular-webfont.woff') format('woff');
 }
 
 @keyframes slideUp {
