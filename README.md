@@ -1,6 +1,6 @@
 # digital-mag-redesign
 
-update: 6:10
+update: 6:15
  
 click to view page
 
@@ -14,7 +14,7 @@ click to view page
   <li><a href="./root-folder/stories/q-and-a/q-and-a.html">Q&A</a></li>
   <li><a href="./root-folder/stories/basic-story/ryans/ryans.html">Ryans deliver on the promise to foster groundbreaking research</a></li>
   <li><a href="./root-folder/stories/basic-story/teleheatlth/telehealth.html">Telehealth to the Rescue</a></li>
-  <li><a href="./root-folder/stories/basic-story/air/air.html">Ryans deliver on the promise to foster groundbreaking research</a></li>
+  <li><a href="./root-folder/stories/basic-story/air/air.html">The Doctor Is In — and On the Air</a></li>
   <li><a href=""></a></li>
   <li><a href=""></a></li>
   <li><a href=""></a></li>
