@@ -262,7 +262,7 @@ h3{
 }
 
 .qoutation-mark--top {
-  font-size: 100px !important;
+  font-size: 100px !important; 
   transform: rotate(180deg);
 }
 
