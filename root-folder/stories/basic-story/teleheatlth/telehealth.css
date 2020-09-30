@@ -1,0 +1,21 @@
+.basic-story__lead-in {
+    margin-top: -.15em;
+  }
+
+  @media (max-width: 480px) {
+    body {
+      width: 960px;
+      padding: 0 2%;
+    }
+  
+    aside {
+      width: 25%;
+    }
+  
+    .basic-story__lead-in{
+      margin-top: -.2em;
+    }
+  .basic-story__story-qoute__qoute{
+      width:750px;
+  }
+}
