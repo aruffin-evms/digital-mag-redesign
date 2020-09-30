@@ -85,6 +85,16 @@
   text-transform: uppercase;
 }
 
+.basic-story__dropcap {
+  color: #c7531e;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
 .basic-story__content {
   max-width: 1440px;
   width: 100%;
@@ -126,6 +136,38 @@
   font-size: 28px !important;
 }
 /* [end] social icons */
+
+/* taken from different stylesheet */
+.basic-story__social-share__social-icons {
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 5px;
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  line-height: .5;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.fb{
+  background-image: url(../images/facebook.svg); 
+}
+
+.ig{
+  background-image: url(../images/instagram.svg); 
+}
+.in{
+  background-image: url(../images/LinkedIn.svg); 
+}
+.tw{
+  background-image: url(../images/twitter.svg); 
+}
+
 
 .basic-story__content__description {
   margin: 10px 0 45px;

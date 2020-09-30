@@ -15,7 +15,7 @@ click to view page
   <li><a href="./root-folder/stories/basic-story/ryans/ryans.html">Ryans deliver on the promise to foster groundbreaking research</a></li>
   <li><a href="./root-folder/stories/basic-story/teleheatlth/telehealth.html">Telehealth to the Rescue</a></li>
   <li><a href="./root-folder/stories/basic-story/air/air.html">The Doctor Is In — and On the Air</a></li>
-  <li><a href=""></a></li>
-  <li><a href=""></a></li>
+  <li><a href="./root-folder/stories/basic-story/my-story/my-story.html"></a>Former drummer, DJ refuses to let MS take his “happy”</li>
+  <li><a href="./root-folder/stories/basic-story/research/research.html"></a>NIH awards $3.1 million grant to EVMS social scientist</li>
   <li><a href=""></a></li>
 </ul>
