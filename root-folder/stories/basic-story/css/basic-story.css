@@ -228,8 +228,10 @@ h3{
 
 /* [start] image with caption */
 .basic-story__content__image-wrapper {
-  width: 704px;
+  width: 1182px;
+  height: 784px;
   margin: 48px auto 16px;
+  background-color: gray;
 }
 
 .basic-story__content__image {
