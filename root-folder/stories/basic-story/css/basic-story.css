@@ -441,7 +441,9 @@ aside {
 }
 
 .diySection{
-  margin: 24em 0 0;
+  /* margin: 24em 0 0; */
+  position: relative;
+  top: 19em;
 }
 
 .diySection hr{
