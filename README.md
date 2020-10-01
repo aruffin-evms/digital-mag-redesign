@@ -1,6 +1,6 @@
 # digital-mag-redesign
 
-updated: 5:47
+updated: 5:49
  
 click to view page
 
