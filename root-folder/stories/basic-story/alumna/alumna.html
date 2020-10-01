@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="../js/basic-story.js"></script>
-  <link rel="stylesheet" href="../css/basic-story.css">
-  <link rel="stylesheet" href="alumna.css">
+  <script defer src="../basic-story.js"></script>
+  <link rel="stylesheet" href="../basic-story.css">
+  <!-- <link rel="stylesheet" href="alumna.css"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="http://cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
 
@@ -23,13 +23,11 @@
         <img src="hero1.jpg" alt="Hero image" class="basic-story__hero__image">
       </figure>
     </section>
-    <aside>
+    <aside class="basic-story__aside">
+      <p>PICTURED ABOVE: Please provide a caption
+        for the hero photo.
+        Photo courtesy of</p>
       <div class="basic-story__social-share">
-        <div class="photoSub">
-          <p>PICTURED ABOVE: Please provide a caption
-            for the hero photo.
-            Photo courtesy of</p>
-        </div>
         <p class="basic-story__social-share__title">Share this story</p>
         <!-- [start] component: social icons -->
         <div class="basic-story__social-share__social-icons">
@@ -38,24 +36,21 @@
           <span class="basic-story__social-share__social-icon material-icons">facebook</span>
           <span class="basic-story__social-share__social-icon material-icons">facebook</span>
         </div>
-        <div class="basic-story__by-line">
-          <div class="basic-story__by-line__line-wrapper">
-            <p class="basic-story__byline__label">Story:</p>
-            <p class="basic-story__byline__name">Emily Satchell</p>
-          </div>
-          <div class="basic-story__by-line__line-wrapper">
-            <p class="basic-story__byline__label">Photography:</p>
-            <p class="basic-story__byline__name">Margaret Stowasser </p>
-          </div>
-          <div class="basic-story__by-line__line-wrapper">
-            <!-- <p class="basic-story__byline__label">Video:</p>
-            <p class="basic-story__byline__name">Brendan Ash</p> -->
-          </div>
+      </div>
+      <div class="basic-story__by-line">
+        <div class="basic-story__by-line__line-wrapper">
+          <p class="basic-story__byline__label">Story:</p>
+          <p class="basic-story__byline__name">Emily Satchell</p>
+        </div>
+        <div class="basic-story__by-line__line-wrapper">
+          <p class="basic-story__byline__label">Photography:</p>
+          <p class="basic-story__byline__name">Margaret Stowasser </p>
+        </div>
+        <div class="basic-story__by-line__line-wrapper">
+          <!-- <p class="basic-story__byline__label">Video:</p>
+          <p class="basic-story__byline__name">Brendan Ash</p> -->
         </div>
       </div>
-
-
-
     </aside>
     <section class="basic-story__content">
       <div class="basic-story__content__wrapper">
@@ -72,8 +67,7 @@
       </div>
       <!-- [end] component: by lines -->
       <div class="basic-story__content__wrapper">
-        <p class="basic-story__content__story__p"><span class="basic-story__lead-in">O </span></p>
-        <p>n a normal day, Margaret Stowasser, MPA
+        <p class="basic-story__content__story__p"><span class="basic-story__dropcap">O </span>n a normal day, Margaret Stowasser, MPA
           (MPA ’16), PA-C, spends hours in the oper‑
           ating room as a Surgical Physician Assistant.
           Her daily routine is hectic — she collaborates with
@@ -89,6 +83,17 @@
           Stowasser described the hospital as a “healthcare
           war zone” with an overwhelming number of
           patients in all corners of hospital hallways. </p>
+      </div>
+      <!-- [start] component: image with caption -->
+      <figure class="basic-story__content__image-wrapper">
+        <img src="image12.jpg" alt="Margaret Stowasser" class="basic-story__content__image animate-vertical">
+      </figure>
+      <figcaption class="basic-story__content__image-caption">Physician assistant Margaret Stowasser served on the front
+        lines of the pandemic last spring when she treated patients
+        in a New York City hospital.  <br />
+        <i>Photos courtesy of Margaret Stowasser </i></figcaption>
+      <!-- [end] component: image with caption -->
+      <div class="basic-story__content__wrapper">
         <p class="basic-story__content__story__p">Ms. Stowasser found a community of support
           by connecting with other EVMS alumni working
           in the city. It was a comfort that helped
@@ -109,21 +114,8 @@
           flexibility and adaptation needed to be
           a successful provider. COVID‑19 put this
           all to the test.”</p>
-        
+        </div>
       </div>
-      </div>
-      <!-- [start] component: image with caption -->
-      <figure class="basic-story__content__image-wrapper">
-        <img src="image12.jpg" alt="Margaret Stowasser" class="basic-story__content__image animate-vertical">
-      </figure>
-
-      <!-- [end] component: image with caption -->
-      <div class="basic-story__content__wrapper">
-        <figcaption class="basic-story__content__image-caption">Physician assistant Margaret Stowasser served on the front
-          lines of the pandemic last spring when she treated patients
-          in a New York City hospital.  <br />
-          <i>Photos courtesy of Margaret Stowasser </i></figcaption>
-        
       </div>
       </div>
       </div>

@@ -6,7 +6,7 @@
 /* fonts for page */
 @font-face {
   font-family: 'GT-Super';
-  src: url('/root-folder/fonts/GT-Super-Display-Super.woff') format('woff');
+  src: url('../../fonts/GT-Super-Display-Super.woff') format('woff');
 
   /* would suggest adding to each 
   src: url('webfont.woff2') format('woff2'), /* Super Modern Browsers 
@@ -15,12 +15,12 @@
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff') format('woff');
+  src: url('../../fonts/GT-Super-Display-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Calluna';
-  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff') format('woff');
+  src: url('../../fonts/Calluna-Regular-webfont.woff') format('woff');
 }
 
 @keyframes slideUp {
@@ -95,6 +95,23 @@
   padding-left: 3px;
 }
 
+.basic-story__aside {
+  /* float: right; */
+  width: 300px;
+  margin: 0 auto;
+  height: auto;
+}
+
+@media (min-width: 900px) {
+  .basic-story__aside {
+    float: right;
+    width: 20%;
+    margin: 2% 5% 2% 2%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .basic-story__content {
   max-width: 1440px;
   width: 100%;
@@ -116,7 +133,8 @@
 .basic-story__social-share {
   float: right;
   height: 50px;
-  width: 140px;
+  /* width: 140px; */
+  margin: 40px 0;
 }
 
 .basic-story__social-share__title {
@@ -125,7 +143,7 @@
 }
 
 /* [start] social icons */
-.basic-story__social-share__social-icons {
+/* .basic-story__social-share__social-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -134,7 +152,7 @@
 
 .basic-story__social-share__social-icon {
   font-size: 28px !important;
-}
+} */
 /* [end] social icons */
 
 /* taken from different stylesheet */
@@ -155,17 +173,17 @@
 }
 
 .fb{
-  background-image: url(../images/facebook.svg); 
+  background-image: url(./images/facebook.svg); 
 }
 
 .ig{
-  background-image: url(../images/instagram.svg); 
+  background-image: url(./images/instagram.svg); 
 }
 .in{
-  background-image: url(../images/LinkedIn.svg); 
+  background-image: url(./images/LinkedIn.svg); 
 }
 .tw{
-  background-image: url(../images/twitter.svg); 
+  background-image: url(./images/twitter.svg); 
 }
 
 
@@ -189,7 +207,7 @@
   height: 100px;
   width: auto;
   border-left: 1px solid rgba(128, 128, 128, 0.8);
-  margin: 20px 0 0 50px;
+  margin: 20px 0 0;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -222,7 +240,7 @@
 }
 .basic-story__content__story__p {
   padding: 17px 0;
-  font-family: 'Calluna';
+  /* font-family: 'Calluna'; */
 }
 
 /* [start] image with caption */
@@ -230,6 +248,7 @@
   width: 1182px;
   height: 784px;
   margin: 48px auto 16px;
+  background-color: gray;
 }
 
 .basic-story__content__image {
@@ -417,7 +436,28 @@
 
   width:80%;
 } */
-aside{
 
-  width:15%;
+.diySection{
+  /* margin: 24em 0 0; */
+  position: relative;
+  top: 10em;
+}
+
+.diySection hr{
+  width: 60px;
+  height: 10px;
+  color: #c7531e;
+  background-color: #c7531e;
+  border: 0;
+  margin: 12% 0 3%;
+}
+
+.diySection p{
+  margin: 2% 0 5%;
+  font-family: 'Calluna';
+}
+
+.steps{
+  color: #c7531e;
+  font-family: 'Benton Sans Reg';
 }

@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="../js/basic-story.js"></script>
-  <link rel="stylesheet" href="../css/basic-story.css">
-  <link rel="stylesheet" href="pandemic.css">
+  <link rel="stylesheet" href="../basic-story.css">
+  <!-- <link rel="stylesheet" href="pandemic.css"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="http://cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
 
@@ -21,13 +21,11 @@
         <img src="hero1.jpg" alt="Hero image" class="basic-story__hero__image">
       </figure>
     </section>
-    <aside>
+    <aside class="basic-story__aside">
+      <p>PICTURED ABOVE: Please provide a caption
+        for the hero photo.
+        Photo courtesy of</p>
       <div class="basic-story__social-share">
-        <div class="photoSub">
-          <p>PICTURED ABOVE: Please provide a caption
-            for the hero photo.
-            Photo courtesy of</p>
-        </div>
         <p class="basic-story__social-share__title">Share this story</p>
         <!-- [start] component: social icons -->
         <div class="basic-story__social-share__social-icons">
@@ -36,24 +34,17 @@
           <a href="https://www.linkedin.com/school/eastern-virginia-medical-school/" target="_blank"><span class="basic-story__social-share__social-icons  in">&nbsp;</span></a>
           <a href="https://www.instagram.com/EVMSedu/" target="_blank"><span class="basic-story__social-share__social-icons  tw">&nbsp;</span></a>
         </div>
-        <div class="basic-story__by-line">
-          <div class="basic-story__by-line__line-wrapper">
-            <p class="basic-story__byline__label">Story:</p>
-            <p class="basic-story__byline__name">Jennifer McCarrel</p>
-          </div>
-          <div class="basic-story__by-line__line-wrapper">
-            <p class="basic-story__byline__label">Photography:</p>
-            <p class="basic-story__byline__name">Photo courtesy of University Hospitals Cleveland Medical Center</p>
-          </div>
-          <div class="basic-story__by-line__line-wrapper">
-            <!-- <p class="basic-story__byline__label">Video:</p>
-            <p class="basic-story__byline__name">Brendan Ash</p> -->
-          </div>
+      </div>
+      <div class="basic-story__by-line">
+        <div class="basic-story__by-line__line-wrapper">
+          <p class="basic-story__byline__label">Story:</p>
+          <p class="basic-story__byline__name">Jennifer McCarrel</p>
+        </div>
+        <div class="basic-story__by-line__line-wrapper">
+          <p class="basic-story__byline__label">Photo:</p>
+          <p class="basic-story__byline__name">Courtesy of University Hospitals Cleveland Medical Center</p>
         </div>
       </div>
-
-
-
     </aside>
     <section class="basic-story__content">
       <div class="basic-story__content__wrapper">
@@ -116,6 +107,7 @@
           He credits much of his success in medicine,
           leadership and teaching to his time at EVMS.
         </p>
+        </div>
         <section class="basic-story__story-qoute">
           <div class="basic-story__story-qoute__wrapper">
             <div class="basic-story__story-qoute__qoutation-mark basic-story__story-qoute__qoutation-mark--top">
@@ -134,7 +126,7 @@
                 class="qoutation-mark--bottom material-icons animate-vertical">format_quote</span></div>
           </div>
         </section>
-
+        <div class="basic-story__content__wrapper">
         <p class="basic-story__content__story__p">
           “The reason I became a surgeon, the reason
           I think systemically, it’s the experience I had
@@ -173,19 +165,19 @@
           a special interest in complex abdominal wall
           reconstruction.
         </p>
+        </div>
       </div>
       </div>
       <!-- [start] component: image with caption -->
       <figure class="basic-story__content__image-wrapper">
         <img src="image12.jpg" alt="Dr. Phillip Chang " class="basic-story__content__image animate-vertical">
       </figure>
-
+      <figcaption class="basic-story__content__image-caption">Dr. Phillip Chang started his job as Vice President and Chief
+        Medical Officer for University Hospitals Cleveland Medical
+        Center just as the pandemic struck.  <br />
+        <i>Photo courtesy of University Hospitals Cleveland Medical Center</i></figcaption>
       <!-- [end] component: image with caption -->
       <div class="basic-story__content__wrapper">
-        <figcaption class="basic-story__content__image-caption">Dr. Phillip Chang started his job as Vice President and Chief
-          Medical Officer for University Hospitals Cleveland Medical
-          Center just as the pandemic struck.  <br />
-          <i>Photo courtesy of University Hospitals Cleveland Medical Center</i></figcaption>
         <div class="basic-story__content__story">
           <p class="basic-story__content__story__p">Dr. Chang also models his teaching style with
             surgery residents after his mentor.

@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="../js/basic-story.js"></script>
-  <link rel="stylesheet" href="../css/basic-story.css">
-  <link rel="stylesheet" href="ryans.css">
+  <script defer src="../basic-story.js"></script>
+  <link rel="stylesheet" href="../basic-story.css">
+  <!-- <link rel="stylesheet" href="ryans.css"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="http://cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
 
@@ -18,17 +18,15 @@
     <section class="basic-story__hero">
       <figure class="basic-story__hero-wrapper">
         <!-- will need path etc for this image -->
-        <img src="hero.jpg" alt="Ryans deliver on the promise to foster groundbreaking research"
-          class="basic-story__hero__image2">
+        <img src="" alt="Ryans deliver on the promise to foster groundbreaking research"
+          class="basic-story__hero__image">
       </figure>
     </section>
-    <aside>
+    <aside class="basic-story__aside">
+      <p>PICTURED ABOVE: Please provide a caption
+        for the hero photo.
+        Photo courtesy of</p>
       <div class="basic-story__social-share">
-        <div class="photoSub">
-          <p>PICTURED ABOVE: Please provide a caption
-            for the hero photo.
-            Photo courtesy of</p>
-        </div>
         <p class="basic-story__social-share__title">Share this story</p>
         <!-- [start] component: social icons -->
         <div class="basic-story__social-share__social-icons">
@@ -40,6 +38,7 @@
               class="basic-story__social-share__social-icons  in">&nbsp;</span></a>
           <a href="https://www.instagram.com/EVMSedu/" target="_blank"><span
               class="basic-story__social-share__social-icons  tw">&nbsp;</span></a>
+        </div>
         </div>
         <div class="basic-story__by-line">
           <div class="basic-story__by-line__line-wrapper">
@@ -54,17 +53,13 @@
             <p class="basic-story__byline__label">Video:</p>
             <p class="basic-story__byline__name">Brendan Ash</p>
           </div>
-        </div>
       </div>
-
-
-
     </aside>
     <section class="basic-story__content">
       <div class="basic-story__content__wrapper">
         <label for="" class="basic-story__content__department-label">PIVOTING IN A PANDEMIC | PROFILE </label>
         <h1 class="basic-story__content__title">The Doctor Is In — and On the Air</h1>
-        <p>When reporters have questions about
+        <p class="basic-story__content__story__p">When reporters have questions about
           COVID‑19, Dr. Edward Oldfield is the
           expert they call on.</p>
 
@@ -75,7 +70,7 @@
 
       <!-- [end] component: by lines -->
       <div class="basic-story__content__wrapper">
-        <p class="basic-story__content__story__p"><span class="basic-story__lead-in">a</span>s a sophomore at Norfolk
+        <p class="basic-story__content__story__p"><span class="basic-story__dropcap">A</span>s a sophomore at Norfolk
           Catholic High
           School, Edward Oldfield III, MD, would
           sometimes stay up late reading, engrossed
@@ -169,7 +164,19 @@
           Along with his work at EVMS, he also is Medical Director
           for the Infection Prevention High-Performance Team that
           serves all hospitals in the Sentara Healthcare system.</p>
-
+      </div>
+      <!-- [start] component: image with caption -->
+      <figure class="basic-story__content__image-wrapper">
+        <img src="" alt="Louis and Prudence Ryan" class="basic-story__content__image animate-vertical">
+      </figure>
+      <figcaption class="basic-story__content__image-caption">Robert Palmer, MD, MPH, is the
+        former John Franklin Distinguished
+        Chair for Geriatrics, Director of the
+        Glennan Center for Geriatrics and
+        Gerontology, Professor and Chair of
+        Internal Medicine.</figcaption>
+      <!-- [end] component: image with caption -->
+      <div class="basic-story__content__wrapper">
         <p class="basic-story__content__story__p">“I’ve always preferred the word ‘we’ rather than ‘I,’”
           Dr. Oldfield says. “It’s only with team effort that we can
           accomplish things. When it comes to COVID‑19, it’s team‑
@@ -186,23 +193,7 @@
           request his expertise. He is an extremely valuable resource
           for the Hampton Roads community and beyond.”</p>
       </div>
-
-
-      <!-- [start] component: image with caption -->
-      <figure class="basic-story__content__image-wrapper">
-        <img src="image1.jpg" alt="Louis and Prudence Ryan" class="basic-story__content__image animate-vertical">
-      </figure>
-
-      <!-- [end] component: image with caption -->
-      <div class="basic-story__content__wrapper">
-        <figcaption class="basic-story__content__image-caption">Robert Palmer, MD, MPH, is the
-          former John Franklin Distinguished
-          Chair for Geriatrics, Director of the
-          Glennan Center for Geriatrics and
-          Gerontology, Professor and Chair of
-          Internal Medicine.</i></figcaption>
-
-      </div>
+    </div>
       </div>
     </section>
 
