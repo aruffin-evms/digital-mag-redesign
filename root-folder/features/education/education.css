@@ -1,0 +1,43 @@
+.feature__faculty-spotlight__image-wrapper img{
+  height: 180px;
+  margin-top: -25px;
+}
+
+.feature__hero__image{
+  width:50%;
+  float:left;
+  
+}
+
+ .hero-wrapper{
+
+  display: block;
+  clear: both;
+  height: 50vh;
+  width: 100%;
+} 
+
+.features__hero__title {
+  font-family: "GT-Super";
+  margin: 10px 0;
+}
+
+.features__hero__overlay {
+  position: absolute;
+  top: 12%;
+    left: 14%;
+    width: 25%;
+  color: #000;
+  margin: 30px 0 0 30px;
+}
+
+@media (min-width: 900px) {
+  .features__hero__overlay {
+    
+}
+.features__hero__title {
+  font-size: 50px;
+  }
+
+  
+}
