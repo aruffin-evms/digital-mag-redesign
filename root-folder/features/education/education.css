@@ -32,12 +32,22 @@
 }
 
 @media (min-width: 900px) {
-  .features__hero__overlay {
-    
-}
+
 .features__hero__title {
   font-size: 50px;
   }
 
   
+}
+
+@media (max-width:640px){
+  .features__hero__overlay {
+    top: -2%;
+    left: 0
+}
+
+.feature__faculty-spotlight__item {
+  width: 100%;
+  margin: 7%;
+}
 }
