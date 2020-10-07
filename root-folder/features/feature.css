@@ -259,7 +259,7 @@
 /* [start] image with caption */
 .feature__content__image-wrapper {
   width: 100vw;
-  height: 300px;
+  height: auto;
   margin: 48px auto 16px;
   background-color: gray;
 }
