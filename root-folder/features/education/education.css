@@ -61,3 +61,9 @@
   margin: -40px 0;
 }
 }
+
+@media (max-height:411px){
+.features__hero__overlay {
+  top: 0%;
+}
+}
