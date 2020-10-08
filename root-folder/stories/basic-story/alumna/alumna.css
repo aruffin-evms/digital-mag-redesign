@@ -1,16 +1,77 @@
-.basic-story__hero__image2{
-padding:280px 924px ;
-background-color: darkgrey;
-
+.feature__hero__image{
+  width:50%;
+  float:left;
+  
 }
 
-.basic-story__content__image{
-  background-color: darkgrey;
-  /* padding: 402px 352px; */
+ .hero-wrapper{
+
+  display: block;
+  clear: both;
+  height: 50vh;
+  width: 100%;
+} 
+
+.features__hero__title {
+  font-family: "GT-Super";
+  margin: 10px 0;
+  font-size: 4em;
+}
+
+.features__hero__overlay {
+  width: 30%;
+    color: #000;
+    margin: -21% 0 0 13%;
+    float: left;
 }
 
 .basic-story__lead-in {
   text-transform: capitalize;
   margin-top: 0em;
   padding: 0 .1em 0 0;
+}
+
+.basic-story__content__image-caption {
+  margin: 5% auto;
+
+}
+
+@media (max-width:640px){
+
+  .features__hero__title{
+
+      font-size: 1.5em;
+  }
+  .features__hero__overlay {
+    width: 40%;
+    margin: -71% 0 0 5%;
+}
+
+    .basic-story__content__department-label {
+      font-size: .7em;
+  }
+
+  .feature__faculty-spotlight__item {
+      width: 85%;
+  }
+}
+
+@media (max-width:480px){
+  .basic-story__content__department-label {
+      font-size: .5em;
+  }
+    .features__hero__title{
+
+      font-size: 1em;
+  }
+}
+
+@media (max-width:823px){
+  .basic-story__content__department-label {
+      font-size: .5em;
+  }
+    .features__hero__title{
+
+      font-size: 1em;
+  }
 }
