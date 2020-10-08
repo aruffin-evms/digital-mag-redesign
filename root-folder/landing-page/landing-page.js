@@ -19,7 +19,7 @@ const forwardArrow = document.getElementById('forwardArrow')
 
 const carousel = document.querySelector('.landing-page__stories-carousel__carousel__wrapper')
 
-const scrollDistance = 130;
+const scrollDistance = 200;
 
 // todo: create function that checks scroll position for looping carousel
 backArrow.addEventListener('click', function() {
@@ -43,9 +43,9 @@ qouteDrawer.addEventListener('click', function() {
 
 function showQouteText(display) {
   qouteText.style.display = display
-  qouteText.style.animation = '1.5s fadeIn'
+  qouteText.style.animation = '2.9s fadeIn'
   qouteSource.style.display = display
-  qouteSource.style.animation = '1.5s fadeIn'
+  qouteSource.style.animation = '3.3s fadeIn'
 
   if(qouteText.style.display === 'none') {
     qouteText.style.animation = '1s fadeOut'

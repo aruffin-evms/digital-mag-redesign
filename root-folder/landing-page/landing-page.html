@@ -12,6 +12,11 @@
 <body>
   <main class="landing-page">
     <section class="landing-page__hero">
+      <div class="landing-page__hero__content">
+        <h1 class="landing-page__hero__title">Pivoting in&nbsp;a Pandemic</h1>
+        <h2 class="landing-page__hero__subtitle">EVMS confronts COVID-19</h2>
+        <a href="" class="landing-page__cta">Read the Story</a>
+      </div>
       <figure class="landing-page__hero__wrapper">
         <img src="../assets/landing-page-main-feature-hero-placeholder.jpg" alt="" class="landing-page__hero__image">
       </figure>
@@ -24,6 +29,7 @@
               <a href="" id="gridStory" class="landing-page__featured-stories__link">
               <figure class="landing-page__featured-stories__grid-item__story-image__wrapper landing-page__featured-stories__grid-item--one__image-wrapper">
                 <img src="../assets/landing-page-pandemic-profile.jpg" alt="" id="gridImages" class="landing-page__featured-stories__grid-item__story-image fade-in-left">
+                <div id="itemOneAnimation"></div>
               </figure>
               <div class="landing-page__featured-stories__grid-item__content-wrapper">
                 <label for="" class="landing-page__featured-stories__grid-item__category">FEATURE</label>
@@ -63,9 +69,10 @@
         <img src="../assets/landing-page-full-width-image-caption-drawer-expanded.jpg" alt="" class="landing-page__stretched-image__image">
       </figure>
       <div id="qouteDrawer" class="landing-page__stretched-image__qoute">
+        .landing-page__open
         <div class="landing-page__stretched-image__qoute__wrapper">
-          <p id="qouteText" class="landing-page__stretched-image__qoute__copy">Fero cus ditatem dentotat. Menis dolor rem arum idi ut laut laut parunt, aut fugit fuga. Itati utemqui antibusam, Occaerumquia volorest et, sed quis volor adia quo et eventur autetur? Quiberum</p>
-          <p id="qouteSource" class="landing-page__stretched-image__qoute__source">Photograph by Eric Lusher</p>
+          <p id="qouteText" class="landing-page__stretched-image__qoute__copy">Last spring, construction workers at Waitzer Hall expressed their appreciation to frontline healthcare workers battling the pandemic.</p>
+          <p id="qouteSource" class="landing-page__stretched-image__qoute__source">Photo by DOUG GARDNER</p>
         </div>
       </div>
     </section>
@@ -134,7 +141,7 @@
     <section class="landing-page__story-qoute">
       <div class="landing-page__story-qoute__wrapper">
         <div class="landing-page__story-qoute__qoutation-mark landing-page__story-qoute__qoutation-mark--top">
-          <span class="qoutation-mark--top material-icons animate-vertical">format_quote</span>
+          <img src="../assets/close-quotation-mark.svg" alt="" class="qoutation-mark--top">
         </div>
           <div class="landing-page__story-qoute__qoutation-mark__horizontal-line--bottom"></div>
           <div class="landing-page__story-qoute__content">
@@ -142,7 +149,7 @@
           </div>
           <div class="landing-page__story-qoute__qoutation-mark__horizontal-line--top"></div>
         <div class="landing-page__story-qoute__qoutation-mark landing-page__story-qoute__qoutation-mark--bottom">
-          <span class="qoutation-mark--bottom material-icons animate-vertical">format_quote</span>
+          <img src="../assets/close-quotation-mark.svg" alt="" class="qoutation-mark--bottom">
         </div>
       </div>
     </section>
@@ -165,8 +172,10 @@
             <figure class="landing-page__more-stories__image-wrapper">
               <img src="../assets/landing-page-diversity-inclusion.jpg" alt="" class="landing-page__more-stories__image">
             </figure>
-            <label class="landing-page__more-stories__category">DIVERSITY & INCLUSION</label>
-            <h3 class="landing-page__more-stories__title">Change for the Better</h3>
+            <div class="landing-page__more-stories__copy-wrapper">
+              <label class="landing-page__more-stories__category">DIVERSITY & INCLUSION</label>
+              <h3 class="landing-page__more-stories__title">Change for the Better</h3>
+            </div>
           </div>
         </a>
         <a href="" class="landing-page__more-stories__story animate-right">
@@ -174,8 +183,10 @@
             <figure class="landing-page__more-stories__image-wrapper">
               <img src="../assets/landing-page-com-outreach.jpg" alt="" class="landing-page__more-stories__image">
             </figure>
-            <label class="landing-page__more-stories__category">COMMUNITY & OUTREACH</label>
-            <h3 class="landing-page__more-stories__title">“How can we help?”</h3>
+            <div class="landing-page__more-stories__copy-wrapper">
+              <label class="landing-page__more-stories__category">COMMUNITY & OUTREACH</label>
+              <h3 class="landing-page__more-stories__title">“How can we help?”</h3>
+            </div>
           </div>
         </a>
       </div>
@@ -198,17 +209,45 @@
     </div>
     </section>
     <div class="landing-page__hairline"></div>
-    <section class="landing-page__archived-articles animate-vertical">
+    <section class="landing-page__additional-stories">
+      <div class="landing-page__additional-stories__wrapper">
+        <a href="" class="landing-page__additional-stories__story animate-left">
+          <div class="landing-page__additional-stories__content ">
+            <figure class="landing-page__additional-stories__image-wrapper">
+              <img src="../assets/landing-page-yourSupport.jpg" alt="" class="landing-page__additional-stories__image">
+            </figure>
+            <div class="landing-page__additional-stories__copy-wrapper">
+              <label class="landing-page__additional-stories__category">YOUR SUPPORT</label>
+              <h3 class="landing-page__additional-stories__title">Ryan Translational Research Fund</h3>
+              <!-- <h3 class="landing-page__additional-stories__title">Ryan Research Fund</h3> -->
+            </div>
+          </div>
+        </a>
+        <a href="" class="landing-page__additional-stories__story animate-right">
+          <div class="landing-page__additional-stories__content ">
+            <figure class="landing-page__additional-stories__image-wrapper">
+              <img src="../assets/landing-page-photoEssay.jpg" alt="" class="landing-page__additional-stories__image">
+            </figure>
+            <div class="landing-page__additional-stories__copy-wrapper">
+              <label class="landing-page__additional-stories__category">PHOTO ESSAY</label>
+              <h3 class="landing-page__additional-stories__title">Safety First</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <div class="landing-page__hairline"></div>
+    <section class="landing-page__archived-articles">
       <div class="landing-page__archived-articles__wrapper">
         <div class="landing-page__archived-articles__callout">
-          <div class="landing-page__archived-articles__callout__wrapper">
+          <div class="landing-page__archived-articles__callout__wrapper animate-vertical">
             <h3 class="landing-page__archived-articles__callout__title">Missed an issue?</h3>
             <a href="" class="landing-page__archived-articles__callout__cta">Read the Archives</a>
           </div>
         </div>
         <div class="landing-page__archived-articles">
           <figure class="landing-page__archived-articles__asset-wrapper">
-            <img src="../assets/landing-page-archives-deck.png" class="landing-page__archived-articles__asset">
+            <img src="../assets/landing-page-archives-deck.png" class="landing-page__archived-articles__asset animate-vertical">
           </figure>
         </div>
       </div>
