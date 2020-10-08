@@ -1,6 +1,6 @@
 # digital-mag-redesign
 
-updated: 6:30
+updated: 4:48
  
 click to view page
 
@@ -16,5 +16,11 @@ click to view page
   <li><a href="./root-folder/stories/basic-story/air/air.html">The Doctor Is In — and On the Air</a></li>
   <li><a href="./root-folder/stories/basic-story/my-story/my-story.html">Former drummer, DJ refuses to let MS take his “happy”</a></li>
   <li><a href="./root-folder/stories/basic-story/research/research.html">NIH awards $3.1 million grant to EVMS social scientist</a></li>
+  <li><a href="./root-folder/landing-page/landing-page.html"></a>Main Landing page</li>
+  <li><a href="./root-folder/features/patient_care/patient_care.html">[Feature] Patient care</a></li>
+  <li><a href="./root-folder/features/education/education.html">[Feature] Education</a></li>
+  <li><a href="./root-folder/features/research/research.html">[Feature] Research</a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
   <li><a href=""></a></li>
 </ul>
