@@ -75,7 +75,6 @@
 .basic-story__hero-wrapper {
   height: 30vh;
   width: 100%;
-  background-color: gray;
 }
 
 @media(min-width: 900px) {
@@ -265,7 +264,6 @@
   width: 100vw;
   height: 300px;
   margin: 48px auto 16px;
-  background-color: gray;
 }
 
 @media(min-width: 900px) {

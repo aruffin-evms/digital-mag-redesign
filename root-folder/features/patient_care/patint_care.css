@@ -24,9 +24,9 @@
 
 .features__hero__overlay {
   width: 30%;
-    color: #000;
-    margin: -21% 0 0 13%;
-    float: left;
+  color: #000;
+  margin: -20% 0 0 13%;
+  float: left;
 }
 
 @media (min-width: 900px) {
