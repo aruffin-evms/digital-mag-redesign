@@ -588,6 +588,34 @@ body {
     font-size: 40px;
   }
 }
+
+.landing-page__story-qoute__copy-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.landing-page__story-qoute__copy {
+  text-align: center;
+  font-family: 'Benton Sans Reg';
+}
+
+.landing-page__story-qoute__cta {
+  color: #c7531e;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-decoration: none;
+  font-family: 'Benton Sans Reg';
+}
+
+.landing-page__story-qoute__cta:hover {
+  text-decoration: underline;
+}
+
 .landing-page__my-story__image-wrapper {
   height: 400px;
   width: 100vw;
@@ -619,7 +647,9 @@ body {
 @media(min-width: 900px) {
   .landing-page__my-story__callout {
     left: 100px;
-    margin-bottom: 105px;
+    margin-bottom: -105px;
+    width: 400px;
+    top: -170px;
   }
 }
 
@@ -653,7 +683,7 @@ body {
   transform: translateZ(0);
   position: relative;
   overflow: hidden;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .landing-page__cta:before { 
