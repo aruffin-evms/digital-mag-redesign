@@ -1,14 +1,128 @@
-.basic-story__lead-in {  
-  margin-top: -.2em;
+.feature__faculty-spotlight {
+  margin: 40px 0;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.feature__faculty-spotlight__wrapper {
+  min-height: 300px;
+  max-width: 708px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+}
+
+.orange{
+  color:#c7531e;
+}
+
+
+
+.feature__faculty-spotlight__item {
+  width: 65%;
+  height: auto;
+}
+
+.feature__faculty-spotlight__item p{
+    text-align:left;
+    margin-top: 5%;
+}
+
+.feature__faculty-spotlight__image-wrapper {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5% 0 0;
+  float: left;
+}
+
+/* .feature__faculty-spotlight__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+
+.feature__faculty-spotlight__name {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.feature__faculty-spotlight__image-wrapper img{
+  height: 180px;
+  margin-top: -25px;
+}
+
+.features__hero__title {
+  font-family: "GT-Super";
+  margin: 10px 0;
+  font-size: 4em;
+}
+
+.features__hero__overlay {
+  width: 30%;
+    color: #FFF;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    
+
+}
+
+.basic-story__content__department-label{
+  color:#fff;
+  font-size:1em;
+}
+
+.topText{
+    font-size: 1.5em;
+}
+
+@media (max-width:640px){
+
+  .features__hero__title{
+
+      font-size: 1.5em;
+  }
+  .features__hero__overlay {
+      width: 35%;
+        top: 1%;
+        left: 3%;
+    }
+
+    .features__hero__overlay h2{
+      font-size: 1em;
+    line-height: 1em;
+    }
+
+    .basic-story__content__department-label {
+      font-size: .7em;
   }
 
-  .basic-story__hero__image2{
-    /* padding:150px 924px ; */
-    background-color: darkgrey;
-    
-    }
-    
-    .basic-story__content__image{
-      background-color: darkgrey;
-      /* padding: 402px 352px; */
-    }
+  .feature__faculty-spotlight__item {
+      width: 85%;
+  }
+}
+
+@media (max-width:480px){
+  .basic-story__content__department-label {
+      font-size: .5em;
+  }
+    .features__hero__title{
+
+      font-size: 1em;
+  }
+}
+
+@media (max-width:823px){
+  .basic-story__content__department-label {
+      font-size: .5em;
+  }
+    .features__hero__title{
+
+      font-size: 1em;
+  }
+}
