@@ -12,16 +12,14 @@
 <body>
   <main class="landing-page">
     <section class="landing-page__hero">
-      <div class="landing-page__hero__wrapper">
-        <img src="../assets/landing-page-hero.jpg" alt="" class="landing-page__hero__image">
+      <div class="landing-page__hero__content">
+        <h1 class="landing-page__hero__title">Pivoting in&nbsp;a Pandemic</h1>
+        <h2 class="landing-page__hero__subtitle">EVMS confronts COVID-19</h2>
+        <a href="" class="landing-page__cta">Read the Story</a>
       </div>
-      <div class="landing-page__hero__callout">
-        <div class="landing-page__hero__callout__wrapper">
-          <p class="landing-page__hero__callout__headline">PUBLIC HEALTH SPECIAL REPORT</p>
-          <p class="landing-page__hero__callout__title">Unprecedented</p>
-          <a href="" class="landing-page__hero__callout__button">Read the Story</a>
-        </div>
-      </div>
+      <figure class="landing-page__hero__wrapper">
+        <img src="../assets/landing-page-main-feature-hero-placeholder.jpg" alt="" class="landing-page__hero__image">
+      </figure>
     </section>
     <section class="landing-page__featured-stories">
       <div class="landing-page__featured-stories__wrapper">
@@ -30,12 +28,12 @@
             <div class="landing-page__featured-stories__grid-item__wrapper">
               <a href="" id="gridStory" class="landing-page__featured-stories__link">
               <figure class="landing-page__featured-stories__grid-item__story-image__wrapper landing-page__featured-stories__grid-item--one__image-wrapper">
-                <img src="../assets/landing-page-street-health.jpg" alt="" id="gridImages" class="landing-page__featured-stories__grid-item__story-image fade-in-left">
+                <img src="../assets/landing-page-pandemic-profile.jpg" alt="" id="gridImages" class="landing-page__featured-stories__grid-item__story-image fade-in-left">
+                <div id="itemOneAnimation"></div>
               </figure>
               <div class="landing-page__featured-stories__grid-item__content-wrapper">
                 <label for="" class="landing-page__featured-stories__grid-item__category">FEATURE</label>
-                <h3 class="landing-page__featured-stories__grid-item__title">Students take healthcare to the street</h3>
-                <p class="landing-page__featured-stories__grid-item__desription">Through the Community-Engaged Learning initiative called Street Health, EVMS students learn and serve people in need.</p>
+                <h3 class="landing-page__featured-stories__grid-item__title">The doctor is in &mdash; and on the air</h3>
               </div>
             </a>
             </div>
@@ -44,11 +42,10 @@
             <div class="landing-page__featured-stories__grid-item__wrapper">
               <a href="" id="storyLink" class="landing-page__featured-stories__link">
               <figure class="landing-page__featured-stories__grid-item__story-image__wrapper landing-page__featured-stories__grid-item--two__image-wrapper">
-                <img src="../assets/landing-page-graduation.jpg" alt="" class="landing-page__featured-stories__grid-item__story-image">
+                <img src="../assets/landing-page-pandemic-firstPerson.jpg" alt="" class="landing-page__featured-stories__grid-item__story-image">
               </figure>
               <label for="" class="landing-page__featured-stories__grid-item__category">ONLINE EXCLUSIVE</label>
-              <h3 class="landing-page__featured-stories__grid-item__title">Graduation 2020</h3>
-              <p class="landing-page__featured-stories__grid-item__desription">Relive the moments</p>
+              <h3 class="landing-page__featured-stories__grid-item__title">The heartbreaking toll of social distancing</h3>
             </a>
             </div>
           </div>
@@ -56,11 +53,10 @@
             <div class="landing-page__featured-stories__grid-item__wrapper">
               <a href="" id="storyLink" class="landing-page__featured-stories__link">
               <figure class="landing-page__featured-stories__grid-item__story-image__wrapper landing-page__featured-stories__grid-item--three__image-wrapper">
-                <img src="../assets/landing-page-holi-fest.jpg" alt="" class="landing-page__featured-stories__grid-item__story-image">
+                <img src="../assets/landing-page-pandemic-community.jpg" alt="" class="landing-page__featured-stories__grid-item__story-image">
               </figure>
               <label for="" class="landing-page__featured-stories__grid-item__category">PHOTO ESSAY</label>
-              <h3 class="landing-page__featured-stories__grid-item__title">Holi Fest</h3>
-              <p class="landing-page__featured-stories__grid-item__desription">EVMS student body welcomes spring with loud splashes of paint</p>
+              <h3 class="landing-page__featured-stories__grid-item__title">Telehealth t0 the Rescue</h3>
             </a>
             </div>
           </div>
@@ -70,12 +66,13 @@
     <!-- todo: rename section -->
     <section class="landing-page__stretched-image animate-vertical">
       <figure class="landing-page__stretched-image__image-wrapper">
-        <img src="../assets/landing-page-stretched-image.jpg" alt="" class="landing-page__stretched-image__image">
+        <img src="../assets/landing-page-full-width-image-caption-drawer-expanded.jpg" alt="" class="landing-page__stretched-image__image">
       </figure>
       <div id="qouteDrawer" class="landing-page__stretched-image__qoute">
+        .landing-page__open
         <div class="landing-page__stretched-image__qoute__wrapper">
-          <p id="qouteText" class="landing-page__stretched-image__qoute__copy">Fero cus ditatem dentotat. Menis dolor rem arum idi ut laut laut parunt, aut fugit fuga. Itati utemqui antibusam, Occaerumquia volorest et, sed quis volor adia quo et eventur autetur? Quiberum</p>
-          <p id="qouteSource" class="landing-page__stretched-image__qoute__source">Photograph by Eric Lusher</p>
+          <p id="qouteText" class="landing-page__stretched-image__qoute__copy">Last spring, construction workers at Waitzer Hall expressed their appreciation to frontline healthcare workers battling the pandemic.</p>
+          <p id="qouteSource" class="landing-page__stretched-image__qoute__source">Photo by DOUG GARDNER</p>
         </div>
       </div>
     </section>
@@ -84,16 +81,16 @@
         <div class="landing-page__subscribe__column landing-page__subscribe__column-left">
           <div class="landing-page__subscribe__content">
             <figure class="landing-page__subscribe__poster-wrapper">
-              <img src="../assets/landing-page-poster.jpg" alt="" class="landing-page__subscribe__poster animate-vertical">
+              <img src="../assets/landing-page-mag-13.1-cover.png" alt="" class="landing-page__subscribe__poster animate-vertical">
             </figure> 
+            <a href="" class="landing-page__subscribe__pdf-download" download="">Download a PDF</a>
           </div>
         </div>
         <div class="landing-page__subscribe__column landing-page__subscribe__column-right">
           <div class="landing-page__subscribe__content">
           <h3 class="landing-page__subscribe__title">Read the Print</h3>
-          <p class="landing-page__subscribe__description">The award-winning EVMS Magazine is published four times a year. Subscribe to be notified when the next digital issue is published and/or to receive complimentary copies of the print version.</p>
-          <a href="" class="landing-page__subscribe__cta animate-vertical">Subscribe</a>
-          <a href="" class="landing-page__subscribe__pdf-download" download="">Download a PDF</a>
+          <p class="landing-page__subscribe__description">This issue is the first to feature a new design for EVMS Magazine. In addition to several visual changes, we’ve introduced new departments — Trending, Seen & Heard and Diversity & Inclusion — to better reflect our evolving content and culture, and we’ve renamed some departments to quickly convey the kind of stories presented.</p>
+          <a href="" class="landing-page__cta animate-vertical">Subscribe</a>
         </div>
         </div>
       </div>
@@ -105,37 +102,37 @@
           <span id="forwardArrow" class="landing-page__stories-carousel__forward material-icons">arrow_forward_ios</span>
         <div class="landing-page__stories-carousel__carousel-item">
           <figure class="landing-page__stories-carousel__image-wrapper">
-            <img src="" alt="" class="landing-page__stories-carousel__image">
+            <img src="../assets/landing-page-plunk-research-photoCircle.png" alt="" class="landing-page__stories-carousel__image">
           </figure>
           <p class="landing-page__stories-carousel__label">Research</p>
           <p class="landing-page__stories-carousel__title">Research offers new hope for lung disease</p>
         </div>
         <div class="landing-page__stories-carousel__carousel-item">
           <figure class="landing-page__stories-carousel__image-wrapper">
-            <img src="" alt="" class="landing-page__stories-carousel__image">
+            <img src="../assets/landing-page-hooper-q&a-photoCircle.png" alt="" class="landing-page__stories-carousel__image">
           </figure>
           <p class="landing-page__stories-carousel__label">Q&A</p>
           <p class="landing-page__stories-carousel__title">Ben Olsen</p>
         </div>
         <div class="landing-page__stories-carousel__carousel-item">
           <figure class="landing-page__stories-carousel__image-wrapper">
-            <img src="" alt="" class="landing-page__stories-carousel__image">
+            <img src="../assets/landing-page-chang-alumni-PhotoCircle.png" alt="" class="landing-page__stories-carousel__image">
           </figure>
-          <p class="landing-page__stories-carousel__label">Alumni Profile</p>
+          <p class="landing-page__stories-carousel__label">Chang</p>
           <p class="landing-page__stories-carousel__title">Young alum is the voice behind local coalition</p>
         </div>
         <div class="landing-page__stories-carousel__carousel-item">
           <figure class="landing-page__stories-carousel__image-wrapper">
-            <img src="" alt="" class="landing-page__stories-carousel__image">
+            <img src="../assets/landing-page-kelleher-alumni-photoCircle.png" alt="" class="landing-page__stories-carousel__image">
           </figure>
-          <p class="landing-page__stories-carousel__label">Alumni Profile</p>
+          <p class="landing-page__stories-carousel__label">Kelleher</p>
           <p class="landing-page__stories-carousel__title">Young alum is the voice behind local coalition</p>
         </div>
         <div class="landing-page__stories-carousel__carousel-item">
           <figure class="landing-page__stories-carousel__image-wrapper">
-            <img src="" alt="" class="landing-page__stories-carousel__image">
+            <img src="../assets/landing-page-stowasser-alumni-photoCircle.png" alt="" class="landing-page__stories-carousel__image">
           </figure>
-          <p class="landing-page__stories-carousel__label">Alumni Profile</p>
+          <p class="landing-page__stories-carousel__label">Stowasser</p>
           <p class="landing-page__stories-carousel__title">Young alum is the voice behind local coalition</p>
         </div>
       </div>
@@ -144,27 +141,27 @@
     <section class="landing-page__story-qoute">
       <div class="landing-page__story-qoute__wrapper">
         <div class="landing-page__story-qoute__qoutation-mark landing-page__story-qoute__qoutation-mark--top">
-          <span class="qoutation-mark--top material-icons animate-vertical">format_quote</span>
+          <img src="../assets/close-quotation-mark.svg" alt="" class="qoutation-mark--top">
         </div>
           <div class="landing-page__story-qoute__qoutation-mark__horizontal-line--bottom"></div>
           <div class="landing-page__story-qoute__content">
-            <p class="landing-page__story-qoute__qoute animate-left">When you reach the end of your rope, tie a knot and hang on. I would rather be a little nobody, then to be a evil somebody. I have always found that mercy bears richer fruits than strict justice.</p>
+            <p class="landing-page__story-qoute__qoute animate-left">Every day, I am grateful to experience the power of genuine, vulnerable human connection and to extend grace to one another.</p>
           </div>
           <div class="landing-page__story-qoute__qoutation-mark__horizontal-line--top"></div>
         <div class="landing-page__story-qoute__qoutation-mark landing-page__story-qoute__qoutation-mark--bottom">
-          <span class="qoutation-mark--bottom material-icons animate-vertical">format_quote</span>
+          <img src="../assets/close-quotation-mark.svg" alt="" class="qoutation-mark--bottom">
         </div>
       </div>
     </section>
     <section class="landing-page__my-story animate-vertical">
       <figure class="landing-page__my-story__image-wrapper">
-        <img src="../assets/landing-page-my-story.jpg" alt="" class="landing-page__my-story__image">
+        <img src="../assets/landing-page-myStory-placeholder.jpg" alt="" class="landing-page__my-story__image">
       </figure>
       <div class="landing-page__my-story__callout">
         <div class="landing-page__my-story__callout__wrapper">
           <label for="" class="landing-page__my-story__category">MY STORY</label>
-          <h3 class="landing-page__my-story__title">IVF baby comes full circle</h3>
-          <a href="" class="landing-page__my-story__cta">Read the Story</a>
+          <h3 class="landing-page__my-story__title">Former drummer, DJ refuses to let MS take his “happy”</h3>
+          <a href="" class="landing-page__cta">Read the Story</a>
         </div>
       </div>
     </section>
@@ -173,21 +170,23 @@
         <a href="" class="landing-page__more-stories__story animate-left">
           <div class="landing-page__more-stories__content ">
             <figure class="landing-page__more-stories__image-wrapper">
-              <img src="../assets/landing-page-alzheimers-crisis.jpg" alt="" class="landing-page__more-stories__image">
+              <img src="../assets/landing-page-diversity-inclusion.jpg" alt="" class="landing-page__more-stories__image">
             </figure>
-            <label class="landing-page__more-stories__category">FEATURE</label>
-            <h3 class="landing-page__more-stories__title">The Alzheimer's Crisis</h3>
-            <p class="landing-page__more-stories__description">Tio. Ut expligenis mil ipsae. Intore sinustotatem id esti aut quis et fugit ipsus,</p>
+            <div class="landing-page__more-stories__copy-wrapper">
+              <label class="landing-page__more-stories__category">DIVERSITY & INCLUSION</label>
+              <h3 class="landing-page__more-stories__title">Change for the Better</h3>
+            </div>
           </div>
         </a>
         <a href="" class="landing-page__more-stories__story animate-right">
           <div class="landing-page__more-stories__content ">
             <figure class="landing-page__more-stories__image-wrapper">
-              <img src="../assets/landing-page-scholarships.jpg" alt="" class="landing-page__more-stories__image">
+              <img src="../assets/landing-page-com-outreach.jpg" alt="" class="landing-page__more-stories__image">
             </figure>
-            <label class="landing-page__more-stories__category">YOUR SUPPORT</label>
-            <h3 class="landing-page__more-stories__title">Scholarships</h3>
-            <p class="landing-page__more-stories__description">Tio. Ut expligenis mil ipsae. Intore sinustotatem id esti aut quis et fugit ipsus,</p>
+            <div class="landing-page__more-stories__copy-wrapper">
+              <label class="landing-page__more-stories__category">COMMUNITY & OUTREACH</label>
+              <h3 class="landing-page__more-stories__title">“How can we help?”</h3>
+            </div>
           </div>
         </a>
       </div>
@@ -201,34 +200,55 @@
     <section class="landing-page__infograph">
       <div class="landing-page__infograph__wrapper">
         <figure class="landing-page__infograph__asset-wrapper">
-          <img src="" alt="" class="landing-page__infograph__asset animate-vertical">
+          <img src="../assets/landing-page-pictureThis-infographic-placeholder.jpg" alt="" class="landing-page__infograph__asset animate-vertical">
         </figure>
-        <label for="" class="landing-page__infograph__label animate-vertical">Picture This</label>
-        <h3 class="landing-page__infograph__title animate-vertical">Economic Powerhouse Emerges</h3>
-        <p class="landing-page__infograph__description animate-vertical">Cimodisquam acea eum qui dem que. Imusam nis volo et la volorem poritat empedit, experum sint faccae modi vel</p>
-        <a href="" class="landing-page__infograph__cta animate-vertical">Read the Infographic</a>
+        <label for="" class="landing-page__infograph__label">Picture This</label>
+        <h3 class="landing-page__infograph__title">COVID-19 Fund</h3>
+        <p class="landing-page__infograph__description">Critical operations continue during the pandemic thanks to our donor’s generous support</p>
+        <a href="" class="landing-page__cta">Read the Infographic</a>
     </div>
     </section>
     <div class="landing-page__hairline"></div>
-    <section class="landing-page__archived-articles animate-vertical">
+    <section class="landing-page__additional-stories">
+      <div class="landing-page__additional-stories__wrapper">
+        <a href="" class="landing-page__additional-stories__story animate-left">
+          <div class="landing-page__additional-stories__content ">
+            <figure class="landing-page__additional-stories__image-wrapper">
+              <img src="../assets/landing-page-yourSupport.jpg" alt="" class="landing-page__additional-stories__image">
+            </figure>
+            <div class="landing-page__additional-stories__copy-wrapper">
+              <label class="landing-page__additional-stories__category">YOUR SUPPORT</label>
+              <h3 class="landing-page__additional-stories__title">Ryan Translational Research Fund</h3>
+              <!-- <h3 class="landing-page__additional-stories__title">Ryan Research Fund</h3> -->
+            </div>
+          </div>
+        </a>
+        <a href="" class="landing-page__additional-stories__story animate-right">
+          <div class="landing-page__additional-stories__content ">
+            <figure class="landing-page__additional-stories__image-wrapper">
+              <img src="../assets/landing-page-photoEssay.jpg" alt="" class="landing-page__additional-stories__image">
+            </figure>
+            <div class="landing-page__additional-stories__copy-wrapper">
+              <label class="landing-page__additional-stories__category">PHOTO ESSAY</label>
+              <h3 class="landing-page__additional-stories__title">Safety First</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <div class="landing-page__hairline"></div>
+    <section class="landing-page__archived-articles">
       <div class="landing-page__archived-articles__wrapper">
         <div class="landing-page__archived-articles__callout">
-          <div class="landing-page__archived-articles__callout__wrapper">
+          <div class="landing-page__archived-articles__callout__wrapper animate-vertical">
             <h3 class="landing-page__archived-articles__callout__title">Missed an issue?</h3>
             <a href="" class="landing-page__archived-articles__callout__cta">Read the Archives</a>
           </div>
         </div>
-        <div class="landing-page__archived-articles__carousel">
-          <div class="landing-page__more-stories__carousel" id="slider">
-            <!-- max of 5 -->
-            <input class="landing-page__more-stories__input" type="radio" name="slider" id="s1">
-            <input class="landing-page__more-stories__input" type="radio" name="slider" id="s2">
-            <input class="landing-page__more-stories__input" type="radio" name="slider" id="s3" checked>
-            <!-- max of 5 -->
-            <label for="s1" id="slide1"><img src="" alt="" style="background-color: silver;"></label>
-            <label for="s2" id="slide2"><img src="" alt="" style="background-color: silver;"></label>
-            <label for="s3" id="slide3"><img src="" alt="" style="background-color: darkblue;"></label>
-          </div>
+        <div class="landing-page__archived-articles">
+          <figure class="landing-page__archived-articles__asset-wrapper">
+            <img src="../assets/landing-page-archives-deck.png" class="landing-page__archived-articles__asset animate-vertical">
+          </figure>
         </div>
       </div>
     </section>
