@@ -24,7 +24,7 @@
   display: block;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   opacity: .4;
 }
 
@@ -35,8 +35,10 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 30px;
-  background-color: #fafafa;
+  background-color: transparent;
   overflow-y: scroll;
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 900px) {
@@ -158,11 +160,14 @@
 .pandemic-landing__content__headline {
   font-size: 20px;
   margin: 15px;
+  font-family: 'Benton Sans Lt';
+  font-weight: 100;
 }
 
 .pandemic-landing__content__p {
   font-size: 18px;
   margin: 15px;
+  font-family: 'Benton Sans Lt';
 }
 
 .pandemic-landing__ctas {
@@ -185,6 +190,8 @@
   padding: 6px 10px;
   text-decoration: none !important;
   color: black;
+  cursor: pointer;
+  font-family: 'Benton Sans Reg';
 }
 
 @media (min-width: 600px) {
