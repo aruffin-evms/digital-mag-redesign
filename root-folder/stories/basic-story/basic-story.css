@@ -253,6 +253,7 @@
 .basic-story__content__story__p {
   padding: 17px 0;
   /* font-family: 'Calluna'; */
+  font-size: 1.2em;
 }
 
 /* [start] image with caption */
@@ -438,7 +439,7 @@
 }
 
 .basic-story__subscribe__poster-wrapper {
-  background-color: gray;
+  
   height: 340px;
   width: 300px;
   margin: 0 auto;

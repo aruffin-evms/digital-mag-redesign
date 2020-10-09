@@ -1,19 +1,87 @@
-.basic-story__lead-in {
-    font-size: 1em;
-    text-transform: capitalize;
-    float: none;
-    margin-top: 0em;
-    padding: 0 .1em 0 0;
-    font-weight: bold;
+.feature__hero-wrapper {
+  height: 30vh;
+  width: 100%;
+
+}
+
+.hero-wrapper img:nth-child(2){ 
+ border-left: white solid 7px;
+}
+
+.hero-wrapper img{
+  width:49.5%;
+  float:left;
+}
+
+.basic-story__content__department-label {
+  font-size:1em;
+}
+
+.basic-story__lead-in{
+  font-size:1em;
+  font-weight:700;
+}
+
+.basic-story__lead-in:nth-child(1) {
+  margin-top: 0;
+}
+
+.basic-story__content__image-wrapper {
+  width: 50%;
+  height: 50%;
+}
+
+.basic-story__content__department-label{
+  position: relative;
+    left: -21em;
+}
+
+.subText{
+  font-size:1.5em;
+}
+
+@media (max-width:640px){
+
+  .hero-wrapper img {
+    width: 100%;
+    clear:both;
+  }
+  .hero-wrapper img:nth-child(2){ 
+    border-left: white none 7px;
+   }
+
+   .diySection{
+    display: contents;
+   }
+   
+
+    .basic-story__content__department-label {
+      font-size: .7em;
   }
 
-  .basic-story__hero__image2{
-    /* padding:230px 924px ; */
-    background-color: darkgrey;
-    
-    }
-    
-    .basic-story__content__image{
-      background-color: darkgrey;
-      /* padding: 402px 352px; */
-    }
+  .feature__faculty-spotlight__item {
+      width: 85%;
+  }
+}
+
+@media (max-width:480px){
+  .basic-story__content__department-label {
+      font-size: .5em;
+  }
+    .features__hero__title{
+
+      font-size: 1em;
+  }
+}
+
+@media (max-width:823px){
+ 
+    .features__hero__title{
+
+      font-size: 1em;
+  }
+
+  .diySection{
+    display: contents;
+   }
+}
