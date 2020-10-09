@@ -1,21 +1,25 @@
-.basic-story__lead-in {
-    margin-top: -.15em;
-  }
+.basic-story__hero__image {
+  height:auto;
+}
+
+.basic-story__content{
+  margin: 27% auto 0;
+}
+
+.basic-story__aside {
+  margin: 27% 5% 2% 2%;
+}
+
+.basic-story__content__department-label {
+  font-size: 1em;
+}
 
   @media (max-width: 480px) {
-    body {
-      width: 960px;
-      padding: 0 2%;
+    .basic-story__content{
+      width: 74%;
     }
-  
-    aside {
-      width: 25%;
-    }
-  
-    .basic-story__lead-in{
-      margin-top: -.2em;
-    }
-  .basic-story__story-qoute__qoute{
-      width:750px;
+
+    .basic-story__aside {
+      margin: 0;
   }
 }

@@ -86,7 +86,6 @@ h3{
 .basic-story__hero-wrapper {
   height: 60vh;
   width: 100%;
-  background-color: gray;
 }
 
 .basic-story__hero__image {
@@ -233,11 +232,10 @@ h3{
   width: 1182px;
   height: 784px;
   margin: 48px auto 16px;
-  background-color: gray;
 }
 
 .basic-story__content__image {
-  height: 100%;
+
   width: 100%;
   object-fit: cover;
 }
