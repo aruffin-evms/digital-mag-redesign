@@ -118,7 +118,6 @@ body {
 }
 
 .landing-page__hero__image {
-  background-color: gray;
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -320,6 +319,13 @@ body {
   .landing-page__stretched-image__image {
     object-position: center;
   }
+}
+
+.landing-page__qoute__button {
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  top: -7px;
 }
 
 .landing-page__stretched-image__qoute {
