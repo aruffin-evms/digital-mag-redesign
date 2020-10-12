@@ -10,6 +10,8 @@ const gridLinks = document.querySelectorAll('.landing-page__featured-stories__li
 const gridItemTitles = document.getElementsByTagName('h3')
 const gridItemContent = document.querySelector('.landing-page__featured-stories__grid-item__content-wrapper')
 
+// const storyWrapperOne = document.querySelector('.landing-page__story--one')
+
 const colors = {
   evmsRust: '#c7531e'
 }
@@ -55,12 +57,10 @@ function showQouteText(display) {
 gridStories.forEach(function(story) {
   story.addEventListener('mouseover', function() {
     story.getElementsByTagName('figure')[0].style.boxShadow = `0 -5px 0 ${colors.evmsRust}  inset`
-    gridItemContent.style.opacity = '.3'
     
     story.onmouseout = function(event) {
       story.getElementsByTagName('figure')[0].style.boxShadow = `none`
       story.getElementsByTagName('figure')[0].style.transition = '.5s all'
-      gridItemContent.style.opacity = '1'
     }
   })
 })

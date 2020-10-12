@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="photo-essay.css">
+  <title>Photo essay</title>
+</head>
+
+<body>
+  <img src="https://www.evms.edu/uploads/12.1/feature-bangladesh/assets/images/arrow-right-outline.svg" alt=""
+    id="prevArrow" class="arrow arrow__previous" onclick="newSlide(-1)" />
+  <img src="https://www.evms.edu/uploads/12.1/feature-bangladesh/assets/images/arrow-right-outline.svg" alt=""
+    id="nextArrow" class="arrow arrow__next spin circle" onclick="newSlide(+1)" />
+  <main class="photo-essay">
+    <section class="photo-essay__intro section">
+    </section>
+    <section class="photo-essay__gallery-one section">
+    </section>
+    <section class="photo-essay__gallery-two section">
+    </section>
+    <section class="photo-essay__infograph section">
+    </section>
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <div id="closeModal" class="modal__close">&times;</div>
+        <img src="" alt="" id="modalImage" class="modal__image">
+        <div id="modalCaption" class="modal__caption"></div>
+      </div>
+    </div>
+  </main>
+  <script src="photo-essay.js"></script>
+</body>
+</html>

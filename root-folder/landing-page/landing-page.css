@@ -206,6 +206,21 @@ body {
   }
 } 
 
+.landing-page__story--one:hover, .landing-page__story--one:hover .landing-page__story--one h3 {
+  text-decoration-color: #c7531e;
+  text-decoration: underline;
+}
+
+.landing-page__story--two:hover, .landing-page__story--two:hover .landing-page__story--two h3 {
+  text-decoration-color: #c7531e;
+  text-decoration: underline;
+}
+
+.landing-page__story--three:hover, .landing-page__story--three:hover .landing-page__story--three h3 {
+  text-decoration-color: #c7531e;
+  text-decoration: underline;
+}
+
 .landing-page__featured-stories__grid-item--one {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -326,10 +341,11 @@ body {
   position: absolute;
   width: 100%;
   top: -7px;
+  cursor: pointer;
 }
 
 .landing-page__stretched-image__qoute {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   width: auto;
   height: 0px;
   position: relative;
