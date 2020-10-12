@@ -376,13 +376,13 @@ h3{
   height: 340px;
   width: 300px;
   margin: 0 auto;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .basic-story__subscribe__poster {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .basic-story__subscribe__title {
