@@ -19,10 +19,17 @@
 }
 
 .features__hero__overlay {
-  width: 30%;
-    color: #000;
-    margin: -21% 0 0 13%;
-    float: left;
+  width: 100%;
+  color: #000;
+  margin: -21% 0 0 13%;
+}
+
+.basic-story__dropcap{
+  position: relative;
+}
+
+.basic-story__hero__image {
+  height: auto;
 }
 
 .basic-story__lead-in {
@@ -32,7 +39,9 @@
 }
 
 .basic-story__content__image-caption {
-  margin: 5% auto;
+  margin: 2% auto;
+  width: 81.5%;
+  font-style: italic;
 
 }
 
@@ -43,9 +52,11 @@
       font-size: 1.5em;
   }
   .features__hero__overlay {
-    width: 40%;
-    margin: -71% 0 0 5%;
-}
+      width: 85%;
+        top: 1%;
+        left: 3%;
+        margin: -45% 0 0 13%;
+    }
 
     .basic-story__content__department-label {
       font-size: .7em;
@@ -54,6 +65,18 @@
   .feature__faculty-spotlight__item {
       width: 85%;
   }
+}
+
+@media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 850px) {
+  .features__hero__overlay {
+    margin: 0% 0 0 13%;
+  }
+
+  .basic-story__hero__image {
+    height: 100%;
+}
 }
 
 @media (max-width:480px){
