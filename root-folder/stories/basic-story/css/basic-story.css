@@ -168,12 +168,12 @@ h1{
   justify-content: space-evenly;
 }
 
-/* hack for mobile */
+/* hack for mobile 
 @media(max-width: 899px) {
   .basic-story__aside p:first-child {
     display: none;
   }
-}
+}*/
 
 @media (min-width: 900px) {
   .basic-story__aside {
@@ -247,17 +247,17 @@ h1{
 }
 
 .fb{
-  background-image: url(./images/facebook.svg); 
+  background-image: url(../images/facebook.svg); 
 }
 
 .ig{
-  background-image: url(./images/instagram.svg); 
+  background-image: url(../images/instagram.svg); 
 }
 .in{
-  background-image: url(./images/LinkedIn.svg); 
+  background-image: url(../images/LinkedIn.svg); 
 }
 .tw{
-  background-image: url(./images/twitter.svg); 
+  background-image: url(../images/twitter.svg); 
 }
 
 
