@@ -316,6 +316,14 @@ h1{
   padding: 17px 0;
 }
 
+
+.quote {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
 /* [start] image with caption */
 .basic-story__content__image-wrapper {
   width: 100vw;
