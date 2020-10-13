@@ -60,15 +60,15 @@
 }
 
 .features__hero__overlay {
-  width: 50%;
+  width: 70%;
   color: #000;
   position: absolute;
   top: 10%;
   left: 30%;
-
-
 }
-
+.basic-story__content{
+  margin: -12em auto;
+}
 .basic-story__content__department-label {
   color: #000;
   font-size: 1em;
@@ -85,18 +85,31 @@
 }
 
 .basic-story__content__image-wrapper {
-  margin: 2em auto 18em;
+  margin: 2em auto 0;
 }
 
 .basic-story__content__image-caption {
-  width: 25em;
+  width: 24.5em;
+  margin: -3em auto 48px;
 }
 
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 1224px) {
+  .basic-story__content{
+    margin: -18em auto 0;
+  }
+}
+
+@media only screen 
+and (min-width: 900px)
+and (max-device-width : 1100px) { 
   .basic-story__content__image-wrapper {
     width: 25em;
     height: 37em;
+  }
+
+  .basic-story__content{
+    margin: -12em auto;
   }
 }
 
@@ -106,8 +119,14 @@
     font-size: 1.5em;
   }
 
+
+
+.storyTop{
+  margin: 15em auto 0;
+}
+
   .features__hero__overlay {
-    width: 50%;
+    width: 80%;
     top: 10%;
     left: 25%;
   }
@@ -119,6 +138,15 @@
   .basic-story__by-line{
     margin: 20px 0 0 5%;
     padding: 0 0 0 1%;
+  }
+
+  .basic-story__aside{
+    padding: 0 1%;
+  }
+
+  .basic-story__content__image-caption {
+    margin: 16em auto 0;
+    width: 90%;
   }
 
   .basic-story__social-share__social-icons{
@@ -170,4 +198,48 @@
   float: none;
   margin-top: 0em;
   padding: 0 .1em 0 0;
+}
+
+@media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 850px) {
+  .features__hero__title {
+    font-size: 1.5em;
+  }
+.storyTop{
+  margin: 15em auto 0;
+}
+
+  .features__hero__overlay {
+    width: 70%;
+    top: 10%;
+    left: 25%;
+  }
+
+  .basic-story__content__department-label {
+    font-size: .7em;
+  }
+
+  .basic-story__by-line{
+    margin: 20px 0 0 5%;
+    padding: 0 0 0 1%;
+  }
+
+  .basic-story__aside{
+    padding: 0 1%;
+  }
+
+  .basic-story__content__image-caption {
+    margin: 16em auto 0;
+    width: 54%;
+  }
+
+  .basic-story__social-share__social-icons{
+    padding-left:2%
+  }
+
+  .feature__faculty-spotlight__item {
+    width: 85%;
+  }
+}
 }
