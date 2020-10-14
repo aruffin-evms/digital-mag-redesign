@@ -37,15 +37,6 @@
 float:none;
 }
 
-.smaller{
-  position: relative;
-  left: -6em;
-  font-size: .9em;
-  font-style: italic;
-  width: 14%;
-  float:right;
-}
-
 .feature__dropcap {
 padding-bottom:5px;
 }
@@ -78,16 +69,7 @@ padding-bottom:5px;
   margin: 292px auto 0;
 }
 
-.smaller {
-  position: relative;
-  left: 0;
-  font-size: .9em;
-  font-style: italic;
-  width: 90%;
-  float: right;
-  /* margin: 0 auto; */
-  padding: 0 2%;
-}
+
 .feature__social-share {
   margin: -40px 100px 0 0;
 }
@@ -99,11 +81,4 @@ padding-bottom:5px;
 }
 }
 
-@media only screen 
-and (min-device-width : 800px) 
-and (max-device-width : 850px) {
-  .smaller {
-    width: 60%;
-    float: none;
-  }
-}
+
