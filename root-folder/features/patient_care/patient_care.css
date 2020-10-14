@@ -45,6 +45,7 @@
 
 .feature__hero__image {
   width: 100%;
+  margin-bottom:5%;
 }
 
 .feature__faculty-spotlight__item {
@@ -62,4 +63,12 @@
 .features__hero__overlay {
   top: 0%;
 }
+}
+
+@media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 850px) {
+    .features__hero__department{
+        font-size: .6em;
+    }
 }

@@ -646,6 +646,9 @@ and (max-device-width : 850px) {
     width: 60%;
     float: none;
   }
+  h2{
+    font-size: 1.2em;
+  }
   .feature__content__story {
     font-size: .8em;
   }
