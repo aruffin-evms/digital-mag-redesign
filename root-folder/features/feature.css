@@ -3,6 +3,21 @@
   padding: 0;
 }
 
+body{
+  font-size:18px;
+   font-family: 'Calluna';
+   line-height: 1.4em;
+}
+
+.clear{
+  clear: both;
+}
+
+h1{
+  line-height: 1.1em;
+}
+
+
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
@@ -398,7 +413,7 @@
 }
 .feature__faculty-spotlight__wrapper {
   min-height: 300px;
-  max-width: 708px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -407,6 +422,13 @@
   justify-content: space-evenly;
   align-content: center;
   text-align: center;
+  font-size: .9em;
+    padding: 1% 0;
+}
+
+.feature__faculty-spotlight__credentials{
+  padding: 0 10%;
+  line-height: 1.1em;
 }
 
 @media(min-width: 900px) {
@@ -421,7 +443,6 @@
 }
 
 .feature__faculty-spotlight__image-wrapper {
-  height: 150px;
   width: 150px;
   border-radius: 50%;
   margin: 0 auto;
@@ -435,7 +456,7 @@
 
 .feature__faculty-spotlight__name {
   font-weight: bold;
-  margin: 15px 0;
+  margin: 0 0 .5em 0;
 }
 
 .feature__horizontal-rule--first {

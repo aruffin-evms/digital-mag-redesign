@@ -1,6 +1,5 @@
 .feature__faculty-spotlight__image-wrapper img{
-  height: 180px;
-  margin-top: -25px;
+  height: 125px;
 }
 
 .feature__hero__image{
@@ -29,6 +28,28 @@
     float: left;
 }
 
+}
+.feature__content__image-caption--portrait {
+  width: 98% !important;
+}
+
+.feature__content__image-caption {
+float:none;
+}
+
+.smaller{
+  position: relative;
+  left: -6em;
+  font-size: .9em;
+  font-style: italic;
+  width: 14%;
+  float:right;
+}
+
+.feature__dropcap {
+padding-bottom:5px;
+}
+
 @media (min-width: 900px) {
 
 .features__hero__title {
@@ -40,7 +61,7 @@
 
 @media (max-width:640px){
   .features__hero__overlay {
-    margin: -160% 0 0 13%;
+    margin: -180% 0 0 13%;
     width: 90%;
 }
 
@@ -53,7 +74,20 @@
   margin: 7%;
 }
 
+.topper{
+  margin: 292px auto 0;
+}
 
+.smaller {
+  position: relative;
+  left: 0;
+  font-size: .9em;
+  font-style: italic;
+  width: 90%;
+  float: right;
+  /* margin: 0 auto; */
+  padding: 0 2%;
+}
 .feature__social-share {
   margin: -40px 100px 0 0;
 }
@@ -63,4 +97,13 @@
 .features__hero__overlay {
   top: 0%;
 }
+}
+
+@media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 850px) {
+  .smaller {
+    width: 60%;
+    float: none;
+  }
 }
