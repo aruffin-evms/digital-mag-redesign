@@ -476,15 +476,65 @@
 }
 
 .basic-story__more-stories__title {
-  width: 130px;
   font-size: 42px;
+  width: 100px;
+}
+
+.basic-story__more-stories__carousel-item__title {
+  width: 130px;
+  font-size: 16px;
+  font-family: 'Benton Sans Lt';
+  color: #c7531e;
+  text-transform: uppercase;
+}
+
+.basic-story__more-stories__carousel-item__subtitle {
+  font-family: 'Benton Sans Lt';
+  font-size: 20px;
 }
 
 .basic-story__more-stories__carousel {
-  background-color: blue;
   width: 60%;
-  height: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
 }
+
+.basic-story__more-stories__carousel-item {
+  width: 100%;
+  margin: 20px;
+  /* background: gray; */
+}
+
+.basic-story__more-stories__thumbnail-wrapper {
+  min-height: 144px;
+  min-width: 208px;
+}
+
+.basic-story__more-stories__thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: solid 1px #b1b4b7;
+}
+
+.basic-story__more-carousel__thumbnail-wrapper--tall {
+  height: 288px;
+  width: 100%;
+}
+
+.basic-story__more-carousel__thumbnail-wrapper--short {
+  height: auto;
+  width: auto;
+}
+
+.basic-story__more-carousel__thumbnail-wrapper--medium {
+  height: 288px;
+  width: 100%;
+}
+
 /* [end] more stories carousel */
 
 /* [start] subscribe module */
