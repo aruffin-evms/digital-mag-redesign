@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  width: min-content;
+}
+
+/* fonts for page */
+@font-face {
+  font-family: 'GT-Super';
+  src: url('/root-folder/fonts/GT-Super-Display-Super.woff') format('woff');
+}
+
+@font-face {
+  font-family: "GT-Super-bold";
+  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Calluna';
+  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff') format('woff');
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 40px !important;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.arrow__next {
+  right: 0;
+  
+}
+
+.arrow__back {
+  left: 0;
+  margin-left: 10px;
+}
+
+.photo-essay {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo-essay__intro {
+  background-image: url(../assets/photo-essay-safetyFirst-1.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.photo-essay__intro__content {
+  max-width: 300px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  color: black;
+}
+
+@media(min-width: 900px) {
+  .photo-essay__intro__content {
+    position: relative;
+    top: 100px;
+    left: 100px;
+  }
+}
+
+.photo-essay__intro__department {
+  text-transform: uppercase;
+  font-family: 'Benton Sans Reg';
+}
+
+.photo-essay__intro__title {
+  font-family: 'GT-Super-bold';
+  font-size: 60px;
+}
+
+@media(min-width: 900px) {
+  .photo-essay__intro__title {
+    font-size: 130px;
+  }
+}
+
+.photo-essay__intro__by-line {
+  font-style: italic;
+  font-family: 'Benton Sans Reg';
+}
+
+.photo-essay__intro__by-line__name {
+  text-transform: uppercase;
+  font-family: 'Benton Sans Reg';
+}
+
+.photo-essay__step-one {
+  position: relative;
+  bottom: -20%;
+  left: 30px;
+}
+
+@media(min-width: 900px) {
+  .photo-essay__step-one {
+    bottom: -30%;
+    left: 70%;
+  }
+}
+
+.photo-essay__step-two {
+  position: relative;
+  bottom: -10%;
+  left: 30px;
+}
+
+.photo-essay__step-three {
+  position: relative;
+  bottom: -60%;
+  left: 70%;
+}
+
+.photo-essay__step-four {
+  position: relative;
+  bottom: -60%;
+  left: 70%;
+}
+
+.photo-essay__step-one__wrapper,
+.photo-essay__step-two__wrapper,
+.photo-essay__step-three__wrapper,
+.photo-essay__step-four__wrapper {
+  background-color: rgb(255, 255, 255, 0.8);
+  width: 90%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+@media(min-width: 900px) {
+.photo-essay__step-one__wrapper,
+.photo-essay__step-two__wrapper,
+.photo-essay__step-three__wrapper,
+.photo-essay__step-four__wrapper {
+  width: 100%;
+  max-width: 400px;
+ }
+}
+
+.photo-essay__step-one__label,
+.photo-essay__step-two__label,
+.photo-essay__step-three__label,
+.photo-essay__step-four__label {
+  padding: 10px 25px;
+  background-color: #c7531e;
+  position: absolute;
+  bottom: 100%;
+  font-size: 30px;
+  font-family: 'Benton Sans Reg';
+  color: #fafafa;
+}
+
+.photo-essay__step-one__number, 
+.photo-essay__step-two__number,
+.photo-essay__step-three__number,
+.photo-essay__step-four__number {
+  font-family: 'GT-Super-bold';
+  width: 20%;
+  font-size: 140px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  color: #c7531e;
+  padding: 10px 20px;
+}
+
+.photo-essay__step-one__copy,
+.photo-essay__step-two__copy,
+.photo-essay__step-three__copy,
+.photo-essay__step-four__copy {
+  font-size: 18px;
+  font-family: "Benton Sans Lt";
+  height: 70%;
+  justify-self: center;
+  align-self: center;
+}
+
+.photo-essay__slide-two {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/photo-essay-safetyFirst-2.jpg);
+  background-size: cover;
+}
+
+
+.photo-essay__slide-three {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/photo-essay-safetyFirst-3.jpg);
+  background-size: cover;
+}
+
+.photo-essay__slide-four {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/photo-essay-safetyFirst-4.jpg);
+  background-size: cover;
+}

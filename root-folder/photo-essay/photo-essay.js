@@ -1,21 +1,26 @@
 
+const slides = document.getElementsByClassName("photo-essay__slide");
+const prevArrow = document.getElementById("prevArrow");
+const nextArrow = document.getElementById("nextArrow");
+
 let slideIndex = 1;
 
 showSection(slideIndex);
 
 function showSection(n) {
-  if (n > sections.length) {
+  if (n > slides.length) {
     slideIndex = 1;
   }
   if (n < 1) {
-    slideIndex = sections.length;
+    slideIndex = slides.length;
   }
 
-  for (let i = 0; i < sections.length; i++) {
-    sections[i].style.display = "none";
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
 
-  sections[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = "block";
+  // slides[slideIndex - 1].classList.add('fadeIn')
 }
 
 function newSlide(n) {

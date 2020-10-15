@@ -3,32 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="photo-essay.css">
+  <link rel="stylesheet" href="./photo-essay.css">
+  <script defer src="./photo-essay.js"></script>
+  <link href="//cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <title>Photo essay</title>
 </head>
 
 <body>
-  <img src="https://www.evms.edu/uploads/12.1/feature-bangladesh/assets/images/arrow-right-outline.svg" alt=""
+  <!-- <img src="https://www.evms.edu/uploads/12.1/feature-bangladesh/assets/images/arrow-right-outline.svg" alt=""
     id="prevArrow" class="arrow arrow__previous" onclick="newSlide(-1)" />
   <img src="https://www.evms.edu/uploads/12.1/feature-bangladesh/assets/images/arrow-right-outline.svg" alt=""
-    id="nextArrow" class="arrow arrow__next spin circle" onclick="newSlide(+1)" />
+    id="nextArrow" class="arrow arrow__next" onclick="newSlide(+1)" /> -->
+    <span id="prevArrow" class="arrow arrow__back material-icons" onclick="newSlide(-1)">arrow_back_ios</span>
+    <span id="nextArrow" class="arrow arrow__next material-icons" onclick="newSlide(+1)">arrow_forward_ios</span>
   <main class="photo-essay">
-    <section class="photo-essay__intro section">
+    <section class="photo-essay__intro photo-essay__slide">
+      <div class="photo-essay__intro__content">
+        <p class="photo-essay__intro__department">photo essay</p>
+        <h1 class="photo-essay__intro__title">Safety First</h1>
+        <p class="photo-essay__intro__by-line">Photos by <span class="photo-essay__intro__by-line__name">doug gardner</span></p>
+      </div>
+      <div class="photo-essay__step-one">
+        <label for="" class="photo-essay__step-one__label">Step</label>
+        <div class="photo-essay__step-one__wrapper">
+          <p class="photo-essay__step-one__number">1</p>
+          <p class="photo-essay__step-one__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt!</p>
+        </div>
+      </div>
     </section>
-    <section class="photo-essay__gallery-one section">
+    <section class="photo-essay__slide-two photo-essay__slide">
+      <div class="photo-essay__step-two">
+        <label for="" class="photo-essay__step-two__label">Step</label>
+        <div class="photo-essay__step-two__wrapper">
+          <p class="photo-essay__step-two__number">2</p>
+          <p class="photo-essay__step-two__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt!</p>
+        </div>
+      </div>
     </section>
-    <section class="photo-essay__gallery-two section">
+    <section class="photo-essay__slide-three photo-essay__slide">
+      <div class="photo-essay__step-three">
+        <label for="" class="photo-essay__step-three__label">Step</label>
+        <div class="photo-essay__step-three__wrapper">
+          <p class="photo-essay__step-three__number">3</p>
+          <p class="photo-essay__step-three__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt!</p>
+        </div>
+      </div>
     </section>
-    <section class="photo-essay__infograph section">
+    <section class="photo-essay__slide-four photo-essay__slide">
+      <div class="photo-essay__step-four">
+        <label for="" class="photo-essay__step-four__label">Step</label>
+        <div class="photo-essay__step-four__wrapper">
+          <p class="photo-essay__step-four__number">4</p>
+          <p class="photo-essay__step-four__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt!</p>
+        </div>
+      </div>
     </section>
-    <div class="modal" id="modal">
+    <!-- <div class="modal" id="modal">
       <div class="modal__content">
         <div id="closeModal" class="modal__close">&times;</div>
         <img src="" alt="" id="modalImage" class="modal__image">
         <div id="modalCaption" class="modal__caption"></div>
       </div>
-    </div>
+    </div> -->
   </main>
-  <script src="photo-essay.js"></script>
 </body>
 </html>
