@@ -16,7 +16,11 @@
   text-align: center;
 }
 
-
+.basic-story__content__wrapper{
+  width: 50%;
+  margin: 0 auto;
+  font-size: .9em;
+}
 
 .feature__faculty-spotlight__item {
   width: 65%;
@@ -56,15 +60,12 @@
 .features__hero__title {
   font-family: "GT-Super";
   margin: 10px 0;
-  font-size: 4em;
 }
 
 .features__hero__overlay {
-  width: 70%;
-  color: #000;
   position: absolute;
-  top: 10%;
-  left: 30%;
+    top: 10%;
+    left: 28%;
 }
 .basic-story__content{
   margin: -12em auto;
@@ -93,20 +94,25 @@
   margin: -3em auto 48px;
 }
 
+.basic-story__story-qoute__qoutation-mark__horizontal-line--top{
+  width: 69%;
+}
 
 @media only screen and (min-width: 1224px) {
   .basic-story__content{
     margin: -18em auto 0;
   }
 }
-
+@media only screen 
+and (min-width: 900px) { 
+  .basic-story__content__image-wrapper {
+    width: 30%;
+    height: 37em;
+  }
 @media only screen 
 and (min-width: 900px)
 and (max-device-width : 1100px) { 
-  .basic-story__content__image-wrapper {
-    width: 25em;
-    height: 37em;
-  }
+
 
   .basic-story__content{
     margin: -12em auto;
@@ -198,6 +204,7 @@ and (max-device-width : 1100px) {
   float: none;
   margin-top: 0em;
   padding: 0 .1em 0 0;
+  line-height: 1.1em;;
 }
 
 @media only screen 

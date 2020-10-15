@@ -86,6 +86,10 @@
 }
 
 @media (max-width:640px){
+  body{
+    font-size:.8em;
+    padding: 0 .5em;
+  }
 
   .features__hero__title{
       font-size: 1.5em;

@@ -78,9 +78,14 @@
   }
 
   @media (max-width:640px){
-
+    body{
+      font-size: .8em;
+    }
+    .basic-story__aside{
+      display: block;
+      padding: 1%;
+    }
     .features__hero__title{
-
         font-size: 1.5em;
     }
     .features__hero__overlay {
@@ -88,11 +93,25 @@
         top: 10%;
         left: 3%;
       }
+      .basic-story__by-line{
+        float: none;
+        height: auto;
+      }
+  .basic-story__social-share{
+        margin: 1.2em 0 3em;
+      }
+      .topText {
+        font-size: 1.2em;
+        line-height: 1.4em;
+        padding: 2em .5em;
+    }
 
+    .basic-story__content__wrapper{
+      padding: 0 1em;
+    }
       .basic-story__content__department-label {
         font-size: .7em;
     }
-
     .feature__faculty-spotlight__item {
         width: 85%;
     }
@@ -105,19 +124,35 @@
       .features__hero__title{
         font-size: 1em;
     }
+
+    .basic-story__content__wrapper{
+      padding: 0 1em;
+    }
+   
   }
 
   @media only screen 
 and (min-device-width : 800px) 
 and (max-device-width : 850px) {
+  body{
+    font-size:.9em;
+  }
     .basic-story__hero__image {
         height: auto;
     }
-    .basic-story__by-line {
-        position: relative;
-    left: 100px;
-    top: -100px;
+
+    .basic-story__aside{
+      display: block;
     }
+    .basic-story__content{
+      padding: 0 .5em;
+    width: 90%;
+    }
+
+    .basic-story__content__story__p{
+      padding: .8em 0;
+    }
+   
 }
 
   @media (min-width:900px){
@@ -146,8 +181,4 @@ and (min-width : 1224px) {
     .features__hero__overlay{font-size: 1em;}
     
 }
-
- 
-
-
- 
+)
