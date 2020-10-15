@@ -3,6 +3,21 @@
   padding: 0;
 }
 
+body{
+  font-size:18px;
+   font-family: 'Calluna';
+   line-height: 1.4em;
+}
+
+.clear{
+  clear: both;
+}
+
+h1{
+  line-height: 1.1em;
+}
+
+
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
@@ -103,6 +118,7 @@
   padding-top: 4px;
   padding-right: 8px;
   padding-left: 3px;
+  padding-bottom: 5px;
 }
 
 .feature__aside {
@@ -253,7 +269,7 @@
 
 .feature__content__story {
   margin: 10px 0 0;
-  line-height: 32px;
+  line-height: 1.4em
 }
 .feature__content__story__p {
   padding: 17px 0;
@@ -293,9 +309,18 @@
 
 @media(min-width: 900px) {
   .feature__content__image-caption {
-    float: right;
+   
     width: 20%;
   }
+}
+
+.smaller{
+  position: relative;
+  left: -6em;
+  font-size: .9em;
+  font-style: italic;
+  width: 14%;
+  float:right;
 }
 
 .feature__content__image-caption--portrait {
@@ -398,7 +423,7 @@
 }
 .feature__faculty-spotlight__wrapper {
   min-height: 300px;
-  max-width: 708px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -407,6 +432,13 @@
   justify-content: space-evenly;
   align-content: center;
   text-align: center;
+  font-size: .9em;
+    padding: 1% 0;
+}
+
+.feature__faculty-spotlight__credentials{
+  padding: 0 10%;
+  line-height: 1.1em;
 }
 
 @media(min-width: 900px) {
@@ -421,7 +453,6 @@
 }
 
 .feature__faculty-spotlight__image-wrapper {
-  height: 150px;
   width: 150px;
   border-radius: 50%;
   margin: 0 auto;
@@ -435,7 +466,7 @@
 
 .feature__faculty-spotlight__name {
   font-weight: bold;
-  margin: 15px 0;
+  margin: 0 0 .5em 0;
 }
 
 .feature__horizontal-rule--first {
@@ -490,6 +521,10 @@
   justify-content: center;
   align-content: center;
   margin: 30px 0;
+}
+
+.feature__faculty-spotlight__image-wrapper img{
+  height: 152px;
 }
 
 @media(min-width: 900px) {
@@ -581,4 +616,47 @@
 .steps{
   color: #c7531e;
   font-family: 'Benton Sans Reg';
+}
+
+@media (max-width:640px){
+body{
+  font-size: .9em;
+}
+
+h2{
+  font-size:1.1em;
+}
+
+.smaller {
+  position: relative;
+  left: 0;
+  font-size: .9em;
+  font-style: italic;
+  width: 90%;
+  float: right;
+  /* margin: 0 auto; */
+  padding: 0 2%;
+}
+}
+
+@media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 850px) {
+  .smaller {
+    width: 60%;
+    float: none;
+  }
+  h2{
+    font-size: 1.2em;
+  }
+  .feature__content__story {
+    font-size: .8em;
+  }
+
+  .feature__faculty-spotlight__wrapper{
+    font-size:.8em;
+  }
+  .feature__faculty-spotlight__name{
+    font-size:.9em;
+  }
 }
