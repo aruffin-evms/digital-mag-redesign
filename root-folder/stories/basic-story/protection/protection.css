@@ -103,6 +103,9 @@ font-size: .7em;
 }
 
 @media (max-width:640px) {
+  body{
+    font-size:.9em;
+  }
   .basic-story__hero__image {
     width: 100%;
     height:auto;
@@ -128,7 +131,7 @@ font-size: .7em;
     float: right;
     margin-top: -9em;
     padding: 1em;
-    font-size: .7em;
+    font-size: .9em;
   }
   .basic-story__content{
     margin: 5em auto;
