@@ -8,8 +8,14 @@
   
 }
 
- .hero-wrapper{
+.smaller{
+  font-size: .7em;
+  margin: 0 auto;
+  left:0;
+  width: 40%;
+}
 
+ .hero-wrapper{
   display: block;
   clear: both;
   height: 50vh;
@@ -31,6 +37,7 @@
 }
 .feature__content__image-caption--portrait {
   width: 98% !important;
+  font-size:.8em;
 }
 
 .feature__content__image-caption {
