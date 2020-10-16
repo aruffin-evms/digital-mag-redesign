@@ -1,135 +1,178 @@
 .feature__hero-wrapper {
-    height: 30vh;
+  height: 30vh;
+  width: 100%;
+}
+
+
+
+/* aside section */
+aside {
+  width: 25%;
+  float:left;
+}
+
+.basic-story__social-share__social-icons {
+  line-height: 1.1em;
+}
+
+.imageSide {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.imageSide img {
+  width: 100%;
+}
+
+.basic-story__social-share {
+  float: none;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.diySection {
+  top: 0;
+}
+
+.basic-story__content__image-caption {
+  font-size: .7em;
+  left: 0;
+}
+
+/* end Aside section */
+
+/* main body content */
+
+.center_content{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.basic-story__content__wrapper {
+  width: 80%;
+  float: left;
+  padding-right: 3em;
+}
+
+.basic-story__content__title {
+  font-size: 2em;
+}
+
+.subText {
+  font-size: 1.2em;
+}
+
+.basic-story__lead-in {
+  line-height: 1.2em;
+}
+
+
+
+/* end main body content */
+
+.hero-wrapper img:nth-child(2) {
+  border-left: white solid 7px;
+}
+
+.hero-wrapper img {
+  width: 49.5%;
+  float: left;
+}
+
+.basic-story__content__department-label {
+  font-size: .7em;
+}
+
+.basic-story__lead-in {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.basic-story__lead-in:nth-child(1) {
+  margin-top: 0;
+}
+
+.basic-story__content__image-wrapper {
+  width: 50%;
+  height: 50%;
+}
+
+
+
+
+@media (max-width:640px) {
+
+  body{
+    font-size: .9em;
+  }
+
+  .hero-wrapper img {
     width: 100%;
+    clear: both;
   }
 
-  .feature__hero{
-      margin-bottom:32em;
+  .hero-wrapper img:nth-child(2) {
+    border-left: white none 7px;
   }
 
-  /* aside section */
-  aside{
-    width: 25%;
-    float: right;
-  }
-  .basic-story__social-share__social-icons{
-      line-height:1.1em;
-  }
-  .imageSide{
-    width: 50%;
-    margin: 0 auto;
-  }
-  .imageSide img{
-      width:100%;
-  }
-  .basic-story__social-share{
-    float: none;
-    height: auto;
-    width: auto;
-    margin: 0;   
-  }
-
-  .diySection{
-      top:0;
-  }
-
-  .basic-story__content__image-caption{
-    font-size: .7em;
-    left:0;
-  }
-
-  /* end Aside section */ 
-
-  /* main body content */
-
-  .basic-story__content__wrapper{
-      width:70%;
-  }
-
-  .basic-story__content__title{
-      font-size:2em;
-  }
-
-  .subText {
-    font-size: 1.2em;
-}
-
-.basic-story__lead-in{
-    line-height: 1.2em;
-}
-
-
-
-  /* end main body content */ 
-
-  .hero-wrapper img:nth-child(2){ 
-   border-left: white solid 7px;
-  }
-  
-  .hero-wrapper img{
-    width:49.5%;
-    float:left;
-  }
-  
   .basic-story__content__department-label {
     font-size: .7em;
   }
-  
-  .basic-story__lead-in{
-    font-size:1em;
-    font-weight:700;
-  }
-  
-  .basic-story__lead-in:nth-child(1) {
-    margin-top: 0;
-  }
-  
-  .basic-story__content__image-wrapper {
-    width: 50%;
-    height: 50%;
+
+  .basic-story__content__wrapper {
+    width: auto;
+    float: left;
+    padding-right: 0;
   }
 
-  
+  .center_content {
+    width: 90%;
+    margin: 0 auto;
+}
 
-  
-  @media (max-width:640px){
-  
-    .hero-wrapper img {
-      width: 100%;
-      clear:both;
-    }
-    .hero-wrapper img:nth-child(2){ 
-      border-left: white none 7px;
-     }
-  
-  
-     
-  
-      .basic-story__content__department-label {
-        font-size: .7em;
-    }
-  
-  
+aside {
+  width: 80%;
+  margin: 0 auto;
+  float:none;
+}
+
+
+}
+
+@media (max-width:480px) {
+
+
+  .features__hero__title {
+    font-size: 1em;
   }
-  
-  @media (max-width:480px){
-    .basic-story__content__department-label {
-        font-size: .5em;
-    }
-      .features__hero__title{
-  
-        font-size: 1em;
-    }
-  }
-  
-  @media (max-width:823px){
-   
-      .features__hero__title{
-  
-        font-size: 1em;
-    }
-  
-    .diySection{
-      display: contents;
-     }
-  }
+}
+
+@media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 850px) {
+  .basic-story__content__wrapper {
+    width: auto;
+    float: none;
+    padding-right: 0;
+}
+
+aside {
+  width: 80%;
+  float: none;
+  margin: 0 auto;
+}
+
+.center_content {
+  width: 80%;
+  margin: 0 auto;
+  font-size: .8em;
+}
+
+.basic-story__content__department-label{
+  position: relative;
+    left: -31.5em;
+}
+}
+
+}
