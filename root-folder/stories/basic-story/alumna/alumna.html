@@ -7,6 +7,7 @@
   <script defer src="../basic-story.js"></script>
   <link rel="stylesheet" href="../css/basic-story.css">
   <link rel="stylesheet" href="alumna.css">
+  <link rel="stylesheet" href="../basic-story.css">:css
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="http://cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
 
@@ -135,14 +136,86 @@
     <!-- [start] component: more stories carousel -->
     <section class="basic-story__more-stories">
       <h3 class="basic-story__more-stories__title">Also in&nbsp;the issue</h3>
-      <div class="basic-story__more-stories__carousel">
-        <div class="basic-story__more-stories__carousel-item"></div>
-        <div class="basic-story__more-stories__carousel-item"></div>
-        <div class="basic-story__more-stories__carousel-item"></div>
-        <div class="basic-story__more-stories__carousel-item"></div>
-        <div class="basic-story__more-stories__carousel-item"></div>
-        <div class="basic-story__more-stories__carousel-item"></div>
-        <div class="basic-story__more-stories__carousel-item"></div>
+      <span id="prevThumbnail" class="arrow arrow__back material-icons" onclick="newSlide(-1)">arrow_back_ios</span>
+      <span id="nextThumbnail" class="arrow arrow__next material-icons" onclick="newSlide(+1)">arrow_forward_ios</span>
+      <div id="storyCarousel" class="basic-story__more-stories__carousel">
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--tall">
+            <img src="../../assets/stories-carousel-alumni-stowasser-208x288.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">Alumni</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="../../assets/stories-carousel-myStory-208x144.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">my story</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
+            <img src="../../assets/stories-carousel-diversity+inclusion-208x224.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">diversity & inclusion</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="../../assets/stories-carousel-oldfield-208x144.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">Lorem, ipsum.</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--tall">
+            <img src="../../assets/stories-carousel-community+Outreach-208x288.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">community & outreach</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="../../assets/stories-carousel-photoEssay-208x144.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">Lorem, ipsum.</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
+            <img src="../../assets/stories-carousel-mazzurco-208x224.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">Lorem, ipsum.</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="../../assets/stories-carousel-Q+A-208x144.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">Lorem, ipsum.</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
+            <img src="../../assets/stories-carousel-research-208x224.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">Lorem, ipsum.</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="../../assets/stories-carousel-telehealth-208x144.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">Lorem, ipsum.</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="basic-story__more-stories__carousel-item">
+          <figure class="basic-story__more-stories__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="../../assets/stories-carousel-yourSupport-208x144.jpg" alt="" class="basic-story__more-stories__thumbnail">
+          </figure>
+          <h3 class="basic-story__more-stories__carousel-item__title">Lorem, ipsum.</h3>
+          <p class="basic-story__more-stories__carousel-item__subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
       </div>
     </section>
     <!-- [end] component: more stories carousel -->

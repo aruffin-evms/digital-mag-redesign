@@ -64,6 +64,23 @@
   animation: slideRight 1.5s;
 }
 
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(128, 128, 128, 0.7);
+  cursor: pointer;
+  padding: 20px;
+}
+
+.arrow__back {
+  left: 20%;
+}
+
+.arrow__next {
+  right: 10%;
+}
+
 .basic-story {
   overflow-x: hidden;
 }
@@ -473,6 +490,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 
 .basic-story__more-stories__title {
@@ -500,6 +518,7 @@
   flex-direction: row;
   justify-content: space-between;
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 
 .basic-story__more-stories__carousel-item {
