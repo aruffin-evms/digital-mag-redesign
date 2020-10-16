@@ -3,8 +3,6 @@
   width: 100%;
 }
 
-
-
 /* aside section */
 aside {
   width: 25%;
@@ -38,6 +36,10 @@ aside {
 .basic-story__content__image-caption {
   font-size: .7em;
   left: 0;
+}
+
+.basic-story__by-line{
+  float:none;
 }
 
 /* end Aside section */
