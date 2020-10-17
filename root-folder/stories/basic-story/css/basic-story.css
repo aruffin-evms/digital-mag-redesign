@@ -225,7 +225,7 @@ h1{
 
 .basic-story__social-share__title {
   text-transform: uppercase;
-  font-size: 12px;
+
 }
 
 /* [start] social icons */
@@ -623,8 +623,7 @@ h1{
 
 .diySection{
   /* margin: 24em 0 0; */
-  position: relative;
-  top: 10em;
+
 }
 
 .diySection hr{
