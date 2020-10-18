@@ -1,259 +1,186 @@
-.feature__faculty-spotlight {
-  margin: 40px 0;
-  background-color: rgba(128, 128, 128, 0.2);
+body{
+  background-image: url("imgs/Hero-Left-PivotingPandemic-Research.jpg");
 }
 
-.feature__faculty-spotlight__wrapper {
-  min-height: 300px;
-  max-width: 708px;
-  width: 100%;
+.basic-story__lead-in{
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+
+.feature__hero__image{
+  width:50%;
+  float:left;  
+  background-color: #FFF;
+}
+.basic-story__content{
+  width: 60%;
+  float:left;
+  background-color: #FFF;
+}
+
+.basic-story__social-share__title{
+  font-size: .3em;
+    margin: 1em auto;
+}
+
+.basic-story__social-share{
+  float: none;
+  height: 50px;
+  margin: 0;
+}
+
+.basic-story {
+  overflow-x: hidden;
+  width: 60%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
-  text-align: center;
+}
+@media (min-width: 900px){
+.basic-story__aside {
+  float: right;
+  width: 35%;
+  margin: 0;
+  flex-direction: column;
+}
 }
 
-.basic-story__content__wrapper{
-  width: 50%;
-  margin: 0 auto;
-  font-size: .9em;
+.basic-story__story-qoute__wrapper{
+  margin:0 auto;
 }
 
-.feature__faculty-spotlight__item {
-  width: 65%;
-  height: auto;
+.basic-story__story-qoute__qoutation-mark__horizontal-line--bottom , .basic-story__story-qoute__qoutation-mark__horizontal-line--top{
+  z-index: 1;
+  width: 90%;
 }
 
-.feature__faculty-spotlight__item p {
-  text-align: left;
-  margin-top: 5%;
+.basic-story__story-qoute__qoute{
+  font-size: 1.5em;
+  width: 70%
 }
 
-.feature__faculty-spotlight__image-wrapper {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background-color: gray;
-  margin: 0 5% 0 0;
-  float: left;
-}
-
-/* .feature__faculty-spotlight__image {
-  height: 100%;
+ .hero-wrapper{
+  display: block;
+  clear: both;
+  height: 50vh;
   width: 100%;
-  object-fit: cover;
-} */
-
-.feature__faculty-spotlight__name {
-  font-weight: bold;
-  margin: 15px 0;
-}
-
-.feature__faculty-spotlight__image-wrapper img {
-  height: 180px;
-  margin-top: -25px;
-}
+} 
 
 .features__hero__title {
   font-family: "GT-Super";
   margin: 10px 0;
+  background-color: #FFF;
+}
+
+.basic-story__by-line{
+  float:none;
+  height: auto;
+  margin: 2em 0;
 }
 
 .features__hero__overlay {
-  margin: 3em auto 2em;
-    width: 50%;
-}
-.features__hero__overlay label{
-
-}
-.basic-story__content{
-  margin: -12em auto;
-}
-.basic-story__content__department-label {
   color: #000;
-  font-size: 1em;
+  margin: 0 auto 0;
 }
 
-.topText {
-  font-size: 1.5em;
+.basic-story__dropcap{
+  position: relative;
 }
 
-.basic-story__content__image {
+.basic-story__hero__image {
   height: auto;
-  width: auto;
-  object-fit: cover;
-}
-
-.basic-story__content__image-wrapper {
-  margin: 2em auto 0;
-}
-
-.basic-story__content__image-caption {
-  width: 28%;
-  margin: -3em auto 48px;
-}
-
-.basic-story__story-qoute__qoutation-mark__horizontal-line--top{
-  width: 69%;
-}
-@media (min-width: 900px){
-.basic-story__hero-wrapper {
-    height: 30vh;
-}
-}
-
-@media only screen and (min-width: 1224px) {
-  .basic-story__content{
-    max-width: max-content;
-  }
-}
-@media only screen 
-and (min-width: 900px) { 
-  .basic-story__content__image-wrapper {
-    width: 30%;
-    height: 37em;
-  }
-@media only screen 
-and (min-width: 900px)
-and (max-device-width : 1100px) { 
-
-
-  .basic-story__content{
-    margin: -12em auto;
-  }
-}
-
-@media (max-width:640px) {
-
-  .features__hero__title {
-    font-size: 1.5em;
-  }
-
-
-
-.storyTop{
-  margin: 15em auto 0;
-}
-
-  .features__hero__overlay {
-    width: 80%;
-    top: 10%;
-    left: 25%;
-  }
-
-  .basic-story__content__department-label {
-    font-size: .7em;
-  }
-
-  .basic-story__by-line{
-    margin: 20px 0 0 5%;
-    padding: 0 0 0 1%;
-  }
-
-  .basic-story__aside{
-    padding: 0 1%;
-  }
-
-  .basic-story__content__image-caption {
-    margin: 16em auto 0;
-    width: 90%;
-  }
-
-  .basic-story__social-share__social-icons{
-    padding-left:2%
-  }
-
-  .feature__faculty-spotlight__item {
-    width: 85%;
-  }
-}
-
-@media (max-width:480px) {
-  .basic-story__content__department-label {
-    font-size: .5em;
-  }
-
-  .features__hero__title {
-
-    font-size: 1em;
-  }
-}
-
-@media (max-width:823px) {
-  .basic-story__content__department-label {
-    font-size: .5em;
-  }
-
-  .features__hero__title {
-
-    font-size: 1em;
-  }
-
-  .basic-story__by-line{
-    margin: 20px 0 0 5%;
-    padding: 0 0 0 1%;
-  }
-  .basic-story__content__image-wrapper{
-    width:25em;
-  }
-
-  .basic-story__social-share__social-icons{
-    padding-left:2%
-  }
 }
 
 .basic-story__lead-in {
-  font-size: 1em;
   text-transform: capitalize;
-  float: none;
   margin-top: 0em;
   padding: 0 .1em 0 0;
-  line-height: 1.1em;;
+}
+
+.basic-story__content__image-caption {
+  font-size: .8em;
+  font-style: italic;
+  left: 0;
+  width: 100%;
+}
+
+.basic-story__content__image-caption i{
+  font-size:.7em;
+}
+
+@media (max-width:640px){
+  h1 {
+    line-height: 1.2em;
+}
+  .features__hero__overlay{
+    width: 90%;
+  }
+  .basic-story__content {
+    width: 90%;
+    background-color: #FFF;
+    float: none;
+}
+.basic-story {
+  overflow-x: hidden;
+  width: auto;
+  margin: 0 auto;
+}
+
+.basic-story__content__image-wrapper{
+  margin: 0;
+}
+
+.basic-story__content__image{
+  width: 90%
+}
+
+.basic-story__aside{
+  padding: 0 2%;
+}
+
+.basic-story__story-qoute__qoute{
+  width:100%;
+}
 }
 
 @media only screen 
 and (min-device-width : 800px) 
 and (max-device-width : 850px) {
-  .features__hero__title {
-    font-size: 1.5em;
+  h1 {
+    line-height: 1.2em;
+}
+  .features__hero__overlay{
+    width: 90%;
   }
-.storyTop{
-  margin: 15em auto 0;
+  .basic-story__content {
+    width: 90%;
+    float: none;
+}
+.basic-story {
+  overflow-x: hidden;
+  width: auto;
+  margin: 0 auto;
 }
 
-  .features__hero__overlay {
-    width: 70%;
-    top: 10%;
-    left: 25%;
-  }
+.basic-story__content__image-wrapper{
+  margin: 0;
+}
 
-  .basic-story__content__department-label {
-    font-size: .7em;
-  }
+.basic-story__content__image{
+  width: 60%;
+  height: 130%;
+}
 
-  .basic-story__by-line{
-    margin: 20px 0 0 5%;
-    padding: 0 0 0 1%;
-  }
-
-  .basic-story__aside{
-    padding: 0 1%;
-  }
-
-  .basic-story__content__image-caption {
-    margin: 16em auto 0;
-    width: 54%;
-  }
-
-  .basic-story__social-share__social-icons{
-    padding-left:2%
-  }
-
-  .feature__faculty-spotlight__item {
-    width: 85%;
-  }
+.basic-story__aside{
+  padding: 0 2%;
+}
+.basic-story__story-qoute__qoute{
+  width:100%;
+}
+.basic-story__content__image-caption {
+  font-size: .8em;
+  font-style: italic;
+  left: 0;
+  width: 100%;
+  margin: 7em 0 0 0;
 }
 }
