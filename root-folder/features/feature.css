@@ -15,6 +15,15 @@ body{
 
 h1{
   line-height: 1.1em;
+  font-size: 2em;
+}
+
+h2{
+  font-size:1.3em
+}
+
+a{
+  color: #c7531e;
 }
 
 
@@ -302,9 +311,11 @@ h1{
 
 .feature__content__image-caption {
   border-left: solid 1px gray;
-  width: 60%;
-  margin: 15px auto 48px;
+  width: 90%;
+  margin: 1.2em auto;
   padding-left: 10px;
+  font-style: italic;
+  font-size: .8em;
 }
 
 @media(min-width: 900px) {
@@ -322,6 +333,12 @@ h1{
   width: 14%;
   float:right;
 }
+.quote {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
 
 .feature__content__image-caption--portrait {
   max-width: 708px;
@@ -331,7 +348,7 @@ h1{
 }
 
 .feature__story-qoute__wrapper {
-  margin: 64px auto;
+  margin: 0 auto;
   max-width: 90vw;
 }
 
@@ -407,7 +424,7 @@ h1{
 
 @media(min-width: 900px) {
   .feature__story-qoute__qoute {
-    font-size: 40px;
+    font-size: 2em;
   }
 }
 /* [end] story pull qoute  */
