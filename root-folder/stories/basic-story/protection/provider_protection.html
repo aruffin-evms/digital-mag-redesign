@@ -139,8 +139,8 @@
             made all of this possible.”</p>
         </div>
         <section class="basic-story__mask-steps">
-          <span id="prevThumbnail" class="arrow arrow__back material-icons" onclick="newSlide(-1)">arrow_back_ios</span>
-          <span id="nextThumbnail" class="arrow arrow__next material-icons" onclick="newSlide(+1)">arrow_forward_ios</span>
+          <span id="prevThumbnail" class="arrow arrow__back material-icons">arrow_back_ios</span>
+          <span id="nextThumbnail" class="arrow arrow__next material-icons">arrow_forward_ios</span>
           <div id="maskCarousel" class="basic-story__mask-steps__carousel">
             <div class="basic-story__mask-steps__carousel__item">
               <figure id="stepOne" class="basic-story__mask-steps__thumbnail-wrapper">
@@ -280,87 +280,167 @@
 
 
   </main>
-  <div id="slideModal" class="modal">
+  <div class="modal slide-one__modal">
     <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-eleven__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-two__modal')">arrow_forward_ios</span>
       <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture1@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideTwo" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-two__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-one__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-three__modal')">arrow_forward_ios</span>
+      <div id="slideThree" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture2@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideThree" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-three__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-two__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-four__modal')">arrow_forward_ios</span>
+      <div id="slideFour" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture3@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideFour" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-four__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-three__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-five__modal')">arrow_forward_ios</span>
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture4@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideFive" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-five__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-four__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-five-b__modal')">arrow_forward_ios</span>
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture5@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideFiveB" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-five-b__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-five__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-six__modal')">arrow_forward_ios</span>
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture5b@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideSix" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-six__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-five-b__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-seven__modal')">arrow_forward_ios</span>
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture6@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideSeven" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-seven__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-six__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-eight__modal')">arrow_forward_ios</span>
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture7@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideEight" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-eight__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-seven__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-eight-b__modal')">arrow_forward_ios</span>
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture8@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideEightB" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-eight-b__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-eight__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-eight-c__modal')">arrow_forward_ios</span>
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture8b@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideEightC" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-eight-c__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-eight-b__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-nine__modal')">arrow_forward_ios</span>
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture8c@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideNine" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-nine__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-eight-c__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-ten__modal')">arrow_forward_ios</span>
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture9@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideTen" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-ten__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-nine__modal')">arrow_back_ios</span> -->
+    <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-eleven__modal')">arrow_forward_ios</span>
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture10@2x.jpg" alt="" class="modal__slides__image">
         </figure>
         <p class="modal__slides__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla est nisi aspernatur iste consequatur odio beatae qui omnis dolore?</p>
       </div>
-      <div id="slideEleven" class="modal__slides">
+    </div>  
+  </div>
+  <div class="modal slide-eleven__modal">
+    <div id="closeModal" class="modal__close">&times;</div>
+    <!-- <span id="prevSlide" class="arrow arrow__back--slide material-icons" onclick="nextModal('.slide-ten__modal')">arrow_back_ios</span> -->
+    <!-- <span id="nextSlide" class="arrow arrow__next--slide material-icons" onclick="nextModal('.slide-one__modal')">arrow_forward_ios</span> -->
+      <div id="slideOne" class="modal__slides">
         <figure class="modal__slides__image-wrapper">
           <img src="../../../assets/slide-picture11@2x.jpg" alt="" class="modal__slides__image">
         </figure>
@@ -368,7 +448,6 @@
       </div>
     </div>  
   </div>
-
   <!-- [end] component: social icons -->
 </body>
 
