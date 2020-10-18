@@ -6,28 +6,43 @@ const slideElementsUp = document.querySelectorAll('.animate-vertical');
 const nextThumbnail = document.getElementById('nextThumbnail')
 const prevThumbnail = document.getElementById('prevThumbnail')
 const maskCarousel = document.getElementById('maskCarousel')
-const slideModal = document.getElementById('slideModal') 
+const modals = document.querySelectorAll('.modal')
 const steps = document.querySelectorAll('.basic-story__mask-steps__thumbnail-wrapper')
-const closeModal = document.getElementById('closeModal')
+const closeModals = document.querySelectorAll('.modal__close')
 const slides = document.querySelectorAll('.modal__slides')
-const slideOne = document.getElementById('slideOne')
+const slideOne = document.querySelector('.slide-one__modal')
+const slideTwo = document.querySelector('.slide-two__modal')
+const slideThree = document.querySelector('.slide-three__modal')
+const slideFour = document.querySelector('.slide-four__modal')
+const slideFive = document.querySelector('.slide-five__modal')
+const slideFiveB = document.querySelector('.slide-five-b__modal')
+const slideSix = document.querySelector('.slide-six__modal')
+const slideSeven = document.querySelector('.slide-seven__modal')
+const slideEight = document.querySelector('.slide-eight__modal')
+const slideEightB = document.querySelector('.slide-eight-b__modal')
+const slideEightC = document.querySelector('.slide-eight-c__modal')
+const slideNine = document.querySelector('.slide-nine__modal')
+const slideTen = document.querySelector('.slide-ten__modal')
+const slideEleven = document.querySelector('.slide-eleven__modal')
 
-const modalSlides = {
-  slideOne: '../../../assets/slide-picture1@2x.jpg',
-  slideTwo: '../../../assets/slide-picture2@2x.jpg',
-  slideThree: '../../../assets/slide-picture3@2x.jpg',
-  slideFour: '../../../assets/slide-picture4@2x.jpg',
-  slideFive: '../../../assets/slide-picture5@2x.jpg',
-  slideFiveB: '../../../assets/slide-picture5b@2x.jpg',
-  slideSix: '../../../assets/slide-picture6@2x.jpg',
-  slideSeven: '../../../assets/slide-picture7@2x.jpg',
-  slideEight: '../../../assets/slide-picture8@2x.jpg',
-  slideEightB: '../../../assets/slide-picture8b@2x.jpg',
-  slideEightC: '../../../assets/slide-picture8c@2x.jpg',
-  slideNine: '../../../assets/slide-picture9@2x.jpg',
-  slideTen: '../../../assets/slide-picture10@2x.jpg',
-  slideEleven: '../../../assets/slide-picture11@2x.jpg'
-}
+
+// const modalSlides = {
+//   slideOne: document.getElementById('slideOne'),
+//   slideTwo: document.getElementById('slideTwo'),
+//   slideThree: document.getElementById('slideThree'),
+//   slideFour: document.getElementById('slideFour'),
+//   slideFive: document.getElementById('slideFive'),
+//   slideFiveB: document.getElementById('slideFiveB'),
+//   slideSix: document.getElementById('slideSix'),
+//   slideSeven: document.getElementById('slideSeven'),
+//   slideEight: document.getElementById('slideEight'),
+//   slideEightB: document.getElementById('slideEightB'),
+//   slideEightC: document.getElementById('slideEightC'),
+//   slideNine: document.getElementById('slideNine'),
+//   slideTen: document.getElementById('slideTen'),
+//   slideEleven: document.getElementById('slideEleven')
+// }
+
 
 
 const config = {
@@ -104,12 +119,33 @@ function showSteps(n) {
   // steps[slideIndex - 1].classList.add('fadeIn')
 }
 
-function newSlide(n) {
-  showSteps((slideIndex += n));
+function nextModal(slide) {
+  // let modals = [
+  //   '.slide-one__modal',
+  //   '.slide-two__modal',
+  //   '.slide-three__modal',
+  //   '.slide-four__modal',
+  //   '.slide-five__modal',
+  //   '.slide-five-b__modal',
+  //   '.slide-six__modal',
+  //   '.slide-seven__modal',
+  //   '.slide-eight__modal',
+  //   '.slide-eight-b__modal',
+  //   '.slide-eight-c__modal',
+  //   '.slide-nine__modal',
+  //   '.slide-ten__modal',
+  //   '.slide-eleven__modal'
+  // ]
+
+  // let currentModal = index - 1;
+  // console.log(current)
+  let currentModal = document.querySelector(slide)
+  console.log(currentModal)
+  currentModal.style.display = 'block'
 }
 
 function currentSlide(n) {
-  return showSteps(slideIndex = n);
+  showSteps(slideIndex = n);
 }
 
 function handleThumbnailClick() {
@@ -124,73 +160,73 @@ function handleCurrentSlide() {
       let id = this.id
       switch (id) {
         case 'stepOne':
-          showModal()
-          showSlide(modalSlides.slideOne)
+          // showModal()
+          showSlide(slideOne)
           break;
           
         case 'stepTwo':
-          showModal()
-          showSlide(modalSlides.slideTwo)
+          // showModal()
+          showSlide(slideTwo)
           break;
 
         case 'stepThree':
-          showModal()
-          showSlide(modalSlides.slideThree)
+          // showModal()
+          showSlide(slideThree)
           break;
 
         case 'stepFour':
-          showModal()
-          showSlide(modalSlides.slideFour)
+          // showModal()
+          showSlide(slideFour)
           break;
 
         case 'stepFive':
-          showModal()
-          showSlide(modalSlides.slideFive)
+          // showModal()
+          showSlide(slideFive)
           break;
 
         case 'stepFiveB':
-          showModal()
-          showSlide(modalSlides.slideFiveB)
+          // showModal()
+          showSlide(slideFiveB)
           break;
 
         case 'stepSix':
-          showModal()
-          showSlide(modalSlides.slideSix)
+          // showModal()
+          showSlide(slideSix)
           break;
 
         case 'stepSeven':
-          showModal()
-          showSlide(modalSlides.slideSeven)
+          // showModal()
+          showSlide(slideSeven)
           break;
 
         case 'stepEight':
-          showModal()
-          showSlide(modalSlides.slideEight)
+          // showModal()
+          showSlide(slideEight)
           break;
 
         case 'stepEightB':
-          showModal()
-          showSlide(modalSlides.slideEightB)
+          // showModal()
+          showSlide(slideEightB)
           break;
 
         case 'stepEightC':
-          showModal()
-          showSlide(modalSlides.slideEightC)
+          // showModal()
+          showSlide(slideEightC)
           break;
 
         case 'stepNine':
-          showModal()
-          showSlide(modalSlides.slideNine)
+          // showModal()
+          showSlide(slideNine)
           break;
 
         case 'stepTen':
-          showModal()
-          showSlide(modalSlides.slideTen)
+          // showModal()
+          showSlide(slideTen)
           break;
 
         case 'stepEleven':
-          showModal()
-          showSlide(modalSlides.slideEleven)
+          // showModal()
+          showSlide(slideEleven)
           break;
 
         default:
@@ -202,22 +238,19 @@ function handleCurrentSlide() {
 
 handleCurrentSlide()
 
-function showModal() {
-  slideModal.style.display = 'block'
-  // html.style.overflow = "hidden";
-}
+// function // showModal() {
+//   modal.style.display = 'block'
+// }
 
 function hideModal() {
-  slideModal.style.display = 'none'
+  modals.forEach(function(modal) {
+    modal.style.display = 'none'
+  })
 }
 
 function showSlide(slide) {
+  // console.log(slide)
   slide.style.display = 'block'
-
-  // if(!slide) {
-  //   console.log('not')
-  //   slide.style.display = 'none'
-  // }
 }
 
 const scrollDistance = 500;
@@ -230,4 +263,8 @@ prevThumbnail.addEventListener('click', function() {
   maskCarousel.scrollLeft -= scrollDistance
 })
 
-closeModal.addEventListener('click', hideModal)
+closeModals.forEach(function(closeIcon) {
+  closeIcon.addEventListener('click', function() {
+    hideModal()
+  })
+})
