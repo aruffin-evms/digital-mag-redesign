@@ -23,7 +23,7 @@ body{
 }
 
 h1{
-  line-height: 1.1em;
+  line-height: 2em;
 }
 
 /* fonts for page */
@@ -428,6 +428,10 @@ h1{
 .qoutation-mark--top {
   font-size: 100px !important; 
   transform: rotate(180deg);
+}
+
+.portrait {
+  max-width: 708px;
 }
 
 .qoutation-mark--bottom {

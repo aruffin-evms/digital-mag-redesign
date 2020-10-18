@@ -1,9 +1,41 @@
+body{
+  background-image: url("imgs/Hero-Left-PivotingPandemic-Education.jpg");
+}
+
 .feature__hero__image{
   width:50%;
   float:left;  
+  background-color: #FFF;
 }
 .basic-story__content{
   width: 50%;
+  float:left;
+  background-color: #FFF;
+}
+
+.basic-story__social-share__title{
+  font-size: .3em;
+    margin: 1em auto;
+}
+
+.basic-story__social-share{
+  float: none;
+  height: 50px;
+  margin: 0;
+}
+
+.basic-story {
+  overflow-x: hidden;
+  width: 60%;
+  margin: 0 auto;
+}
+@media (min-width: 900px){
+.basic-story__aside {
+  float: right;
+  width: 40%;
+  margin: 0;
+  flex-direction: column;
+}
 }
 
  .hero-wrapper{
@@ -16,12 +48,18 @@
 .features__hero__title {
   font-family: "GT-Super";
   margin: 10px 0;
+  background-color: #FFF;
+}
+
+.basic-story__by-line{
+  float:none;
+  height: auto;
+  margin: 2em 0;
 }
 
 .features__hero__overlay {
-  width: 50%;
   color: #000;
-  margin: -21% auto 0;
+  margin: 0 auto 0;
 }
 
 .basic-story__dropcap{
@@ -41,8 +79,7 @@
 .basic-story__content__image-caption {
   font-size: .8em;
   font-style: italic;
-  padding-right: 13em;
-  margin: 0 0 0 .5em;
+  left: 0;
 }
 
 .basic-story__content__image-caption i{
