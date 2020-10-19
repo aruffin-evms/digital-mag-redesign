@@ -81,7 +81,9 @@ h1{
     margin-right: 0;
   }
 }
-
+.smaller{
+  font-size:.8em;
+}
 .slide-up {
   animation: slideUp 1.5s;
 }
