@@ -5,8 +5,11 @@
 
 body{
   font-size:18px;
-   font-family: 'Calluna';
-   line-height: 1.4em;
+  font-family: 'Calluna', serif;
+  margin: 0 auto;
+  width: 100%;
+  line-height: 1.5em;
+  overflow-x: hidden;
 }
 
 .clear{
@@ -17,13 +20,13 @@ body{
   margin-bottom:7em;
 }
 
-.orange{
+.rust, a{
   color: #c7531e;
 
 }
 
 h1{
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
 
 /* fonts for page */
@@ -138,7 +141,7 @@ h1{
 }
 
 .basic-story__hero__title {
-  font-family: "GT-Super";
+  font-family: "GT-Super", serif;
   margin: 10px 0;
 }
 
@@ -209,10 +212,14 @@ h1{
   height: 100%;
   margin: 0 auto;
 }
+.basic-story__content__wrapper {
+  max-width: 608px;
+  margin: 0 auto;
+}
 
 .basic-story__content__title {
   margin: 10px 0 0;
-  font-family: 'GT-Super';
+  font-family: 'GT-Super', serif;
   font-size: 3em;
 }
 
@@ -225,7 +232,7 @@ h1{
 
 .basic-story__social-share__title {
   text-transform: uppercase;
-  font-size: 12px;
+
 }
 
 /* [start] social icons */
@@ -276,22 +283,19 @@ h1{
 .basic-story__content__description {
   margin: 10px 0 45px;
   width: 90%;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
   line-height: 32px;
 }
 
 .basic-story__content__department-label {
   text-transform: uppercase;
   color: #c7531e;
-  font-family: 'Benton Sans Reg';
-  font-size: .7em;
+  font-family: 'Benton Sans Reg', sans-serif;
+  font-size: .9em;
 }
 
 /* [start] by lines */
 .basic-story__by-line {
-  float: right;
-  height: 100px;
-  width: auto;
   border-left: 1px solid rgba(128, 128, 128, 0.8);
   margin: 20px 0 0;
   display: flex;
@@ -306,14 +310,15 @@ h1{
 }
 
 .basic-story__byline__label {
-  font-family: 'Calluna';
   font-weight: bold;
   font-style: italic;
-  padding: 0 10px 0 16px;
+  padding: 0 8px 0 16px;
+  font-size: 0.8em;
 }
 
 .basic-story__byline__name {
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
+  font-size: 0.8em;
 }
 
 /* [end] by lines */
@@ -322,7 +327,7 @@ h1{
   margin: 10px 0 0; 
 }
 .basic-story__content__story__p {
-  padding: 17px 0;
+  padding: 1em 0;
 }
 
 
@@ -336,14 +341,12 @@ h1{
 /* [start] image with caption */
 .basic-story__content__image-wrapper {
   width: 100vw;
-  height: 300px;
   margin: 48px auto 16px;
 }
 
 @media(min-width: 900px) {
   .basic-story__content__image-wrapper {
-    width: 1182px;
-    height: 784px;
+    width: 100%;
   }
 }
 
@@ -363,7 +366,7 @@ h1{
   color: white;
   font-size: 12px;
   margin-left: 20px;
-  font-family: 'Calluna';
+  font-family: 'Calluna', serif;
   position: relative;
 }
 
@@ -387,9 +390,7 @@ h1{
 }
 
 .basic-story__content__image {
-  height: 100%;
-  width: auto;
-  object-fit: cover;
+  width: 100%;
 }
 
 .basic-story__content__image-caption {
@@ -415,7 +416,7 @@ h1{
 /* [end] image with caption */
 
 .basic-story__story-qoute__wrapper {
-  margin: 64px auto;
+  margin: 0 auto;
   max-width: 90vw;
 }
 
@@ -428,6 +429,10 @@ h1{
 .qoutation-mark--top {
   font-size: 100px !important; 
   transform: rotate(180deg);
+}
+
+.portrait {
+  max-width: 608px;
 }
 
 .qoutation-mark--bottom {
@@ -484,7 +489,7 @@ h1{
   width: 100%;
   line-height: 42px;
   text-align: center;
-  font-family: 'GT-Super-bold';
+  font-family: 'GT-Super-bold', serif;
 }
 
 @media(min-width: 900px) {
@@ -594,7 +599,7 @@ h1{
   color: #fafafa;
   text-decoration: none;
   transition: 0.5s ease;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 
 .basic-story__subscribe__cta:hover {
@@ -603,29 +608,16 @@ h1{
 
 .basic-story__subscribe__description {
   padding-bottom: 20px;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 
 .basic-story__subscribe__pdf-download {
   color: #c7531e;
   text-decoration: none;
   padding-top: 20px;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 /* [end] subscribe module */  
-
-/* sidebar start */
-/* main{
-  float:left; 
-
-  width:80%;
-} */
-
-.diySection{
-  /* margin: 24em 0 0; */
-  position: relative;
-  top: 10em;
-}
 
 .diySection hr{
   width: 60px;
@@ -638,10 +630,10 @@ h1{
 
 .diySection p{
   margin: 2% 0 5%;
-  font-family: 'Calluna';
+  font-family: 'Calluna', serif;
 }
 
 .steps{
   color: #c7531e;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
 }

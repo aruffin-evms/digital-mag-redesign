@@ -3,6 +3,30 @@
   padding: 0;
 }
 
+body{
+  font-size:18px;
+  font-family: 'Calluna', serif;
+  line-height: 1.5em;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.clear{
+  clear: both;
+}
+
+.extra{
+  margin-bottom:7em;
+}
+
+.rust, a{
+  color: #c7531e;
+}
+
+h1{
+  line-height: 1.2em;
+}
+
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
@@ -62,23 +86,6 @@
 
 .slide-right {
   animation: slideRight 1.5s;
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(128, 128, 128, 0.7);
-  cursor: pointer;
-  padding: 20px;
-}
-
-.arrow__back {
-  left: 20%;
-}
-
-.arrow__next {
-  right: 10%;
 }
 
 .basic-story {
@@ -157,7 +164,12 @@
 .basic-story__lead-in {
   color: #c7531e;
   text-transform: uppercase;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-right: 8px;
 }
+ 
 
 .basic-story__dropcap {
   color: #c7531e;
@@ -175,12 +187,12 @@
   justify-content: space-evenly;
 }
 
-/* hack for mobile */
+/* hack for mobile 
 @media(max-width: 899px) {
   .basic-story__aside p:first-child {
     display: none;
   }
-}
+}*/
 
 @media (min-width: 900px) {
   .basic-story__aside {
@@ -199,16 +211,10 @@
   margin: 0 auto;
 }
 
-.basic-story__content__wrapper {
-  max-width: 704px;
-  width: 90%;
-  margin: 32px auto 0;
-}
-
 .basic-story__content__title {
   margin: 10px 0 0;
   font-family: 'GT-Super';
-  font-size: 52px;
+  font-size: 3em;
 }
 
 .basic-story__social-share {
@@ -220,7 +226,7 @@
 
 .basic-story__social-share__title {
   text-transform: uppercase;
-  font-size: 12px;
+
 }
 
 /* [start] social icons */
@@ -254,17 +260,17 @@
 }
 
 .fb{
-  background-image: url(./images/facebook.svg); 
+  background-image: url(../images/facebook.svg); 
 }
 
 .ig{
-  background-image: url(./images/instagram.svg); 
+  background-image: url(../images/instagram.svg); 
 }
 .in{
-  background-image: url(./images/LinkedIn.svg); 
+  background-image: url(../images/LinkedIn.svg); 
 }
 .tw{
-  background-image: url(./images/twitter.svg); 
+  background-image: url(../images/twitter.svg); 
 }
 
 
@@ -279,7 +285,7 @@
   text-transform: uppercase;
   color: #c7531e;
   font-family: 'Benton Sans Reg';
-  font-size: .7em;
+  font-size: .9em;
 }
 
 /* [start] by lines */
@@ -304,25 +310,28 @@
   font-family: 'Calluna';
   font-weight: bold;
   font-style: italic;
-  font-size: 16px;
   padding: 0 10px 0 16px;
 }
 
 .basic-story__byline__name {
   font-family: 'Benton Sans Reg';
-  font-size: 16px;
 }
 
 /* [end] by lines */
 
 .basic-story__content__story {
-  margin: 10px 0 0;
-  line-height: 32px;
+  margin: 10px 0 0; 
 }
 .basic-story__content__story__p {
-  padding: 17px 0;
-  /* font-family: 'Calluna'; */
-  font-size: 1.2em;
+  padding: 1em 0;
+}
+
+
+.quote {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
 }
 
 /* [start] image with caption */
@@ -379,16 +388,30 @@
 }
 
 .basic-story__content__image {
-  height: 100%;
+  /*! height: 100%; */
   width: 100%;
-  object-fit: cover;
+  /*! object-fit: cover; */
 }
 
 .basic-story__content__image-caption {
   border-left: solid 1px gray;
-  width: 60%;
-  margin: 48px auto 0;
+  margin: 15px auto 48px;
   padding-left: 10px;
+  position: relative;
+  left: -.55em;
+  font-style: italic;
+  font-size: .9em;
+}
+
+.middle{
+  width: 47%;
+    margin: 0 auto;
+    position: relative;
+    left: -3em;
+}
+
+.middle i{
+  font-size: .7em;
 }
 /* [end] image with caption */
 
@@ -406,6 +429,10 @@
 .qoutation-mark--top {
   font-size: 100px !important; 
   transform: rotate(180deg);
+}
+
+.portrait {
+  max-width: 708px;
 }
 
 .qoutation-mark--bottom {
@@ -460,7 +487,6 @@
 
 .basic-story__story-qoute__qoute {
   width: 100%;
-  font-size: 22px;
   line-height: 42px;
   text-align: center;
   font-family: 'GT-Super-bold';
@@ -490,70 +516,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
 }
 
 .basic-story__more-stories__title {
-  font-size: 42px;
-  width: 100px;
-}
-
-.basic-story__more-stories__carousel-item__title {
   width: 130px;
-  font-size: 16px;
-  font-family: 'Benton Sans Lt';
-  color: #c7531e;
-  text-transform: uppercase;
-}
-
-.basic-story__more-stories__carousel-item__subtitle {
-  font-family: 'Benton Sans Lt';
-  font-size: 20px;
+  font-size: 42px;
 }
 
 .basic-story__more-stories__carousel {
+  background-color: blue;
   width: 60%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
+  height: 300px;
 }
-
-.basic-story__more-stories__carousel-item {
-  width: 100%;
-  margin: 20px;
-  /* background: gray; */
-}
-
-.basic-story__more-stories__thumbnail-wrapper {
-  min-height: 144px;
-  min-width: 208px;
-}
-
-.basic-story__more-stories__thumbnail {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border: solid 1px #b1b4b7;
-}
-
-.basic-story__more-carousel__thumbnail-wrapper--tall {
-  height: 288px;
-  width: 100%;
-}
-
-.basic-story__more-carousel__thumbnail-wrapper--short {
-  height: auto;
-  width: auto;
-}
-
-.basic-story__more-carousel__thumbnail-wrapper--medium {
-  height: 288px;
-  width: 100%;
-}
-
 /* [end] more stories carousel */
 
 /* [start] subscribe module */
@@ -654,8 +628,7 @@
 
 .diySection{
   /* margin: 24em 0 0; */
-  position: relative;
-  top: 10em;
+
 }
 
 .diySection hr{

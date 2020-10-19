@@ -8,8 +8,14 @@
   
 }
 
- .hero-wrapper{
+.smaller{
+  font-size: .7em;
+  margin: 0 auto;
+  left:0;
+  width: 100%;
+}
 
+ .hero-wrapper{
   display: block;
   clear: both;
   height: 50vh;
@@ -31,6 +37,7 @@
 }
 .feature__content__image-caption--portrait {
   width: 98% !important;
+  font-size:.8em;
 }
 
 .feature__content__image-caption {
@@ -44,7 +51,7 @@ padding-bottom:5px;
 @media (min-width: 900px) {
 
 .features__hero__title {
-  font-size: 50px;
+  font-size: 2em;
   }
 
   
@@ -54,6 +61,10 @@ padding-bottom:5px;
   .features__hero__overlay {
     margin: -180% 0 0 13%;
     width: 90%;
+}
+
+.feature__content__story{
+  width: 100%;
 }
 
 .feature__hero__image {
@@ -66,12 +77,12 @@ padding-bottom:5px;
 }
 
 .topper{
-  margin: 292px auto 0;
+  margin: 23em auto 0
 }
 
 
 .feature__social-share {
-  margin: -40px 100px 0 0;
+  margin: -4em 100px 0 0;
 }
 }
 
@@ -81,4 +92,20 @@ padding-bottom:5px;
 }
 }
 
+@media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 850px) {
+ 
+h1{
+  font-size:1em;
+}
 
+.feature__content__story{
+  width:100%;
+}
+
+.feature__content__image-wrapper {
+  margin: 1em auto 1em;
+}
+
+}

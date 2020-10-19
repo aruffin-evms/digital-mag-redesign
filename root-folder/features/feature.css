@@ -15,6 +15,20 @@ body{
 
 h1{
   line-height: 1.1em;
+  font-size: 2em;
+}
+
+h2{
+  font-size:1.3em
+}
+
+a{
+  color: #c7531e;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 
@@ -101,10 +115,6 @@ h1{
   object-fit: cover;
 }
 
-.features__hero__department {
-  font-family: 'Calluna';
-}
-
 .feature__lead-in {
   color: #c7531e;
   text-transform: uppercase;
@@ -127,18 +137,17 @@ h1{
   justify-content: space-evenly;
 }
 
-/* hack for mobile */
-@media(max-width: 899px) {
-  .feature__aside p:first-child {
-    display: none;
-  }
+.heroCaption{
+  font-size:.8em;
 }
+
+
 
 @media (min-width: 900px) {
   .feature__aside {
     float: right;
     width: 20%;
-    margin: 2% 5% 2% 2%;
+    margin: 3% 10% 2% 2%;
     display: flex;
     flex-direction: column;
   }
@@ -154,7 +163,7 @@ h1{
 .feature__content__wrapper {
   max-width: 704px;
   width: 90%;
-  margin: 32px auto 0;
+  margin:1em auto;
 }
 
 .feature__content__title {
@@ -164,10 +173,7 @@ h1{
 }
 
 .feature__social-share {
-  float: right;
-  height: 50px;
-  /* width: 140px; */
-  margin: 40px 0;
+  
 }
 
 .feature__social-share__title {
@@ -236,11 +242,7 @@ h1{
 
 /* [start] by lines */
 .feature__by-line {
-  float: right;
-  height: 100px;
-  width: auto;
   border-left: 1px solid rgba(128, 128, 128, 0.8);
-  margin: 20px 0 0;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -250,37 +252,33 @@ h1{
 .feature__by-line__line-wrapper {
   display: flex;
   flex-direction: row;
+  font-size: .8em;
+  font-family: 'Benton Sans Reg';
 }
 
 .feature__byline__label {
-  font-family: 'Calluna';
   font-weight: bold;
   font-style: italic;
-  font-size: 16px;
   padding: 0 10px 0 16px;
 }
 
-.feature__byline__name {
-  font-family: 'Benton Sans Reg';
-  font-size: 16px;
-}
 
 /* [end] by lines */
 
 .feature__content__story {
-  margin: 10px 0 0;
-  line-height: 1.4em
+  margin: 1em 0 0;
+  line-height: 1.4em;
+  width: 608px;
 }
 .feature__content__story__p {
-  padding: 17px 0;
-  /* font-family: 'Calluna'; */
+  padding: 1em 0;
 }
 
 /* [start] image with caption */
 .feature__content__image-wrapper {
   width: 100vw;
   height: auto;
-  margin: 48px auto 16px;
+  margin: 1em auto 4em;
 }
 
 @media(min-width: 900px) {
@@ -302,9 +300,10 @@ h1{
 
 .feature__content__image-caption {
   border-left: solid 1px gray;
-  width: 60%;
-  margin: 15px auto 48px;
+  width: 90%;
   padding-left: 10px;
+  font-style: italic;
+  font-size: .8em;
 }
 
 @media(min-width: 900px) {
@@ -315,23 +314,28 @@ h1{
 }
 
 .smaller{
-  position: relative;
-  left: -6em;
+  left: 0;
   font-size: .9em;
   font-style: italic;
-  width: 14%;
-  float:right;
+  width: 100%;
+  float: none;
+}
+.quote {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
 }
 
 .feature__content__image-caption--portrait {
   max-width: 708px;
   width: 100% !important;
-  margin: 15px 0 48px !important;
+  margin: 0;
+  font-size: .8em;
 }
 
 .feature__story-qoute__wrapper {
-  margin: 64px auto;
-  max-width: 90vw;
+  max-width:100%;
 }
 
 .feature__story-qoute__qoutation-mark {
@@ -406,7 +410,7 @@ h1{
 
 @media(min-width: 900px) {
   .feature__story-qoute__qoute {
-    font-size: 40px;
+    font-size: 2em;
   }
 }
 /* [end] story pull qoute  */
@@ -610,7 +614,6 @@ h1{
 
 .diySection p{
   margin: 2% 0 5%;
-  font-family: 'Calluna';
 }
 
 .steps{
@@ -633,19 +636,18 @@ h2{
   font-size: .9em;
   font-style: italic;
   width: 90%;
-  float: right;
-  /* margin: 0 auto; */
   padding: 0 2%;
+}
+
+.feature__content__image-wrapper{
+  margin: 1em auto 0;
 }
 }
 
 @media only screen 
 and (min-device-width : 800px) 
 and (max-device-width : 850px) {
-  .smaller {
-    width: 60%;
-    float: none;
-  }
+
   h2{
     font-size: 1.2em;
   }
@@ -658,5 +660,9 @@ and (max-device-width : 850px) {
   }
   .feature__faculty-spotlight__name{
     font-size:.9em;
+  }
+
+  .feature__story-qoute__wrapper{
+    width:100%;
   }
 }

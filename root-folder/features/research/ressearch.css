@@ -26,13 +26,17 @@
   float: left;
 }
 
-@media (min-width: 900px) {
+.feature__social-share__title {
+  margin: 1em 0;
+  font-size: .3em;
+}
 
-.features__hero__title {
-  font-size: 50px;
-  }
-
-  
+@media (min-width: 900px){
+.feature__content__image-caption {
+  width: 81%;
+  font-size: .9em;
+  font-style: italic;
+}
 }
 
 @media (max-width:640px){
@@ -40,20 +44,16 @@
     margin: -48em 0 0 .7em;
     width: 90%;
 }
-
 .topper{
   margin: 20em auto 0;
 }
 .feature__hero__image {
   width: 100%;
 }
-
 .feature__faculty-spotlight__item {
   width: 100%;
   margin: 7%;
 }
-
-
 .feature__social-share {
   margin: -40px 100px 0 0;
 }

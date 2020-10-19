@@ -147,6 +147,7 @@ and (max-device-width : 850px) {
     .basic-story__content{
       padding: 0 .5em;
     width: 90%;
+    margin: 10em auto 0;
     }
 
     .basic-story__content__story__p{
@@ -160,10 +161,17 @@ and (max-device-width : 850px) {
         font-size: .5em;
     }
       .features__hero__title{
-        font-size: 4em;
+        font-size: 2em;
     }
     .features__hero__overlay{font-size: 1em;}
+    .basic-story__story-qoute__qoute {
+      font-size: 2em;
+  
   }
+  }
+
+  
+
 
 
 

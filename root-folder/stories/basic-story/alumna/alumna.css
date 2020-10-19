@@ -1,9 +1,34 @@
-.feature__hero__image{
-  width:50%;
-  float:left;  
+body{  
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 80%, rgba(255,255,255,1) 100%), url("imgs/Hero-Left-PivotingPandemic-Education.jpg") no-repeat; /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.4) 80%,rgba(255,255,255,1) 100%), url("imgs/Hero-Left-PivotingPandemic-Education.jpg") no-repeat; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.4) 80%,rgba(255,255,255,1) 100%), url("imgs/Hero-Left-PivotingPandemic-Education.jpg") no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
 }
-.basic-story__content{
-  width: 50%;
+
+.basic-story__social-share__title{
+  font-size: .3em;
+    margin: 1em auto;
+}
+
+.basic-story__social-share{
+  margin: 1em 0 0 1em;
+}
+
+.basic-story {
+  margin: 0 auto;
+}
+@media (min-width: 900px){
+  .basic-story__aside {
+    width: 35%;
+    margin: 0;
+    flex-direction: column;
+    position: absolute;
+    right: -10em;
+    top: 7em;
+  }
 }
 
  .hero-wrapper{
@@ -14,14 +39,14 @@
 } 
 
 .features__hero__title {
-  font-family: "GT-Super";
+  font-family: "GT-Super", serif;
   margin: 10px 0;
+  font-size: 2em;
 }
 
 .features__hero__overlay {
-  width: 50%;
   color: #000;
-  margin: -21% auto 0;
+  margin: 0 auto 0;
 }
 
 .basic-story__dropcap{
@@ -41,8 +66,8 @@
 .basic-story__content__image-caption {
   font-size: .8em;
   font-style: italic;
-  padding-right: 13em;
-  margin: 0 0 0 .5em;
+  left: 0;
+  width: 100%;
 }
 
 .basic-story__content__image-caption i{
@@ -50,54 +75,59 @@
 }
 
 @media (max-width:640px){
-
-  .features__hero__title{
-      font-size: 1.5em;
+  .features__hero__overlay{
+    width: 90%;
   }
-  .features__hero__overlay {
-      width: 85%;
-        top: 1%;
-        left: 3%;
-        margin: -45% 0 0 13%;
-    }
+  .basic-story__content {
+    width: 90%;
+    background-color: #FFF;
+    float: none;
+}
+.basic-story {
+  overflow-x: hidden;
+  width: auto;
+  margin: 0 auto;
+}
 
-    .basic-story__content__department-label {
-      font-size: .7em;
-  }
+.basic-story__content__image-wrapper{
+  margin: 0;
+}
 
-  .feature__faculty-spotlight__item {
-      width: 85%;
-  }
+.basic-story__content__image{
+  width: 90%
+}
+
+.basic-story__aside{
+  padding: 0 2%;
+}
 }
 
 @media only screen 
 and (min-device-width : 800px) 
 and (max-device-width : 850px) {
-  .features__hero__overlay {
-    margin: 0% 0 0 13%;
+  .features__hero__overlay{
+    width: 90%;
   }
-
-  .basic-story__hero__image {
-    height: 100%;
+  .basic-story__content {
+    width: 90%;
+    background-color: #FFF;
+    float: none;
 }
-}
-
-@media (max-width:480px){
-  .basic-story__content__department-label {
-      font-size: .5em;
-  }
-    .features__hero__title{
-
-      font-size: 1em;
-  }
+.basic-story {
+  overflow-x: hidden;
+  width: auto;
+  margin: 0 auto;
 }
 
-@media (max-width:823px){
-  .basic-story__content__department-label {
-      font-size: .5em;
-  }
-    .features__hero__title{
+.basic-story__content__image-wrapper{
+  margin: 0;
+}
 
-      font-size: 1em;
-  }
+.basic-story__content__image{
+  width: 90%
+}
+
+.basic-story__aside{
+  padding: 0 2%;
+}
 }
