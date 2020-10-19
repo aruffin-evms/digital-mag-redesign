@@ -1,16 +1,11 @@
-body{
-  background-image: url("imgs/Hero-Left-PivotingPandemic-Education.jpg");
-}
-
-.feature__hero__image{
-  width:50%;
-  float:left;  
-  background-color: #FFF;
-}
-.basic-story__content{
-  width: 60%;
-  float:left;
-  background-color: #FFF;
+body{  
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 80%, rgba(255,255,255,1) 100%), url("imgs/Hero-Left-PivotingPandemic-Education.jpg") no-repeat; /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.4) 80%,rgba(255,255,255,1) 100%), url("imgs/Hero-Left-PivotingPandemic-Education.jpg") no-repeat; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.4) 80%,rgba(255,255,255,1) 100%), url("imgs/Hero-Left-PivotingPandemic-Education.jpg") no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
 }
 
 .basic-story__social-share__title{
@@ -19,23 +14,21 @@ body{
 }
 
 .basic-story__social-share{
-  float: none;
-  height: 50px;
-  margin: 0;
+  margin: 1em 0 0 1em;
 }
 
 .basic-story {
-  overflow-x: hidden;
-  width: 60%;
   margin: 0 auto;
 }
 @media (min-width: 900px){
-.basic-story__aside {
-  float: right;
-  width: 35%;
-  margin: 0;
-  flex-direction: column;
-}
+  .basic-story__aside {
+    width: 35%;
+    margin: 0;
+    flex-direction: column;
+    position: absolute;
+    right: -10em;
+    top: 7em;
+  }
 }
 
  .hero-wrapper{
@@ -46,15 +39,9 @@ body{
 } 
 
 .features__hero__title {
-  font-family: "GT-Super";
+  font-family: "GT-Super", serif;
   margin: 10px 0;
-  background-color: #FFF;
-}
-
-.basic-story__by-line{
-  float:none;
-  height: auto;
-  margin: 2em 0;
+  font-size: 2em;
 }
 
 .features__hero__overlay {
