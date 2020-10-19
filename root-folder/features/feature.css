@@ -641,6 +641,7 @@ h2{
 
 .feature__content__image-wrapper{
   margin: 1em auto 0;
+  width: 90%
 }
 .heroCaption{
   display:none;
@@ -671,3 +672,8 @@ and (max-device-width : 850px) {
   .heroCaption{
     display:none;
   }
+  .feature__content__image-wrapper{
+    margin: 1em auto 0;
+    width: 90%
+  }
+}
