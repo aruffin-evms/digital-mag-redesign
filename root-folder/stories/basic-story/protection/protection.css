@@ -21,7 +21,10 @@
   line-height: 2em;
 }
 
-
+.middle {
+  width: 100%;
+  left: -2em;
+}
 
 .feature__faculty-spotlight__item {
   width: 65%;
@@ -80,13 +83,12 @@
 }
 
 .basic-story__content__wrapper {
-  width: 90%;
+  width: 45%;
   margin: 32px auto 0;
 }
 .bottomStory{
-  float: left;
-    width: 40%;
-    padding-right: 4%;
+  width: 100%;
+  margin: 1em 0;
 }
 
 .bottomStory2{
@@ -110,9 +112,12 @@ font-size: .7em;
     width: 100%;
     height:auto;
   }
-
+  .basic-story__content__wrapper{
+    width: 90%;
+    margin: 0 auto 0;
+  }
   .basic-story__content__title{
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .features__hero__title {
@@ -168,16 +173,7 @@ font-size: .7em;
   }
 }
 
-@media (max-width:480px) {
-  .basic-story__content__department-label {
-    font-size: .5em;
-  }
 
-  .features__hero__title {
-
-    font-size: 1em;
-  }
-}
 
 @media only screen 
 and (min-device-width : 800px) 
@@ -185,19 +181,68 @@ and (max-device-width : 850px) {
   body{
     font-size:.9em;
   }
+  .basic-story__hero__image {
+    width: 100%;
+    height:auto;
+  }
+  .basic-story__content__wrapper{
+    width: 90%;
+    margin: 0 auto 0;
+  }
+  .basic-story__content__title{
+    font-size: 2em;
+  }
+
+  .features__hero__title {
+    font-size: 1.5em;
+  }
+
+  .features__hero__overlay {
+    width: 35%;
+    top: 1%;
+    left: 3%;
+  }
+
   .basic-story__aside{
-    display: block;
-    width: 80%;
-    padding: 3em;
+    display: table-column;
+    width: 90%;
+    float: right;
+    margin-top: -9em;
+    padding: 1em;
+    font-size: .9em;
   }
-  .diySection{
-    margin:0;
-    top:0
+  .basic-story__content{
+    margin: 5em auto;
+    display: inline-block;
   }
-  .bottomStory{
-    float:none;
-    width:100%;
-    padding:0;
+
+  .basic-story__content__image-wrapper {
+    width: auto;
+    text-align: center;
+}
+.middle {
+  width: auto;
+  left: 0;
+}
+.bottomStory{
+  float: none;
+    width: auto;
+    padding-right: 0;
+}
+.bottomStory2{
+  width:auto;
+}
+
+.diySection{
+  top: 4em;
+}
+
+  .basic-story__content__department-label {
+    font-size: .7em;
+  }
+
+  .feature__faculty-spotlight__item {
+    width: 85%;
   }
 
 }
