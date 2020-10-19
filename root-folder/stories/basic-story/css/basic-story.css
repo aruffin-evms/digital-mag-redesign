@@ -433,7 +433,7 @@ h1{
 }
 
 .portrait {
-  max-width: 708px;
+  max-width: 608px;
 }
 
 .qoutation-mark--bottom {
@@ -619,18 +619,6 @@ h1{
   font-family: 'Benton Sans Reg', sans-serif;
 }
 /* [end] subscribe module */  
-
-/* sidebar start */
-/* main{
-  float:left; 
-
-  width:80%;
-} */
-
-.diySection{
-  /* margin: 24em 0 0; */
-
-}
 
 .diySection hr{
   width: 60px;
