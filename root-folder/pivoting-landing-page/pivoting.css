@@ -28,6 +28,13 @@
   opacity: .4;
 }
 
+.pandemic-landing__virus {
+  /* position: absolute; */
+  height: 100px;
+  width: 100px;
+  margin: 0 auto 30px;
+}
+
 .pandemic-landing {
   height: auto;
   width: 100vw;
@@ -149,6 +156,7 @@
 .pandemic-landing__column {
   display: flex;
   flex-direction: column;
+  min-width: 370px;
 }
 
 .pandemic-landing__rust-bar {
@@ -192,12 +200,20 @@
   color: black;
   cursor: pointer;
   font-family: 'Benton Sans Reg';
+  background: #fafafa;
+  transition: 1s all;
 }
 
 @media (min-width: 600px) {
   .pandemic-landing__cta {
     padding: 15px 40px;
   }
+}
+
+
+
+.pandemic-landing__cta:hover {
+  background-color: rgb(155, 155, 155, 0.4);
 }
 
 .pandemic-landing__cta--education {

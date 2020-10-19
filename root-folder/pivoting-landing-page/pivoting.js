@@ -1,3 +1,5 @@
+// const virus = document.getElementById('virus')
+
 window.onload = function() {
   Particles.init({
     selector: '.background',
@@ -21,3 +23,4 @@ window.onload = function() {
     ] 
   });
 };
+

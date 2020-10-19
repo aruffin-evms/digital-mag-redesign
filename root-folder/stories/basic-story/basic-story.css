@@ -343,8 +343,8 @@ h1{
 
 @media(min-width: 900px) {
   .basic-story__content__image-wrapper {
-    width: 1182px;
-    height: 784px;
+    max-width: 1182px;
+    height: 100%;
   }
 }
 
@@ -459,7 +459,7 @@ h1{
 
 @media(min-width: 900px) {
   .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
-    width: 976px;
+    max-width: 976px;
   }
 }
 
@@ -481,7 +481,7 @@ h1{
 
 @media(min-width: 900px) {
   .basic-story__story-qoute__content {
-    width: 864px;
+    max-width: 864px;
   }
 }
 

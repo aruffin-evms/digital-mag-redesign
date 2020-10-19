@@ -64,6 +64,10 @@
   animation: slideRight 1.5s;
 }
 
+.basic-story__social-share {
+  float: none;
+}
+
 .q-and-a__qoutation-mark {
   height: 40px !important;
   position: absolute;
@@ -204,10 +208,11 @@
 /* [end] social icons */
 
 .q-and-a__content__description {
-  margin: 10px 0 45px;
+  margin: 10px 0 15px;
   width: 90%;
   font-family: "Benton Sans Reg";
   line-height: 32px;
+  font-size: 20px;
 }
 
 .q-and-a__content__department-label {
@@ -288,7 +293,7 @@
   color: white;
   font-size: 12px;
   margin-left: 20px;
-  font-family: 'Calluna';
+  font-family: "Calluna";
 }
 
 @media (min-width: 600px) {
@@ -318,7 +323,8 @@
 
 @media (min-width: 900px) {
   .q-and-a__content__image-caption {
-    width: 60%;
+    width: 100%;
+    margin: 0;
   }
 }
 /* [end] image with caption */
@@ -369,11 +375,11 @@
 
 @media (min-width: 900px) {
   .q-and-a__story-qoute__qoutation-mark__horizontal-line--bottom {
-    width: 976px;
+    max-width: 976px;
   }
 
   .q-and-a__story-qoute__qoutation-mark__horizontal-line--top {
-    width: 976px;
+    max-width: 976px;
   }
 }
 
@@ -395,7 +401,7 @@
 
 @media (min-width: 900px) {
   .q-and-a__story-qoute__content {
-    width: 864px;
+    max-width: 864px;
   }
 }
 .q-and-a__story-qoute__qoute {
