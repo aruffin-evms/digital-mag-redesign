@@ -415,7 +415,7 @@ h1{
 /* [end] image with caption */
 
 .basic-story__story-qoute__wrapper {
-  margin: 64px auto;
+  margin: 0 auto;
   max-width: 90vw;
 }
 
