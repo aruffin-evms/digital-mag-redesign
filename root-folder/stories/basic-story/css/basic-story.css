@@ -22,7 +22,11 @@ body{
 
 .rust, a{
   color: #c7531e;
+  text-decoration: none;
+}
 
+a:hover{
+  text-decoration: underline;
 }
 
 h1{
@@ -232,7 +236,7 @@ h1{
 
 .basic-story__social-share__title {
   text-transform: uppercase;
-
+  font-size: .8em;
 }
 
 /* [start] social icons */

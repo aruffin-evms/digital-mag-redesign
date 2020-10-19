@@ -20,7 +20,8 @@
 }
 
 .sideDetails{
-  display: block;;
+  display: block;
+  font-size: .8em;
 }
 
 
@@ -99,8 +100,14 @@
         top: 1%;
         left: 3%;
     }
-    
 
+    .basic-story__content__wrapper{
+      width: 95%;
+    }
+    
+    .basic-story__social-share{
+      float: none;
+    }
     .features__hero__overlay h2{
       font-size: 1em;
     line-height: 1em;
@@ -142,7 +149,7 @@ and (max-device-width : 850px) {
     font-size: .5em;
 }
   .features__hero__title{
-    font-size: .7em;
+    font-size: 1em;
 }
 
 .features__hero__overlay{
@@ -150,8 +157,9 @@ and (max-device-width : 850px) {
 }
 
 .basic-story__social-share {
-  margin: 40px 10px;
-
+  margin: 2em .8em 0;
+  float: left;
+  height: auto;
 }
 
 .basic-story__hero__image {
@@ -159,7 +167,8 @@ height:auto;
 }
 
 .basic-story__by-line {
-  margin: 20px 10px 0;
+  margin: 2.2em 1em;
+  float: none;
 }
 
 .basic-story__aside{
@@ -168,6 +177,7 @@ height:auto;
 }
 
 .basic-story__content__description{
-  width:80%;
+  width:70%;
+  font-size: .9em;
 }
 }
