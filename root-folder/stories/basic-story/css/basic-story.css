@@ -5,8 +5,10 @@
 
 body{
   font-size:18px;
-   font-family: 'Calluna';
-   line-height: 1.4em;
+  font-family: 'Calluna', serif;
+  margin: 0 auto;
+  width: 100%;
+  line-height: 1.5em;
 }
 
 .clear{
@@ -17,7 +19,7 @@ body{
   margin-bottom:7em;
 }
 
-.orange, a{
+.rust, a{
   color: #c7531e;
 
 }
@@ -138,7 +140,7 @@ h1{
 }
 
 .basic-story__hero__title {
-  font-family: "GT-Super";
+  font-family: "GT-Super", serif;
   margin: 10px 0;
 }
 
@@ -209,10 +211,14 @@ h1{
   height: 100%;
   margin: 0 auto;
 }
+.basic-story__content__wrapper {
+  max-width: 608px;
+  margin: 0 auto;
+}
 
 .basic-story__content__title {
   margin: 10px 0 0;
-  font-family: 'GT-Super';
+  font-family: 'GT-Super', serif;
   font-size: 3em;
 }
 
@@ -276,15 +282,15 @@ h1{
 .basic-story__content__description {
   margin: 10px 0 45px;
   width: 90%;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
   line-height: 32px;
 }
 
 .basic-story__content__department-label {
   text-transform: uppercase;
   color: #c7531e;
-  font-family: 'Benton Sans Reg';
-  font-size: .7em;
+  font-family: 'Benton Sans Reg', sans-serif;
+  font-size: .9em;
 }
 
 /* [start] by lines */
@@ -306,14 +312,14 @@ h1{
 }
 
 .basic-story__byline__label {
-  font-family: 'Calluna';
+  font-family: 'Calluna', serif;
   font-weight: bold;
   font-style: italic;
   padding: 0 10px 0 16px;
 }
 
 .basic-story__byline__name {
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 
 /* [end] by lines */
@@ -336,14 +342,12 @@ h1{
 /* [start] image with caption */
 .basic-story__content__image-wrapper {
   width: 100vw;
-  height: 300px;
   margin: 48px auto 16px;
 }
 
 @media(min-width: 900px) {
   .basic-story__content__image-wrapper {
-    width: 1182px;
-    height: 784px;
+    width: 100%;
   }
 }
 
@@ -363,7 +367,7 @@ h1{
   color: white;
   font-size: 12px;
   margin-left: 20px;
-  font-family: 'Calluna';
+  font-family: 'Calluna', serif;
   position: relative;
 }
 
@@ -387,9 +391,7 @@ h1{
 }
 
 .basic-story__content__image {
-  height: 100%;
-  width: auto;
-  object-fit: cover;
+  width: 100%;
 }
 
 .basic-story__content__image-caption {
@@ -488,7 +490,7 @@ h1{
   width: 100%;
   line-height: 42px;
   text-align: center;
-  font-family: 'GT-Super-bold';
+  font-family: 'GT-Super-bold', serif;
 }
 
 @media(min-width: 900px) {
@@ -598,7 +600,7 @@ h1{
   color: #fafafa;
   text-decoration: none;
   transition: 0.5s ease;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 
 .basic-story__subscribe__cta:hover {
@@ -607,14 +609,14 @@ h1{
 
 .basic-story__subscribe__description {
   padding-bottom: 20px;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 
 .basic-story__subscribe__pdf-download {
   color: #c7531e;
   text-decoration: none;
   padding-top: 20px;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 /* [end] subscribe module */  
 
@@ -641,10 +643,10 @@ h1{
 
 .diySection p{
   margin: 2% 0 5%;
-  font-family: 'Calluna';
+  font-family: 'Calluna', serif;
 }
 
 .steps{
   color: #c7531e;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
 }
