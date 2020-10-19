@@ -81,10 +81,6 @@ aside {
   margin: 1em 0;
 }
 
-.basic-story__content__image-caption{
-
-}
-
 .basic-story__lead-in {
   line-height: 1.4em;
 }
@@ -211,6 +207,4 @@ aside {
   position: relative;
     left: -31.5em;
 }
-}
-
 }
