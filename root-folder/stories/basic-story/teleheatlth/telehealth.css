@@ -2,17 +2,35 @@
   height: auto;
 }
 
+.feature__hero__image {
+  height: auto;
+  width: 50%;
+  object-fit: cover;
+}
+
+.smaller{
+  font-size:.8em;
+}
+
 .basic-story__content__wrapper{
   margin: 0 3em 0 0;
   width: 60%;
   float:left;
 }
 
+.hero-wrapper{
+  background-color: #262626;
+  color: #FFF;
+}
 
 .basic-story__aside {
   margin: 5% 0 0 4%;
   float: none;
   width: 33%;
+}
+
+.photoSub{
+  font-size:.9em;
 }
 
 .basic-story__social-share__title{
@@ -79,12 +97,6 @@
   float: left;
 }
 
-/* .feature__faculty-spotlight__image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-} */
-
 .feature__faculty-spotlight__name {
   font-weight: bold;
   margin: 15px 0;
@@ -98,34 +110,61 @@
 .features__hero__title {
   font-family: "GT-Super";
   margin: 10px 0;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 .features__hero__overlay {
-  width: 30%;
-    color: #000;
-    margin: 15% 0 0 5%;
+  width: 50%;
+ float:left;
+}
+.teleTextTop{
+  width:50%;
+  margin:6em auto 0;
 }
 
 .basic-story__content__department-label{
-  color:#000;
   font-size:1em;
+  color:#fff;
 }
 
 .topText{
     font-size: 1.5em;
 }
 
+.basic-story__story-qoute__content, .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom{
+  width:auto;
+}
+
+.basic-story__story-qoute__qoute{
+  font-size:1.2em;
+}
+
+.imageFix{
+  margin: -.7em;
+  height: 0;
+}
+
+
 @media (max-width:640px){
   .features__hero__title{
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .features__hero__overlay{
     width: 100%;
-    color: #000;
-    margin: 0 0 0 5%;
+    float: none;
+    color: #FFF;
+    padding: 1em;
   }
+
+  .feature__hero__image {
+width:100%;
+  }
+
+  .teleTextTop {
+    width: 100%;
+    margin: 0;
+}
 
   .basic-story__content {
     margin: 0;
@@ -165,14 +204,24 @@
 and (min-device-width : 800px) 
 and (max-device-width : 850px) {
   .features__hero__title{
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .features__hero__overlay{
     width: 100%;
-    color: #000;
-    margin: 44% 0 0 5%
+    float: none;
+    color: #FFF;
+    padding: 1em;
   }
+
+  .feature__hero__image {
+width:100%;
+  }
+
+  .teleTextTop {
+    width: 100%;
+    margin: 0;
+}
 
   .basic-story__content {
     margin: 0;
@@ -191,7 +240,7 @@ and (max-device-width : 850px) {
   object-fit: cover;
 }
 .basic-story__content__image-wrapper {
-  height: 30em;
+  height: 14em;
 }
 .basic-story__aside {
   margin: 5% 0 0 4%;
@@ -206,20 +255,10 @@ and (max-device-width : 850px) {
   margin: 3em 0;
   display: block;
 }
+
+.imageFix{
+  line-height: 15em;
+  margin: 0;
 }
-
-
-
-
-@media (min-width: 900px){
-  .features__hero__title {
-    font-size: 2em;
-  }
-  .features__hero__overlay {
-    margin: 15% 0 0 5%;
-  }
-  
-  
 }
-
 
