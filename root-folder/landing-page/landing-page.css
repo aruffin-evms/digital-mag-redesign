@@ -70,7 +70,7 @@ body {
 @keyframes slideRight {
   from {
     opacity: 0;
-    margin-right: -20%;
+    margin-right: -40%;
   }
   to {
     opacity: 1;
@@ -102,9 +102,104 @@ body {
 }
 
 .digital-mag__nav {
-  height: 100px;
+  background-color: #fafafa;
+  width: 100vw;
+}
+
+.digital-mag__nav--mobile {
+  display: flex;
+  height: 100%; 
+  position: relative;
+  top: 0;
+}
+
+.digital-mag__nav--desktop {
+  display: none;
+}
+
+@media(min-width: 900px) {
+  .digital-mag__nav--mobile {
+    display: none;
+  }
+
+  .digital-mag__nav--desktop {
+    display: block;
+  }
+}
+
+.digital-mag__nav--mobile__wrapper {
+  background-color: gray;
   width: 100%;
-  background-color: rebeccapurple;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.digital-mag__nav--mobile__logo-wrapper {
+  background-color: green;
+  width: 100px;
+  height: 90%;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.digital-mag__nav--mobile__suscribe-cta {
+  text-align: center;
+  padding-top: 23px !important;
+}
+
+.digital-mag__nav--mobile__icon {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.digital-mag__nav--mobile__icon-bar1, .digital-mag__nav--mobile__icon-bar2, .digital-mag__nav--mobile__icon-bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+
+.icon-transform .digital-mag__nav--mobile__icon-bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.icon-transform  .digital-mag__nav--mobile__icon-bar2 {
+  opacity: 0;
+}
+
+.icon-transform .digital-mag__nav--mobile__icon-bar3 {
+  -webkit-transform: rotate(45deg) translate(-4px, -4px) ;
+  transform: rotate(45deg) translate(-4px, -4px) ;
+}
+
+.digital-mag__nav--mobile__sidenav {
+  height: 100vh;
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  right: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.digital-mag__nav--mobile__sidenav__wrapper {
+
+}
+
+.digital-mag__nav--mobile__sidenav__list-item {
+  width: 100%;
 }
 
 .landing-page {
@@ -394,7 +489,7 @@ body {
   margin: 0 auto;
   max-width: 700px;
   width: 90vw;
-  min-height: 500px;
+  height: auto;
   position: relative;
   top: -80px;
   z-index: 10;
@@ -422,6 +517,7 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  height: 90%;
 }
 
 .landing-page__subscribe__poster-wrapper {
@@ -444,6 +540,8 @@ body {
 .landing-page__subscribe__description {
   padding-bottom: 20px;
   font-family: 'Benton Sans Reg';
+  width: 90%;
+  margin: 20px auto 0;
 }
 
 .landing-page__subscribe__pdf-download {
@@ -626,7 +724,7 @@ body {
 
 .landing-page__story-qoute__copy-wrapper {
   max-width: 500px;
-  margin: 0 auto;
+  margin: -30px auto;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -795,7 +893,7 @@ body {
 }
 
 .landing-page__more-stories__image-wrapper {
-  height: 350px;
+  height: 450px;
   margin-bottom: 15px;
   border: solid 1px lightgray;
   overflow: hidden;
@@ -856,6 +954,7 @@ body {
 .landing-page__email-banner__title {
   font-size: 20px;
   font-family: 'GT-Super-bold';
+  font-style: italic;
 }
 
 @media(min-width: 900px) {
@@ -868,8 +967,9 @@ body {
   color: #c7531e;
   text-decoration: none;
   max-width: 150px;
-  margin: 0 auto;
+  margin: 10px auto;
   transition: .3s all;
+  font-family: 'Benton Sans Reg';
 }
 
 .landing-page__email-banner__cta:hover {
@@ -1004,7 +1104,6 @@ body {
   height: auto;
   width: 350px;
   text-decoration: none;
-  margin: 20px auto;
 }
 
 .landing-page__additional-stories__content {
@@ -1013,8 +1112,12 @@ body {
   color: black;
 }
 
+.landing-page__additional-stories__image:hover {
+  
+}
+
 .landing-page__additional-stories__image-wrapper {
-  height: 350px;
+  height: 450px;
   width: auto;
   margin-bottom: 15px;
   border: solid 1px lightgray;
@@ -1023,6 +1126,7 @@ body {
 
 .landing-page__additional-stories__image-wrapper:hover img {
   transform: scale(1.1);
+  
 }
 
 .landing-page__additional-stories__image  {
@@ -1030,6 +1134,7 @@ body {
   height: 100%;
   object-fit: cover;
   transition: 1s all;
+  box-shadow: inset 0 -5px 0 #c7531e;
 }
 
 .landing-page__additional-stories__category {

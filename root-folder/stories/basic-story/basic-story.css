@@ -334,8 +334,8 @@
 
 @media(min-width: 900px) {
   .basic-story__content__image-wrapper {
-    width: 1182px;
-    height: 784px;
+    max-width: 1182px;
+    height: 100%;
   }
 }
 
@@ -387,7 +387,7 @@
 .basic-story__content__image-caption {
   border-left: solid 1px gray;
   width: 60%;
-  margin: 15px auto 48px;
+  margin: 48px auto 0;
   padding-left: 10px;
 }
 /* [end] image with caption */
@@ -432,7 +432,7 @@
 
 @media(min-width: 900px) {
   .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
-    width: 976px;
+    max-width: 976px;
   }
 }
 
@@ -454,7 +454,7 @@
 
 @media(min-width: 900px) {
   .basic-story__story-qoute__content {
-    width: 864px;
+    max-width: 864px;
   }
 }
 

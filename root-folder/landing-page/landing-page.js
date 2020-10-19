@@ -1,3 +1,6 @@
+const mobileIcon = document.getElementById('mobileIcon')
+const sideNav = document.getElementById('sideNav')
+
 const qouteDrawer = document.getElementById('qouteDrawer')
 const qouteDrawerInitialHeight = qouteDrawer.style.height;
 const qouteText = document.getElementById('qouteText')
@@ -5,7 +8,7 @@ const qouteSource = document.getElementById('qouteSource')
 
 const storyLink = document.getElementById('storyLink')
 
-const gridStories  = document.querySelectorAll('.landing-page__featured-stories__grid-item__wrapper')
+const gridStories  = document.querySelectorAll('.landing-page__story')
 const gridLinks = document.querySelectorAll('.landing-page__featured-stories__link')
 const gridItemTitles = document.getElementsByTagName('h3')
 const gridItemContent = document.querySelector('.landing-page__featured-stories__grid-item__content-wrapper')
@@ -22,6 +25,8 @@ const forwardArrow = document.getElementById('forwardArrow')
 const carousel = document.querySelector('.landing-page__stories-carousel__carousel__wrapper')
 
 const scrollDistance = 200;
+
+console.log(carousel.offsetWidth)
 
 // todo: create function that checks scroll position for looping carousel
 backArrow.addEventListener('click', function() {
@@ -64,6 +69,17 @@ gridStories.forEach(function(story) {
     }
   })
 })
+
+// additionalStories.forEach(function(story) {
+//   story.addEventListener('mouseover', function() {
+//     story.getElementsByTagName('figure')[0].style.boxShadow = `0 -5px 0 ${colors.evmsRust}  inset`
+    
+//     story.onmouseout = function(event) {
+//       story.getElementsByTagName('figure')[0].style.boxShadow = `none`
+//       story.getElementsByTagName('figure')[0].style.transition = '.5s all'
+//     }
+//   })
+// })
 
 // intersection observer for page animations
 // animate-vertical
@@ -120,3 +136,14 @@ observer = new IntersectionObserver((entries) => {
 slideElementsRight.forEach(element => {
   observer.observe(element);
 }, config);
+
+mobileIcon.addEventListener('click', function() {
+  this.classList.toggle('icon-transform')
+  sideNav.style.width = "250px";
+  mobileIcon.style.position = 'absolute'
+  
+  if(!this.classList.contains('icon-transform')) {
+    sideNav.style.width = 0
+    mobileIcon.style.position = 'relative'
+  }
+})
