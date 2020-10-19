@@ -12,7 +12,7 @@
   font-size: .7em;
   margin: 0 auto;
   left:0;
-  width: 40%;
+  width: 81%;
 }
 
  .hero-wrapper{
@@ -86,4 +86,14 @@ padding-bottom:5px;
 .features__hero__overlay {
   top: 0%;
 }
+}
+
+@media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 850px) {
+ 
+h1{
+  font-size:1em;
+}
+
 }
