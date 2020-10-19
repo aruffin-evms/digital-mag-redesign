@@ -28,6 +28,7 @@
 
 .feature__social-share__title {
   margin: 1em 0;
+  font-size: .3em;
 }
 
 @media (min-width: 900px){

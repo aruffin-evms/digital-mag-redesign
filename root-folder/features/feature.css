@@ -137,8 +137,8 @@ a:hover{
   justify-content: space-evenly;
 }
 
-.feature__aside p{
-  font-size: .8em;
+.heroCaption{
+  font-size:.8em;
 }
 
 
@@ -173,9 +173,7 @@ a:hover{
 }
 
 .feature__social-share {
-  height: 50px;
-  /* width: 140px; */
-  margin: 1em 0;
+  
 }
 
 .feature__social-share__title {
