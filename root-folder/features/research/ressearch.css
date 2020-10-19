@@ -28,6 +28,7 @@
 
 .feature__social-share__title {
   margin: 1em 0;
+  font-size: .3em;
 }
 
 @media (min-width: 900px){
@@ -44,7 +45,10 @@
     width: 90%;
 }
 .topper{
-  margin: 20em auto 0;
+  margin: 25em auto 0;
+}
+.feature__content__story{
+  width:100%
 }
 .feature__hero__image {
   width: 100%;
@@ -54,7 +58,7 @@
   margin: 7%;
 }
 .feature__social-share {
-  margin: -40px 100px 0 0;
+  margin: -5em 9em 0 0;
 }
 }
 
@@ -74,5 +78,10 @@ and (max-device-width : 850px) {
 h2{
   font-size: 1.2em;
 }
-
+.feature__content__story{
+  width:100%
+}
+.feature__content__image-wrapper{
+  margin: 1em auto;
+}
 }

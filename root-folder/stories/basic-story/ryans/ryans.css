@@ -11,6 +11,11 @@ aside {
 
 .basic-story__social-share__social-icons {
   line-height: 1.1em;
+  height: 1em;
+}
+
+.heroCaption, .basic-story__social-share__title{
+  font-size:.8em;
 }
 
 .imageSide {
@@ -43,7 +48,9 @@ aside {
 }
 
 .basic-story__by-line{
-  float:none;
+  float: none;
+    height: 2.5em;
+    margin-top: -3em;
 }
 
 /* end Aside section */
