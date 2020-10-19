@@ -26,6 +26,10 @@
   float: left;
 }
 
+.feature__social-share__title {
+  margin: 1em 0;
+}
+
 @media (min-width: 900px){
 .feature__content__image-caption {
   width: 81%;
