@@ -9,6 +9,7 @@ body{
   margin: 0 auto;
   width: 100%;
   line-height: 1.5em;
+  overflow-x: hidden;
 }
 
 .clear{
@@ -295,9 +296,6 @@ h1{
 
 /* [start] by lines */
 .basic-story__by-line {
-  float: right;
-  height: 100px;
-  width: auto;
   border-left: 1px solid rgba(128, 128, 128, 0.8);
   margin: 20px 0 0;
   display: flex;
@@ -312,14 +310,15 @@ h1{
 }
 
 .basic-story__byline__label {
-  font-family: 'Calluna', serif;
   font-weight: bold;
   font-style: italic;
-  padding: 0 10px 0 16px;
+  padding: 0 8px 0 16px;
+  font-size: 0.8em;
 }
 
 .basic-story__byline__name {
   font-family: 'Benton Sans Reg', sans-serif;
+  font-size: 0.8em;
 }
 
 /* [end] by lines */
