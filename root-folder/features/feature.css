@@ -141,12 +141,7 @@ a:hover{
   font-size: .8em;
 }
 
-/* hack for mobile */
-@media(max-width: 899px) {
-  .feature__aside p:first-child {
-    display: none;
-  }
-}
+
 
 @media (min-width: 900px) {
   .feature__aside {
@@ -308,7 +303,6 @@ a:hover{
 .feature__content__image-caption {
   border-left: solid 1px gray;
   width: 90%;
-  margin: 1.2em auto;
   padding-left: 10px;
   font-style: italic;
   font-size: .8em;
@@ -322,12 +316,11 @@ a:hover{
 }
 
 .smaller{
-  position: relative;
-  left: -6em;
+  left: 0;
   font-size: .9em;
   font-style: italic;
-  width: 14%;
-  float:right;
+  width: 100%;
+  float: none;
 }
 .quote {
   width: 50%;
@@ -344,8 +337,7 @@ a:hover{
 }
 
 .feature__story-qoute__wrapper {
-  margin: 0 auto;
-  max-width: 90vw;
+  max-width:100%;
 }
 
 .feature__story-qoute__qoutation-mark {
@@ -646,19 +638,18 @@ h2{
   font-size: .9em;
   font-style: italic;
   width: 90%;
-  float: right;
-  /* margin: 0 auto; */
   padding: 0 2%;
+}
+
+.feature__content__image-wrapper{
+  margin: 1em auto 0;
 }
 }
 
 @media only screen 
 and (min-device-width : 800px) 
 and (max-device-width : 850px) {
-  .smaller {
-    width: 60%;
-    float: none;
-  }
+
   h2{
     font-size: 1.2em;
   }
@@ -671,5 +662,9 @@ and (max-device-width : 850px) {
   }
   .feature__faculty-spotlight__name{
     font-size:.9em;
+  }
+
+  .feature__story-qoute__wrapper{
+    width:100%;
   }
 }
