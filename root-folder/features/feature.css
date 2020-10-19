@@ -24,6 +24,11 @@ h2{
 
 a{
   color: #c7531e;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 
@@ -110,10 +115,6 @@ a{
   object-fit: cover;
 }
 
-.features__hero__department {
-  font-family: 'Calluna';
-}
-
 .feature__lead-in {
   color: #c7531e;
   text-transform: uppercase;
@@ -136,6 +137,10 @@ a{
   justify-content: space-evenly;
 }
 
+.feature__aside p{
+  font-size: .8em;
+}
+
 /* hack for mobile */
 @media(max-width: 899px) {
   .feature__aside p:first-child {
@@ -147,7 +152,7 @@ a{
   .feature__aside {
     float: right;
     width: 20%;
-    margin: 2% 5% 2% 2%;
+    margin: 3% 10% 2% 2%;
     display: flex;
     flex-direction: column;
   }
@@ -163,7 +168,7 @@ a{
 .feature__content__wrapper {
   max-width: 704px;
   width: 90%;
-  margin: 32px auto 0;
+  margin:1em auto;
 }
 
 .feature__content__title {
@@ -173,10 +178,9 @@ a{
 }
 
 .feature__social-share {
-  float: right;
   height: 50px;
   /* width: 140px; */
-  margin: 40px 0;
+  margin: 1em 0;
 }
 
 .feature__social-share__title {
@@ -245,11 +249,7 @@ a{
 
 /* [start] by lines */
 .feature__by-line {
-  float: right;
-  height: 100px;
-  width: auto;
   border-left: 1px solid rgba(128, 128, 128, 0.8);
-  margin: 20px 0 0;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -259,37 +259,33 @@ a{
 .feature__by-line__line-wrapper {
   display: flex;
   flex-direction: row;
+  font-size: .8em;
+  font-family: 'Benton Sans Reg';
 }
 
 .feature__byline__label {
-  font-family: 'Calluna';
   font-weight: bold;
   font-style: italic;
-  font-size: 16px;
   padding: 0 10px 0 16px;
 }
 
-.feature__byline__name {
-  font-family: 'Benton Sans Reg';
-  font-size: 16px;
-}
 
 /* [end] by lines */
 
 .feature__content__story {
-  margin: 10px 0 0;
-  line-height: 1.4em
+  margin: 1em 0 0;
+  line-height: 1.4em;
+  width: 608px;
 }
 .feature__content__story__p {
-  padding: 17px 0;
-  /* font-family: 'Calluna'; */
+  padding: 1em 0;
 }
 
 /* [start] image with caption */
 .feature__content__image-wrapper {
   width: 100vw;
   height: auto;
-  margin: 48px auto 16px;
+  margin: 1em auto 4em;
 }
 
 @media(min-width: 900px) {
@@ -343,7 +339,7 @@ a{
 .feature__content__image-caption--portrait {
   max-width: 708px;
   width: 100% !important;
-  margin: 15px 0 48px !important;
+  margin: 0;
   font-size: .8em;
 }
 
@@ -628,7 +624,6 @@ a{
 
 .diySection p{
   margin: 2% 0 5%;
-  font-family: 'Calluna';
 }
 
 .steps{
