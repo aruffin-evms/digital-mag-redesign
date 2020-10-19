@@ -642,6 +642,9 @@ h2{
 .feature__content__image-wrapper{
   margin: 1em auto 0;
 }
+.heroCaption{
+  display:none;
+}
 }
 
 @media only screen 
@@ -665,4 +668,6 @@ and (max-device-width : 850px) {
   .feature__story-qoute__wrapper{
     width:100%;
   }
-}
+  .heroCaption{
+    display:none;
+  }
