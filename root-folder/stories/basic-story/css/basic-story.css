@@ -23,7 +23,7 @@ body{
 }
 
 h1{
-  line-height: 2em;
+  line-height: 1.2em;
 }
 
 /* fonts for page */
@@ -322,7 +322,7 @@ h1{
   margin: 10px 0 0; 
 }
 .basic-story__content__story__p {
-  padding: 17px 0;
+  padding: 1em 0;
 }
 
 
