@@ -2,6 +2,10 @@
   height: auto;
 }
 
+h3{ 
+  font-size: .9em;
+}
+
 .feature__hero__image {
   height: auto;
   width: 50%;
@@ -14,8 +18,10 @@
 
 .basic-story__content__wrapper{
   margin: 0 3em 0 0;
-  width: 60%;
-  float:left;
+    width: 100%;
+    float: left;
+    position: relative;
+    left: 10em;
 }
 
 .hero-wrapper{
@@ -25,8 +31,14 @@
 
 .basic-story__aside {
   margin: 5% 0 0 4%;
-  float: none;
-  width: 33%;
+    float: none;
+    width: 25%;
+    position: relative;
+    left: 10em;
+}
+
+.heroCaption, .basic-story__social-share__title{
+  font-size:.8em;
 }
 
 .photoSub{
@@ -39,8 +51,8 @@
 }
 
 .basic-story__content{
-  margin: 5% auto 0;
-  width: 50%;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .basic-story__by-line{
@@ -66,7 +78,7 @@
 
 .basic-story__content__image{
   height: auto;
-  width: 60%;
+  width: 608px;
     object-fit: cover;
 }
 
@@ -175,6 +187,7 @@ width:100%;
   margin: 0;
   width: auto;
   float: none;
+  left: 0;
 }
 
 .basic-story__content__image {
@@ -183,13 +196,14 @@ width:100%;
   object-fit: cover;
 }
 .basic-story__content__image-wrapper {
-  height: 14em;
+  height: 20em;
 }
 .basic-story__aside {
   margin: 5% 0 0 4%;
   float: none;
   width: 95%;
   display: block;
+  left: 0;
 }
 
 .basic-story__social-share {
@@ -198,6 +212,9 @@ width:100%;
   margin: 3em 0;
   display: block;
 }
+.heroCaption{
+  display: block;
+} 
 }
 
 @media only screen 
@@ -223,6 +240,10 @@ width:100%;
     margin: 0;
 }
 
+.basic-story__content__wrapper{
+  max-width: 100%;
+}
+
   .basic-story__content {
     margin: 0;
     width: 95%;
@@ -230,8 +251,9 @@ width:100%;
 }
 .basic-story__content__wrapper {
   margin: 0;
-  width: auto;
+  width: 95%;
   float: none;
+  left:0;
 }
 
 .basic-story__content__image {
@@ -240,13 +262,14 @@ width:100%;
   object-fit: cover;
 }
 .basic-story__content__image-wrapper {
-  height: 14em;
+  height: 34em;
 }
 .basic-story__aside {
   margin: 5% 0 0 4%;
   float: none;
   width: 95%;
   display: block;
+  left:0;
 }
 
 .basic-story__social-share {
@@ -256,9 +279,16 @@ width:100%;
   display: block;
 }
 
+.basic-story__content__image-caption{
+  margin:0;
+}
+
 .imageFix{
   line-height: 15em;
   margin: 0;
 }
+.heroCaption{
+  display: block;
+} 
 }
 

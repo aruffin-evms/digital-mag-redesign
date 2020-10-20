@@ -63,16 +63,12 @@ padding-bottom:5px;
     width: 90%;
 }
 
-.feature__content__story{
-  width: 100%;
-}
 
-.feature__hero__image {
+.feature__content__story, .feature__content, .feature__hero__image, .feature__faculty-spotlight__item{
   width: 100%;
 }
 
 .feature__faculty-spotlight__item {
-  width: 100%;
   margin: 7%;
 }
 
@@ -100,8 +96,8 @@ h1{
   font-size:1em;
 }
 
-.feature__content__story{
-  width:100%;
+.feature__content__story, .feature__content,  .feature__faculty-spotlight__item{
+  width: 100%;
 }
 
 .feature__content__image-wrapper {

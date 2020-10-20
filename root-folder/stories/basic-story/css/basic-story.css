@@ -81,7 +81,9 @@ h1{
     margin-right: 0;
   }
 }
-
+.smaller{
+  font-size:.8em;
+}
 .slide-up {
   animation: slideUp 1.5s;
 }
@@ -224,7 +226,7 @@ h1{
 .basic-story__content__title {
   margin: 10px 0 0;
   font-family: 'GT-Super', serif;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .basic-story__social-share {
@@ -289,6 +291,7 @@ h1{
   width: 90%;
   font-family: 'Benton Sans Reg', sans-serif;
   line-height: 32px;
+  font-size: 1.2em;
 }
 
 .basic-story__content__department-label {

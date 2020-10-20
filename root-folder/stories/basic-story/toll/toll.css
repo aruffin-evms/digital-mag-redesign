@@ -1,0 +1,201 @@
+.feature__faculty-spotlight {
+    margin: 40px 0;
+    background-color: rgba(128, 128, 128, 0.2);
+  }
+
+  .basic-story{
+    overflow: hidden;
+  }
+  .feature__faculty-spotlight__wrapper {
+    min-height: 300px;
+    max-width: 708px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+  }
+
+.heroCaption, .basic-story__social-share__title{
+  font-size:.8em;
+}
+  
+  .feature__faculty-spotlight__item {
+    width: 65%;
+    height: auto;
+  }
+
+  .feature__faculty-spotlight__item p{
+      text-align:left;
+      font-size: .9em;
+  }
+  
+  .feature__faculty-spotlight__image-wrapper {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5% 0 0;
+    float: left;
+  }
+  
+  /* .feature__faculty-spotlight__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  } */
+  
+  .feature__faculty-spotlight__name {
+    font-weight: bold;
+    margin: 15px 0;
+  }
+
+  .feature__faculty-spotlight__image-wrapper img{
+    height: 180px;
+    margin-top: -25px;
+  }
+
+  .features__hero__title {
+    font-family: "GT-Super";
+    margin: 10px 0;
+  }
+
+  .features__hero__overlay {
+    width: 30%;
+    color: #000;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+
+  .features__hero__overlay p{
+    font-size:1.2em;
+    font-style: italic;
+  }
+
+  .basic-story__content__department-label{
+    color:#000;
+    font-size:1em;
+  }
+
+  .topText{
+      font-size: 1.5em;
+      line-height:1.4em;
+  }
+
+  @media (max-width:640px){
+    body{
+      font-size: .8em;
+    }
+    .basic-story__aside{
+      display: block;
+      padding: 1%;
+    }
+    .features__hero__title{
+        font-size: 1.5em;
+    }
+    .features__hero__overlay {
+      width: 65%;
+        top: 10%;
+        right: 3%;
+      }
+      .basic-story__by-line{
+        float: none;
+        height: auto;
+      }
+  .basic-story__social-share{
+    margin: .2em 0 3em;
+      }
+      .topText {
+        font-size: 1.2em;
+        line-height: 1.4em;
+        padding: 2em .5em;
+    }
+
+    .basic-story__content__wrapper{
+      padding: 0 1em;
+    }
+      .basic-story__content__department-label {
+        font-size: .7em;
+    }
+    .feature__faculty-spotlight__item {
+        width: 85%;
+    }
+  }
+
+  @media (max-width:480px){
+    .basic-story__content__department-label {
+      font-size: .8em;
+    }
+      .features__hero__title{
+        font-size: 1.7em;
+    }
+
+    .basic-story__content__wrapper{
+      padding: 0 1em;
+    }
+   
+  }
+
+  @media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 850px) {
+  body{
+    font-size:.9em;
+  }
+    .basic-story__hero__image {
+        height: auto;
+    }
+
+    .basic-story__aside{
+      display: block;
+    }
+    .basic-story__content{
+      padding: 0 .5em;
+    width: 90%;
+    margin: 10em auto 0;
+    }
+
+    .basic-story__content__story__p{
+      padding: .8em 0;
+    }
+   
+}
+
+  @media (min-width:900px){
+    .basic-story__content__department-label {
+      font-size: 1em;
+    }
+      .features__hero__title{
+        font-size: 2em;
+    }
+    .features__hero__overlay{font-size: 1em;}
+    .basic-story__story-qoute__qoute {
+      font-size: 2em;
+  
+  }
+  }
+
+  
+
+
+
+
+ @media only screen 
+and (min-device-width : 600px) 
+and (max-device-width : 768px) {
+    .features__hero__overlay{font-size: .5em;}
+    .features__hero__title{
+        font-size: 1em;
+    }
+}
+
+@media only screen 
+and (min-width : 1224px) {
+    .features__hero__overlay{font-size: 1em;}
+    
+}
+)

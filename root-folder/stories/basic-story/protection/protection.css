@@ -21,6 +21,10 @@
   line-height: 2em;
 }
 
+.heroCaption, .basic-story__social-share__title{
+  font-size:.8em;
+}
+
 .middle {
   width: 100%;
   left: -2em;
@@ -76,7 +80,7 @@
 }
 
 .basic-story__content__image-wrapper {
-  width: 50%;
+  width: 608px;
 }
 .topText {
   font-size: 1.5em;
@@ -90,13 +94,17 @@
   width: 100%;
   margin: 1em 0;
 }
+.basic-story__content__image-caption{
+  left:0;
+  text-align: left;
+}
 
 .bottomStory2{
   position: relative;
   left: -.1em;
   display: flex;
   margin: 0;
-  width: 45%;
+  width: 100%;
 }
 .bottomStory2 i{
 display: contents;
@@ -187,7 +195,7 @@ and (max-device-width : 850px) {
   }
   .basic-story__content__wrapper{
     width: 90%;
-    margin: 0 auto 0;
+    margin: 3em auto 0;
   }
   .basic-story__content__title{
     font-size: 2em;
