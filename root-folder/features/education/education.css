@@ -34,6 +34,8 @@
     float: left;
 }
 
+.feature-content__image-wrapper--portrait{
+  width:608px;
 }
 .feature__content__image-caption--portrait {
   width: 98% !important;
