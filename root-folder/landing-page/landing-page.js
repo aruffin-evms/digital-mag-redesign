@@ -8,10 +8,15 @@ const qouteSource = document.getElementById('qouteSource')
 
 const storyLink = document.getElementById('storyLink')
 
-const gridStories  = document.querySelectorAll('.landing-page__story')
+const gridStories  = document.querySelectorAll('.landing-page__featured-stories__grid-item__wrapper')
 const gridLinks = document.querySelectorAll('.landing-page__featured-stories__link')
 const gridItemTitles = document.getElementsByTagName('h3')
 const gridItemContent = document.querySelector('.landing-page__featured-stories__grid-item__content-wrapper')
+
+const additionalStories = document.querySelectorAll('.landing-page__story-block')
+
+const expandList = document.getElementById('expandList')
+const featuresList = document.getElementById('featuresList')
 
 // const storyWrapperOne = document.querySelector('.landing-page__story--one')
 
@@ -26,15 +31,38 @@ const carousel = document.querySelector('.landing-page__stories-carousel__carous
 
 const scrollDistance = 200;
 
-console.log(carousel.offsetWidth)
+let clickCount = 0;
+
+
 
 // todo: create function that checks scroll position for looping carousel
 backArrow.addEventListener('click', function() {
   carousel.scrollLeft -= scrollDistance
+
+  clickCount--
+
+  console.log(clickCount)
+
+  if(3 > clickCount > 0) {
+    backArrow.style.display = 'none'
+    forwardArrow.style.display = 'block'
+  }
 })
 
 forwardArrow.addEventListener('click', function() {
   carousel.scrollLeft += scrollDistance
+
+  clickCount++ 
+
+  console.log(clickCount)
+
+  if(clickCount == 3) {
+    forwardArrow.style.display = 'none'
+  }
+
+  if(clickCount > 0) {
+
+  }
 })
 
 qouteDrawer.addEventListener('click', function() {
@@ -70,16 +98,16 @@ gridStories.forEach(function(story) {
   })
 })
 
-// additionalStories.forEach(function(story) {
-//   story.addEventListener('mouseover', function() {
-//     story.getElementsByTagName('figure')[0].style.boxShadow = `0 -5px 0 ${colors.evmsRust}  inset`
+additionalStories.forEach(function(story) {
+  story.addEventListener('mouseover', function() {
+    story.getElementsByTagName('figure')[0].style.boxShadow = `0 -5px 0 ${colors.evmsRust}  inset`
     
-//     story.onmouseout = function(event) {
-//       story.getElementsByTagName('figure')[0].style.boxShadow = `none`
-//       story.getElementsByTagName('figure')[0].style.transition = '.5s all'
-//     }
-//   })
-// })
+    story.onmouseout = function(event) {
+      story.getElementsByTagName('figure')[0].style.boxShadow = `none`
+      story.getElementsByTagName('figure')[0].style.transition = '.5s all'
+    }
+  })
+})
 
 // intersection observer for page animations
 // animate-vertical
@@ -139,7 +167,7 @@ slideElementsRight.forEach(element => {
 
 mobileIcon.addEventListener('click', function() {
   this.classList.toggle('icon-transform')
-  sideNav.style.width = "250px";
+  sideNav.style.width = "300px";
   mobileIcon.style.position = 'absolute'
   
   if(!this.classList.contains('icon-transform')) {
@@ -147,3 +175,25 @@ mobileIcon.addEventListener('click', function() {
     mobileIcon.style.position = 'relative'
   }
 })
+
+expandList.addEventListener('click', function() {
+  console.log(this.innerHTML)
+  if(this.innerHTML === 'expand_more') {
+    this.innerHTML = 'expand_less'
+    showList(featuresList)
+  } else {
+    this.innerHTML = 'expand_more'
+    hideList(featuresList)
+  }
+})
+
+function showList(list) {
+  list.style.display = 'block'
+  list.style.height = '200px'
+  list.style.opacity = '1'
+}
+
+function hideList(list) {
+  list.style.display = 'none'
+  list.style.height = '0px'
+}
