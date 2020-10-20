@@ -17,11 +17,10 @@ h3{
 }
 
 .basic-story__content__wrapper{
-  margin: 0 3em 0 0;
     width: 100%;
     float: left;
     position: relative;
-    left: 10em;
+    left: 22%;
 }
 
 .hero-wrapper{
@@ -30,11 +29,8 @@ h3{
 }
 
 .basic-story__aside {
-  margin: 5% 0 0 4%;
-    float: none;
-    width: 25%;
-    position: relative;
-    left: 10em;
+  width: 25%;
+  margin: 2%;
 }
 
 .heroCaption, .basic-story__social-share__title{
@@ -48,11 +44,6 @@ h3{
 .basic-story__social-share__title{
   font-size: .3em;
   padding-bottom: 1em;
-}
-
-.basic-story__content{
-  margin: 0 auto;
-  width: 60%;
 }
 
 .basic-story__by-line{
