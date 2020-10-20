@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="landing-page.css">
   <script defer src="landing-page.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="//cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
   <title>Landing page</title>
@@ -33,26 +34,59 @@
   </div>
 </nav>
 <nav class="digital-mag__nav digital-mag__nav--desktop">
-
+  <div class="digital-mag__nav--desktop__wrapper">
+    <img src="../assets/magazine-logo.svg" alt="" class="digital-mag__nav--desktop__logo">
+    <p class="digital-mag__nav--desktop__magazine-cta">Issue 13.1<span id="toggleSubnav" class="material-icons">expand_more</span></p>
+    <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/12_3/previous_issues/" class="digital-mag__nav-desktop__archives-link">Archives</a>
+    <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/12_3/subscribe/" class="digital-mag__nav--desktop__suscribe-cta landing-page__cta">Subscribe</a>
+  </div>
+  <div id="subnav" class="digital-mag__nav--desktop__subnav">
+    <div class="digital-mag__nav--desktop__subnav__wrapper">
+      <div class="digital-mag__nav--desktop__subnav-dropdown">features<span id="toggleFeatureNav" class="material-icons">expand_more</span></div>
+      <div class="digital-mag__nav--desktop__subnav-dropdown">departments<span id="toggleDepartmentNav" class="material-icons">expand_more</span></div>
+    </div>
+  </div>
+  <div class="digital-mag__nav--desktop__features-subnav">
+    <ul id="featureMenu" class="digital-mag__nav--desktop__features-subnav__list">
+      <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Education</a></li>
+      <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Research</a></li>
+      <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Patient Care</a></li>
+    </ul>
+</div>
+<div class="digital-mag__nav--desktop__departments-subnav">
+  <ul id="departmentMenu" class="digital-mag__nav--desktop__departments-subnav__list">
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/research/research.html">Research</a></li>
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/diversity/diversity.html">Diversity & Inclusion</a></li>
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/protection/provider_protection.html">Community & Outreach</a></li>
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/my-story/my-story.html">My Story</a></li>
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Alumni Profile</a></li>
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../photo-essay/photo-essay.html">Photo Essay</a></li>
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Picture This</a></li>
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/ryans/ryans.html">Your Support</a></li>
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">From the President</a></li>
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/toll/toll.html">Online Exclusive</a></li>
+    <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="https://www.evms.edu/">EVMS Home</a></li>
+  </ul>
+</div>
 </nav>
 <body>
   <main class="landing-page">
     <section class="landing-page__hero">
+      <canvas style="height: 100%;" class="background"></canvas>
+      <img src="../assets/colored-virus-small@2x.png" alt="" class="landing-page__virus landing-page__virus--right">
+      <img src="../assets/colored-virus-small@2x.png" alt="" class="landing-page__virus landing-page__virus--left">
       <div class="landing-page__hero__content">
         <h1 class="landing-page__hero__title">Pivoting in&nbsp;a Pandemic</h1>
         <h2 class="landing-page__hero__subtitle">EVMS confronts COVID-19</h2>
         <a href="../pivoting-landing-page/pivoting.html" class="landing-page__cta">Read the Story</a>
       </div>
-      <figure class="landing-page__hero__wrapper">
-        <img src="../assets/landing-page-main-feature-hero-placeholder.jpg" alt="" class="landing-page__hero__image">
-      </figure>
     </section>
     <section class="landing-page__featured-stories">
       <div class="landing-page__featured-stories__wrapper">
         <div class="landing-page__featured-stories__grid">
           <div class="landing-page__featured-stories__grid-item landing-page__featured-stories__grid-item--one">
             <div class="landing-page__featured-stories__grid-item__wrapper landing-page__story">
-              <a href="" id="gridStory" class="landing-page__featured-stories__link landing-page__story--one">
+              <a href="../stories/basic-story/air/air.html" id="gridStory" class="landing-page__featured-stories__link landing-page__story--one">
               <figure class="landing-page__featured-stories__grid-item__story-image__wrapper landing-page__featured-stories__grid-item--one__image-wrapper">
                 <img src="../assets/landing-page-pandemic-profile.jpg" alt="" id="gridImages" class="landing-page__featured-stories__grid-item__story-image fade-in-left">
                 <div id="itemOneAnimation"></div>
@@ -66,7 +100,7 @@
           </div>
           <div class="landing-page__featured-stories__grid-item landing-page__featured-stories__grid-item--two">
             <div class="landing-page__featured-stories__grid-item__wrapper landing-page__story">
-              <a href="" id="storyLink" class="landing-page__featured-stories__link landing-page__story--two">
+              <a href="../stories/basic-story/toll/toll.html" id="storyLink" class="landing-page__featured-stories__link landing-page__story--two">
               <figure class="landing-page__featured-stories__grid-item__story-image__wrapper landing-page__featured-stories__grid-item--two__image-wrapper">
                 <img src="../assets/landing-page-pandemic-firstPerson.jpg" alt="" class="landing-page__featured-stories__grid-item__story-image">
               </figure>
@@ -77,7 +111,7 @@
           </div>
           <div class="landing-page__featured-stories__grid-item landing-page__featured-stories__grid-item--three">
             <div class="landing-page__featured-stories__grid-item__wrapper landing-page__story">
-              <a href="" id="storyLink" class="landing-page__featured-stories__link landing-page__story--three">
+              <a href="../photo-essay/photo-essay.html" id="storyLink" class="landing-page__featured-stories__link landing-page__story--three">
               <figure class="landing-page__featured-stories__grid-item__story-image__wrapper landing-page__featured-stories__grid-item--three__image-wrapper">
                 <img src="../assets/landing-page-pandemic-community.jpg" alt="" class="landing-page__featured-stories__grid-item__story-image">
               </figure>
@@ -116,7 +150,7 @@
           <div class="landing-page__subscribe__content">
           <h3 class="landing-page__subscribe__title">Read the Print</h3>
           <p class="landing-page__subscribe__description">This issue is the first to feature a new design for EVMS Magazine. In addition to several visual changes, we’ve introduced new departments — Trending, Seen & Heard and Diversity & Inclusion — to better reflect our evolving content and culture, and we’ve renamed some departments to quickly convey the kind of stories&nbsp;presented.</p>
-          <a href="" class="landing-page__cta animate-vertical">Subscribe</a>
+          <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/12_3/subscribe/" class="landing-page__cta animate-vertical">Subscribe</a>
         </div>
         </div>
       </div>
@@ -127,39 +161,49 @@
           <span id="backArrow" class="landing-page__stories-carousel__back material-icons">arrow_back_ios</span>
           <span id="forwardArrow" class="landing-page__stories-carousel__forward material-icons">arrow_forward_ios</span>
         <div class="landing-page__stories-carousel__carousel-item">
-          <figure class="landing-page__stories-carousel__image-wrapper">
-            <img src="../assets/landing-page-plunk-research-photoCircle.png" alt="" class="landing-page__stories-carousel__image">
-          </figure>
-          <p class="landing-page__stories-carousel__label">Research</p>
-          <p class="landing-page__stories-carousel__title">NIH awards $3.1 million grant to EVMS social scientist</p>
+          <a href="../stories/basic-story/research/research.html" class="landing-page__stories-carousel__link">
+            <figure class="landing-page__stories-carousel__image-wrapper">
+              <img src="../assets/landing-page-plunk-research-photoCircle.png" alt="" class="landing-page__stories-carousel__image">
+            </figure>
+            <p class="landing-page__stories-carousel__label">Research</p>
+            <p class="landing-page__stories-carousel__title">NIH awards $3.1 million grant to EVMS social scientist</p>
+          </a>
         </div>
         <div class="landing-page__stories-carousel__carousel-item">
+          <a href="../stories/q-and-a/q-and-a.html" class="landing-page__stories-carousel__link">
           <figure class="landing-page__stories-carousel__image-wrapper">
             <img src="../assets/landing-page-hooper-q&a-photoCircle.png" alt="" class="landing-page__stories-carousel__image">
           </figure>
           <p class="landing-page__stories-carousel__label">Q&A</p>
           <p class="landing-page__stories-carousel__title">Military. Mother. Mentor.</p>
+        </a>
         </div>
         <div class="landing-page__stories-carousel__carousel-item">
+          <a href="../stories/basic-story/pandemic/pandemic.html" class="landing-page__stories-carousel__link">
           <figure class="landing-page__stories-carousel__image-wrapper">
             <img src="../assets/landing-page-chang-alumni-PhotoCircle.png" alt="" class="landing-page__stories-carousel__image">
           </figure>
           <p class="landing-page__stories-carousel__label">Alumni Focus</p>
           <p class="landing-page__stories-carousel__title">EVMS training preps surgeon to lead pandemic response</p>
+        </a>
         </div>
         <div class="landing-page__stories-carousel__carousel-item">
+          <a href="../stories/basic-story/textbook/stolen.html" class="landing-page__stories-carousel__link">
           <figure class="landing-page__stories-carousel__image-wrapper">
             <img src="../assets/landing-page-kelleher-alumni-photoCircle-new.png" alt="" class="landing-page__stories-carousel__image">
           </figure>
           <p class="landing-page__stories-carousel__label">Alumni Focus</p>
           <p class="landing-page__stories-carousel__title">“Stolen” textbook, passion for art fuel career in art therapy</p>
+        </a>
         </div>
         <div class="landing-page__stories-carousel__carousel-item">
+          <a href="../stories/basic-story/basic-story.html" class="landing-page__stories-carousel__link">
           <figure class="landing-page__stories-carousel__image-wrapper">
             <img src="../assets/landing-page-stowasser-alumni-photoCircle.png" alt="" class="landing-page__stories-carousel__image">
           </figure>
           <p class="landing-page__stories-carousel__label">Alumni Focus</p>
           <p class="landing-page__stories-carousel__title">EVMS alumna battles COVID-19 in New York City</p>
+        </a>
         </div>
       </div>
     </div>
@@ -179,7 +223,7 @@
         </div>
         <div class="landing-page__story-qoute__copy-wrapper">
           <p class="landing-page__story-qoute__copy">Lauren Mazzurco, DO, Rosemary Fenton and Garnett Jordan Professor in Geriatrics, Associate Professor of Internal Medicine and a geriatrician in the EVMS Glennan Center for Geriatrics&nbsp;and&nbsp;Gerontology</p>
-          <a href="" class="landing-page__story-qoute__cta">Read the Story</a>
+          <a href="../stories/basic-story/toll/toll.html" class="landing-page__story-qoute__cta">Read the Story</a>
         </div>
       </div>
     </section>
@@ -191,13 +235,13 @@
         <div class="landing-page__my-story__callout__wrapper">
           <label for="" class="landing-page__my-story__category">MY STORY</label>
           <h3 class="landing-page__my-story__title">Former drummer, DJ refuses to let MS take his “happy”</h3>
-          <a href="" class="landing-page__cta">Read the Story</a>
+          <a href="../stories/basic-story/my-story/my-story.html" class="landing-page__cta">Read the Story</a>
         </div>
       </div>
     </section>
     <section class="landing-page__more-stories">
       <div class="landing-page__more-stories__wrapper">
-        <a href="" class="landing-page__more-stories__story landing-page__story-block animate-left">
+        <a href="../stories/basic-story/diversity/diversity.html" class="landing-page__more-stories__story landing-page__story-block animate-left">
           <div class="landing-page__more-stories__content ">
             <figure class="landing-page__more-stories__image-wrapper">
               <img src="../assets/landing-page-diversity-inclusion.jpg" alt="" class="landing-page__more-stories__image">
@@ -208,7 +252,7 @@
             </div>
           </div>
         </a>
-        <a href="" class="landing-page__more-stories__story landing-page__story-block animate-right">
+        <a href="../stories/basic-story/protection/provider_protection.html" class="landing-page__more-stories__story landing-page__story-block animate-right">
           <div class="landing-page__more-stories__content ">
             <figure class="landing-page__more-stories__image-wrapper">
               <img src="../assets/landing-page-com-outreach.jpg" alt="" class="landing-page__more-stories__image">
@@ -228,20 +272,20 @@
       </div>
     </section>
     <section class="landing-page__infograph">
-      <div class="landing-page__infograph__wrapper">
-        <figure class="landing-page__infograph__asset-wrapper">
-          <img src="../assets/landing-page-pictureThis-infographic-placeholder.jpg" alt="" class="landing-page__infograph__asset animate-vertical">
-        </figure>
-        <label for="" class="landing-page__infograph__label">Picture This</label>
-        <h3 class="landing-page__infograph__title">COVID-19 Fund</h3>
-        <p class="landing-page__infograph__description">Critical operations continue during the pandemic thanks to our donor’s generous support</p>
-        <a href="" class="landing-page__cta">Read the Infographic</a>
+      <div class="landing-page__infograph__wrapper animate-vertical">
+        <video id="animationVideo" src="../assets/blue-money-bill-stack_1.mp4" class="landing-page__infograph__video animate-vertical" muted></video>
+        <div class="landing-page__infograph__content-wrapper">
+          <label for="" class="landing-page__infograph__label">Picture This</label>
+          <h3 class="landing-page__infograph__title">COVID-19 Fund</h3>
+          <p class="landing-page__infograph__description">Critical operations continue during the pandemic thanks to our donor’s generous support</p>
+          <a href="" class="landing-page__cta">Read the Infographic</a>
+        </div>
       </div>
     </section>
     <div class="landing-page__hairline"></div>
     <section class="landing-page__additional-stories">
       <div class="landing-page__additional-stories__wrapper">
-        <a href="" class="landing-page__additional-stories__story landing-page__story-block animate-left">
+        <a href="../stories/basic-story/ryans/ryans.html" class="landing-page__additional-stories__story landing-page__story-block animate-left">
           <div class="landing-page__additional-stories__content">
             <figure class="landing-page__additional-stories__image-wrapper">
               <img src="../assets/landing-page-yourSupport.jpg" alt="" class="landing-page__additional-stories__image">
@@ -253,7 +297,7 @@
             </div>
           </div>
         </a>
-        <a href="" class="landing-page__additional-stories__story landing-page__story-block animate-right">
+        <a href="../photo-essay/photo-essay.html" class="landing-page__additional-stories__story landing-page__story-block animate-right">
           <div class="landing-page__additional-stories__content">
             <figure class="landing-page__additional-stories__image-wrapper">
               <img src="../assets/landing-page-photoEssay.jpg" alt="" class="landing-page__additional-stories__image">
@@ -272,7 +316,7 @@
         <div class="landing-page__archived-articles__callout">
           <div class="landing-page__archived-articles__callout__wrapper animate-vertical">
             <h3 class="landing-page__archived-articles__callout__title">Missed an issue?</h3>
-            <a href="" class="landing-page__archived-articles__callout__cta">Read the Archives</a>
+            <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/12_3/previous_issues/" class="landing-page__archived-articles__callout__cta">Read the Archives</a>
           </div>
         </div>
         <div class="landing-page__archived-articles">
@@ -283,5 +327,23 @@
       </div>
     </section>
   </main>
+  <div class="landing-page__hairline"></div>
+  <footer class="landing-page__footer">
+    <div class="landing-page__footer__wrapper">
+      <img src="https://www.evms.edu/media/evms_public/content/style_assets/refresh_2018_style_assets/images/evmsLogoBlue.svg" class="landing-page__logo">
+      <div class="landing-page__info">
+        <div class="landing-page__info__line-one"><a>About</a>/<a>Contact</a></div>
+        <div class="landing-page__info__line-two"><p>Copyright 2020 Eastern Virginia Medical School</p>/&nbsp;<a>Accessibility</a>&nbsp;/&nbsp;<a>Privacy</a>&nbsp;/&nbsp;<a>Terms of Use</a></div>
+      </div>
+      <div class="landing-page__social-icons">
+        <img src="../assets/facebook-EVMS-blue.svg" alt="" class="landing-page__social-icon">
+        <img src="../assets/instagram-EVMS-blue.svg" alt="" class="landing-page__social-icon">
+        <img src="../assets/linkedIn-EVMS-blue.svg" alt="" class="landing-page__social-icon">
+        <img src="../assets/twitter-EVMS-blue.svg" alt="" class="landing-page__social-icon">
+        <img src="../assets/youTube-EVMS-blue.svg" alt="" class="landing-page__social-icon">
+        <img src="../assets/pulse-icon.svg" alt="" class="landing-page__social-icon pulse">
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

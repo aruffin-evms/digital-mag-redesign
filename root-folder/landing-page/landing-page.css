@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+canvas {
+  z-index: -1;
+}
+
 /* fonts for page */
 @font-face {
   font-family: 'GT-Super';
@@ -48,7 +52,7 @@ body {
 @keyframes slideUp {
   from {
     opacity: 0;
-    margin-top: 20%;
+    margin-top: 40%;
   }
   to {
     opacity: 1;
@@ -59,7 +63,7 @@ body {
 @keyframes slideLeft {
   from {
     opacity: 0;
-    margin-left: -20%;
+    margin-left: -40%;
   }
   to {
     opacity: 1;
@@ -89,6 +93,11 @@ body {
   } 
 }
 
+#toggleSubnav, #toggleFeatureNav, #toggleDepartmentNav {
+  position: relative;
+  top: 5px;
+}
+
 .slide-up {
   animation: slideUp 1.5s;
 }
@@ -101,17 +110,22 @@ body {
   animation: slideRight 1.5s;
 }
 
+.material-icons {
+  cursor: pointer;
+}
+
 .digital-mag__nav {
   background-color: #fafafa;
   width: 100vw;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: sticky;
+  z-index: 11;
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
 }
 
 .digital-mag__nav--mobile {
   display: flex;
   height: 100%; 
-  position: sticky;
-  z-index: 11;
+  
   top: 0;
 }
 
@@ -214,16 +228,211 @@ body {
 .digital-mag__nav--mobile__sidenav__list-item--feature:before {
   content: 'Pivoting in a Pandemic'
 }
+
+.digital-mag__nav--desktop {
+  height: 100px;
+  width: 100vw;
+  border-bottom: solid 1px black;
+  position: relative;
+  z-index: 15;
+}
+
+.digital-mag__nav--desktop__wrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.digital-mag__nav--desktop__suscribe-cta {
+  padding: 39px !important;
+  display: flex;
+  justify-self: flex-end;
+  height: max-content;
+  margin: 0 !important;
+}
+
+.digital-mag__nav-desktop__archives-link {
+  margin: 0 30px;
+}
+
+.digital-mag__nav--desktop__magazine-cta {
+  margin-top: -4px;
+}
+
+.digital-mag__nav-desktop__archives-link, .digital-mag__nav--desktop__magazine-cta {
+  font-family: 'GT-Super';
+  text-decoration: none;
+  color: black;
+  transition: .3s all;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: max-content;
+}
+
+.digital-mag__nav-desktop__archives-link:hover, .digital-mag__nav--desktop__magazine-cta:hover {
+  color: #c7531e;
+}
+
+.digital-mag__nav--desktop__magazine-cta {
+  font-family: 'GT-Super';
+}
+
+.digital-mag__nav--desktop__logo {
+  width: 200px;
+  margin-right: 40%;
+}
+
+.digital-mag__nav--desktop__subnav {
+  height: 0;
+  position: relative;
+  z-index: 9;
+  transition: .5s all;
+  overflow: hidden;
+  background-color: #fafafa;
+  border-bottom: solid .5px black;
+  border-top: solid .5px black;
+}
+
+.digital-mag__nav--desktop__subnav__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-content: flex-end; */
+  width: 250px;
+  margin-left: 59%;
+  padding: 9px 0;
+}
+
+.digital-mag__nav--desktop__subnav-dropdown {
+  text-transform: uppercase;
+  height: max-content;
+  transition: .4s all; 
+  cursor: pointer;
+}
+
+.digital-mag__nav--desktop__subnav-dropdown:hover {
+  color: #c7531e;
+}
+
+.digital-mag__nav--desktop__features-subnav {
+  width: 300px;
+  height: auto;
+  background-color: #c7531e;
+  z-index: 6;
+  position: relative;
+  top: 0;
+  left: 55%;
+  color: #fafafa;
+  transition: 1s all;
+}
+
+.digital-mag__nav--desktop__departments-subnav {
+  width: 300px;
+  height: auto;
+  background-color: #c7531e;
+  z-index: 6;
+  position: relative;
+  top: 0;
+  left: 65%;
+  color: #fafafa;
+  transition: 1s all;
+}
+
+.digital-mag__nav--desktop__features-subnav__list, .digital-mag__nav--desktop__departments-subnav__list {
+  transition: 1s all;
+  overflow: hidden;
+  font-family: 'Benton Sans Reg';
+  max-height: 0;
+  transition: max-height 0.6s ease-out;
+}
+
+.digital-mag__nav--desktop__features-subnav__list:hover, .digital-mag__nav--desktop__departments-subnav__list:hover {
+  background-color: #c7531e;
+}
+
+.digital-mag__nav--desktop__features-subnav__list-item, .digital-mag__nav--desktop__departments-subnav__list-item {
+  border-bottom: solid 1px #fafafa;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 1s left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .digital-mag__nav--desktop__features-subnav__list-item:before {
+  background: #c7531e;
+  border-bottom: 1px solid #fafafa;
+} */
+
+.digital-mag__nav--desktop__features-subnav__list-item:hover, .digital-mag__nav--desktop__departments-subnav__list-item:hover {
+  position: relative;
+  left: 30px;
+}
+
+.digital-mag__nav--desktop__features-subnav__list-item:before {
+  content: 'Pivoting in a Pandemic';
+  color: #c7531e;
+}
+
+.digital-mag__nav--desktop__features-subnav__list-item__link, .digital-mag__nav--desktop__departments-subnav__list-item__link {
+  color:#fafafa;
+  text-decoration: none;
+}
+
+/* .digital-mag__nav--desktop__features-subnav__list-item:before {
+  position: relative;
+  left: 30px;
+  z-index: 13;
+} */
+
+li {
+  list-style-type: none;
+}
+
 .landing-page {
   overflow-x: hidden;
 }
+
+.landing-page__virus {
+  position: relative;
+  display: none;
+}
+
+@media(min-width: 900px) {
+  .landing-page__virus {
+    display: block;
+  }
+}
+
+.landing-page__virus--left {
+  left: -80%;
+  top:30%;
+  height: 150px;
+  width: 150px;
+}
+
+.landing-page__virus--right {
+  height: 100px;
+  width: 100px;
+  right: 20%;
+  top: 12%;
+}
+
 .landing-page__hero {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  height: 600px;
 }
+
 
 .landing-page__hero__wrapper {
   height: 60vh;
@@ -243,6 +452,7 @@ body {
   top: 0;
   text-align: center;
   width: 90%;
+  z-index: 5;
 }
 
 @media(min-width: 900px) {
@@ -621,6 +831,16 @@ body {
   margin: 0 45px;
 }
 
+.landing-page__stories-carousel__link {
+  text-decoration: none;
+}
+
+.landing-page__stories-carousel__link:hover figure, .landing-page__stories-carousel__link:hover p{
+  transform: scale(1.1);
+  transition: 1s all;
+  text-decoration: underline;
+}
+
 .landing-page__stories-carousel__image-wrapper {
   height: auto;
   width: 130px;
@@ -889,8 +1109,9 @@ body {
 
   .landing-page__more-stories__content, .landing-page__additional-stories__content {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    flex-direction: column;
   }
 
   .landing-page__more-stories__copy-wrapper, .landing-page__additional-stories__copy-wrapper {
@@ -999,6 +1220,31 @@ body {
 
 .landing-page__infograph__wrapper {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media(min-width: 900px) {
+  .landing-page__infograph__wrapper {
+    flex-direction: row;
+  }
+}
+
+.landing-page__infograph__video {
+  max-height: 300px;
+  border: 0;
+}
+
+.landing-page__infograph__content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media(min-width: 900px) {
+  .landing-page__infograph__content-wrapper {
+    padding-left: 30px;
+  }
 }
 
 .landing-page__infograph__asset-wrapper {
@@ -1035,6 +1281,7 @@ body {
 .landing-page__infograph__description {
   margin: 10px 0 30px;
   font-family: 'Benton Sans Reg';
+  width: 300px;
 }
 
 .landing-page__hairline {
@@ -1119,8 +1366,14 @@ body {
 
 .landing-page__additional-stories__story {
   height: auto;
-  width: 350px;
   text-decoration: none;
+  margin: 0 auto;
+}
+
+@media(min-width: 900px) {
+ .landing-page__additional-stories__story {
+   width: 350px;
+ }
 }
 
 .landing-page__additional-stories__content {
@@ -1169,4 +1422,84 @@ body {
 
 .landing-page__additional-stories__title, .landing-page__more-stories__description {
   padding-top: 10px;
+}
+
+.landing-page__footer {
+  height: 100px;
+  width: 100vw;
+}
+
+.landing-page__footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: max-content;
+  width: 90%;
+  margin: 30px auto;
+}
+
+@media(min-width: 900px) {
+  .landing-page__footer__wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.landing-page__logo {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media(min-width: 900px) {
+  .landing-page__logo {
+    margin: 0;
+  }
+}
+
+.landing-page__info {
+  height: max-content;
+  width: 300px;
+  text-align: center;
+  font-style: 14px;
+  font-family: 'Benton Sans Reg';
+  color: rgba(200, 200, 200, 0.7);
+  white-space: nowrap;
+}
+
+@media(min-width : 900px) {
+  .landing-page__info {
+    width: auto;
+  }
+}
+
+.landing-page__info a, .landing-page__info p{
+  font-size: 14px;
+  color: rgba(180, 180, 180);
+}
+
+.landing-page__info__line-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+
+.landing-page__social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.landing-page__social-icon {
+  height: 30px;
+  margin: 5px;
+  align-self: flex-end;
+}
+
+.pulse {
+  transform: scale(2);
 }
