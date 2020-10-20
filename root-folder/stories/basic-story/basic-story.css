@@ -212,6 +212,11 @@ h1{
   margin: 0 auto;
 }
 
+.basic-story__content__wrapper {
+  max-width: 608px;
+  margin: 0 auto;
+}
+
 .basic-story__content__title {
   margin: 10px 0 0;
   font-family: 'GT-Super';
@@ -365,7 +370,7 @@ h1{
   color: white;
   font-size: 12px;
   margin-left: 20px;
-  font-family: 'Calluna';
+  font-family: 'Calluna', serif;
   position: relative;
 }
 
@@ -381,7 +386,7 @@ h1{
 @media (min-width: 900px) {
   .basic-story__content__caption {
     top: -600px;
-    margin-bottom: -513px;
+    margin-bottom: -400px;
     margin-left: 200px;
     width: 330px;
     font-size: 32px;
@@ -512,7 +517,7 @@ h1{
 
 /* [start] more stories carousel */
 
-.arrow {
+/* .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -527,7 +532,7 @@ h1{
 
 .arrow__next {
   right: 10%;
-}
+} */
 
 .basic-story__more-stories {
   padding: 64px 0;
