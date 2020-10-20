@@ -52,6 +52,38 @@
   }
 }
 
+.fb{
+  background-image: url(../../assets/facebook.svg); 
+}
+
+.ig{
+  background-image: url(../../assets/instagram.svg); 
+}
+.in{
+  background-image: url(../../assets/LinkedIn.svg); 
+}
+.tw{
+  background-image: url(../../assets/twitter.svg); 
+}
+
+.arrow {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(128, 128, 128, 0.7);
+  cursor: pointer;
+  padding: 20px;
+}
+
+.arrow__back {
+  left: 20%;
+}
+
+.arrow__next {
+  right: 10%;
+}
+
+
 .slide-up {
   animation: slideUp 1.5s;
 }
@@ -72,6 +104,11 @@
   height: 40px !important;
   position: absolute;
   top: -50px;
+}
+
+.q-and-a__wrapper {
+  max-width: 1182px;
+  margin: 0 auto;
 }
 
 .q-and-a__hero-wrapper {
@@ -180,6 +217,7 @@
 @media (min-width: 900px) {
   .q-and-a__aside {
     float: right;
+    padding-left: 40px;
   }
 }
 
@@ -238,7 +276,7 @@
 }
 
 .q-and-a__byline__label {
-  font-family: "Calluna";
+  font-family: 'Calluna', serif;
   font-weight: bold;
   font-style: italic;
   font-size: 16px;
@@ -260,7 +298,7 @@
 
 .q-and-a__content__story__p {
   padding: 17px 0;
-  font-family: "Calluna";
+  font-family: 'Calluna', serif;
 }
 
 /* [start] image with caption */
@@ -293,7 +331,7 @@
   color: white;
   font-size: 12px;
   margin-left: 20px;
-  font-family: "Calluna";
+  font-family: 'Calluna', serif;
 }
 
 @media (min-width: 600px) {
