@@ -289,6 +289,7 @@ h1{
   width: 90%;
   font-family: 'Benton Sans Reg';
   line-height: 32px;
+  font-size: 20px;
 }
 
 .basic-story__content__department-label {
@@ -733,6 +734,7 @@ h1{
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
+  margin: 0 auto;
 }
 
 .basic-story__iframe-wrapper iframe {
