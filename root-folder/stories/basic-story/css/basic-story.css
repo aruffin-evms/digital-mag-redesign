@@ -168,7 +168,6 @@ h1{
   }
 }
 
-
 .basic-story__lead-in {
   color: #c7531e;
   text-transform: uppercase;
@@ -646,16 +645,36 @@ h1{
   font-family: 'Benton Sans Reg', sans-serif;
 }
 
-@media (max-width:640px){
+.video{
+  height: 810px;
+  width:100%;
+  margin:0 auto; 
+  text-align: center;
+}
+
+.video iframe{
+  width:100%;
+}
+
+@media only screen 
+and (min-width:300px)
+and (max-width:640px){
   .heroCaption{
     display: none;
+  }
+
+  .video, .video iframe{
+      height:202px;
   }
 }
 
 @media only screen 
-and (min-device-width : 800px) 
+and (min-device-width : 640px) 
 and (max-device-width : 850px) {
   .heroCaption{
     display: none;
   }
+  .video, .video iframe{
+    height:405px;
+}
 }
