@@ -36,17 +36,17 @@ h1{
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
-  src: url("/root-folder/fonts/GT-Super-Display-Super.woff");
+  src: url("../../../fonts/GT-Super-Display-Super.woff");
 }
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url("/root-folder/fonts/GT-Super-Display-Bold.woff") format("woff");
+  src: url("../../../fonts/GT-Super-Display-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Calluna";
-  src: url("/root-folder/fonts/Calluna-Regular-webfont.woff") format("woff");
+  src: url("../../../fonts/Calluna-Regular-webfont.woff") format("woff");
 }
 
 @keyframes slideUp {
@@ -167,7 +167,6 @@ h1{
     width: 100%;
   }
 }
-
 
 .basic-story__lead-in {
   color: #c7531e;
@@ -646,16 +645,37 @@ h1{
   font-family: 'Benton Sans Reg', sans-serif;
 }
 
-@media (max-width:640px){
+.video{
+  height: 810px;
+  width:100%;
+  margin:0 auto; 
+  text-align: center;
+}
+
+.video iframe{
+  width:100%;
+  height: 810px;
+}
+
+@media only screen 
+and (min-width:300px)
+and (max-width:640px){
   .heroCaption{
     display: none;
+  }
+
+  .video, .video iframe{
+      height:202px;
   }
 }
 
 @media only screen 
-and (min-device-width : 800px) 
+and (min-device-width : 640px) 
 and (max-device-width : 850px) {
   .heroCaption{
     display: none;
   }
+  .video, .video iframe{
+    height:405px;
+}
 }

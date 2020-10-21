@@ -1,48 +1,4 @@
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  font-size:18px;
-  font-family: 'Calluna', serif;
-  line-height: 1.5em;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.clear{
-  clear: both;
-}
-
-.extra{
-  margin-bottom:7em;
-}
-
-.rust, a{
-  color: #c7531e;
-}
-
-h1{
-  line-height: 1.2em;
-}
-
-/* fonts for page */
-@font-face {
-  font-family: "GT-Super";
-  src: url("/root-folder/fonts/GT-Super-Display-Super.woff");
-}
-
-@font-face {
-  font-family: "GT-Super-bold";
-  src: url("/root-folder/fonts/GT-Super-Display-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Calluna";
-  src: url("/root-folder/fonts/Calluna-Regular-webfont.woff") format("woff");
-}
 
 @keyframes slideUp {
   from {

@@ -7,7 +7,6 @@
 aside {
   width: 25%;
   float:left;
-  margin: 0 0 0 5em;
 }
 
 .basic-story__social-share__social-icons {
@@ -62,8 +61,7 @@ aside {
 .center_content{
   width: 60%;
   margin: 0 auto;
-  position: relative;
-  left: 5em;
+
 }
 
 .basic-story__content__wrapper {

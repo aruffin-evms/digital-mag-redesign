@@ -17,11 +17,8 @@ h3{
 }
 
 .basic-story__content__wrapper{
-  margin: 0 3em 0 0;
-    width: 100%;
-    float: left;
-    position: relative;
-    left: 10em;
+  position: relative;
+  right: 2%;
 }
 
 .hero-wrapper{
@@ -30,11 +27,11 @@ h3{
 }
 
 .basic-story__aside {
-  margin: 5% 0 0 4%;
-    float: none;
-    width: 25%;
-    position: relative;
-    left: 10em;
+  width: 25%;
+  margin: 2%;
+  position: absolute;
+  top: 52%;
+  right: 0%;
 }
 
 .heroCaption, .basic-story__social-share__title{
@@ -48,11 +45,6 @@ h3{
 .basic-story__social-share__title{
   font-size: .3em;
   padding-bottom: 1em;
-}
-
-.basic-story__content{
-  margin: 0 auto;
-  width: 60%;
 }
 
 .basic-story__by-line{
@@ -196,7 +188,7 @@ width:100%;
   object-fit: cover;
 }
 .basic-story__content__image-wrapper {
-  height: 20em;
+  height: 19em;
 }
 .basic-story__aside {
   margin: 5% 0 0 4%;
@@ -204,6 +196,9 @@ width:100%;
   width: 95%;
   display: block;
   left: 0;
+  position: unset;
+    top: 0;
+    right: 0%;
 }
 
 .basic-story__social-share {
@@ -218,7 +213,7 @@ width:100%;
 }
 
 @media only screen 
-and (min-device-width : 800px) 
+and (min-device-width : 640px) 
 and (max-device-width : 850px) {
   .features__hero__title{
     font-size: 1em;
@@ -290,5 +285,8 @@ width:100%;
 .heroCaption{
   display: block;
 } 
+.basic-story__content__image-wrapper {
+  height: 28em;
+}
 }
 
