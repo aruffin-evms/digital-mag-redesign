@@ -21,6 +21,6 @@ click to view page
   <li><a href="./root-folder/features/education/education.html">[Feature] Education</a></li>
   <li><a href="./root-folder/features/research/research.html">[Feature] Research</a></li>
   <li><a href="./root-folder/photo-essay/photo-essay.html">Photo essay</a></li>
-  <li><a href=""></a></li>
-  <li><a href=""></a></li>
+  <li><a href="./root-folder/stories/basic-story/toll/toll.html">Pivoting: Toll</a></li>
+  <li><a href="./root-folder/stories/basic-story/"></a></li>
 </ul>
