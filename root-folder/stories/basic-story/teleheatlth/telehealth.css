@@ -17,10 +17,8 @@ h3{
 }
 
 .basic-story__content__wrapper{
-    width: 100%;
-    float: left;
-    position: relative;
-    left: 22%;
+  position: relative;
+  right: 2%;
 }
 
 .hero-wrapper{
@@ -31,6 +29,9 @@ h3{
 .basic-story__aside {
   width: 25%;
   margin: 2%;
+  position: absolute;
+  top: 52%;
+  right: 0%;
 }
 
 .heroCaption, .basic-story__social-share__title{
@@ -187,7 +188,7 @@ width:100%;
   object-fit: cover;
 }
 .basic-story__content__image-wrapper {
-  height: 20em;
+  height: 19em;
 }
 .basic-story__aside {
   margin: 5% 0 0 4%;
@@ -195,6 +196,9 @@ width:100%;
   width: 95%;
   display: block;
   left: 0;
+  position: unset;
+    top: 0;
+    right: 0%;
 }
 
 .basic-story__social-share {
@@ -209,7 +213,7 @@ width:100%;
 }
 
 @media only screen 
-and (min-device-width : 800px) 
+and (min-device-width : 640px) 
 and (max-device-width : 850px) {
   .features__hero__title{
     font-size: 1em;
@@ -281,5 +285,8 @@ width:100%;
 .heroCaption{
   display: block;
 } 
+.basic-story__content__image-wrapper {
+  height: 28em;
+}
 }
 
