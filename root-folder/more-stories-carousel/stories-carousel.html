@@ -8,6 +8,122 @@
   <link href="https://cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Document</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "GT-Super-bold";
+  src: url('../fonts/GT-Super-Display-Super.woff') format('woff');
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(128, 128, 128, 0.7);
+  cursor: pointer;
+  padding: 20px;
+  display: none !important;
+}
+
+@media(min-width: 600px) {
+  .arrow {
+    display: inline-block !important;
+  }
+}
+
+.arrow__back {
+  left: 20%;
+}
+
+.arrow__next {
+  right: 3%;
+}
+
+@media(min-width: 900px) {
+  .arrow__next {
+    right: 10%;
+  }
+}
+
+.stories-carousel {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.stories-carousel__title-wrapper {
+  padding-top: 5px;
+}
+
+.stories-carousel__rust-bar {
+  width: 60px;
+  border-top: solid 4px #c7531e;
+  padding-bottom: 10px;
+}
+.stories-carousel__title {
+  font-size: 42px;
+  width: 100px;
+  margin: 0 15px 0 0;
+  font-family: 'GT-Super';
+}
+
+.stories-carousel__carousel-item__title {
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Benton Sans Lt';
+  color: #c7531e;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.stories-carousel__carousel-item__subtitle {
+  font-family: 'Benton Sans Lt';
+  font-size: 18px;
+}
+
+.stories-carousel__carousel {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+@media(min-width: 600px) {
+  .stories-carousel__carousel {
+    overflow-x: hidden;
+  }
+}
+
+.stories-carousel__carousel-item {
+  width: 100%;
+  margin: 20px;
+  /* background: gray; */
+}
+
+.stories-carousel__thumbnail-wrapper {
+  min-height: 144px;
+  min-width: 208px;
+}
+
+.stories-carousel__thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: solid 1px #b1b4b7;
+}
+
+  </style>
 </head>
 <body>
   <section class="stories-carousel">
@@ -104,5 +220,21 @@
       </div>
     </div>
   </section>
+  <script>
+    const scrollDistance = 500;
+const storyCarousel = document.getElementById('storyCarousel')
+const nextThumbnail = document.getElementById('nextThumbnail')
+const prevThumbnail = document.getElementById('prevThumbnail')
+const swipeDistance = 150
+
+nextThumbnail.addEventListener('click', function() {
+  storyCarousel.scrollLeft += scrollDistance
+})
+
+prevThumbnail.addEventListener('click', function() {
+  storyCarousel.scrollLeft -= scrollDistance
+})
+
+  </script>
 </body>
 </html>
