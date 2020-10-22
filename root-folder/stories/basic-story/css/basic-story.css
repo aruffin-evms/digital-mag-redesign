@@ -104,6 +104,9 @@ h1{
   height: 30vh;
   width: 100%;
 }
+.subLead{
+  font-family: 'Benton Sans Reg', serif
+}
 
 @media(min-width: 900px) {
   .basic-story__hero-wrapper {
