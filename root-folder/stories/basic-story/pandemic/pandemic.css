@@ -19,6 +19,11 @@ body {
   width: 90%;
 }
 
+.basic-story__content__image-wrapper.pandemic {
+    width: 30%;
+}
+
+
  .hero-wrapper{
   display: block;
   clear: both;
