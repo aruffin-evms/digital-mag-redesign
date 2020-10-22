@@ -323,7 +323,9 @@ h1{
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: .9em;
+  font-family: 'benton sans reg', sans-serif;
+  transform: scaleX(0.85);
 }
 
 /* [start] image with caption */
