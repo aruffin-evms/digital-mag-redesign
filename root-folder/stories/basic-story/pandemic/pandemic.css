@@ -4,28 +4,16 @@ body {
   background-size: contain;
   background-position-x: center;
 }
-
 .basic-story__story-qoute__wrapper{
-  margin:0 auto;
+    max-width: 60vw;
+    margin:0 auto;
 }
-.basic-story__story-qoute__qoute {
-  font-size: 1.5em;
-  width: 60%;
-  margin: 0 auto;
-}
-
-.basic-story__story-qoute__qoutation-mark__horizontal-line--bottom , .basic-story__story-qoute__qoutation-mark__horizontal-line--top{
-  z-index: 1;
+.basic-story__story-qoute__content {
   width: 90%;
 }
-
- .hero-wrapper{
-  display: block;
-  clear: both;
-  height: 50vh;
-  width: 100%;
-} 
-
+.basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
+ width:95%;
+}
 .basic-story__dropcap{
   position: relative;
 }
