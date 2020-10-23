@@ -683,6 +683,9 @@ and (max-width:640px){
       height:202px;
       width: 100%;
   }
+  .basic-story__content{
+    width:95%;
+  }
 }
 
 @media only screen 
