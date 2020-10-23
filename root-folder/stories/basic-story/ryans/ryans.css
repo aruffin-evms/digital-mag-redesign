@@ -54,6 +54,11 @@ aside {
     margin-top: -3em;
 }
 
+.diySection p{
+  font-family: 'Benton Sans Reg', serif;
+  font-size:.8em;
+}
+
 /* end Aside section */
 
 /* main body content */
@@ -97,7 +102,7 @@ aside {
 }
 
 .basic-story__content__department-label {
-  font-size: .7em;
+  font-size: .8em;
 }
 
 .basic-story__lead-in {
