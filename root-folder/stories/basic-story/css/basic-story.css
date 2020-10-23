@@ -420,7 +420,7 @@ h1{
   margin: 15px auto 48px;
   padding-left: 10px;
   position: relative;
-  left: -.55em;
+  left:0;
   font-style: italic;
   font-size: .9em;
 }
