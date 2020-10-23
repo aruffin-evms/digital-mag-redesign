@@ -71,7 +71,6 @@
 .basic-story__hero-wrapper {
   height: 60vh;
   width: 100%;
-  background-color: gray;
 }
 
 .basic-story__hero__image {
@@ -168,7 +167,9 @@
   background-image: url(../images/twitter.svg); 
 }
 
-
+.basic-story__hero__overlay{
+  width: 470px;
+}
 .basic-story__content__description {
   margin: 10px 0 45px;
   width: 90%;
@@ -216,13 +217,8 @@
 
 /* [end] by lines */
 
-.basic-story__content__story {
-  margin: 10px 0 0;
-  line-height: 32px;
-}
-.basic-story__content__story__p {
-  padding: 17px 0;
-  font-family: 'Calluna';
+.underCaption{
+  margin-top:-5%;
 }
 
 /* [start] image with caption */
@@ -244,6 +240,12 @@
   width: 60%;
   margin: 15px auto 48px;
   padding-left: 10px;
+}
+
+.basic-story__content__caption{
+  display: inline-flex;
+  font-family: 'Benton Sans Lt';
+  width: 400px;
 }
 /* [end] image with caption */
 
@@ -421,4 +423,19 @@
 aside{
 
   width:15%;
+}
+
+@media (max-width:480px) {
+  .basic-story__hero-wrapper{
+    height:auto;
+  }
+
+  .basic-story__hero__overlay {
+    width: 250px;
+    font-size: .7em;
+}
+aside {
+  width: 90%;
+  padding: 2%;
+}
 }
