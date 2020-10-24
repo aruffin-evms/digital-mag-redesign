@@ -33,17 +33,9 @@ width:95%;
   h1 {
     line-height: 1.2em;
 }
-  .features__hero__overlay{
-    width: 90%;
-  }
-  .basic-story__content {
-    width: 90%;
-    background-color: #FFF;
-    float: none;
-}
 .basic-story {
   overflow-x: hidden;
-  width: auto;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -53,10 +45,6 @@ width:95%;
 
 .basic-story__content__image{
   width: 90%
-}
-
-.basic-story__aside{
-  padding: 0 2%;
 }
 
 .basic-story__story-qoute__qoute{
