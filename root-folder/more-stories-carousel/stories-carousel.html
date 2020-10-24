@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stories-carousel.css">
+  <script defer src="./stories-carousel.js"></script>
+  <link href="https://cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "GT-Super-bold";
+  src: url('../fonts/GT-Super-Display-Super.woff') format('woff');
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(128, 128, 128, 0.7);
+  cursor: pointer;
+  padding: 20px;
+  display: none !important;
+}
+
+@media(min-width: 600px) {
+  .arrow {
+    display: inline-block !important;
+  }
+}
+
+.arrow__back {
+  left: 20%;
+}
+
+.arrow__next {
+  right: 3%;
+}
+
+@media(min-width: 900px) {
+  .arrow__next {
+    right: 10%;
+  }
+}
+
+.stories-carousel {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.stories-carousel__title-wrapper {
+  padding-top: 5px;
+}
+
+.stories-carousel__rust-bar {
+  width: 60px;
+  border-top: solid 4px #c7531e;
+  padding-bottom: 10px;
+}
+.stories-carousel__title {
+  font-size: 42px;
+  width: 100px;
+  margin: 0 15px 0 0;
+  font-family: 'GT-Super';
+}
+
+.stories-carousel__carousel-item__title {
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Benton Sans Lt';
+  color: #c7531e;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.stories-carousel__carousel-item__subtitle {
+  font-family: 'Benton Sans Lt';
+  font-size: 18px;
+}
+
+.stories-carousel__carousel {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+@media(min-width: 600px) {
+  .stories-carousel__carousel {
+    overflow-x: hidden;
+  }
+}
+
+.stories-carousel__carousel-item {
+  width: 100%;
+  margin: 20px;
+  /* background: gray; */
+}
+
+.stories-carousel__thumbnail-wrapper {
+  min-height: 144px;
+  min-width: 208px;
+}
+
+.stories-carousel__thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: solid 1px #b1b4b7;
+}
+
+  </style>
+</head>
+<body>
+  <section class="stories-carousel">
+    <div class="stories-carousel__title-wrapper">
+      <div class="stories-carousel__rust-bar"></div>
+      <h3 class="stories-carousel__title">Also in&nbsp;the issue</h3>
+    </div>
+    <span id="prevThumbnail" class="arrow arrow__back material-icons">arrow_back_ios</span>
+    <span id="nextThumbnail" class="arrow arrow__next material-icons">arrow_forward_ios</span>
+    <div id="storyCarousel" class="stories-carousel__carousel">
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--tall">
+          <img src="../assets/stories-carousel-alumni-stowasser-208x288.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">Alumni</h3>
+        <p class="stories-carousel__carousel-item__subtitle">EVMS alumna battles COVID-19 in New York City</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+          <img src="../assets/stories-carousel-myStory-208x144.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">my story</h3>
+        <p class="stories-carousel__carousel-item__subtitle">Former drummer, DJ refuses to let MS take his “happy”</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
+          <img src="../assets/stories-carousel-diversity+inclusion-208x224.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">diversity & inclusion</h3>
+        <p class="stories-carousel__carousel-item__subtitle">Change for the better</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+          <img src="../assets/stories-carousel-oldfield-208x144.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">PIVOTING IN A PANDEMIC | PROFILE</h3>
+        <p class="stories-carousel__carousel-item__subtitle">The Doctor Is In &mdash; and On the Air</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--tall">
+          <img src="../assets/stories-carousel-community+Outreach-208x288.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">community & outreach</h3>
+        <p class="stories-carousel__carousel-item__subtitle">“How can we help?”</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+          <img src="../assets/stories-carousel-photoEssay-208x144.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">photo essay</h3>
+        <p class="stories-carousel__carousel-item__subtitle">Safety first</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
+          <img src="../assets/stories-carousel-mazzurco-208x224.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">PIVOTING IN A PANDEMIC | FIRST PERSON</h3>
+        <p class="stories-carousel__carousel-item__subtitle">The heartbreaking toll of social distancing</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+          <img src="../assets/stories-carousel-Q+A-208x144.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">Q&A</h3>
+        <p class="stories-carousel__carousel-item__subtitle">Military. Mother. Mentor.</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
+          <img src="../assets/stories-carousel-research-208x224.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">Research</h3>
+        <p class="stories-carousel__carousel-item__subtitle">NIH awards $3.1 million grant to EVMS social scientist</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+          <img src="../assets/stories-carousel-telehealth-208x144.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">Feature</h3>
+        <p class="stories-carousel__carousel-item__subtitle">Telehealth to the rescue</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+          <img src="../assets/stories-carousl-alumni-chang.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">ALUMNI FOCUS</h3>
+        <p class="stories-carousel__carousel-item__subtitle">EVMS training preps surgeon to lead pademic response</p>
+      </div>
+      <div class="stories-carousel__carousel-item">
+        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+          <img src="../assets/stories-carousel-yourSupport-208x144.jpg" alt="" class="stories-carousel__thumbnail">
+        </figure>
+        <h3 class="stories-carousel__carousel-item__title">YOUR SUPPORT</h3>
+        <p class="stories-carousel__carousel-item__subtitle">Ryan Translational Research Fund</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    const scrollDistance = 500;
+const storyCarousel = document.getElementById('storyCarousel')
+const nextThumbnail = document.getElementById('nextThumbnail')
+const prevThumbnail = document.getElementById('prevThumbnail')
+const swipeDistance = 150
+
+nextThumbnail.addEventListener('click', function() {
+  storyCarousel.scrollLeft += scrollDistance
+})
+
+prevThumbnail.addEventListener('click', function() {
+  storyCarousel.scrollLeft -= scrollDistance
+})
+
+  </script>
+</body>
+</html>

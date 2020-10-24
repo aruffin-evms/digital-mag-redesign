@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe__wrapper {
+  display: flex;
+  flex: 0 1 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90vw;
+  height: auto;
+  background-color: white;
+}
+
+@media(min-width: 900px) {
+  .subscribe__wrapper {
+    width: 700px;
+    height: 500px;
+  }
+}
+
+.subscribe__column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 30px 0;
+}
+
+@media(min-width: 900px) {
+  .subscribe__column {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.subscribe__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe__poster-wrapper {
+  
+  height: 340px;
+  width: 300px;
+  margin: 0 auto;  
+}
+
+.subscribe__poster {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.subscribe__title {
+  font-size: 42px;
+}
+
+.subscribe__cta {
+  max-width: 120px;
+  text-align: center;
+  background-color: #000000;
+  padding: 10px 20px;
+  margin: 0 auto;
+  color: #fafafa;
+  text-decoration: none;
+  transition: 0.5s ease;
+  font-family: 'Benton Sans Reg';
+}
+
+.subscribe__cta:hover {
+  box-shadow: 0 5px 0 #c7531e inset;
+}
+
+.subscribe__description {
+  padding-bottom: 20px;
+  font-family: 'Benton Sans Reg';
+}
+
+.subscribe__pdf-download {
+  color: #c7531e;
+  text-decoration: none;
+  padding-top: 20px;
+  font-family: 'Benton Sans Reg';
+}

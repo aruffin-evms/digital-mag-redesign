@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="../basic-story.js"></script>
   <link rel="stylesheet" href="../basic-story.css">
+  <link rel="stylesheet" href="../css/basic-story.css">
   <!-- <link rel="stylesheet" href="my-story.css"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="//cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
@@ -15,7 +16,7 @@
 
 <body>
   <main class="basic-story">
-    <section class="basic-story__hero">
+    <section class="basic-story__hero" style="margin-bottom: 20px;">
       <figure class="basic-story__hero-wrapper">
         <img src="../../../assets/my-story-roebuck.jpg" alt="" class="basic-story__hero__image">
       </figure>
@@ -25,9 +26,7 @@
       </div> -->
     </section>
     <aside class="basic-story__aside">
-      <p>PICTURED ABOVE: Please provide a caption
-        for the hero photo.
-        Photo courtesy of</p>
+      <p class="heroCaption">Eddie Robuck was diagnosed with MS on his 49th birthday. He chooses to face the challenges his condition deals him head on. </p>
       <div class="basic-story__social-share">
         <p class="basic-story__social-share__title">Share this story</p>
         <!-- [start] component: social icons -->
@@ -39,24 +38,22 @@
         </div>        
       </div>
       <!-- [start] component: by lines -->
-      <!-- <div class="basic-story__by-line">
+      <div class="basic-story__by-line">
         <div class="basic-story__by-line__line-wrapper">
-          <p class="basic-story__byline__label">Story by</p>
+          <p class="basic-story__byline__label">Story:</p>
           <p class="basic-story__byline__name">Jennifer McCarrel</p>
         </div>
         <div class="basic-story__by-line__line-wrapper">
-          <p class="basic-story__byline__label">Photo by</p>
+          <p class="basic-story__byline__label">Photo:</p>
           <p class="basic-story__byline__name">Brendan Ash</p>
         </div>
-      </div> -->
+      </div> 
       <!-- [end] component: by lines -->
     </aside>
     <section class="basic-story__content">
       <div class="basic-story__content__wrapper">
         <label for="" class="basic-story__content__department-label">My story</label>
-        <h1 class="basic-story__content__title">Former drummer, DJ refuses to let MS take his “happy”</h1>
-        <p class="basic-story__content__description">Through the Community-Engaged Learning initiative called<br>Street
-          Health, EVMS students learn and serve people in need.</p>
+        <h1 class="basic-story__content__title" style="margin-bottom: 20px; ">Former drummer, DJ refuses to let MS take his “happy”</h1>
         <div class="basic-story__content__story">
           <p class="basic-story__content__story__p"><span class="basic-story__dropcap">E</span>ddie Roebuck’s index and middle finger tap against the side of his leg and his wheelchair with intensity and intentionality. At first glance, this could be dismissed as nerves misfiring in a haphazard way, yet something begs for a second look.</p>
           <p class="basic-story__content__story__p">The beat his fingers tap out is steady, matching the slight bob of his head, and gets faster, louder as he breaks into song.</p>
@@ -79,10 +76,12 @@
         </div>
       </div>
       <!-- [start] component: image with caption -->
-      <figure class="basic-story__content__image-wrapper">
-        <img src="../../../assets/my-story-eddie-van.jpg" alt="" class="basic-story__content__image animate-vertical">
-      </figure>
-      <figcaption class="basic-story__content__image-caption">Git precull uptat. It ad eriorib erferum fuga. Officaborro voles dolorum atur remporerit qui cum rehendi sciatureprat earciendel idebitatur sinvelescil ipid experum dolores soluptae conet volupta simporae nullorerit, vollati berovitatent ulpa nem inctorrum ut liquate doloritaque et, non erores maximus.</figcaption>
+      <div class="basic-story__wrapper">
+        <figure class="basic-story__content__image-wrapper">
+          <img src="../../../assets/my-story-eddie-van.jpg" alt="" class="basic-story__content__image animate-vertical">
+        </figure>
+        <figcaption class="basic-story__content__image-caption">In August, a fundraising effort spearheaded by Mr. Roebuck’s sister enabled him to buy a specially equipped van that gave him back a sense of freedom.</figcaption>
+      </div>
       <!-- [end] component: image with caption -->
       <div class="basic-story__content__wrapper">
         <div class="basic-story__content__story">
@@ -126,10 +125,11 @@
               as I can, I am going back to
               physical therapy. I’m going
               to walk again, and then —
-              then I’m going to dance.”</p>
+              then I’m going&nbsp;to&nbsp;dance.</p>
           </div>
           <div class="basic-story__story-qoute__qoutation-mark__horizontal-line--top"></div>
         <div class="basic-story__story-qoute__qoutation-mark basic-story__story-qoute__qoutation-mark--bottom"><span class="qoutation-mark--bottom material-icons animate-vertical">format_quote</span></div>
+        <p class="basic-story__content__story__p quote">Eddie Roebuck</p>
       </div>
     </section>
     <!-- [end] component: story pull qoute -->

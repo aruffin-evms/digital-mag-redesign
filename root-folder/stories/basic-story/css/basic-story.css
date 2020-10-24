@@ -36,17 +36,17 @@ h1{
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
-  src: url("/root-folder/fonts/GT-Super-Display-Super.woff");
+  src: url("../../../fonts/GT-Super-Display-Super.woff");
 }
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url("/root-folder/fonts/GT-Super-Display-Bold.woff") format("woff");
+  src: url("../../../fonts/GT-Super-Display-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Calluna";
-  src: url("/root-folder/fonts/Calluna-Regular-webfont.woff") format("woff");
+  src: url("../../../fonts/Calluna-Regular-webfont.woff") format("woff");
 }
 
 @keyframes slideUp {
@@ -81,7 +81,9 @@ h1{
     margin-right: 0;
   }
 }
-
+.smaller{
+  font-size:.8em;
+}
 .slide-up {
   animation: slideUp 1.5s;
 }
@@ -98,19 +100,27 @@ h1{
   overflow-x: hidden;
 }
 
+.basic-story__hero{
+  display: inline-block;
+}
+
 .basic-story__hero-wrapper {
   height: 30vh;
   width: 100%;
+}
+.subLead{
+  font-family: 'Benton Sans Reg', serif
 }
 
 @media(min-width: 900px) {
   .basic-story__hero-wrapper {
     height: 60vh;
+    display: inline-block;
   }
 }
 
 .basic-story__hero__image {
-  height: 100%;
+  height: auto;
   width: 100%;
   object-fit: cover;
 }
@@ -166,7 +176,6 @@ h1{
   }
 }
 
-
 .basic-story__lead-in {
   color: #c7531e;
   text-transform: uppercase;
@@ -200,6 +209,11 @@ h1{
   }
 }*/
 
+.heroCaption{
+  font-family: 'Benton Sans Reg', sans-serif;
+  font-size: .8em;
+}
+
 @media (min-width: 900px) {
   .basic-story__aside {
     float: right;
@@ -231,12 +245,13 @@ h1{
   float: right;
   height: 50px;
   /* width: 140px; */
-  margin: 2em 0 1em;
+  margin: 40px 0;
 }
 
 .basic-story__social-share__title {
   text-transform: uppercase;
-  font-size: .8em;
+    font-size: .7em;
+    font-family: 'Benton Sans Reg';
 }
 
 /* [start] social icons */
@@ -341,7 +356,8 @@ h1{
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1em;
+  font-family: 'Benton Sans Reg';
 }
 
 /* [start] image with caption */
@@ -404,7 +420,7 @@ h1{
   margin: 15px auto 48px;
   padding-left: 10px;
   position: relative;
-  left: -.55em;
+  left:0;
   font-style: italic;
   font-size: .9em;
 }
@@ -465,14 +481,14 @@ h1{
 
 @media(min-width: 900px) {
   .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
-    width: 976px;
+    width: 900px
   }
 }
 
 .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
   border-top: 1px solid gray;
   margin: 0 auto;
-  width: 90%;
+  width: 64%;
   position: relative;
   top: 5px;
   z-index: -1;
@@ -487,7 +503,7 @@ h1{
 
 @media(min-width: 900px) {
   .basic-story__story-qoute__content {
-    width: 864px;
+    width: 800px;
   }
 }
 
@@ -644,16 +660,42 @@ h1{
   font-family: 'Benton Sans Reg', sans-serif;
 }
 
-@media (max-width:640px){
+.video{
+  height: 640px;
+  width:88%;
+  margin:0 auto; 
+  text-align: center;
+}
+
+.video iframe{
+  width:88%;
+  height: 640px;
+}
+
+@media only screen 
+and (min-width:300px)
+and (max-width:640px){
   .heroCaption{
     display: none;
+  }
+
+  .video, .video iframe{
+      height:202px;
+      width: 100%;
+  }
+  .basic-story__content{
+    width:95%;
   }
 }
 
 @media only screen 
-and (min-device-width : 800px) 
+and (min-device-width : 640px) 
 and (max-device-width : 850px) {
   .heroCaption{
     display: none;
   }
+  .video, .video iframe{
+    height:360px;
+    width: 100%;
+}
 }

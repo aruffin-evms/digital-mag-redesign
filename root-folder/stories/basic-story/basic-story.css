@@ -1,48 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
 }
 
-body{
-  font-size:18px;
-  font-family: 'Calluna', serif;
-  line-height: 1.5em;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.clear{
-  clear: both;
-}
-
-.extra{
-  margin-bottom:7em;
-}
-
-.rust, a{
-  color: #c7531e;
-}
-
-h1{
-  line-height: 1.2em;
-}
-
-/* fonts for page */
-@font-face {
-  font-family: "GT-Super";
-  src: url("/root-folder/fonts/GT-Super-Display-Super.woff");
-}
-
-@font-face {
-  font-family: "GT-Super-bold";
-  src: url("/root-folder/fonts/GT-Super-Display-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Calluna";
-  src: url("/root-folder/fonts/Calluna-Regular-webfont.woff") format("woff");
-}
 
 @keyframes slideUp {
   from {
@@ -102,6 +62,11 @@ h1{
   .basic-story__hero-wrapper {
     height: 60vh;
   }
+}
+
+.basic-story__wrapper {
+  max-width: 1182px;
+  margin: 0 auto;
 }
 
 .basic-story__hero__image {
@@ -212,6 +177,11 @@ h1{
   margin: 0 auto;
 }
 
+.basic-story__content__wrapper {
+  max-width: 608px;
+  margin: 0 auto;
+}
+
 .basic-story__content__title {
   margin: 10px 0 0;
   font-family: 'GT-Super';
@@ -261,25 +231,25 @@ h1{
 }
 
 .fb{
-  background-image: url(../images/facebook.svg); 
+  background-image: url(../../assets/facebook.svg); 
 }
 
 .ig{
-  background-image: url(../images/instagram.svg); 
+  background-image: url(../../assets/instagram.svg); 
 }
 .in{
-  background-image: url(../images/LinkedIn.svg); 
+  background-image: url(../../assets/LinkedIn.svg); 
 }
 .tw{
-  background-image: url(../images/twitter.svg); 
+  background-image: url(../../assets/twitter.svg); 
 }
-
 
 .basic-story__content__description {
   margin: 10px 0 45px;
   width: 90%;
   font-family: 'Benton Sans Reg';
   line-height: 32px;
+  font-size: 20px;
 }
 
 .basic-story__content__department-label {
@@ -365,7 +335,7 @@ h1{
   color: white;
   font-size: 12px;
   margin-left: 20px;
-  font-family: 'Calluna';
+  font-family: 'Calluna', serif;
   position: relative;
 }
 
@@ -381,7 +351,7 @@ h1{
 @media (min-width: 900px) {
   .basic-story__content__caption {
     top: -600px;
-    margin-bottom: -513px;
+    margin-bottom: -400px;
     margin-left: 200px;
     width: 330px;
     font-size: 32px;
@@ -511,6 +481,24 @@ h1{
 }
 
 /* [start] more stories carousel */
+
+/* .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(128, 128, 128, 0.7);
+  cursor: pointer;
+  padding: 20px;
+}
+
+.arrow__back {
+  left: 20%;
+}
+
+.arrow__next {
+  right: 10%;
+} */
+
 .basic-story__more-stories {
   padding: 64px 0;
   display: flex;
@@ -520,14 +508,64 @@ h1{
 }
 
 .basic-story__more-stories__title {
-  width: 130px;
   font-size: 42px;
+  width: 100px;
+}
+
+.basic-story__more-stories__carousel-item__title {
+  width: 130px;
+  font-size: 16px;
+  font-family: 'Benton Sans Lt';
+  color: #c7531e;
+  text-transform: uppercase;
+}
+
+.basic-story__more-stories__carousel-item__subtitle {
+  font-family: 'Benton Sans Lt';
+  font-size: 20px;
 }
 
 .basic-story__more-stories__carousel {
-  background-color: blue;
   width: 60%;
-  height: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.basic-story__more-stories__carousel-item {
+  width: 100%;
+  margin: 20px;
+  /* background: gray; */
+}
+
+.basic-story__more-stories__thumbnail-wrapper {
+  min-height: 144px;
+  min-width: 208px;
+}
+
+.basic-story__more-stories__thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: solid 1px #b1b4b7;
+}
+
+.basic-story__more-carousel__thumbnail-wrapper--tall {
+  height: 288px;
+  width: 100%;
+}
+
+.basic-story__more-carousel__thumbnail-wrapper--short {
+  height: auto;
+  width: auto;
+}
+
+.basic-story__more-carousel__thumbnail-wrapper--medium {
+  height: 288px;
+  width: 100%;
 }
 /* [end] more stories carousel */
 
@@ -649,4 +687,22 @@ h1{
 .steps{
   color: #c7531e;
   font-family: 'Benton Sans Reg';
+}
+
+.basic-story__iframe-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin: 0 auto;
+}
+
+.basic-story__iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }

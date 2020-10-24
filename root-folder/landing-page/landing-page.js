@@ -8,12 +8,27 @@ const qouteSource = document.getElementById('qouteSource')
 
 const storyLink = document.getElementById('storyLink')
 
-const gridStories  = document.querySelectorAll('.landing-page__story')
+const gridStories  = document.querySelectorAll('.landing-page__featured-stories__grid-item__wrapper')
 const gridLinks = document.querySelectorAll('.landing-page__featured-stories__link')
 const gridItemTitles = document.getElementsByTagName('h3')
 const gridItemContent = document.querySelector('.landing-page__featured-stories__grid-item__content-wrapper')
 
-// const storyWrapperOne = document.querySelector('.landing-page__story--one')
+const additionalStories = document.querySelectorAll('.landing-page__story-block')
+
+const expandList = document.getElementById('expandList')
+const featuresList = document.getElementById('featuresList')
+
+const toggleSubnav = document.getElementById('toggleSubnav')
+const subnav = document.getElementById('subnav')
+
+const toggleFeatureNav = document.getElementById('toggleFeatureNav')
+const toggleDepartmentNav = document.getElementById('toggleDepartmentNav')
+
+
+const featureMenu = document.getElementById('featureMenu')
+const departmentMenu = document.getElementById('departmentMenu')
+
+const animationVideo = document.getElementById('animationVideo')
 
 const colors = {
   evmsRust: '#c7531e'
@@ -26,15 +41,38 @@ const carousel = document.querySelector('.landing-page__stories-carousel__carous
 
 const scrollDistance = 200;
 
-console.log(carousel.offsetWidth)
+let clickCount = 0;
+
+
 
 // todo: create function that checks scroll position for looping carousel
 backArrow.addEventListener('click', function() {
   carousel.scrollLeft -= scrollDistance
+
+  clickCount--
+
+  console.log(clickCount)
+
+  if(3 > clickCount > 0) {
+    backArrow.style.display = 'none'
+    forwardArrow.style.display = 'block'
+  }
 })
 
 forwardArrow.addEventListener('click', function() {
   carousel.scrollLeft += scrollDistance
+
+  clickCount++ 
+
+  console.log(clickCount)
+
+  if(clickCount == 3) {
+    forwardArrow.style.display = 'none'
+  }
+
+  if(clickCount > 0) {
+
+  }
 })
 
 qouteDrawer.addEventListener('click', function() {
@@ -70,16 +108,16 @@ gridStories.forEach(function(story) {
   })
 })
 
-// additionalStories.forEach(function(story) {
-//   story.addEventListener('mouseover', function() {
-//     story.getElementsByTagName('figure')[0].style.boxShadow = `0 -5px 0 ${colors.evmsRust}  inset`
+additionalStories.forEach(function(story) {
+  story.addEventListener('mouseover', function() {
+    story.getElementsByTagName('figure')[0].style.boxShadow = `0 -5px 0 ${colors.evmsRust}  inset`
     
-//     story.onmouseout = function(event) {
-//       story.getElementsByTagName('figure')[0].style.boxShadow = `none`
-//       story.getElementsByTagName('figure')[0].style.transition = '.5s all'
-//     }
-//   })
-// })
+    story.onmouseout = function(event) {
+      story.getElementsByTagName('figure')[0].style.boxShadow = `none`
+      story.getElementsByTagName('figure')[0].style.transition = '.5s all'
+    }
+  })
+})
 
 // intersection observer for page animations
 // animate-vertical
@@ -95,6 +133,7 @@ observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.intersectionRatio > 0) {
       entry.target.classList.add('slide-up');
+      animationVideo.play()
     } else {
       // entry.target.classList.remove('slide-up');
     }
@@ -139,11 +178,110 @@ slideElementsRight.forEach(element => {
 
 mobileIcon.addEventListener('click', function() {
   this.classList.toggle('icon-transform')
-  sideNav.style.width = "250px";
+  sideNav.style.width = "300px";
   mobileIcon.style.position = 'absolute'
   
   if(!this.classList.contains('icon-transform')) {
     sideNav.style.width = 0
-    mobileIcon.style.position = 'relative'
+    mobileIcon.style.marginRight = '300px'
+    mobileIcon.style.transition = 'margin-right 1s'
   }
 })
+
+expandList.addEventListener('click', function() {
+  console.log(this.innerHTML)
+  if(this.innerHTML === 'expand_more') {
+    this.innerHTML = 'expand_less'
+    showList(featuresList)
+  } else {
+    this.innerHTML = 'expand_more'
+    hideList(featuresList)
+  }
+})
+
+function showList(list) {
+  list.style.display = 'block'
+  list.style.height = '200px'
+  list.style.opacity = '1'
+}
+
+function hideList(list) {
+  list.style.display = 'none'
+  list.style.height = '0px'
+}
+
+
+toggleSubnav.addEventListener('click', function() {
+  if(this.innerHTML === 'expand_more') {
+    this.innerHTML = 'expand_less'
+    showSubnav()
+  } else {
+    this.innerHTML = 'expand_more'
+    hideSubnav()
+  }
+})
+
+function showSubnav() {
+  subnav.style.height = '50px'
+}
+
+function hideSubnav() {
+  subnav.style.height = '0'
+}
+
+toggleFeatureNav.addEventListener('click', function() {
+  hideMenu(departmentMenu)
+  if(this.innerHTML === 'expand_more') {
+    this.innerHTML = 'expand_less'
+    showMenu(featureMenu)
+  } else {
+    this.innerHTML = 'expand_more'
+    hideMenu(featureMenu)
+  }
+})
+
+toggleDepartmentNav.addEventListener('click', function() {
+  hideMenu(featureMenu)
+  if(this.innerHTML === 'expand_more') {
+    this.innerHTML = 'expand_less'
+    showMenu(departmentMenu)
+  } else {
+    this.innerHTML = 'expand_more'
+    hideMenu(departmentMenu)
+  }
+})
+
+function showMenu(menu) {
+ menu.style.maxHeight = '500px'
+  // featureMenu.style.transition = 'height 1s'
+  console.log('show feature')
+}
+
+function hideMenu(menu) {
+  menu.style.maxHeight = '0'
+}
+
+
+window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    maxParticles: 75,
+    color: ['#4bacb8', '#4bacb8'],
+    minDistance: 150,
+    connectParticles: true,
+    responsive: [
+      {
+        breakpoint: 900,
+        options: {
+          maxParticles: 100
+        }
+      },
+      {
+        breakpoint: 600,
+        options: {
+          maxParticles: 25
+        }
+      }
+    ] 
+  });
+};

@@ -1,0 +1,61 @@
+.basic-story__hero__title{
+    font-size:2em;
+    margin: 1em 0;
+}
+
+.basic-story__content{
+    position: relative;
+}
+h2{
+    font-family: 'Benton Sans Reg', sans-serif;
+    margin: 0 0 1em;
+}
+
+.presidentWrap{
+    float: left;
+    margin: 0 2% 2% 0;
+    width:42%;
+}
+
+.heroCaption{
+    font-size: .8em;
+    font-style: italic;
+}
+
+.presidentWrap img{
+    height: 400px;
+    
+}
+
+.basic-story__social-share__title {
+    text-transform: uppercase;
+    font-size: .3em;
+    margin: 0 0 10% 0;
+}
+
+.basic-story__content p:first-of-type{
+    padding:0 0 1em;
+}
+
+.basic-story__by-line{
+    padding-left:3%;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .presidentWrap {
+        float: none;
+        margin: 2% auto;
+        width: 80%;
+    }
+
+    .basic-story__content {
+        width: 95%;
+        padding: 2%;
+}
+
+  }
+

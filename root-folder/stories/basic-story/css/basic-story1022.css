@@ -221,19 +221,6 @@ h1{
   font-size: .8em;
 }
 
-/* [start] social icons */
-/* .basic-story__social-share__social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 5px;
-}
-
-.basic-story__social-share__social-icon {
-  font-size: 28px !important;
-} */
-/* [end] social icons */
-
 /* taken from different stylesheet */
 .basic-story__social-share__social-icons {
   flex-direction: row;
@@ -318,7 +305,6 @@ h1{
   padding: 1em 0;
 }
 
-
 .quote {
   width: 50%;
   text-align: center;
@@ -340,7 +326,6 @@ h1{
     width: 100%;
   }
 }
-
 
 .basic-story__rust-bar {
   border-top: solid 8px #c7531e;
