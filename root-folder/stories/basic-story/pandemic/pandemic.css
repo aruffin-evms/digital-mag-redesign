@@ -4,6 +4,11 @@ body {
   background-size: contain;
   background-position-x: center;
 }
+
+label{
+  position: relative;
+  margin-top: 120px;
+}
 .basic-story__story-qoute__wrapper{
   max-width: 60vw;
   margin:0 auto;
@@ -16,7 +21,7 @@ width:95%;
 }
 
 .basic-story__content__image-wrapper.pandemic {
-    width: 30%;
+    width: 65%;
 }
 
  .hero-wrapper{
@@ -29,28 +34,6 @@ width:95%;
   position: relative;
 }
 
-@media (max-width:640px){
-  h1 {
-    line-height: 1.2em;
-}
-.basic-story {
-  overflow-x: hidden;
-  width: 95%;
-  margin: 0 auto;
-}
-
-.basic-story__content__image-wrapper{
-  margin: 0;
-}
-
-.basic-story__content__image{
-  width: 90%
-}
-
-.basic-story__story-qoute__qoute{
-  width:100%;
-}
-}
 
 @media only screen 
 and (min-device-width : 800px) 
