@@ -323,8 +323,8 @@ h1{
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  font-size: .9em;
-  font-family: 'benton sans reg', sans-serif;
+  font-size: 1em;
+  font-family: 'Benton Sans Reg', sans-serif;
   transform: scaleX(0.85);
   padding: 0 0 1em;
 }
