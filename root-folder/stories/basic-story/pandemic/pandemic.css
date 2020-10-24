@@ -5,15 +5,26 @@ body {
   background-position-x: center;
 }
 .basic-story__story-qoute__wrapper{
-    max-width: 60vw;
-    margin:0 auto;
+  max-width: 60vw;
+  margin:0 auto;
 }
 .basic-story__story-qoute__content {
-  width: 90%;
+width: 90%;
 }
 .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
- width:95%;
+width:95%;
 }
+
+.basic-story__content__image-wrapper.pandemic {
+    width: 30%;
+}
+
+ .hero-wrapper{
+  display: block;
+  clear: both;
+  height: 50vh;
+  width: 100%;
+} 
 .basic-story__dropcap{
   position: relative;
 }
