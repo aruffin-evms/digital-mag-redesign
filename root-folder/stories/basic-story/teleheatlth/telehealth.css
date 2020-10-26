@@ -1,56 +1,24 @@
-.basic-story__hero__image{
-  height: auto;
-}
-
-h3{ 
-  font-size: .9em;
-}
-
 .feature__hero__image {
   height: auto;
   width: 50%;
   object-fit: cover;
 }
 
-.smaller{
-  font-size:.8em;
-}
-
-.basic-story__content__wrapper{
-  position: relative;
-  right: 2%;
-}
-
 .hero-wrapper{
-  background-color: #262626;
   color: #FFF;
+  display: flex;
 }
 
-.basic-story__aside {
-  width: 25%;
-  margin: 2%;
-  position: absolute;
-  top: 52%;
-  right: 0%;
+.teleTextTop {
+  width: 50%;
+  margin: 6em auto 0;
 }
 
-.heroCaption, .basic-story__social-share__title{
-  font-size:.8em;
+.basic-story__content__department-label {
+  font-size: 1em;
+  color: #fff;
 }
 
-.photoSub{
-  font-size:.9em;
-}
-
-.basic-story__social-share__title{
-  font-size: .3em;
-  padding-bottom: 1em;
-}
-
-.basic-story__by-line{
-  height: auto;
-  display: contents;
-}
 .feature__faculty-spotlight {
   margin: 40px 0;
   background-color: rgba(128, 128, 128, 0.2);
@@ -66,20 +34,6 @@ h3{
   justify-content: space-evenly;
   align-content: center;
   text-align: center;
-}
-
-.basic-story__content__image{
-  height: auto;
-  width: 608px;
-    object-fit: cover;
-}
-
-.basic-story__content__image-wrapper{
-  height: 28em;
-}
-
-.basic-story__content__image-caption{
-  left:0;
 }
 
 .feature__faculty-spotlight__item {
@@ -119,40 +73,52 @@ h3{
 
 .features__hero__overlay {
   width: 50%;
- float:left;
-}
-.teleTextTop{
-  width:50%;
-  margin:6em auto 0;
+  float: left;
+  background-color: #262626;
+  padding-bottom: 11.3%;
 }
 
-.basic-story__content__department-label{
-  font-size:1em;
-  color:#fff;
+.video iframe {
+  width: 88%;
+  height: 640px;
 }
 
-.topText{
-    font-size: 1.5em;
+.video {
+  height: 640px;
+  width: 88%;
+  margin: 1em auto 2.55em;
+  text-align: center;
 }
 
-.basic-story__story-qoute__content, .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom{
-  width:auto;
+.basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top{
+  width: 100%;
 }
 
-.basic-story__story-qoute__qoute{
-  font-size:1.2em;
+.basic-story__story-qoute__qoute {
+  width: 65%;
 }
 
-.imageFix{
-  margin: -.7em;
-  height: 0;
+.heroCaption{
+  margin-bottom: 5%;
 }
-
+@media (min-width: 900px){
+.basic-story__aside {
+  margin: 4% 10% 2% 2%;
+}
+}
 
 @media (max-width:640px){
+
+  .hero-wrapper {
+    display: block;
+}
   .features__hero__title{
     font-size: 1em;
   }
+
+  .basic-story__story-qoute__qoute {
+    width: 100%;
+}
 
   .features__hero__overlay{
     width: 100%;
@@ -166,7 +132,7 @@ width:100%;
   }
 
   .teleTextTop {
-    width: 100%;
+    width: 95%;
     margin: 0;
 }
 
@@ -188,7 +154,7 @@ width:100%;
   object-fit: cover;
 }
 .basic-story__content__image-wrapper {
-  height: 19em;
+  height: 23em;
 }
 .basic-story__aside {
   margin: 5% 0 0 4%;
@@ -210,14 +176,32 @@ width:100%;
 .heroCaption{
   display: block;
 } 
+.video {
+  height: auto;
 }
+
+.video iframe {
+  width: 100%;
+  height: 208px;
+}
+}
+
+
 
 @media only screen 
 and (min-device-width : 640px) 
 and (max-device-width : 850px) {
+
+  .hero-wrapper {
+    display: block;
+}
   .features__hero__title{
     font-size: 1em;
   }
+
+  .basic-story__story-qoute__qoute {
+    width: 100%;
+}
 
   .features__hero__overlay{
     width: 100%;
@@ -231,12 +215,8 @@ width:100%;
   }
 
   .teleTextTop {
-    width: 100%;
+    width: 95%;
     margin: 0;
-}
-
-.basic-story__content__wrapper{
-  max-width: 100%;
 }
 
   .basic-story__content {
@@ -245,10 +225,8 @@ width:100%;
     padding: 0 2%;
 }
 .basic-story__content__wrapper {
-  margin: 0;
-  width: 95%;
-  float: none;
-  left:0;
+  max-width: 100%;
+
 }
 
 .basic-story__content__image {
@@ -257,14 +235,17 @@ width:100%;
   object-fit: cover;
 }
 .basic-story__content__image-wrapper {
-  height: 34em;
+  height: 37em;
 }
 .basic-story__aside {
   margin: 5% 0 0 4%;
   float: none;
   width: 95%;
   display: block;
-  left:0;
+  left: 0;
+  position: unset;
+    top: 0;
+    right: 0%;
 }
 
 .basic-story__social-share {
@@ -273,20 +254,16 @@ width:100%;
   margin: 3em 0;
   display: block;
 }
-
-.basic-story__content__image-caption{
-  margin:0;
-}
-
-.imageFix{
-  line-height: 15em;
-  margin: 0;
-}
 .heroCaption{
   display: block;
 } 
-.basic-story__content__image-wrapper {
-  height: 28em;
+.video {
+  height: auto;
+}
+
+.video iframe {
+  width: 100%;
+  height: 420px;
 }
 }
 
