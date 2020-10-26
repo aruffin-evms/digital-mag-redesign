@@ -6,17 +6,17 @@
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
-  src: url("../fonts/GT-Super-Display-Super.woff") format("woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Super.woff") format("woff");
 }
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url("../fonts/GT-Super-Display-Bold.woff") format("woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Calluna";
-  src: url("../fonts/Calluna-Regular-webfont.woff") format("woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff") format("woff");
 }
 
 .background {
@@ -211,19 +211,25 @@
 }
 
 
-
 .pandemic-landing__cta:hover {
   background-color: rgb(155, 155, 155, 0.4);
 }
 
 .pandemic-landing__cta--education {
-  border: turquoise solid 4px;
+  border: #05c3de solid 4px;
 }
-
+.pandemic-landing__cta--education:hover {
+  border: #05c3de solid 4px;
+}
 .pandemic-landing__cta--research {
-  border: saddlebrown solid 4px;
+  border: #766a62 solid 4px;
 }
-
+.pandemic-landing__cta--research:hover {
+  border: #766a62 solid 4px;
+}
 .pandemic-landing__cta--patient-care {
-  border: darkolivegreen solid 4px;
+  border: #cbc46d solid 4px;
+}
+.pandemic-landing__cta--patient-care:hover {
+  border: #cbc46d solid 4px;
 }
