@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* fonts for page */
+@font-face {
+  font-family: 'GT-Super';
+  src: url('/root-folder/fonts/GT-Super-Display-Super.woff') format('woff');
+}
+
+@font-face {
+  font-family: "GT-Super-bold";
+  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Calluna';
+  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff') format('woff');
+}
+
+#toggleSubnav, #toggleFeatureNav, #toggleDepartmentNav {
+  position: relative;
+  top: 5px;
+}
+
+.digital-mag__cta {
+  background-color: #000000;
+  padding: 10px 20px;
+  max-width: 120px;
+  margin: 0 auto;
+  text-align: center;
+  transition: 0.5s ease;
+  color: white;
+  text-decoration: none;
+  font-family: 'Benton Sans Reg';
+  transform: translateZ(0);
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.digital-mag__cta:before { 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #c7531e;
+  height: 6px;
+  transition: .5s all;
+}
+
+.digital-mag__cta:hover:before {
+  right: 0;
+}
+
+.digital-mag__nav {
+  background-color: #fafafa;
+  width: 100vw;
+  position: sticky;
+  z-index: 11;
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+}
+
+.digital-mag__nav--mobile {
+  display: flex;
+  height: 100%; 
+  
+  top: 0;
+}
+
+.digital-mag__nav--desktop {
+  display: none;
+}
+
+@media(min-width: 900px) {
+  .digital-mag__nav--mobile {
+    display: none;
+  }
+
+  .digital-mag__nav--desktop {
+    display: block;
+  }
+}
+
+/* .digital-mag__mobile-menu__wrapper {
+  height: 0;
+  display: none;
+  opacity: 0;
+  transition: 1s opacity;
+} */
+
+.digital-mag__nav--mobile__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.digital-mag__nav--mobile__logo-wrapper {
+  background-color: green;
+  width: 100px;
+  height: 90%;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.digital-mag__nav--mobile__suscribe-cta {
+  text-align: center;
+  padding-top: 23px !important;
+}
+
+.digital-mag__nav--mobile__icon {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+}
+
+.digital-mag__nav--mobile__icon-bar1, .digital-mag__nav--mobile__icon-bar2, .digital-mag__nav--mobile__icon-bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+
+.icon-transform .digital-mag__nav--mobile__icon-bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.icon-transform  .digital-mag__nav--mobile__icon-bar2 {
+  opacity: 0;
+}
+
+.icon-transform .digital-mag__nav--mobile__icon-bar3 {
+  -webkit-transform: rotate(45deg) translate(-4px, -4px) ;
+  transform: rotate(45deg) translate(-4px, -4px) ;
+}
+
+.digital-mag__nav--mobile__sidenav {
+  height: 100vh;
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  right: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s;
+  color: white;
+}
+
+.digital-mag__nav--mobile__sidenav__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.digital-mag__nav--mobile__sidenav__list-item {
+  width: 100%;
+}
+
+.digital-mag__nav--mobile__sidenav__list-item--feature:before {
+  content: 'Pivoting in a Pandemic'
+}
+
+.digital-mag__nav--desktop {
+  height: 100px;
+  width: 100vw;
+  border-bottom: solid 1px black;
+  position: relative;
+  z-index: 15;
+}
+
+.digital-mag__nav--desktop__wrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.digital-mag__nav--desktop__suscribe-cta {
+  padding: 39px !important;
+  display: flex;
+  justify-self: flex-end;
+  height: max-content;
+  margin: 0 !important;
+}
+
+.digital-mag__nav-desktop__archives-link {
+  margin: 0 30px;
+}
+
+.digital-mag__nav--desktop__magazine-cta {
+  margin-top: -4px;
+}
+
+.digital-mag__nav-desktop__archives-link, .digital-mag__nav--desktop__magazine-cta {
+  font-family: 'GT-Super';
+  text-decoration: none;
+  color: black;
+  transition: .3s all;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: max-content;
+}
+
+.digital-mag__nav-desktop__archives-link:hover, .digital-mag__nav--desktop__magazine-cta:hover {
+  color: #c7531e;
+}
+
+.digital-mag__nav--desktop__magazine-cta {
+  font-family: 'GT-Super';
+}
+
+.digital-mag__nav--desktop__logo {
+  width: 200px;
+  margin-right: 40%;
+}
+
+.digital-mag__nav--desktop__subnav {
+  height: 0;
+  position: relative;
+  z-index: 9;
+  transition: .5s all;
+  overflow: hidden;
+  background-color: #fafafa;
+  border-bottom: solid .5px black;
+  border-top: solid .5px black;
+}
+
+.digital-mag__nav--desktop__subnav__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-content: flex-end; */
+  width: 250px;
+  margin-left: 59%;
+  padding: 9px 0;
+}
+
+.digital-mag__nav--desktop__subnav-dropdown {
+  text-transform: uppercase;
+  height: max-content;
+  transition: .4s all; 
+  cursor: pointer;
+}
+
+.digital-mag__nav--desktop__subnav-dropdown:hover {
+  color: #c7531e;
+}
+
+.digital-mag__nav--desktop__features-subnav {
+  width: 300px;
+  height: auto;
+  background-color: #c7531e;
+  z-index: 6;
+  position: relative;
+  top: 0;
+  left: 55%;
+  color: #fafafa;
+  transition: 1s all;
+}
+
+.digital-mag__nav--desktop__departments-subnav {
+  width: 300px;
+  height: auto;
+  background-color: #c7531e;
+  z-index: 6;
+  position: relative;
+  top: 0;
+  left: 65%;
+  color: #fafafa;
+  transition: 1s all;
+}
+
+.digital-mag__nav--desktop__features-subnav__list, .digital-mag__nav--desktop__departments-subnav__list {
+  transition: 1s all;
+  overflow: hidden;
+  font-family: 'Benton Sans Reg';
+  max-height: 0;
+  transition: max-height 0.6s ease-out;
+}
+
+.digital-mag__nav--desktop__features-subnav__list:hover, .digital-mag__nav--desktop__departments-subnav__list:hover {
+  background-color: #c7531e;
+}
+
+.digital-mag__nav--desktop__features-subnav__list-item, .digital-mag__nav--desktop__departments-subnav__list-item {
+  border-bottom: solid 1px #fafafa;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 1s left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .digital-mag__nav--desktop__features-subnav__list-item:before {
+  background: #c7531e;
+  border-bottom: 1px solid #fafafa;
+} */
+
+.digital-mag__nav--desktop__features-subnav__list-item:hover, .digital-mag__nav--desktop__departments-subnav__list-item:hover {
+  position: relative;
+  left: 30px;
+}
+
+.digital-mag__nav--desktop__features-subnav__list-item:before {
+  content: 'Pivoting in a Pandemic';
+  color: #c7531e;
+}
+
+.digital-mag__nav--desktop__features-subnav__list-item__link, .digital-mag__nav--desktop__departments-subnav__list-item__link {
+  color:#fafafa;
+  text-decoration: none;
+}
+
+/* .digital-mag__nav--desktop__features-subnav__list-item:before {
+  position: relative;
+  left: 30px;
+  z-index: 13;
+} */
+
+li {
+  list-style-type: none;
+}
+
+
+.digital-mag__footer {
+  height: 100px;
+  width: 100vw;
+}
+
+.digital-mag__footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: max-content;
+  width: 90%;
+  margin: 30px auto;
+}
+
+@media(min-width: 900px) {
+  .digital-mag__footer__wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.digital-mag__logo {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media(min-width: 900px) {
+  .digital-mag__logo {
+    margin: 0;
+  }
+}
+
+.digital-mag__info {
+  height: max-content;
+  width: 300px;
+  text-align: center;
+  font-style: 14px;
+  font-family: 'Benton Sans Reg';
+  color: rgba(200, 200, 200, 0.7);
+  white-space: nowrap;
+}
+
+@media(min-width : 900px) {
+  .digital-mag__info {
+    width: auto;
+  }
+}
+
+.digital-mag__info a, .digital-mag__info p{
+  font-size: 14px;
+  color: rgba(180, 180, 180);
+}
+
+.digital-mag__info__line-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+
+.digital-mag__social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.digital-mag__social-icon {
+  height: 30px;
+  margin: 5px;
+  align-self: flex-end;
+}
+
+.pulse {
+  transform: scale(2);
+}

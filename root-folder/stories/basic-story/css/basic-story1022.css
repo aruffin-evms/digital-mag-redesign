@@ -29,24 +29,20 @@ a:hover{
   text-decoration: underline;
 }
 
-h1{
-  line-height: 1.2em;
-}
-
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
-  src: url("/root-folder/fonts/GT-Super-Display-Super.woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Super.woff");
 }
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url("/root-folder/fonts/GT-Super-Display-Bold.woff") format("woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "Calluna";
-  src: url("/root-folder/fonts/Calluna-Regular-webfont.woff") format("woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff") format("woff");
 }
 
 @keyframes slideUp {
@@ -96,8 +92,9 @@ h1{
 
 .basic-story {
   overflow-x: hidden;
+  width: 95%;
+  margin: 0 auto;
 }
-
 .basic-story__hero-wrapper {
   height: 30vh;
   width: 100%;
@@ -116,21 +113,13 @@ h1{
 }
 
 .basic-story__hero__overlay {
-  position: absolute;
-  top: 1%;
-  left: 4%;
-  height: 300px;
-  width: 300px;
-  color: black;
-  margin: 30px 0 0 30px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 @media (min-width: 900px) {
   .basic-story__hero__overlay {
-    top: 5%;
-    left: 23%;
-    width: 400px;
-    margin: 0;
+
   }
 }
 
@@ -147,6 +136,7 @@ h1{
 .basic-story__hero__title {
   font-family: "GT-Super", serif;
   margin: 10px 0;
+  line-height: 1.25em;
 }
 
 @media (min-width: 900px) {
@@ -170,10 +160,6 @@ h1{
 .basic-story__lead-in {
   color: #c7531e;
   text-transform: uppercase;
-  float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding-right: 8px;
 }
  
 
@@ -193,29 +179,58 @@ h1{
   justify-content: space-evenly;
 }
 
-/* hack for mobile 
-@media(max-width: 899px) {
-  .basic-story__aside p:first-child {
-    display: none;
-  }
-}*/
-
 @media (min-width: 900px) {
   .basic-story__aside {
     float: right;
     width: 20%;
-    margin: 10% 10% 2% 2%;
+    margin: 10% 8% 2% 2%;
     display: flex;
     flex-direction: column;
   }
 }
 
+.basic-story__aside-small {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 16px;
+  width: 95%
+}
+@media(min-width: 900px)
+{
+  .basic-story__aside-small{
+    display: none;
+  }
+}
+
+.basic-story__aside-medium{
+  display: none;
+}
+@media(min-width: 900px)
+{
+  .basic-story__aside-medium{
+    display: flex;
+    flex-direction: column;
+  }
+}
 .basic-story__content {
   max-width: 1440px;
   width: 100%;
   height: 100%;
-  margin: 40px auto;
+  margin: 80px auto;
 }
+@media (min-width: 640px) {
+  .basic-story__content {
+    width: 90%;
+  }
+}
+
+@media(min-width: 900px){
+    .basic-story__content {
+      margin: 40px auto;
+      width: 100%;
+  }
+}
+
 .basic-story__content__wrapper {
   max-width: 608px;
   margin: 0 auto;
@@ -227,23 +242,14 @@ h1{
   font-size: 2em;
 }
 
+.basic-story__social-share {
+  height: 72px;
+}
+
 .basic-story__social-share__title {
   text-transform: uppercase;
   font-size: .8em;
 }
-
-/* [start] social icons */
-/* .basic-story__social-share__social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 5px;
-}
-
-.basic-story__social-share__social-icon {
-  font-size: 28px !important;
-} */
-/* [end] social icons */
 
 /* taken from different stylesheet */
 .basic-story__social-share__social-icons {
@@ -263,17 +269,17 @@ h1{
 }
 
 .fb{
-  background-image: url(../images/facebook.svg); 
+  background-image: url(https://www.evms.edu/uploads/social-icons/facebook.svg); 
 }
 
 .ig{
-  background-image: url(../images/instagram.svg); 
+  background-image: url(https://www.evms.edu/uploads/social-icons/instagram.svg); 
 }
 .in{
-  background-image: url(../images/LinkedIn.svg); 
+  background-image: url(https://www.evms.edu/uploads/social-icons/LinkedIn.svg); 
 }
 .tw{
-  background-image: url(../images/twitter.svg); 
+  background-image: url(https://www.evms.edu/uploads/social-icons/twitter.svg); 
 }
 
 
@@ -295,12 +301,13 @@ h1{
 /* [start] by lines */
 .basic-story__by-line {
   border-left: 1px solid rgba(128, 128, 128, 0.8);
-  margin: 0;
+  margin: 20px 0 0 0;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  height: auto;
+  align-content: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+
 }
 
 .basic-story__by-line__line-wrapper {
@@ -312,15 +319,24 @@ h1{
   font-weight: bold;
   font-style: italic;
   padding: 0 8px 0 10px;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
+  @media (min-width: 900px){
+    .basic-story__byline__label {
+    font-size: 0.9em;
+  }
+}
 .basic-story__byline__name {
   font-family: 'Benton Sans Reg', sans-serif;
+  font-size: 0.8em;
+}
+@media (min-width: 900px){
+  .basic-story__byline__name {
   font-size: 0.9em;
 }
-
-/* [end] by lines */
+}
+/* [end] bylines */
 
 .basic-story__content__story {
   margin: 10px 0 0; 
@@ -329,12 +345,14 @@ h1{
   padding: 1em 0;
 }
 
-
 .quote {
-  width: 50%;
+  width: 75%;
   text-align: center;
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1em;
+  font-family: 'Benton Sans Reg', sans-serif;
+  transform: scaleX(0.85);
+  padding: 0 0 1em;
 }
 
 /* [start] image with caption */
@@ -348,7 +366,6 @@ h1{
     width: 100%;
   }
 }
-
 
 .basic-story__rust-bar {
   border-top: solid 8px #c7531e;
@@ -393,16 +410,21 @@ h1{
 }
 
 .basic-story__content__image-caption {
-    border-left: solid 1px gray;
-    margin: 15px auto 48px;
-    padding-left: 10px;
-    position: relative;
-    font-style: italic;
-    font-size: .9em;
+      border-left: solid 1px gray;
+      margin: 15px auto 20px;
+      padding-left: 10px;
+      position: relative;
+      font-style: italic;
+      font-size: .9em;
+  }
+
+.basic-story__content__image-caption br{
+    margin-bottom: 16px;
 }
 
 .basic-story__content__image-caption i {
     font-size: .9em;
+    padding-top: 8px;
 }
 
 .middle{
@@ -489,14 +511,20 @@ h1{
 
 .basic-story__story-qoute__qoute {
   width: 100%;
-  line-height: 42px;
+  line-height: 1.5em;
   text-align: center;
   font-family: 'GT-Super-bold', serif;
 }
 
+@media(min-width: 750px) {
+  .basic-story__story-qoute__qoute {
+    font-size: 1.75em;
+  }
+}
+
 @media(min-width: 900px) {
   .basic-story__story-qoute__qoute {
-    font-size: 40px;
+    font-size: 2.25em;
   }
 }
 /* [end] story pull qoute  */
@@ -653,3 +681,39 @@ and (max-device-width : 850px) {
     display: none;
   }
 }
+.basic-story__content__image-wrapper.hero{
+  width: 70%;
+}
+.basic-story__hero__overlay-title {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 50%;
+  margin-left: 15%;
+  margin-right: 16px;
+}
+.feature__hero__image {
+  width: 100%;
+  }
+  .basic-story__hero {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20%;
+  }
+
+  .basic-story__figcaption-label {
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 8px 0 0;
+    font-size: 0.8em;
+  }
+  
+    @media (min-width: 900px){
+      .basic-story__figcaption-label {
+      font-size: 0.9em;
+    }
+  }
+

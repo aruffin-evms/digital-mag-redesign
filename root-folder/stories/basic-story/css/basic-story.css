@@ -419,6 +419,9 @@ h1{
 .basic-story__content__image-caption {
   border-left: solid 1px gray;
   padding-left: 10px;
+  position: relative;
+  left:0;
+
   font-style: italic;
   font-size: .9em;
 }
@@ -680,6 +683,9 @@ and (max-width:640px){
   .video, .video iframe{
       height:202px;
       width: 100%;
+  }
+  .basic-story__content{
+    width:95%;
   }
 }
 
