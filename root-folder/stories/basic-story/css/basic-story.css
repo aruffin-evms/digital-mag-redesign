@@ -36,17 +36,17 @@ h1{
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
-  src: url("../../../fonts/GT-Super-Display-Super.woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Super.woff");
 }
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url("../../../fonts/GT-Super-Display-Bold.woff") format("woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Calluna";
-  src: url("../../../fonts/Calluna-Regular-webfont.woff") format("woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff") format("woff");
 }
 
 @keyframes slideUp {
