@@ -701,6 +701,7 @@ and (max-device-width : 850px) {
   margin: 0 20%;
   }
 
+
 .basic-story__hero__overlay-title {
   margin-bottom: 20%;
   width: 50%;
@@ -712,3 +713,14 @@ and (max-device-width : 850px) {
     width: 85%;
   }
 }
+
+
+  .basic-story__hero__overlay-title {
+    max-width: 50%;
+  }
+
+  @media (min-width: 900px) {
+    .basic-story__hero__title {
+      width: 70%;
+    }
+  }
