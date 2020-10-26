@@ -4,3 +4,8 @@ body{
     background-size: contain;
     background-position-x: center;
   }
+@media(min-width: 640px){
+  .basic-story__content {
+      margin: 120px auto;
+  }
+}
