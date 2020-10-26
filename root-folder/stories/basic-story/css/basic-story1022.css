@@ -92,7 +92,7 @@ a:hover{
 
 .basic-story {
   overflow-x: hidden;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 .basic-story__hero-wrapper {
