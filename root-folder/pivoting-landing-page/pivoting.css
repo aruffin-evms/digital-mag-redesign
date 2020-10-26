@@ -202,6 +202,7 @@
   font-family: 'Benton Sans Reg';
   background: #fafafa;
   transition: 1s all;
+  font-weight: bold;
 }
 
 @media (min-width: 600px) {
@@ -210,29 +211,25 @@
   }
 }
 
-
-.pandemic-landing__cta:hover {
-  background-color: rgb(155, 155, 155, 0.4);
-}
-
 .pandemic-landing__cta--education {
   border: #05c3de solid 4px;
 }
 .pandemic-landing__cta--education:hover {
-  background-color: #05c3de;
-  opacity: 0.4;
+  background-color: rgb(5, 195, 222, 0.4);
 }
+
 .pandemic-landing__cta--research {
-  border: #766a62 solid 4px;
+  border: rgb(118, 106, 98) solid 4px;
+
 }
 .pandemic-landing__cta--research:hover {
-  background-color: #766a62 solid 4px;
-  opacity: 0.4;
+  background-color: rgb(118, 106, 98, 0.4);
+
 }
 .pandemic-landing__cta--patient-care {
   border: #cbc46d solid 4px;
 }
 .pandemic-landing__cta--patient-care:hover {
-  background-color: #cbc46d;
-  opacity: 0.4;
+  background-color: rgb(203, 196, 109, 0.4);
+
 }
