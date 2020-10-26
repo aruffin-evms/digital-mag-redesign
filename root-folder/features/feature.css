@@ -1,18 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  font-size:18px;
-   font-family: 'Calluna';
-   line-height: 1.4em;
-}
-
-.clear{
-  clear: both;
-}
-
 h1{
   line-height: 1.1em;
   font-size: 2em;
@@ -97,7 +82,17 @@ a:hover{
   overflow-x: hidden;
 }
 
-.feature__hero-wrapper {
+.features__hero__title{
+  font-size: 1.25.em;
+}
+
+@media (min-width: 900px) {
+  .features__hero__title {
+    font-size: 2em;
+    }
+  }
+
+  .feature__hero-wrapper {
   height: 30vh;
   width: 100%;
   background-color: gray;
