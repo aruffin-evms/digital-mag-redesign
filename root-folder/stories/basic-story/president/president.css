@@ -1,6 +1,8 @@
 .basic-story__hero__title{
     font-size:2em;
     margin: 1em 0;
+    text-align: right;
+    margin-right: 17%;
 }
 
 .basic-story__content{
@@ -44,12 +46,11 @@ h2{
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 640px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 640px) {
     .presidentWrap {
         float: none;
-        margin: 2% auto;
-        width: 80%;
+        margin: 0 2% 2% 0;
+        width: 57%;
     }
 
     .basic-story__content {
@@ -58,4 +59,10 @@ h2{
 }
 
   }
+
+  @media (max-width:640px) {
+    .presidentWrap {
+        width: 57%;
+    }
+}
 
