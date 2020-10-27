@@ -130,14 +130,20 @@ additionalStories.forEach(function(story) {
 const slideElementsUp = document.querySelectorAll('.animate-vertical');
 
 const config = {
-  threshold: [0.7]
+  root: null,
+  rootMargin: '50px',
+  threshold: [0.5]
 }
 
 observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
+    if (entry.isIntersecting) {
       entry.target.classList.add('slide-up');
-      animationVideo.play()
+      setTimeout(() => {
+        animationVideo.play()
+      }, 4100);
+      console.log('intersection ratio ' + entry.intersectionRatio)
+      console.log('intersection rect ' + entry.intersectionRect)
     } else {
       // entry.target.classList.remove('slide-up');
     }
@@ -152,8 +158,10 @@ const slideElementsLeft = document.querySelectorAll('.animate-left');
 
 observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
+    if (entry.isIntersecting) {
       entry.target.classList.add('slide-left');
+      console.log('intersection ratio ' + entry.intersectionRatio)
+      console.log('intersection rect ' + entry.intersectionRect)
     } else {
       // entry.target.classList.remove('slide-up');
     }
@@ -168,17 +176,32 @@ const slideElementsRight = document.querySelectorAll('.animate-right');
 
 observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
+    if (entry.isIntersecting) {
       entry.target.classList.add('slide-right');
+      console.log('intersection ratio ' + entry.intersectionRatio)
+      console.log('intersection rect ' + entry.intersectionRect)
     } else {
       // entry.target.classList.remove('slide-up');
     }
   });
 });
 
+
 slideElementsRight.forEach(element => {
   observer.observe(element);
 }, config);
+
+const slideQoute = document.querySelector('.animate-qoute-left');
+
+observer = new IntersectionObserver(entry => {
+  if(entry.isIntersecting) {
+    entry.target.classList.add('animate-qoute')
+    console.log('qoute')
+  }
+});
+
+
+observer.observe(slideQoute)
 
 mobileIcon.addEventListener('click', function() {
   this.classList.toggle('icon-transform')
