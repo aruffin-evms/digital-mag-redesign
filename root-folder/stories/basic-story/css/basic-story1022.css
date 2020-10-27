@@ -33,6 +33,10 @@ h1{
   line-height: 1.2em;
 }
 
+.basic-story__content__story__h2 {
+  padding: 1em 0;
+}
+
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
@@ -325,6 +329,7 @@ h1{
   .basic-story__content__image-wrapper {
     width: 100%;
   }
+
 }
 
 .basic-story__rust-bar {
@@ -414,6 +419,10 @@ h1{
   max-width: 608px;
 }
 
+.landscape{
+  width: 90%;
+}
+
 .qoutation-mark--bottom {
   font-size: 100px !important;
 }
@@ -500,12 +509,6 @@ h1{
 .basic-story__more-stories__title {
   width: 130px;
   font-size: 42px;
-}
-
-.basic-story__more-stories__carousel {
-  background-color: blue;
-  width: 60%;
-  height: 300px;
 }
 /* [end] more stories carousel */
 
@@ -630,12 +633,15 @@ and (max-device-width : 850px) {
     display: none;
   }
 }
+.basic-story__video__wrapper{
+  width:80%;
+  margin: 1em auto;
+}
 
 .basic-story__video {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-  margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
 
 .basic-story__video iframe {
