@@ -128,11 +128,6 @@ h1{
     flex-wrap: nowrap;
 }
 
-@media (min-width: 900px) {
-  .basic-story__hero__overlay {
-
-  }
-}
 
 .basic-story__hero__department {
   text-transform: uppercase;

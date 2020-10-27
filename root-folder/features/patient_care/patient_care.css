@@ -44,7 +44,7 @@
   width: 100%;
   margin: 7%;
 }
-
+}
 
 @media (max-height:411px){
 .features__hero__overlay {
@@ -73,4 +73,4 @@ and (max-device-width : 850px) {
       right: 100px;
       bottom: 50px;
     }
-
+  }
