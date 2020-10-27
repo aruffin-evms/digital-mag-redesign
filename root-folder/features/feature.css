@@ -1,7 +1,28 @@
-.feature__hero {
+.hero-wrapper {
   display:flex;
   flex-direction: row;
 }
+
+.features__hero__title {
+  font-family: "GT-Super", serif;
+  margin: 10px 0;
+  font-size: 3em;
+}
+
+.feature-story__aside {
+  float: right;
+  width: 20%;
+  margin: 2%;
+}
+
+.features__hero__overlay {
+  width: 30%;
+  color: #000;
+  margin: -22% 0 0 15%;
+  float: left;
+  position: relative;
+}
+
 .feature__lead-in {
   color: #c7531e;
   text-transform: uppercase;
@@ -19,7 +40,7 @@
 }
 
 .heroCaption{
-  font-size:.8em;
+  font-size:.9em;
 }
 
 .feature__content {

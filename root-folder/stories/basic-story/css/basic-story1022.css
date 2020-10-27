@@ -456,7 +456,12 @@ h1{
   margin: 0 auto;
   max-width: 90vw;
 }
-
+@media (min-width: 900px) {
+  .basic-story__story-qoute__wrapper {
+    margin: 0 auto;
+    max-width: 80vw;
+  }
+}
 .basic-story__story-qoute__qoutation-mark {
   height: 100px;
   width: 100px;
@@ -468,12 +473,22 @@ h1{
   transform: rotate(180deg);
 }
 
+@media (min-width: 900px) {
+  .basic-story__story-qoute__content {
+    width: 65%;
+  }
+}
+
 .portrait {
   max-width: 608px;
 }
 
 .landscape{
-  width: 90%;
+  width: 80%;
+}
+
+.square {
+  width: 70%;
 }
 
 .qoutation-mark--bottom {
@@ -496,12 +511,6 @@ h1{
   position: relative;
   top: -5px;
   z-index: -1;
-}
-
-@media(min-width: 900px) {
-  .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
-    width: 976px;
-  }
 }
 
 .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
@@ -542,6 +551,12 @@ h1{
 @media(min-width: 900px) {
   .basic-story__story-qoute__qoute {
     font-size: 2.25em;
+  }
+}
+
+@media (min-width: 900px) {
+  .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
+    width: 70%;
   }
 }
 /* [end] story pull qoute  */
