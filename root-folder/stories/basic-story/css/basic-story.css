@@ -285,6 +285,7 @@ h1{
 }
 
 .fb{
+
   background-image: url(https://www.evms.edu/uploads/social-icons/facebook.svg); 
 }
 
@@ -296,6 +297,7 @@ h1{
 }
 .tw{
   background-image: url(https://www.evms.edu/social-icons/twitter.svg); 
+
 }
 
 
@@ -670,6 +672,7 @@ h1{
 .video iframe{
   width:88%;
   height: 640px;
+  padding:.5em 0;
 }
 
 @media only screen 
