@@ -285,17 +285,17 @@ h1{
 }
 
 .fb{
-  background-image: url(https://uploads/social-icons/facebook.svg); 
+  background-image: url(../../../assets/facebook.svg); 
 }
 
 .ig{
-  background-image: url(https://uploads/social-icons/instagram.svg); 
+  background-image: url(../../../assets/instagram.svg); 
 }
 .in{
-  background-image: url(https://uploads/social-icons/LinkedIn.svg); 
+  background-image: url(../../../assets/LinkedIn.svg); 
 }
 .tw{
-  background-image: url(https://uploads/social-icons/twitter.svg); 
+  background-image: url(../../../assets/twitter.svg); 
 }
 
 
@@ -670,6 +670,7 @@ h1{
 .video iframe{
   width:88%;
   height: 640px;
+  padding:.5em 0;
 }
 
 @media only screen 
