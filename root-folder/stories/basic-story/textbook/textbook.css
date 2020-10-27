@@ -1,0 +1,16 @@
+.basic-story__aside {
+    margin: 3% 8% 2% 2%;
+}
+
+.basic-story__content__image-caption {
+    border-left: solid 1px gray;
+    margin: 15px auto 20px;
+    padding-left: 10px;
+    position: relative;
+    font-style: italic;
+    font-size: .9em;
+}
+
+.basic-story__by-line {
+    margin: 20px 0 0 0;
+}

@@ -3,27 +3,6 @@
   background-color: rgba(128, 128, 128, 0.2);
 }
 
-.hero-wrapper{
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-aside{
-  float: right;
-    width: 20%;
-    margin: 0;
-    padding: 0;
-}
-.socialShare{
-  margin:2em;
-}
-
-.socialShare a{
-  font-size:2.5em;
-  margin:0; 
-  padding:0;
-}
 .feature__faculty-spotlight__wrapper {
   min-height: 300px;
   max-width: 708px;
@@ -35,19 +14,6 @@ aside{
   justify-content: space-evenly;
   align-content: center;
   text-align: center;
-}
-
-.heroIsh{
-  width: 60%;
-  display: inline-block;
-}
-
-.topCaption{
-  width: 65%;
-    text-align: left;
-    margin: .5em auto;
-    border-left: 1px solid grey;
-    padding-left: 1%;
 }
 
 .basic-story__content__wrapper {

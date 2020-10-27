@@ -43,6 +43,10 @@ const scrollDistance = 200;
 
 let clickCount = 0;
 
+let browserWidth = window.innerWidth
+
+console.log('width: ' + window.innerWidth)
+
 
 
 // todo: create function that checks scroll position for looping carousel
@@ -53,10 +57,10 @@ backArrow.addEventListener('click', function() {
 
   console.log(clickCount)
 
-  if(3 > clickCount > 0) {
-    backArrow.style.display = 'none'
-    forwardArrow.style.display = 'block'
-  }
+  // if(3 > clickCount > 0) {
+  //   backArrow.style.display = 'none'
+  //   forwardArrow.style.display = 'block'
+  // }
 })
 
 forwardArrow.addEventListener('click', function() {
@@ -66,13 +70,13 @@ forwardArrow.addEventListener('click', function() {
 
   console.log(clickCount)
 
-  if(clickCount == 3) {
-    forwardArrow.style.display = 'none'
-  }
+  // if(clickCount == 3) {
+  //   forwardArrow.style.display = 'none'
+  // }
 
-  if(clickCount > 0) {
+  // if(clickCount > 0) {
 
-  }
+  // }
 })
 
 qouteDrawer.addEventListener('click', function() {

@@ -6,17 +6,23 @@
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
-  src: url("../fonts/GT-Super-Display-Super.woff") format("woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Super.woff") format("woff");
 }
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url("../fonts/GT-Super-Display-Bold.woff") format("woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Calluna";
-  src: url("../fonts/Calluna-Regular-webfont.woff") format("woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff") format("woff");
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Calluna', sans-serif;
+  line-height: 1.5em;
 }
 
 .background {
@@ -83,7 +89,6 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-content: center;
   margin-left: 15px;
 }
@@ -98,21 +103,23 @@
 
 .pandemic-landing__intro__department {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 1.5em;
   color: #c7531e;
-  font-family: "Calluna";
+  font-family: 'Calluna', sans-serif;
   font-weight: bold;
 }
 
+
 .pandemic-landing__intro__title {
-  font-size: 60px;
-  font-family: "GT-Super";
+  font-size: 3em;
+  font-family: "GT-Super", serif;
   color: #1f7f9b;
+  line-height: 110%;
 }
 
 @media (min-width: 900px) {
   .pandemic-landing__intro__title {
-    font-size: 90px;
+    font-size: 5em;
   }
 }
 
@@ -156,7 +163,7 @@
 .pandemic-landing__column {
   display: flex;
   flex-direction: column;
-  min-width: 370px;
+  width: 50%;
 }
 
 .pandemic-landing__rust-bar {
@@ -173,7 +180,6 @@
 }
 
 .pandemic-landing__content__p {
-  font-size: 18px;
   margin: 15px;
   font-family: 'Benton Sans Lt';
 }
@@ -189,8 +195,8 @@
 
 @media (min-width: 1200px) {
   .pandemic-landing__ctas {
-    width: 80%;
-    margin: 0 0 0 30px;
+    width: 90%;
+    margin: 30px 0 0 30px;
   }
 }
 
@@ -199,9 +205,11 @@
   text-decoration: none !important;
   color: black;
   cursor: pointer;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
   background: #fafafa;
   transition: 1s all;
+  font-weight: bold;
+  text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -210,20 +218,25 @@
   }
 }
 
-
-
-.pandemic-landing__cta:hover {
-  background-color: rgb(155, 155, 155, 0.4);
-}
-
 .pandemic-landing__cta--education {
-  border: turquoise solid 4px;
+  border: #05c3de solid 4px;
+}
+.pandemic-landing__cta--education:hover {
+  background-color: rgb(5, 195, 222, 0.4);
 }
 
 .pandemic-landing__cta--research {
-  border: saddlebrown solid 4px;
-}
+  border: rgb(118, 106, 98) solid 4px;
 
+}
+.pandemic-landing__cta--research:hover {
+  background-color: rgb(118, 106, 98, 0.4);
+
+}
 .pandemic-landing__cta--patient-care {
-  border: darkolivegreen solid 4px;
+  border: #cbc46d solid 4px;
+}
+.pandemic-landing__cta--patient-care:hover {
+  background-color: rgb(203, 196, 109, 0.4);
+
 }

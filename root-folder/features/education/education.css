@@ -15,15 +15,8 @@
   width: 100%;
 }
 
- .hero-wrapper{
-  display: block;
-  clear: both;
-  height: 50vh;
-  width: 100%;
-} 
-
 .features__hero__title {
-  font-family: "GT-Super";
+  font-family: "GT-Super", serif;
   margin: 10px 0;
 }
 
@@ -59,15 +52,6 @@ float:none;
 
 .feature__dropcap {
 padding-bottom:5px;
-}
-
-@media (min-width: 900px) {
-
-.features__hero__title {
-  font-size: 2em;
-  }
-
-  
 }
 
 @media (max-width:640px){

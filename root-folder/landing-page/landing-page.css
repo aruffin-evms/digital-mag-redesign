@@ -247,12 +247,25 @@ canvas {
 }
 
 .digital-mag__nav--desktop__suscribe-cta {
-  padding: 39px !important;
-  display: flex;
-  justify-self: flex-end;
+  text-align: center;
+  border: solid 2px black;
+  background-color: #fafafa;
+  color: black;
+  font-family: 'Benton Sans Reg';
+  font-size: 16px;
+  padding: 4px 12px;
   height: max-content;
-  margin: 0 !important;
+  align-self: center;
+  text-decoration: none !important;
+  transition: .4s all;
 }
+
+.digital-mag__nav--desktop__suscribe-cta:hover {
+  background-color: black;
+  color: #fafafa;
+  text-decoration: none !important;
+}
+
 
 .digital-mag__nav-desktop__archives-link {
   margin: 0 30px;
@@ -797,14 +810,14 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 .landing-page__stories-carousel__carousel__wrapper {
-  max-width: 700px;
+  max-width: 655px;
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
@@ -1360,7 +1373,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  max-width: 750px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
