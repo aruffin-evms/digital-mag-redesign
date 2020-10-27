@@ -4,6 +4,37 @@
   object-fit: cover;
 }
 
+.feature__hero{
+  position: relative;
+}
+
+.topNames, .bottomNames{
+  position: absolute;
+  color: #000;
+  font-family: 'Benton Sans Reg';
+  font-weight: 800;
+  padding:0 1%;
+}
+
+.topNames{
+  bottom: 25%;
+}
+
+.topNames span:last-child{
+  left: 135%;
+  bottom: 465%;
+  position: absolute;
+  width: 100%;
+}
+
+.bottomNames{
+  bottom:10%
+}
+
+.bottomNames span:last-child{
+  border: red thin solid;
+  }
+
 .hero-wrapper{
   color: #FFF;
   display: flex;
@@ -11,7 +42,11 @@
 
 .teleTextTop {
   width: 50%;
-  margin: 6em auto 0;
+  margin: 16% auto 0;
+}
+
+.studentNames{
+  width: 50%;
 }
 
 .basic-story__content__department-label {
@@ -94,12 +129,17 @@
   width: 100%;
 }
 
-.basic-story__story-qoute__qoute {
-  width: 65%;
+.basic-story__story-qoute{
+  width: 70%;
+    margin: 0 auto;
 }
 
 .heroCaption{
   margin-bottom: 5%;
+}
+
+.mobile{
+  display:none;
 }
 @media (min-width: 900px){
 .basic-story__aside {
@@ -184,6 +224,12 @@ width:100%;
   width: 100%;
   height: 208px;
 }
+.mobile{
+  display: inline;
+}
+.desktop{
+  display:none;
+}
 }
 
 
@@ -264,6 +310,12 @@ width:100%;
 .video iframe {
   width: 100%;
   height: 420px;
+}
+.mobile{
+  display: inline;
+}
+.desktop{
+  display:none;
 }
 }
 
