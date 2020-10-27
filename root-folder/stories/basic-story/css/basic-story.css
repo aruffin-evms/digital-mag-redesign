@@ -179,9 +179,10 @@ h1{
   color: #c7531e;
   text-transform: uppercase;
   float: left;
-  font-size: 75px;
+  font-size: 90px;
   line-height: 60px;
   padding-right: 8px;
+  margin-top: 2%;
 }
  
 
@@ -285,6 +286,7 @@ h1{
 }
 
 .fb{
+
   background-image: url(https://www.evms.edu/uploads/social-icons/facebook.svg); 
 }
 
@@ -296,6 +298,7 @@ h1{
 }
 .tw{
   background-image: url(https://www.evms.edu/social-icons/twitter.svg); 
+
 }
 
 
@@ -670,6 +673,7 @@ h1{
 .video iframe{
   width:88%;
   height: 640px;
+  padding:.5em 0;
 }
 
 @media only screen 
