@@ -16,6 +16,15 @@
   padding:0 1%;
 }
 
+.basic-story__dropcap{
+  color: #c7531e;
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
 .topNames{
   bottom: 25%;
 }
@@ -41,7 +50,7 @@
 }
 
 .teleTextTop {
-  width: 50%;
+  width: 45%;
   margin: 16% auto 0;
 }
 
@@ -101,9 +110,13 @@
 }
 
 .features__hero__title {
-  font-family: "GT-Super";
-  margin: 10px 0;
-  font-size: 2em;
+  font-family: 'Benton Sans Reg';
+    margin: 10px 0;
+    font-size: 3em;
+}
+
+.teleTextTop p{
+  font-family: 'Benton Sans Reg';
 }
 
 .features__hero__overlay {
@@ -130,12 +143,30 @@
 }
 
 .basic-story__story-qoute{
-  width: 70%;
+  width: 45%;
     margin: 0 auto;
 }
 
+.diySection h3{
+  font-size:1.1em;
+  margin-top:1em;
+}
+
+.diySection hr{
+  margin: 1% 0 3%;
+  width: 140px;
+}
+
+@media (min-width: 900px){
+.basic-story__story-qoute__content {
+    width: 750px;
+}
+}
+
 .heroCaption{
-  margin-bottom: 5%;
+  font-family: 'Benton Sans Reg';
+    font-size: .8em;
+    margin: -3% 0 5% 0;
 }
 
 .mobile{
@@ -147,11 +178,13 @@
 }
 }
 
-@media (max-width:640px){
+@media (max-width:730px){
 
   .hero-wrapper {
     display: block;
 }
+
+
   .features__hero__title{
     font-size: 1em;
   }
