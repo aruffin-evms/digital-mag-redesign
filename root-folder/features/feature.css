@@ -7,11 +7,6 @@ h2{
   font-size:1.3em
 }
 
-a{
-  color: #c7531e;
-  text-decoration: none;
-}
-
 a:hover{
   text-decoration: underline;
 }
@@ -260,11 +255,11 @@ a:hover{
 
 /* [end] by lines */
 
-.feature__content__story {
+/* .feature__content__story {
   margin: 1em 0 0;
   line-height: 1.4em;
   width: 608px;
-}
+} */
 .feature__content__story__p {
   padding: 1em 0;
 }
