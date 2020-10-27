@@ -28,15 +28,19 @@
   text-transform: uppercase;
 }
 
+
 .feature__dropcap {
   color: #c7531e;
   float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-  padding-bottom: 5px;
+  font-size: 100px;
+  line-height: 0.5em;
+  padding-right: 7px;
+  padding-top: 20px;
+  }
+
+  .feature__dropcap.patient_care {
+    font-size: 130px;
+    line-height: 0.7em;
 }
 
 .heroCaption{
