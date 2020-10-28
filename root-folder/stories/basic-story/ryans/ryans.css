@@ -182,6 +182,42 @@ aside {
     font-size: 1em;
   }
 }
+@media only screen 
+and (min-width : 641px) 
+and (max-width : 799px) {
+  .hero-wrapper img {
+    width: 672px;
+  }
+  .hero-wrapper img:nth-child(2) {
+    border-left: none;
+  }
+  aside {
+    width: 100%;
+    float: none;
+}
+
+.basic-story__content__wrapper {
+  width: 100%;
+  float: none;
+  padding-right: 0;
+}
+
+.center_content {
+  width: 90%;
+}
+
+.basic-story__social-share {
+  float: left;
+    width: 50%;
+}
+.imageSide img {
+  width: 50%;
+}
+
+.basic-story__content__image-caption {
+  margin: 0 0 0 50%;
+}
+}
 
 @media only screen 
 and (min-device-width : 800px) 
