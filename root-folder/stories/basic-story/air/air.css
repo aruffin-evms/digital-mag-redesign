@@ -16,10 +16,6 @@
   text-align: center;
 }
 
-.heroCaption,
-.basic-story__social-share__title {
-  font-size: .8em;
-}
 
 .feature__faculty-spotlight__item {
   width: 70%;
@@ -112,11 +108,13 @@
   .basic-story__by-line {
     float: none;
     height: auto;
-    margin: 15% 0 0 0;
+    margin: 0;
   }
 
   .basic-story__social-share {
     margin: .2em 0 3em;
+    float: none;
+}
   }
 
   .topText {
