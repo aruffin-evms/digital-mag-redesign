@@ -759,3 +759,6 @@ and (max-device-width : 850px) {
       font-size: 0.9em;
     }
   }
+  .small-caps {
+  font-variant-caps: small-caps;
+}
