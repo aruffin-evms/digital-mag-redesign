@@ -5,11 +5,7 @@ body {
   background-position-x: center;
 }
 
-@media(min-width: 640px){
-  .basic-story__content {
-    margin: 120px auto;
-  }
-}
+
 label{
   position: relative;
   margin-top: 120px;
@@ -19,11 +15,21 @@ label{
     width: 65%;
 }
 .basic-story__story-qoute__wrapper{
-  max-width: 60vw;
+  max-width: 50vw;
 }
 .basic-story__story-qoute__content {
   width: 90%;
 }
 .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
   width:95%;
+}
+
+@media(max-width: 750px){
+  .basic-story__content {
+    margin: 0 auto;
+  }
+
+  .basic-story__story-qoute__wrapper{
+    max-width: 90vw;
+  }
 }
