@@ -706,6 +706,10 @@ h1{
     height: 100%; 
 }
 
+.basic-story__iframe-wrapper{
+  margin: 1em auto;
+}
+
 @media only screen 
 and (min-width:300px)
 and (max-width:640px){
@@ -722,10 +726,12 @@ and (max-width:640px){
 
 @media only screen 
 and (min-device-width : 640px) 
-and (max-device-width : 850px) {
-  .heroCaption{
-    display: none;
-  }
+and (max-device-width : 899px) {
+
+  .basic-story__hero__title {
+    font-size: 2.5em;
+}
+
   .video, .video iframe{
     height:360px;
     width: 100%;
