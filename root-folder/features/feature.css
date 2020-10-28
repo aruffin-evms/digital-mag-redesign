@@ -1,7 +1,6 @@
-.hero-wrapper {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+.feature__hero {
+  position: relative;
 }
 
 @media (min-width: 900px){
@@ -9,8 +8,11 @@
     flex-wrap: nowrap;
   }
 }
-
-/* basic-story1022.css | http://127.0.0.1:5501/root-folder/stories/basic-story/css/basic-story1022.css */
+.hero-wrapper {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .feature__hero__image {
   margin-bottom: 32px;
@@ -42,19 +44,19 @@
   color: #000;
 } */
 
+
 @media (min-width: 900px) {
   .features__hero__overlay {
-    width: 30%;
+    top: 50px;
+    margin: 0 12%;
     position: absolute;
-    top: 0;
-    left: 25%;
-    margin: 5% 30%;
+    width: 30%;
+  }
 }
-}
+
 
 @media (min-width: 900px) {
   .features__hero__title {
-    /* font-size: 3em; */
     font-size: 3em;
   }
 }
@@ -108,7 +110,7 @@
   line-height: 32px;
 }
 .features__hero__department {
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-family: 'Benton Sans Reg', serif;
 }
 
