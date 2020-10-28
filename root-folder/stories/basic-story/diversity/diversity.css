@@ -15,6 +15,22 @@
   text-align: center;
 }
 
+.basic-story__by-line{
+  border-left: solid 1px gray;
+  padding-left: 10px;
+  position: relative;
+  font-style: italic;
+  font-size: .9em;
+}
+
+.basic-story__aside {
+  margin: 1% 5% 2% 2%;
+}
+
+.basic-story__dropcap{
+  padding-bottom: 70px;
+}
+
 .orange{
   color:#c7531e;
 }
@@ -23,8 +39,6 @@
   display: block;
   font-size: .8em;
 }
-
-
 
 .feature__faculty-spotlight__item {
   width: 65%;
@@ -68,7 +82,7 @@
 }
 
 .features__hero__overlay {
-  width: 30%;
+  width: 35%;
     color: #FFF;
     position: absolute;
     top: 10%;
@@ -143,8 +157,8 @@
 
 
 @media only screen 
-and (min-device-width : 800px) 
-and (max-device-width : 850px) {
+and (min-width : 641px) 
+and (max-width : 897px) {
   .basic-story__content__department-label {
     font-size: .5em;
 }
@@ -152,10 +166,16 @@ and (max-device-width : 850px) {
     font-size: 1em;
 }
 
-.features__hero__overlay{
-  width: 45%;
+.basic-story__content__description{
+width: 90%;
+line-height: 1em;
+font-size: 1em;
 }
 
+.features__hero__overlay{
+  width: 45%;
+  top:2%;
+}
 .basic-story__social-share {
   margin: 2em .8em 0;
   float: left;
@@ -173,7 +193,11 @@ height:auto;
 
 .basic-story__aside{
   display: block;
-  margin: 10em 0 0 0;
+  margin: 0;
+}
+
+.basic-story__hero-wrapper{
+  height:auto;
 }
 
 .basic-story__content__description{
