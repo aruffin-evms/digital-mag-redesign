@@ -4,14 +4,92 @@
   object-fit: cover;
 }
 
+.feature__hero{
+  position: relative;
+}
+
+.topNames, .bottomNames{
+  position: absolute;
+  color: #000;
+  font-family: 'Benton Sans Reg';
+  font-weight: 800;
+  padding:0 1%;
+}
+
+.feature__dropcap {
+  color: #c7531e;
+  float: left;
+  font-size: 100px;
+  line-height: 0.5em;
+  padding-right: 7px;
+  padding-top: 20px;
+}
+
+.feature__dropcap.four-lines {
+  font-size: 130px;
+  line-height: 0.7em;
+}
+
+
+.basic-story__video__wrapper{
+  width:80%;
+  margin: 1em auto;
+}
+
+.basic-story__video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.basic-story__video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; 
+}
+.topNames{
+  bottom: 25%;
+}
+
+.topNames span:last-child{
+  left: 135%;
+  bottom: 465%;
+  position: absolute;
+  width: 100%;
+}
+
+.bottomNames{
+  bottom:10%
+}
+
+.basic-story__content__image-caption {
+  border-left: solid 1px gray;
+  margin: 0 auto 20px;
+  padding-left: 10px;
+  position: relative;
+  font-style: italic;
+  font-size: .9em;
+}
+.bottomNames span:last-child{
+  border: red thin solid;
+  }
+
 .hero-wrapper{
   color: #FFF;
   display: flex;
 }
 
 .teleTextTop {
+  width: 45%;
+  margin: 16% auto 0;
+}
+
+.studentNames{
   width: 50%;
-  margin: 6em auto 0;
 }
 
 .basic-story__content__department-label {
@@ -66,9 +144,13 @@
 }
 
 .features__hero__title {
-  font-family: "GT-Super";
-  margin: 10px 0;
-  font-size: 2em;
+  font-family: 'Benton Sans Reg';
+    margin: 10px 0;
+    font-size: 3em;
+}
+
+.teleTextTop p{
+  font-family: 'Benton Sans Reg';
 }
 
 .features__hero__overlay {
@@ -94,12 +176,49 @@
   width: 100%;
 }
 
-.basic-story__story-qoute__qoute {
-  width: 65%;
+.basic-story__story-qoute{
+  width: 45%;
+    margin: 0 auto;
+}
+
+.diySection h3{
+  font-size:1.1em;
+  margin-top:1em;
+}
+
+.diySection hr{
+  margin: 1% 0 3%;
+  width: 140px;
+}
+
+@media (min-width: 900px){
+.basic-story__story-qoute__content {
+    width: 750px;
+}
 }
 
 .heroCaption{
-  margin-bottom: 5%;
+  font-family: 'Benton Sans Reg';
+    font-size: .8em;
+    margin: -3% 0 5% 0;
+}
+
+.basic-story__content__image-caption, .heroCaption {
+  border-left: solid 1px gray;
+  margin: 15px auto 20px;
+  padding-left: 10px;
+  position: relative;
+  font-style: italic;
+  font-size: .9em;
+}
+
+.heroCaption span {
+  font-style: normal;
+  font-weight: 800;
+}
+
+.mobile{
+  display:none;
 }
 @media (min-width: 900px){
 .basic-story__aside {
@@ -107,11 +226,17 @@
 }
 }
 
-@media (max-width:640px){
+@media (max-width:730px){
 
   .hero-wrapper {
     display: block;
 }
+
+.basic-story__story-qoute{
+  width: 100%;
+}
+
+
   .features__hero__title{
     font-size: 1em;
   }
@@ -184,6 +309,12 @@ width:100%;
   width: 100%;
   height: 208px;
 }
+.mobile{
+  display: inline;
+}
+.desktop{
+  display:none;
+}
 }
 
 
@@ -199,8 +330,12 @@ and (max-device-width : 850px) {
     font-size: 1em;
   }
 
-  .basic-story__story-qoute__qoute {
+  .basic-story__story-qoute{
     width: 100%;
+  }
+
+  .basic-story__story-qoute__qoute {
+    
 }
 
   .features__hero__overlay{
@@ -248,6 +383,8 @@ width:100%;
     right: 0%;
 }
 
+
+
 .basic-story__social-share {
   float: none;
   width: 95%;
@@ -264,6 +401,12 @@ width:100%;
 .video iframe {
   width: 100%;
   height: 420px;
+}
+.mobile{
+  display: inline;
+}
+.desktop{
+  display:none;
 }
 }
 

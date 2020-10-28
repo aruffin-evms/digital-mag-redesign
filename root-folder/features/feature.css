@@ -1,26 +1,62 @@
 .hero-wrapper {
   display:flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 900px){
+  .hero-wrapper {
+    flex-wrap: nowrap;
+  }
+}
+
+/* basic-story1022.css | http://127.0.0.1:5501/root-folder/stories/basic-story/css/basic-story1022.css */
+
+.feature__hero__image {
+  margin-bottom: 32px;
 }
 
 .features__hero__title {
   font-family: "GT-Super", serif;
   margin: 10px 0;
-  font-size: 3em;
+  font-size: 2em;
 }
-
+@media (min-width: 900px){
+  .features__hero__title {
+  font-size: 3em;
+  }
+}
 .feature-story__aside {
   float: right;
   width: 20%;
-  margin: 2%;
+  margin: 2% 3% 2% 2%;
 }
 
-.features__hero__overlay {
-  width: 30%;
+
+/* .features__hero__overlay {
+  width: 50%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translatex(-50%);
   color: #000;
-  margin: -22% 0 0 15%;
-  float: left;
-  position: relative;
+} */
+
+@media (min-width: 900px) {
+  .features__hero__overlay {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    margin: 5% 30%;
+}
+}
+
+@media (min-width: 900px) {
+  .features__hero__title {
+    /* font-size: 3em; */
+    font-size: 3em;
+  }
 }
 
 .feature__lead-in {
@@ -31,12 +67,15 @@
 .feature__dropcap {
   color: #c7531e;
   float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-  padding-bottom: 5px;
+  font-size: 100px;
+  line-height: 0.5em;
+  padding-right: 7px;
+  padding-top: 20px;
+  }
+
+  .feature__dropcap.patient_care {
+    font-size: 130px;
+    line-height: 0.7em;
 }
 
 .heroCaption{
@@ -65,15 +104,12 @@
 .feature__content__description {
   margin: 10px 0 45px;
   width: 90%;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', serif;
   line-height: 32px;
 }
-
-.feature__content__department-label {
-  text-transform: uppercase;
-  color: #c7531e;
-  font-family: 'Benton Sans Reg';
-  font-size: .7em;
+.features__hero__department {
+  font-size: 0.8em;
+  font-family: 'Benton Sans Reg', serif;
 }
 
 .quote {

@@ -3,57 +3,9 @@
   padding: 0
 }
 
-/* fonts for page */
-@font-face {
-  font-family: 'GT-Super';
-  src: url('../../../fonts/GT-Super-Display-Super.woff') format('woff');
 
-  /* would suggest adding to each 
-  src: url('webfont.woff2') format('woff2'), /* Super Modern Browsers 
-       url('webfont.ttf')  format('truetype'),  Safari, Android, iOS */
-}
-
-@font-face {
-  font-family: "GT-Super-bold";
-  src: url('../../../fonts/GT-Super-Display-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Calluna';
-  src: url('../../../fonts/Calluna-Regular-webfont.woff') format('woff');
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    margin-top: 20%;
-  }
-  to {
-    opacity: 1;
-    margin-top: 0;
-  }
-}
-
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    margin-left: -20%;
-  }
-  to {
-    opacity: 1;
-    margin-left: 0;
-  }
-}
-
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    margin-right: -20%;
-  }
-  to {
-    opacity: 1;
-    margin-right: 0;
-  }
+.basic-story__hero__title {
+  font-size: 3.5em;
 }
 
 .slide-up {
@@ -460,9 +412,7 @@ aside {
 }
 }
 
-@media only screen 
-and (min-device-width : 640px) 
-and (max-device-width : 850px) {
+@media (max-width : 800px) {
   .basic-story__hero-wrapper{
     height:auto;
   }
@@ -487,12 +437,80 @@ aside {
   margin: 20px 0 0 5%;
 }
 .basic-story__story-qoute__content{
-  width: 750px;
+  width: 400px;
   padding: 15px 0;
+}
+
+.basic-story__story-qoute__qoute {
+  width: 90%;
+  font-size: 1em;
+}
+
+.basic-story__rust-bar{
+  top: -224px;
+  left: 22px;
 }
 
 .basic-story__content__image-wrapper{
   width: auto;
   height: auto;
+}
+.basic-story__hero__title {
+  font-size: 2.5em;
+}
+}
+
+@media (max-width : 600px) {
+  .basic-story__hero__title {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-device-width : 800px) and (max-device-width : 850px) {
+  .basic-story__hero-wrapper{
+    height:auto;
+  }
+
+  .basic-story__content{
+    width: 95%;
+  }
+
+  .basic-story__hero__overlay {
+    width: 250px;
+    font-size: .7em;
+}
+aside {
+  width: 90%;
+  padding: 2%;
+}
+.basic-story__social-share{
+  margin-left:0;
+}
+
+.basic-story__by-line{
+  margin: 20px 0 0 5%;
+}
+.basic-story__story-qoute__content {
+  width: 800px;
+}
+
+.basic-story__rust-bar {
+  top: -340px;
+  left: 22px;
+}
+
+.basic-story__story-qoute__qoute {
+  width: 90%;
+  font-size: 1em;
+}
+
+
+.basic-story__content__image-wrapper{
+  width: auto;
+  height: auto;
+}
+.basic-story__hero__title {
+  font-size: 2.5em;
+}
 }
 }

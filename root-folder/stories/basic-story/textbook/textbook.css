@@ -2,6 +2,10 @@
     margin: 3% 8% 2% 2%;
 }
 
+.feature__hero__image {
+    width: 300px;
+}
+
 .basic-story__content__image-caption {
     border-left: solid 1px gray;
     margin: 15px auto 20px;
@@ -14,3 +18,30 @@
 .basic-story__by-line {
     margin: 20px 0 0 0;
 }
+
+@media (max-width:899px){
+.basic-story__social-share a{
+   font-size: 2.5em;
+}
+}
+
+
+@media (max-width:640px){
+    .feature__hero__image {
+        width: 250px;
+    }
+
+    .basic-story__hero__title {
+        line-height: 1em;
+    }
+    .basic-story__hero {
+        margin: 0 auto;
+    }
+
+    .basic-story__hero__overlay-title{
+        margin-right: 3%;
+        margin-left: 13%;
+        font-size:1em;
+    }
+}
+
