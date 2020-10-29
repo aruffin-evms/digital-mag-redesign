@@ -204,7 +204,7 @@
 }
 
 
-#alumniList, #featuresList {
+#alumniList, #featuresList, #pivotingList {
   display: none;
 }
 
@@ -212,14 +212,14 @@
   padding-left: 10px;
 }
 
-#expandList, #expandDeptList {
+#expandList, #expandDeptList, #expandPivotingList {
   position: relative;
   top: 6px;
   left: 10px;
 }
 
 
-#subnavIcon, #featureNavIcon, #departmentNavIcon {
+#subnavIcon, #featureNavIcon, #departmentNavIcon, #pivotingNavIcon {
   position: relative;
   top: 5px;
 }
@@ -305,11 +305,12 @@
 .digital-mag__nav--desktop__subnav__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  /* align-content: flex-end; */
-  width: 250px;
-  margin-left: 59%;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  width: 600px;
+  margin-left: 44%;
   padding: 9px 0;
+  text-align: center;
 }
 
 .digital-mag__nav--desktop__subnav-dropdown {
@@ -324,6 +325,18 @@
   color: #c7531e;
 }
 
+.digital-mag__nav--desktop__pivoting-subnav {
+  width: 300px;
+  height: auto;
+  background-color: #c7531e;
+  z-index: 6;
+  position: relative;
+  top: 0;
+  left: 42%;
+  color: #fafafa;
+  transition: 1s all;
+}
+
 .digital-mag__nav--desktop__features-subnav {
   width: 300px;
   height: auto;
@@ -331,7 +344,7 @@
   z-index: 6;
   position: relative;
   top: 0;
-  left: 55%;
+  left: 57%;
   color: #fafafa;
   transition: 1s all;
 }
@@ -343,12 +356,12 @@
   z-index: 6;
   position: relative;
   top: 0;
-  left: 65%;
+  left: 68%;
   color: #fafafa;
   transition: 1s all;
 }
 
-.digital-mag__nav--desktop__features-subnav__list, .digital-mag__nav--desktop__departments-subnav__list {
+.digital-mag__nav--desktop__features-subnav__list, .digital-mag__nav--desktop__departments-subnav__list, .digital-mag__nav--desktop__pivoting-subnav__list {
   transition: 1s all;
   overflow: hidden;
   font-family: 'Benton Sans Reg', sans-serif;
@@ -356,11 +369,11 @@
   transition: max-height 0.6s ease-out;
 }
 
-.digital-mag__nav--desktop__features-subnav__list:hover, .digital-mag__nav--desktop__departments-subnav__list:hover {
+.digital-mag__nav--desktop__features-subnav__list:hover, .digital-mag__nav--desktop__departments-subnav__list:hover, .digital-mag__nav--desktop__pivoting-subnav__list:hover {
   background-color: #c7531e;
 }
 
-.digital-mag__nav--desktop__features-subnav__list-item, .digital-mag__nav--desktop__departments-subnav__list-item {
+.digital-mag__nav--desktop__features-subnav__list-item, .digital-mag__nav--desktop__departments-subnav__list-item, .digital-mag__nav--desktop__pivoting-subnav__list-item {
   border-bottom: solid 1px #fafafa;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.9);
@@ -370,7 +383,7 @@
   flex-direction: column;
 }
 
-.digital-mag__nav--desktop__features-subnav__list-item:hover, .digital-mag__nav--desktop__departments-subnav__list-item:hover {
+.digital-mag__nav--desktop__features-subnav__list-item:hover, .digital-mag__nav--desktop__departments-subnav__list-item:hover, .digital-mag__nav--desktop__pivoting-subnav__list-item:hover {
   position: relative;
   left: 30px;
   text-decoration: underline;
@@ -381,12 +394,12 @@
   color: #c7531e;
 } */
 
-.digital-mag__nav--desktop__features-subnav__list-item__link, .digital-mag__nav--desktop__departments-subnav__list-item__link {
+.digital-mag__nav--desktop__features-subnav__list-item__link, .digital-mag__nav--desktop__departments-subnav__list-item__link, .digital-mag__nav--desktop__pivoting-subnav__list-item__link {
   color:#fafafa;
   /* text-decoration: none; */
 }
 
-.digital-mag__nav--desktop__features-subnav__list-item__link:hover, .digital-mag__nav--desktop__departments-subnav__list-item__link:hover {
+.digital-mag__nav--desktop__features-subnav__list-item__link:hover, .digital-mag__nav--desktop__departments-subnav__list-item__link:hover, .digital-mag__nav--desktop__pivoting-subnav__list-item__link:hover {
   text-decoration: underline;
 }
 

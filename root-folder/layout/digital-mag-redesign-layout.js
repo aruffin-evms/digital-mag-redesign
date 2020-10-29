@@ -16,6 +16,12 @@ const subnavIcon = document.getElementById('subnavIcon')
 const featureNavIcon = document.getElementById('featureNavIcon')
 const alumniListIcon = document.getElementById('alumniListIcon')
 const expandDeptList = document.getElementById('expandDeptList')
+const togglePivotingNav = document.getElementById('togglePivotingNav')
+const pivotingNavIcon = document.getElementById('pivotingNavIcon')
+const pivotingMenu = document.getElementById('pivotingMenu') 
+const categoryPivoting = document.getElementById('categoryPivoting')
+const expandPivotingList = document.getElementById('expandPivotingList')
+const pivotingList = document.getElementById('pivotingList')
 
 categoryFeatures.addEventListener('click', function() {
   if(expandList.innerHTML === 'expand_more') {
@@ -26,6 +32,27 @@ categoryFeatures.addEventListener('click', function() {
     hideList(featuresList)
   }
 })
+
+categoryDepartments.addEventListener('click', function() {
+  if(expandDeptList.innerHTML === 'expand_more') {
+    expandDeptList.innerHTML = 'expand_less'
+    showList(departmentsList)
+  } else {
+    expandDeptList.innerHTML = 'expand_more'
+    hideList(departmentsList)
+  }
+})
+
+categoryPivoting.addEventListener('click', function() {
+  if(expandPivotingList.innerHTML === 'expand_more') {
+    expandPivotingList.innerHTML = 'expand_less'
+    showList(pivotingList)
+  } else {
+    expandPivotingList.innerHTML = 'expand_more'
+    hideList(pivotingList)
+  }
+})
+
 
 function showList(list) {
   list.style.display = 'block'
@@ -64,6 +91,7 @@ function hideSubnav() {
 
 toggleFeatureNav.addEventListener('click', function() {
   hideMenu(departmentMenu)
+  hideMenu(pivotingMenu)
   if(featureNavIcon.innerHTML === 'expand_more') {
     console.log('clcik')
     // this.innerHTML = 'expand_less'
@@ -77,12 +105,25 @@ toggleFeatureNav.addEventListener('click', function() {
 
 toggleDepartmentNav.addEventListener('click', function() {
   hideMenu(featureMenu)
+  hideMenu(pivotingMenu)
   if(departmentNavIcon.innerHTML === 'expand_more') {
     departmentNavIcon.innerHTML = 'expand_less'
     showMenu(departmentMenu)
   } else {
     departmentNavIcon.innerHTML = 'expand_more'
     hideMenu(departmentMenu)
+  }
+})
+
+togglePivotingNav.addEventListener('click', function() {
+  hideMenu(featureMenu)
+  hideMenu(departmentMenu)
+  if(pivotingNavIcon.innerHTML === 'expand_more') {
+    pivotingNavIcon.innerHTML = 'expand_less'
+    showMenu(pivotingMenu)
+  } else {
+    pivotingNavIcon.innerHTML = 'expand_more'
+    hideMenu(pivotingMenu)
   }
 })
 
@@ -94,15 +135,6 @@ function hideMenu(menu) {
   menu.style.maxHeight = '0'
 }
 
-categoryDepartments.addEventListener('click', function() {
-  if(expandDeptList.innerHTML === 'expand_more') {
-    expandDeptList.innerHTML = 'expand_less'
-    showList(departmentsList)
-  } else {
-    expandDeptList.innerHTML = 'expand_more'
-    hideList(departmentsList)
-  }
-})
 
 expandAlumniList.addEventListener('click', function() {
   if(alumniListIcon.innerHTML === 'expand_more') {

@@ -3,34 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./digital-mag-redesign-layout.css">
+  <!-- <link rel="stylesheet" href="./digital-mag-redesign-layout.css"> -->
   <link href="https://cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script defer src="./digital-mag-redesign-layout.js"></script>
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-}
-
-/* fonts for page */
-@font-face {
-  font-family: 'GT-Super';
-  src: url('https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Super.woff') format('woff');
-}
-
-@font-face {
-  font-family: "GT-Super-bold";
-  src: url('https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Calluna';
-  src: url('https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff') format('woff');
-}
-
-  </style>
-  <title>Document</title>
+  <t4 type="media" formatter="css/*" id="149345" />
+  <title><t4 type="title" /> - Eastern Virginia Medical School (EVMS), Norfolk, Hampton Roads</title>
 </head>
 <body>
   <nav class="digital-mag__nav digital-mag__nav--mobile">
@@ -47,13 +24,20 @@
     </div>
     <div id="sideNav" class="digital-mag__nav--mobile__sidenav">
       <div class="digital-mag__nav--mobile__sidenav__wrapper">
+        <div class="digital-mag__nav--mobile__sidenav__category"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">From the President</a></div>
+        <label id="categoryPivoting" for="" class="digital-mag__nav--mobile__sidenav__category">Pivoting in a Pandemic<span id="expandPivotingList" class="material-icons">expand_more</span></label>
+        <div id="pivotingList" class="digital-mag__mobile-menu__wrapper">
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Education</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Research</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Patient Care</a></div>
+        </div>
         <label id="categoryFeatures" for="" class="digital-mag__nav--mobile__sidenav__category">Features<span id="expandList" class="material-icons">expand_more</span></label>
         <div id="featuresList" class="digital-mag__mobile-menu__wrapper">
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Community</a></div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">First Person</a></div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Profile</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Community: Telehealth</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Person: Dr. Mazzurco</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Profile: Dr. Oldfield</a></div>
         </div>
-        <label id="categoryDepartments" for="" class="digital-mag__nav--mobile__sidenav__category">Departments<span id="expandDeptList" class="material-icons">expand_less</span></label>
+        <label id="categoryDepartments" for="" class="digital-mag__nav--mobile__sidenav__category">Stories<span id="expandDeptList" class="material-icons">expand_less</span></label>
         <div id="departmentsList" class="digital-mag__mobile-menu__wrapper">
           <div id="expandAlumniList" class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><span>Alumni Profile<span id="alumniListIcon" class="material-icons">expand_more</span></span></div>
             <div id="alumniList" class="digital-mag__mobile-menu__wrapper">
@@ -85,30 +69,39 @@
     </div>
     <div id="subnav" class="digital-mag__nav--desktop__subnav">
       <div class="digital-mag__nav--desktop__subnav__wrapper">
+        <div id="togglePivotingNav" class="digital-mag__nav--desktop__subnav-dropdown">pivoting in a pandemic<span id="pivotingNavIcon" class="material-icons">expand_more</span></div>
         <div id="toggleFeatureNav" class="digital-mag__nav--desktop__subnav-dropdown">features<span id="featureNavIcon" class="material-icons">expand_more</span></div>
-        <div id="toggleDepartmentNav" class="digital-mag__nav--desktop__subnav-dropdown">departments<span id="departmentNavIcon" class="material-icons">expand_more</span></div>
+        <div id="toggleDepartmentNav" class="digital-mag__nav--desktop__subnav-dropdown">stories<span id="departmentNavIcon" class="material-icons">expand_more</span></div>
       </div>
     </div>
+    <div class="digital-mag__nav--desktop__pivoting-subnav">
+      <ul id="pivotingMenu" class="digital-mag__nav--desktop__pivoting-subnav__list">
+        <li class="digital-mag__nav--desktop__pivoting-subnav__list-item"><a class="digital-mag__nav--desktop__pivoting-subnav__list-item__link" href="">Education</a></li>
+        <li class="digital-mag__nav--desktop__pivoting-subnav__list-item"><a class="digital-mag__nav--desktop__pivoting-subnav__list-item__link" href="">Research</a></li>
+        <li class="digital-mag__nav--desktop__pivoting-subnav__list-item"><a class="digital-mag__nav--desktop__pivoting-subnav__list-item__link" href="">Patient Care</a></li>
+      </ul>
+  </div>
     <div class="digital-mag__nav--desktop__features-subnav">
       <ul id="featureMenu" class="digital-mag__nav--desktop__features-subnav__list">
-        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Education</a></li>
-        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Research</a></li>
-        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Patient Care</a></li>
+        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Community: Telehealth</a></li>
+        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Person: Dr. Mazzurco</a></li>
+        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Profile: Dr. Oldfield </a></li>
       </ul>
   </div>
   <div class="digital-mag__nav--desktop__departments-subnav">
     <ul id="departmentMenu" class="digital-mag__nav--desktop__departments-subnav__list">
+      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">From the President</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/research/research.html">Research</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/diversity/diversity.html">Diversity & Inclusion</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/protection/provider_protection.html">Community & Outreach</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/my-story/my-story.html">My Story</a></li>
+      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/my-story/my-story.html">Q&A - Dr. Hooper</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Alumni Profile</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../photo-essay/photo-essay.html">Photo Essay</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Picture This</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/ryans/ryans.html">Your Support</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">From the President</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/toll/toll.html">Online Exclusive</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="https://www.evms.edu/">EVMS Home</a></li>
+      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/toll/toll.html">Picture This</a></li>
+      <div class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link">EVMS Home</a></div>
     </ul>
   </div>
   </nav>

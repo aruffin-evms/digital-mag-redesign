@@ -94,11 +94,6 @@ canvas {
   } 
 }
 
-#toggleSubnav, #toggleFeatureNav, #toggleDepartmentNav {
-  position: relative;
-  top: 5px;
-}
-
 .slide-up {
   animation: slideUp 1.5s;
 }
