@@ -205,7 +205,7 @@
 
 .basic-story__content__image-caption, .heroCaption {
   border-left: solid 1px gray;
-  margin: 15px auto 20px;
+  margin: -2px auto 20px;
   padding-left: 10px;
   position: relative;
   font-style: italic;
