@@ -836,7 +836,8 @@ li {
 
 .landing-page__more-stories__story {
   min-height: 350px;
-  min-width: 300px;
+  min-width: 290px;
+  max-width: 310px;
   text-decoration: none;
 }
 

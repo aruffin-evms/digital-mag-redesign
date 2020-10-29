@@ -193,16 +193,6 @@
   
 }
 
-/* .digital-mag__nav--mobile__sidenav__list-item__feature:before {
-  content: 'Pivoting in a Pandemic';
-  color: #c7531e;
-  display: flex;
-} */
-
-.digital-mag__nav--mobile__sidenav__list-item__departments {
-  /* display: inline; */
-}
-
 #toggleFeatureNav {
   width: 112px;
 }
@@ -270,6 +260,7 @@
 
 .digital-mag__nav--desktop__magazine-cta { 
   margin-top: -4px;
+  min-width: 100px;
 }
 
 .digital-mag__nav-desktop__archives-link, .digital-mag__nav--desktop__magazine-cta {
@@ -392,14 +383,10 @@
   text-decoration: underline;
 }
 
-/* .digital-mag__nav--desktop__features-subnav__list-item:before {
-  content: 'Pivoting in a Pandemic';
-  color: #c7531e;
-} */
 
 .digital-mag__nav--desktop__features-subnav__list-item__link, .digital-mag__nav--desktop__departments-subnav__list-item__link, .digital-mag__nav--desktop__pivoting-subnav__list-item__link {
   color:#fafafa;
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
 .digital-mag__nav--desktop__features-subnav__list-item__link:hover, .digital-mag__nav--desktop__departments-subnav__list-item__link:hover, .digital-mag__nav--desktop__pivoting-subnav__list-item__link:hover {
@@ -453,6 +440,7 @@ li {
   font-family: 'Benton Sans Reg';
   color: rgba(200, 200, 200, 0.7);
   white-space: nowrap;
+  margin: 0 auto;
 }
 
 @media(min-width : 900px) {
@@ -675,7 +663,6 @@ li {
 .stories-carousel__carousel-item {
   width: 100%;
   margin: 20px;
-  /* background: gray; */
 }
 
 .stories-carousel__thumbnail-wrapper {
