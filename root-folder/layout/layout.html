@@ -3,686 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="layout.css">
+  <!-- <link rel="stylesheet" href="./digital-mag-redesign-layout.css"> -->
   <link href="https://cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="layout.js" defer></script>
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-}
-
-/* fonts for page */
-@font-face {
-  font-family: 'GT-Super';
-  src: url('/root-folder/fonts/GT-Super-Display-Super.woff') format('woff');
-}
-
-@font-face {
-  font-family: "GT-Super-bold";
-  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Calluna';
-  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff') format('woff');
-}
-
-#toggleSubnav, #toggleFeatureNav, #toggleDepartmentNav {
-  position: relative;
-  top: 5px;
-}
-
-.digital-mag__cta {
-  background-color: #000000;
-  padding: 10px 20px;
-  max-width: 120px;
-  margin: 0 auto;
-  text-align: center;
-  transition: 0.5s ease;
-  color: white;
-  text-decoration: none;
-  font-family: 'Benton Sans Reg';
-  transform: translateZ(0);
-  position: relative;
-  overflow: hidden;
-  font-size: 18px;
-}
-
-.digital-mag__cta:before { 
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  background: #c7531e;
-  height: 6px;
-  transition: .5s all;
-}
-
-.digital-mag__cta:hover:before {
-  right: 0;
-}
-
-.digital-mag__nav {
-  background-color: #fafafa;
-  width: 100vw;
-  position: sticky;
-  z-index: 11;
-  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
-}
-
-.digital-mag__nav--mobile {
-  display: flex;
-  height: 100%; 
-  
-  top: 0;
-}
-
-.digital-mag__nav--desktop {
-  display: none;
-}
-
-@media(min-width: 900px) {
-  .digital-mag__nav--mobile {
-    display: none;
-  }
-
-  .digital-mag__nav--desktop {
-    display: block;
-  }
-}
-
-/* .digital-mag__mobile-menu__wrapper {
-  height: 0;
-  display: none;
-  opacity: 0;
-  transition: 1s opacity;
-} */
-
-.digital-mag__nav--mobile__wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-}
-
-.digital-mag__nav--mobile__logo-wrapper {
-  background-color: green;
-  width: 100px;
-  height: 90%;
-  display: flex;
-  justify-self: center;
-  align-self: center;
-}
-
-.digital-mag__nav--mobile__suscribe-cta {
-  text-align: center;
-  padding-top: 23px !important;
-}
-
-.digital-mag__nav--mobile__icon {
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  top: 10px;
-}
-
-.digital-mag__nav--mobile__icon-bar1, .digital-mag__nav--mobile__icon-bar2, .digital-mag__nav--mobile__icon-bar3 {
-  width: 35px;
-  height: 2px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-
-.icon-transform .digital-mag__nav--mobile__icon-bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-.icon-transform  .digital-mag__nav--mobile__icon-bar2 {
-  opacity: 0;
-}
-
-.icon-transform .digital-mag__nav--mobile__icon-bar3 {
-  -webkit-transform: rotate(45deg) translate(-4px, -4px) ;
-  transform: rotate(45deg) translate(-4px, -4px) ;
-}
-
-.digital-mag__nav--mobile__sidenav {
-  height: 100vh;
-  width: 0; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  right: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s;
-  color: white;
-}
-
-.digital-mag__nav--mobile__sidenav__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.digital-mag__nav--mobile__sidenav__list-item {
-  width: 100%;
-}
-
-.digital-mag__nav--mobile__sidenav__list-item--feature:before {
-  content: 'Pivoting in a Pandemic'
-}
-
-.digital-mag__nav--desktop {
-  height: 80px;
-  width: 100vw;
-  border-bottom: solid 1px black;
-  position: relative;
-  z-index: 15;
-}
-
-.digital-mag__nav--desktop__wrapper {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.digital-mag__nav--desktop__suscribe-cta {
-  padding: 27px !important;
-  display: flex;
-  justify-self: flex-end;
-  height: max-content;
-  margin: 0 !important;
-}
-
-.digital-mag__nav-desktop__archives-link {
-  margin: 0 30px;
-}
-
-.digital-mag__nav--desktop__magazine-cta {
-  margin-top: -4px;
-}
-
-.digital-mag__nav-desktop__archives-link, .digital-mag__nav--desktop__magazine-cta {
-  font-family: 'GT-Super';
-  text-decoration: none;
-  color: black;
-  transition: .3s all;
-  cursor: pointer;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  height: max-content;
-}
-
-.digital-mag__nav-desktop__archives-link:hover, .digital-mag__nav--desktop__magazine-cta:hover {
-  color: #c7531e;
-}
-
-.digital-mag__nav--desktop__magazine-cta {
-  font-family: 'GT-Super';
-}
-
-.digital-mag__nav--desktop__logo {
-  width: 200px;
-  margin-right: 40%;
-}
-
-.digital-mag__nav--desktop__subnav {
-  height: 0;
-  position: relative;
-  z-index: 9;
-  transition: .5s all;
-  overflow: hidden;
-  background-color: #fafafa;
-  border-bottom: solid .5px black;
-  border-top: solid .5px black;
-}
-
-.digital-mag__nav--desktop__subnav__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* align-content: flex-end; */
-  width: 250px;
-  margin-left: 59%;
-  padding: 9px 0;
-}
-
-.digital-mag__nav--desktop__subnav-dropdown {
-  text-transform: uppercase;
-  height: max-content;
-  transition: .4s all; 
-  cursor: pointer;
-  min-width: 170px;
-}
-
-.digital-mag__nav--desktop__subnav-dropdown:hover {
-  color: #c7531e;
-}
-
-.digital-mag__nav--desktop__features-subnav {
-  width: 300px;
-  height: auto;
-  background-color: #c7531e;
-  z-index: 6;
-  position: relative;
-  top: 0;
-  left: 55%;
-  color: #fafafa;
-  transition: 1s all;
-}
-
-.digital-mag__nav--desktop__departments-subnav {
-  width: 300px;
-  height: auto;
-  background-color: #c7531e;
-  z-index: 6;
-  position: relative;
-  top: 0;
-  left: 65%;
-  color: #fafafa;
-  transition: 1s all;
-}
-
-.digital-mag__nav--desktop__features-subnav__list, .digital-mag__nav--desktop__departments-subnav__list {
-  transition: 1s all;
-  overflow: hidden;
-  font-family: 'Benton Sans Reg';
-  max-height: 0;
-  transition: max-height 0.6s ease-out;
-}
-
-.digital-mag__nav--desktop__features-subnav__list:hover, .digital-mag__nav--desktop__departments-subnav__list:hover {
-  background-color: #c7531e;
-}
-
-.digital-mag__nav--desktop__features-subnav__list-item, .digital-mag__nav--desktop__departments-subnav__list-item {
-  border-bottom: solid 1px #fafafa;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.9);
-  transition: 1s left;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-}
-
-/* .digital-mag__nav--desktop__features-subnav__list-item:before {
-  background: #c7531e;
-  border-bottom: 1px solid #fafafa;
-} */
-
-.digital-mag__nav--desktop__features-subnav__list-item:hover, .digital-mag__nav--desktop__departments-subnav__list-item:hover {
-  position: relative;
-  left: 30px;
-}
-
-.digital-mag__nav--desktop__features-subnav__list-item:before {
-  content: 'Pivoting in a Pandemic';
-  color: #c7531e;
-}
-
-.digital-mag__nav--desktop__features-subnav__list-item__link, .digital-mag__nav--desktop__departments-subnav__list-item__link {
-  color:#fafafa;
-  text-decoration: none;
-}
-
-/* .digital-mag__nav--desktop__features-subnav__list-item:before {
-  position: relative;
-  left: 30px;
-  z-index: 13;
-} */
-
-li {
-  list-style-type: none;
-}
-
-
-.digital-mag__footer {
-  height: 100px;
-  width: 100vw;
-}
-
-.digital-mag__footer__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: max-content;
-  width: 90%;
-  margin: 30px auto;
-}
-
-@media(min-width: 900px) {
-  .digital-mag__footer__wrapper {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-}
-
-.digital-mag__logo {
-  width: 150px;
-  height: auto;
-  margin: 0 auto;
-}
-
-@media(min-width: 900px) {
-  .digital-mag__logo {
-    margin: 0;
-  }
-}
-
-.digital-mag__info {
-  height: max-content;
-  width: 300px;
-  text-align: center;
-  font-style: 14px;
-  font-family: 'Benton Sans Reg';
-  color: rgba(200, 200, 200, 0.7);
-  white-space: nowrap;
-}
-
-@media(min-width : 900px) {
-  .digital-mag__info {
-    width: auto;
-  }
-}
-
-.digital-mag__info a, .digital-mag__info p{
-  font-size: 14px;
-  color: rgba(180, 180, 180);
-}
-
-.digital-mag__info__line-two {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 16px;
-}
-
-
-.digital-mag__social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-}
-
-.digital-mag__social-icon {
-  height: 30px;
-  margin: 5px;
-  align-self: flex-end;
-}
-
-.pulse {
-  transform: scale(2);
-}
-
-.subscribe__wrapper {
-  display: flex;
-  flex: 0 1 100%;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  width: 90vw;
-  height: auto;
-  background-color: white;
-}
-
-@media(min-width: 900px) {
-  .subscribe__wrapper {
-    width: 700px;
-    height: 500px;
-  }
-}
-
-.subscribe__column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin: 30px 0;
-}
-
-@media(min-width: 900px) {
-  .subscribe__column {
-    width: 50%;
-    margin: 0;
-  }
-}
-
-.subscribe__content {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.subscribe__poster-wrapper {
-  
-  height: 340px;
-  width: 300px;
-  margin: 0 auto;  
-}
-
-.subscribe__poster {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.subscribe__title {
-  font-size: 42px;
-}
-
-.subscribe__cta {
-  max-width: 120px;
-  text-align: center;
-  background-color: #000000;
-  padding: 10px 20px;
-  margin: 0 auto;
-  color: #fafafa;
-  text-decoration: none;
-  transition: 0.5s ease;
-  font-family: 'Benton Sans Reg';
-}
-
-.subscribe__cta:hover {
-  box-shadow: 0 5px 0 #c7531e inset;
-}
-
-.subscribe__description {
-  padding-bottom: 20px;
-  font-family: 'Benton Sans Reg';
-}
-
-.subscribe__pdf-download {
-  color: #c7531e;
-  text-decoration: none;
-  padding-top: 20px;
-  font-family: 'Benton Sans Reg';
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(128, 128, 128, 0.7);
-  cursor: pointer;
-  padding: 20px;
-  display: none !important;
-}
-
-@media(min-width: 600px) {
-  .arrow {
-    display: inline-block !important;
-  }
-}
-
-.arrow__back {
-  left: 20%;
-}
-
-.arrow__next {
-  right: 3%;
-}
-
-@media(min-width: 900px) {
-  .arrow__next {
-    right: 10%;
-  }
-}
-
-.stories-carousel {
-  padding: 64px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-}
-
-.stories-carousel__title-wrapper {
-  padding-top: 5px;
-}
-
-.stories-carousel__rust-bar {
-  width: 60px;
-  border-top: solid 4px #c7531e;
-  padding-bottom: 10px;
-}
-.stories-carousel__title {
-  font-size: 42px;
-  width: 100px;
-  margin: 0 15px 0 0;
-  font-family: 'GT-Super';
-}
-
-.stories-carousel__carousel-item__title {
-  width: 100%;
-  font-size: 14px;
-  font-family: 'Benton Sans Lt';
-  color: #c7531e;
-  text-transform: uppercase;
-  margin: 5px 0;
-}
-
-.stories-carousel__carousel-item__subtitle {
-  font-family: 'Benton Sans Lt';
-  font-size: 18px;
-}
-
-.stories-carousel__carousel {
-  width: 60%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow-x: scroll;
-  position: relative;
-  scroll-behavior: smooth;
-}
-
-@media(min-width: 600px) {
-  .stories-carousel__carousel {
-    overflow-x: hidden;
-  }
-}
-
-.stories-carousel__carousel-item {
-  width: 100%;
-  margin: 20px;
-  /* background: gray; */
-}
-
-.stories-carousel__thumbnail-wrapper {
-  min-height: 144px;
-  min-width: 208px;
-}
-
-.stories-carousel__thumbnail {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border: solid 1px #b1b4b7;
-}
-
-.digital-mag__hairline {
-  border-bottom: solid 1px rgba(128, 128, 128, 0.2);
-}
-  </style>
-  <title>Document</title>
+  <t4 type="media" formatter="css/*" id="149345" />
+  <title><t4 type="title" /> - Eastern Virginia Medical School (EVMS), Norfolk, Hampton Roads</title>
 </head>
 <body>
   <nav class="digital-mag__nav digital-mag__nav--mobile">
     <div class="digital-mag__nav--mobile__wrapper">
       <figure class="digital-mag__nav--mobile__logo-wrapper">
-        <img src="" alt="" class="digital-mag__nav--mobile__logo">
+        <img src="https://www.evms.edu/uploads/13.1/assets/magazine-logo.svg" alt="" class="digital-mag__nav--mobile__logo">
       </figure>
-      <a href="" class="digital-mag__nav--mobile__suscribe-cta digital-mag__cta">Subscribe</a>
+      <a href="" class="digital-mag__nav--mobile__suscribe-cta">Subscribe</a>
       <div id="mobileIcon" class="digital-mag__nav--mobile__icon">
-        <div class="digital-mag__nav--mobile__icon-bar1"></div>
-        <div class="digital-mag__nav--mobile__icon-bar2"></div>
-        <div class="digital-mag__nav--mobile__icon-bar3"></div>
+        <div class="digital-mag__nav--mobile__icon-bar digital-mag__nav--mobile__icon-bar1"></div>
+        <div class="digital-mag__nav--mobile__icon-bar digital-mag__nav--mobile__icon-bar2"></div>
+        <div class="digital-mag__nav--mobile__icon-bar digital-mag__nav--mobile__icon-bar3"></div>
       </div>
     </div>
     <div id="sideNav" class="digital-mag__nav--mobile__sidenav">
       <div class="digital-mag__nav--mobile__sidenav__wrapper">
+        <div class="digital-mag__nav--mobile__sidenav__category"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">From the President</a></div>
+        <label id="categoryPivoting" for="" class="digital-mag__nav--mobile__sidenav__category">Pivoting in a Pandemic<span id="expandPivotingList" class="material-icons">expand_more</span></label>
+        <div id="pivotingList" class="digital-mag__mobile-menu__wrapper">
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Education</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Research</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Patient Care</a></div>
+        </div>
         <label id="categoryFeatures" for="" class="digital-mag__nav--mobile__sidenav__category">Features<span id="expandList" class="material-icons">expand_more</span></label>
-        <ul id="featuresList" class="digital-mag__mobile-menu__wrapper">
-          <li class="digital-mag__nav--mobile__sidenav__list-item--feature">Feature link 1</li>
-          <li class="digital-mag__nav--mobile__sidenav__list-item">Feature link 2</li>
-          <li class="digital-mag__nav--mobile__sidenav__list-item">Feature link 2</li>
-        </ul>
+        <div id="featuresList" class="digital-mag__mobile-menu__wrapper">
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Community: Telehealth</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Person: Dr. Mazzurco</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Profile: Dr. Oldfield</a></div>
+        </div>
+        <label id="categoryDepartments" for="" class="digital-mag__nav--mobile__sidenav__category">Stories<span id="expandDeptList" class="material-icons">expand_less</span></label>
+        <div id="departmentsList" class="digital-mag__mobile-menu__wrapper">
+          <div id="expandAlumniList" class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><span>Alumni Profile<span id="alumniListIcon" class="material-icons">expand_more</span></span></div>
+            <div id="alumniList" class="digital-mag__mobile-menu__wrapper">
+                <div class="digital-mag__nav--mobile__sidenav__list-item"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Margaret Stowasser</a></div>
+                <div class="digital-mag__nav--mobile__sidenav__list-item"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Maureen Kelleher</a></div>
+                <div class="digital-mag__nav--mobile__sidenav__list-item"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Phillip Chang</a></div>
+              
+            </div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Research</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Diversity & Inclusion</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Community & Outreach</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">My Story</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Photo Essay</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Picture This</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">From the President</a></div>
+          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Your Support</a></div>
+          <div id="archives" class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">Archives</a></div>
+          <div id="evmsHome" class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><a href="" class="digital-mag__nav--mobile__features-subnav__list-item__link">EVMS Home</a></div>
+        </div>
       </div>
     </div>
   </nav>
   <nav class="digital-mag__nav digital-mag__nav--desktop">
     <div class="digital-mag__nav--desktop__wrapper">
-      <img src="../assets/magazine-logo.svg" alt="" class="digital-mag__nav--desktop__logo">
-      <p class="digital-mag__nav--desktop__magazine-cta">Issue 13.1<span id="toggleSubnav" class="material-icons">expand_more</span></p>
+      <img src="https://www.evms.edu/uploads/13.1/assets/magazine-logo.svg" alt="" class="digital-mag__nav--desktop__logo">
+      <p id="toggleSubnav" class="digital-mag__nav--desktop__magazine-cta">Issue 13.1<span id="subnavIcon" class="material-icons">expand_more</span></p>
       <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/13_1/previous_issues/" class="digital-mag__nav-desktop__archives-link">Archives</a>
-      <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/13_1/subscribe/" class="digital-mag__nav--desktop__suscribe-cta digital-mag__cta">Subscribe</a>
+      <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/13_1/subscribe/" class="digital-mag__nav--desktop__suscribe-cta">Subscribe</a>
     </div>
     <div id="subnav" class="digital-mag__nav--desktop__subnav">
       <div class="digital-mag__nav--desktop__subnav__wrapper">
-        <div class="digital-mag__nav--desktop__subnav-dropdown">features<span id="toggleFeatureNav" class="material-icons">expand_more</span></div>
-        <div class="digital-mag__nav--desktop__subnav-dropdown">departments<span id="toggleDepartmentNav" class="material-icons">expand_more</span></div>
+        <div id="togglePivotingNav" class="digital-mag__nav--desktop__subnav-dropdown">pivoting in a pandemic<span id="pivotingNavIcon" class="material-icons">expand_more</span></div>
+        <div id="toggleFeatureNav" class="digital-mag__nav--desktop__subnav-dropdown">features<span id="featureNavIcon" class="material-icons">expand_more</span></div>
+        <div id="toggleDepartmentNav" class="digital-mag__nav--desktop__subnav-dropdown">stories<span id="departmentNavIcon" class="material-icons">expand_more</span></div>
       </div>
     </div>
+    <div class="digital-mag__nav--desktop__pivoting-subnav">
+      <ul id="pivotingMenu" class="digital-mag__nav--desktop__pivoting-subnav__list">
+        <li class="digital-mag__nav--desktop__pivoting-subnav__list-item"><a class="digital-mag__nav--desktop__pivoting-subnav__list-item__link" href="">Education</a></li>
+        <li class="digital-mag__nav--desktop__pivoting-subnav__list-item"><a class="digital-mag__nav--desktop__pivoting-subnav__list-item__link" href="">Research</a></li>
+        <li class="digital-mag__nav--desktop__pivoting-subnav__list-item"><a class="digital-mag__nav--desktop__pivoting-subnav__list-item__link" href="">Patient Care</a></li>
+      </ul>
+  </div>
     <div class="digital-mag__nav--desktop__features-subnav">
       <ul id="featureMenu" class="digital-mag__nav--desktop__features-subnav__list">
-        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Education</a></li>
-        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Research</a></li>
-        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Patient Care</a></li>
+        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Community: Telehealth</a></li>
+        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Person: Dr. Mazzurco</a></li>
+        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Profile: Dr. Oldfield </a></li>
       </ul>
   </div>
   <div class="digital-mag__nav--desktop__departments-subnav">
     <ul id="departmentMenu" class="digital-mag__nav--desktop__departments-subnav__list">
+      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">From the President</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/research/research.html">Research</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/diversity/diversity.html">Diversity & Inclusion</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/protection/provider_protection.html">Community & Outreach</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/my-story/my-story.html">My Story</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Alumni Profile</a></li>
+      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/my-story/my-story.html">Q&A - Dr. Hooper</a></li>
+      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Alumni Profile: Chang</a></li>
+      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Alumni Profile: Stowasser</a></li>
+      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Alumni Profile: Kelleher</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../photo-essay/photo-essay.html">Photo Essay</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Picture This</a></li>
       <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/ryans/ryans.html">Your Support</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">From the President</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/toll/toll.html">Online Exclusive</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="https://www.evms.edu/">EVMS Home</a></li>
+      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/toll/toll.html">Picture This</a></li>
+      <div class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link">EVMS Home</a></div>
     </ul>
   </div>
   </nav>
@@ -706,92 +127,5 @@ li {
       </div>
     </div>
   </footer>
-  <script>
-    const expandList = document.getElementById('expandList')
-const featuresList = document.getElementById('featuresList')
-
-const toggleSubnav = document.getElementById('toggleSubnav')
-const subnav = document.getElementById('subnav')
-
-const toggleFeatureNav = document.getElementById('toggleFeatureNav')
-const toggleDepartmentNav = document.getElementById('toggleDepartmentNav')
-
-
-const featureMenu = document.getElementById('featureMenu')
-const departmentMenu = document.getElementById('departmentMenu')
-
-expandList.addEventListener('click', function() {
-  console.log(this.innerHTML)
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showList(featuresList)
-  } else {
-    this.innerHTML = 'expand_more'
-    hideList(featuresList)
-  }
-})
-
-function showList(list) {
-  list.style.display = 'block'
-  list.style.height = '200px'
-  list.style.opacity = '1'
-}
-
-function hideList(list) {
-  list.style.display = 'none'
-  list.style.height = '0px'
-}
-
-
-toggleSubnav.addEventListener('click', function() {
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showSubnav()
-  } else {
-    this.innerHTML = 'expand_more'
-    hideSubnav()
-  }
-})
-
-function showSubnav() {
-  subnav.style.height = '50px'
-}
-
-function hideSubnav() {
-  subnav.style.height = '0'
-}
-
-toggleFeatureNav.addEventListener('click', function() {
-  hideMenu(departmentMenu)
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showMenu(featureMenu)
-  } else {
-    this.innerHTML = 'expand_more'
-    hideMenu(featureMenu)
-  }
-})
-
-toggleDepartmentNav.addEventListener('click', function() {
-  hideMenu(featureMenu)
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showMenu(departmentMenu)
-  } else {
-    this.innerHTML = 'expand_more'
-    hideMenu(departmentMenu)
-  }
-})
-
-function showMenu(menu) {
- menu.style.maxHeight = '500px'
-  // featureMenu.style.transition = 'height 1s'
-  console.log('show feature')
-}
-
-function hideMenu(menu) {
-  menu.style.maxHeight = '0'
-}
-  </script>
 </body>
 </html>

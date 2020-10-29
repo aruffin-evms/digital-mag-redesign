@@ -1,5 +1,5 @@
-const mobileIcon = document.getElementById('mobileIcon')
-const sideNav = document.getElementById('sideNav')
+// const mobileIcon = document.getElementById('mobileIcon')
+// const sideNav = document.getElementById('sideNav')
 
 const qouteDrawer = document.getElementById('qouteDrawer')
 const qouteDrawerInitialHeight = qouteDrawer.style.height;
@@ -15,18 +15,19 @@ const gridItemContent = document.querySelector('.landing-page__featured-stories_
 
 const additionalStories = document.querySelectorAll('.landing-page__story-block')
 
-const expandList = document.getElementById('expandList')
-const featuresList = document.getElementById('featuresList')
+// const expandList = document.getElementById('expandList')
+// const featuresList = document.getElementById('featuresList')
+// const departmentsList = document.getElementById('departmentsList')
 
-const toggleSubnav = document.getElementById('toggleSubnav')
-const subnav = document.getElementById('subnav')
+// const toggleSubnav = document.getElementById('toggleSubnav')
+// const subnav = document.getElementById('subnav')
 
-const toggleFeatureNav = document.getElementById('toggleFeatureNav')
-const toggleDepartmentNav = document.getElementById('toggleDepartmentNav')
+// const toggleFeatureNav = document.getElementById('toggleFeatureNav')
+// const toggleDepartmentNav = document.getElementById('toggleDepartmentNav')
 
 
-const featureMenu = document.getElementById('featureMenu')
-const departmentMenu = document.getElementById('departmentMenu')
+// const featureMenu = document.getElementById('featureMenu')
+// const departmentMenu = document.getElementById('departmentMenu')
 
 const animationVideo = document.getElementById('animationVideo')
 
@@ -41,11 +42,16 @@ const carousel = document.querySelector('.landing-page__stories-carousel__carous
 
 const scrollDistance = 200;
 
-let clickCount = 0;
+// const iconBars = document.querySelectorAll('.digital-mag__nav--mobile__icon-bar')
+// const expandDeptList = document.getElementById('expandDeptList')
+// const expandAlumniList = document.getElementById('expandAlumniList')
 
-let browserWidth = window.innerWidth
 
-console.log('width: ' + window.innerWidth)
+// let clickCount = 0;
+
+// let browserWidth = window.innerWidth
+
+// console.log('width: ' + window.innerWidth)
 
 
 
@@ -130,14 +136,20 @@ additionalStories.forEach(function(story) {
 const slideElementsUp = document.querySelectorAll('.animate-vertical');
 
 const config = {
-  threshold: [0.7]
+  root: null,
+  rootMargin: '50px',
+  threshold: [0.5]
 }
 
 observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
+    if (entry.isIntersecting) {
       entry.target.classList.add('slide-up');
-      animationVideo.play()
+      setTimeout(() => {
+        animationVideo.play()
+      }, 4100);
+      console.log('intersection ratio ' + entry.intersectionRatio)
+      console.log('intersection rect ' + entry.intersectionRect)
     } else {
       // entry.target.classList.remove('slide-up');
     }
@@ -152,8 +164,10 @@ const slideElementsLeft = document.querySelectorAll('.animate-left');
 
 observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
+    if (entry.isIntersecting) {
       entry.target.classList.add('slide-left');
+      console.log('intersection ratio ' + entry.intersectionRatio)
+      console.log('intersection rect ' + entry.intersectionRect)
     } else {
       // entry.target.classList.remove('slide-up');
     }
@@ -168,102 +182,143 @@ const slideElementsRight = document.querySelectorAll('.animate-right');
 
 observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
+    if (entry.isIntersecting) {
       entry.target.classList.add('slide-right');
+      console.log('intersection ratio ' + entry.intersectionRatio)
+      console.log('intersection rect ' + entry.intersectionRect)
     } else {
       // entry.target.classList.remove('slide-up');
     }
   });
 });
 
+
 slideElementsRight.forEach(element => {
   observer.observe(element);
 }, config);
 
-mobileIcon.addEventListener('click', function() {
-  this.classList.toggle('icon-transform')
-  sideNav.style.width = "300px";
-  mobileIcon.style.position = 'absolute'
+const slideQoute = document.querySelector('.animate-qoute-left');
+
+observer = new IntersectionObserver(entry => {
+  if(entry.isIntersecting) {
+    entry.target.classList.add('animate-qoute')
+    console.log('qoute')
+  }
+});
+
+
+observer.observe(slideQoute)
+
+// function changeIconColor(color) {
+//   iconBars.forEach(function(bar) {
+//     bar.style.backgroundColor = color
+//   })
+// }
+
+// mobileIcon.addEventListener('click', function() {
+//   this.classList.toggle('icon-transform')
+//   sideNav.style.width = "300px";
+//   changeIconColor('white')
   
-  if(!this.classList.contains('icon-transform')) {
-    sideNav.style.width = 0
-    mobileIcon.style.marginRight = '300px'
-    mobileIcon.style.transition = 'margin-right 1s'
-  }
-})
+  
+//   if(!this.classList.contains('icon-transform')) {
+//     sideNav.style.width = 0
+//     changeIconColor('#333')
+//   }
+// })
 
-expandList.addEventListener('click', function() {
-  console.log(this.innerHTML)
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showList(featuresList)
-  } else {
-    this.innerHTML = 'expand_more'
-    hideList(featuresList)
-  }
-})
+// expandList.addEventListener('click', function() {
+//   console.log(this.innerHTML)
+//   if(this.innerHTML === 'expand_more') {
+//     this.innerHTML = 'expand_less'
+//     showList(featuresList)
+//   } else {
+//     this.innerHTML = 'expand_more'
+//     hideList(featuresList)
+//   }
+// })
 
-function showList(list) {
-  list.style.display = 'block'
-  list.style.height = '200px'
-  list.style.opacity = '1'
-}
+// expandDeptList.addEventListener('click', function() {
+//   if(this.innerHTML === 'expand_more') {
+//     this.innerHTML = 'expand_less'
+//     showList(departmentsList)
+//   } else {
+//     this.innerHTML = 'expand_more'
+//     hideList(departmentsList)
+//   }
+// })
 
-function hideList(list) {
-  list.style.display = 'none'
-  list.style.height = '0px'
-}
+// expandAlumniList.addEventListener('click', function() {
+//   if(this.innerHTML === 'expand_more') {
+//     this.innerHTML = 'expand_less'
+//     showList(alumniList)
+//   } else {
+//     this.innerHTML = 'expand_more'
+//     hideList(alumniList)
+//   }
+// })
+
+// function showList(list) {
+//   list.style.display = 'block'
+//   list.style.maxHeight = '200px'
+//   list.style.transition ='max-height 1s'
+//   list.style.opacity = '1'
+// }
+
+// function hideList(list) {
+//   list.style.display = 'none'
+//   list.style.maxHeight = '0px'
+//   list.style.transition ='max-height 1s'
+// }
 
 
-toggleSubnav.addEventListener('click', function() {
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showSubnav()
-  } else {
-    this.innerHTML = 'expand_more'
-    hideSubnav()
-  }
-})
+// toggleSubnav.addEventListener('click', function() {
+//   if(this.innerHTML === 'expand_more') {
+//     this.innerHTML = 'expand_less'
+//     showSubnav()
+//   } else {
+//     this.innerHTML = 'expand_more'
+//     hideSubnav()
+//   }
+// })
 
-function showSubnav() {
-  subnav.style.height = '50px'
-}
+// function showSubnav() {
+//   subnav.style.height = '50px'
+// }
 
-function hideSubnav() {
-  subnav.style.height = '0'
-}
+// function hideSubnav() {
+//   subnav.style.height = '0'
+// }
 
-toggleFeatureNav.addEventListener('click', function() {
-  hideMenu(departmentMenu)
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showMenu(featureMenu)
-  } else {
-    this.innerHTML = 'expand_more'
-    hideMenu(featureMenu)
-  }
-})
+// toggleFeatureNav.addEventListener('click', function() {
+//   hideMenu(departmentMenu)
+//   if(this.innerHTML === 'expand_more') {
+//     this.innerHTML = 'expand_less'
+//     showMenu(featureMenu)
+//   } else {
+//     this.innerHTML = 'expand_more'
+//     hideMenu(featureMenu)
+//   }
+// })
 
-toggleDepartmentNav.addEventListener('click', function() {
-  hideMenu(featureMenu)
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showMenu(departmentMenu)
-  } else {
-    this.innerHTML = 'expand_more'
-    hideMenu(departmentMenu)
-  }
-})
+// toggleDepartmentNav.addEventListener('click', function() {
+//   hideMenu(featureMenu)
+//   if(this.innerHTML === 'expand_more') {
+//     this.innerHTML = 'expand_less'
+//     showMenu(departmentMenu)
+//   } else {
+//     this.innerHTML = 'expand_more'
+//     hideMenu(departmentMenu)
+//   }
+// })
 
-function showMenu(menu) {
- menu.style.maxHeight = '500px'
-  // featureMenu.style.transition = 'height 1s'
-  console.log('show feature')
-}
+// function showMenu(menu) {
+//  menu.style.maxHeight = '500px'
+// }
 
-function hideMenu(menu) {
-  menu.style.maxHeight = '0'
-}
+// function hideMenu(menu) {
+//   menu.style.maxHeight = '0'
+// }
 
 
 window.onload = function() {
