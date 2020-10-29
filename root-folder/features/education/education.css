@@ -2,12 +2,6 @@
   height: 125px;
 }
 
-.feature__hero__image{
-  width:50%;
-  float:left;
-  
-}
-
 .smaller{
   font-size: .7em;
   margin: 0 auto;
@@ -48,10 +42,6 @@
 
 .feature__content__image-caption {
 float:none;
-}
-
-.feature__dropcap {
-padding-bottom:5px;
 }
 
 @media (max-width:640px){

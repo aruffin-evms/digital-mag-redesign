@@ -1,4 +1,4 @@
-.feature__faculty-spotlight {
+/* .feature__faculty-spotlight {
   margin: 40px 0;
   background-color: rgba(128, 128, 128, 0.2);
 }
@@ -248,7 +248,7 @@ and (max-device-width : 850px) {
     width: 85%;
   }
 
-}
+} */
 
 .arrow {
 position: absolute;

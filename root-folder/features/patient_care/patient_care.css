@@ -2,37 +2,13 @@
   height: 125px;
 }
 
-.feature__hero__image{
-  width:50%;
-  height: auto;
-  float:left;
-}
-
 .topPiece{
   margin: 6em auto 0;
 }
 
- .hero-wrapper{
-  display: block;
-  clear: both;
-  height: 50vh;
-  width: 100%;
-} 
-
 .features__hero__title {
   font-family: "GT-Super";
   margin: 10px 0;
-}
-
-.features__hero__overlay {
-  width: 30%;
-  color: #000;
-  margin: -20% 0 0 13%;
-  float: left;
-}
-
-.features__hero__overlay label{
-  font-size:.8em;
 }
 
 .feature__faculty-spotlight__wrapper{
@@ -68,14 +44,6 @@
   width: 100%;
   margin: 7%;
 }
-
-
-.feature__social-share {
-  margin: 22em 10em 0 0
-}
-.feature__aside p{
-  display: none;
-}
 }
 
 @media (max-height:411px){
@@ -101,25 +69,8 @@ and (max-device-width : 850px) {
       width:100%;
     }
     .feature__content__story{
-     
+    
       right: 100px;
       bottom: 50px;
     }
-    .feature__aside{
-      margin: 0 0 6em 0;
-    }
-
-    .feature__by-line{
-      position: absolute;
-      left: 6em;
-      top: 11em;
-    }
-    .feature__social-share{
-      position: absolute;
-    right: 3em;
-    top: 13.5em;
-    }
-    .feature__aside p{
-      display: none;
-    }
-}
+  }

@@ -66,22 +66,6 @@
   background-image: url(../../assets/twitter.svg); 
 }
 
-.arrow {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(128, 128, 128, 0.7);
-  cursor: pointer;
-  padding: 20px;
-}
-
-.arrow__back {
-  left: 20%;
-}
-
-.arrow__next {
-  right: 10%;
-}
 
 
 .slide-up {
@@ -139,7 +123,7 @@
 
 @media (min-width: 900px) {
   .q-and-a__hero__overlay {
-    top: 5%;
+    top: 18%;
     left: 23%;
     width: 400px;
     margin: 0;
