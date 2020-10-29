@@ -38,11 +38,13 @@
     float: left;
   }
   
-  /* .feature__faculty-spotlight__image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  } */
+  .heroCaption {
+    margin: 0;
+  }
+  .heroCaption  span{
+    font-weight: 800;
+    font-style: normal;
+  }
   
   .feature__faculty-spotlight__name {
     font-weight: bold;
@@ -68,9 +70,10 @@
     width: 40%;
     color: #000;
     position: absolute;
-    bottom: 50%;
     right: 10%;
   }
+
+
 
   .features__hero__overlay p{
     font-size:1.2em;
@@ -88,13 +91,11 @@
   }
 
 
-  @media (max-width:640px){
-    body{
-      font-size: .8em;
-    }
+  @media (max-width:800px){
+    
     .basic-story__aside{
       display: block;
-      padding: 1%;
+      padding: 4% 2% 0;
     }
     .features__hero__title{
         font-size: 1.5em;
@@ -110,7 +111,8 @@
         height: auto;
       }
   .basic-story__social-share{
-    margin: .2em 0 3em;
+    margin: 5% 0 8%;
+    float:none;
       }
       .topText {
         font-size: 1.2em;
@@ -118,40 +120,51 @@
         padding: 2em .5em;
     }
 
-    .basic-story__content__wrapper{
-      padding: 0 1em;
-    }
       .basic-story__content__department-label {
         font-size: .7em;
     }
     .feature__faculty-spotlight__item {
         width: 85%;
     }
+    .features__hero__overlay {
+      bottom: 20%;
+  }
+  .basic-story__content__department-label {
+    font-size: .6em;
+  }
+    .features__hero__title{
+      font-size: .9em;
+      width: 100%;
+  }
+
+  .basic-story__content__wrapper{
+    padding: 0 1em;
+  }
+  .basic-story__hero-wrapper{
+    height: auto;
+  }
+  .features__hero__overlay p {
+    font-size: 1em;
+  }
+  .heroCaption{
+    font-size: .8em;
+  }
+
+  .basic-story__story-qoute__qoutation-mark__horizontal-line--top{
+    width: 90%;
+}
+ 
   }
 
   @media (max-width:480px){
-    .basic-story__content__department-label {
-      font-size: .8em;
-    }
-      .features__hero__title{
-        font-size: .9em;
-        width: 60%;
-    }
-
-    .basic-story__content__wrapper{
-      padding: 0 1em;
-    }
-    .basic-story__hero-wrapper{
-      height: auto;
-    }
    
   }
 
   @media only screen 
-and (min-device-width : 800px) 
-and (max-device-width : 850px) {
+and (min-width : 500px) 
+and (max-width : 900px) {
   body{
-    font-size:.9em;
+    font-size:.8em;
   }
     .basic-story__hero__image {
         height: auto;
@@ -162,43 +175,78 @@ and (max-device-width : 850px) {
     }
 
     .basic-story__aside{
-      display: block;
+      display: flex;
+      padding: 2%;
     }
     .basic-story__content{
       padding: 0 .5em;
     width: 90%;
-    margin: 10em auto 0;
+    margin: 0 auto;
     }
+
+   
 
     .basic-story__content__story__p{
       padding: .8em 0;
     }
+    .features__hero__overlay {
+      bottom: -17%;
+  }
+
+  .basic-story__social-share{
+    float: none;
+    margin: 0;
+  }
+
+  .heroCaption {
+    height: 20px;
+}
    
 }
 
   @media (min-width:900px){
     .basic-story__content__department-label {
-      font-size: 1em;
+      font-size: .9em;
     }
       .features__hero__title{
-        font-size: 2em;
+        font-size: 3em;
     }
     .features__hero__overlay{font-size: 1em;}
     .basic-story__story-qoute__qoute {
       font-size: 2em;
   
   }
+  .features__hero__overlay {
+    bottom: 20%;
+}
   }
  @media only screen 
 and (min-device-width : 600px) 
-and (max-device-width : 768px) {
+and (max-device-width : 858px) {
     .features__hero__title{
         font-size: 1em;
     }
+    .features__hero__overlay {
+      bottom: 20%;
+  }
+  .basic-story__story-qoute__qoutation-mark__horizontal-line--top{
+        width: 90%;
+  }
 }
 @media only screen 
-and (min-width : 1224px) {
-    .features__hero__overlay{font-size: 1em;}
-    
+and (min-width : 900px) {
+  .features__hero__title{font-size: 2em;}
+    .features__hero__overlay {
+      bottom: 20%;
+  }
 }
-)
+@media only screen 
+and (min-width : 1600px) {
+    .features__hero__overlay{font-size: 1em;}
+    .features__hero__overlay {
+      bottom: 50%;
+  }
+  .features__hero__title{
+    font-size: 3em;
+}
+}
