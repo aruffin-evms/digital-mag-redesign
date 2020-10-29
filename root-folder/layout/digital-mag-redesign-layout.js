@@ -128,7 +128,7 @@ togglePivotingNav.addEventListener('click', function() {
 })
 
 function showMenu(menu) {
- menu.style.maxHeight = '500px'
+ menu.style.maxHeight = '700px'
 }
 
 function hideMenu(menu) {

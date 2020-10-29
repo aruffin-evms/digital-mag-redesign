@@ -203,6 +203,9 @@
   /* display: inline; */
 }
 
+#toggleFeatureNav {
+  width: 112px;
+}
 
 #alumniList, #featuresList, #pivotingList {
   display: none;
@@ -468,6 +471,7 @@ li {
   flex-direction: row;
   justify-content: center;
   padding-top: 16px;
+  flex-wrap: wrap;
 }
 
 

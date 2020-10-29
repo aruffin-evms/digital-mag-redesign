@@ -153,9 +153,14 @@ li {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  height: 600px;
+  height: 400px;
 }
 
+@media(min-width: 900px) {
+  .landing-page__hero {
+    height: 600px;
+  }
+}
 
 .landing-page__hero__wrapper {
   height: 60vh;
@@ -172,7 +177,7 @@ li {
   height: auto;
   max-width: 500px;
   position: absolute;
-  top: 0;
+  top: 40px;
   text-align: center;
   width: 90%;
   z-index: 5;
@@ -531,8 +536,14 @@ li {
   max-width: 655px;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  overflow-x: scroll;
   scroll-behavior: smooth;
+}
+
+@media(min-width: 900px) {
+  .landing-page__stories-carousel__carousel__wrapper {
+    overflow: hidden;
+  }
 }
 
 .landing-page__stories-carousel__forward, .landing-page__stories-carousel__back {
@@ -541,6 +552,13 @@ li {
   transform: scale(1.6);
   color: grey;
   cursor: pointer;
+  display: none !important;
+}
+
+@media(min-width: 900px) {
+  .landing-page__stories-carousel__forward, .landing-page__stories-carousel__back {
+    display: block !important;
+  }
 }
 
 .landing-page__stories-carousel__forward {
@@ -555,7 +573,13 @@ li {
   height: 70%;
   width: 180px;
   text-align: center;
-  margin: 0 45px;
+  margin: 0 25px;
+}
+
+@media(min-width: 900px) {
+  .landing-page__stories-carousel__carousel-item {
+    margin: 0 45px;
+  }
 }
 
 .landing-page__stories-carousel__link {
@@ -734,7 +758,7 @@ li {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
   position: relative;
-  top: -180px;
+  top: -173px;
   margin-bottom: -180px;
 }
 

@@ -122,6 +122,7 @@
 
 .basic-story__hero__overlay{
   width: 470px;
+  top: 18%;
 }
 .basic-story__content__description {
   margin: 10px 0 45px;
@@ -511,6 +512,5 @@ aside {
 }
 .basic-story__hero__title {
   font-size: 2.5em;
-}
 }
 }
