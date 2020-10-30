@@ -641,6 +641,11 @@ li {
 .stories-carousel__carousel-item__subtitle {
   font-family: 'Benton Sans Lt', sans-serif;
   font-size: 18px;
+  color: black!important;
+}
+
+.stories-carousel__carousel-item__subtitle:hover {
+  color: black!important;
 }
 
 .stories-carousel__carousel {
