@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script defer src="../basic-story.js"></script>
-  <link rel="stylesheet" href="../css/basic-story-subdirectory.css">
-  <link rel="stylesheet" href="../css/basic-story1022.css">
-  <link rel="stylesheet" href="/root-folder/stories/basic-story/air/air.css">
+  <link rel="stylesheet" href="../../../features/basic-story1028.css">
+  <link rel="stylesheet" href="../../../features/feature.css">
+  <link rel="stylesheet" href="air.css">
 
   <!-- <link rel="stylesheet" href="ryans.css"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,19 +17,46 @@
 </head>
 <body>
   <main class="basic-story">
-    <section class="basic-story__hero">
-      <figure class="basic-story__hero-wrapper">
+    <section class="feature__hero">
+      <figure class="hero-wrapper">
         <!-- will need path etc for this image -->
-        <img src="https://www.evms.edu/uploads/13.1/air/Oldfield-hero.jpg" alt="Dr. Oldfield" class="basic-story__hero__image">
+        <img src="https://www.evms.edu/uploads/13.1/air/Oldfield-hero.jpg" alt="Dr. Oldfield" class="feature__hero__image">
       </figure>
       <div class="features__hero__overlay">
-        <label for="" class="basic-story__content__department-label">PIVOTING IN A PANDEMIC | <span>PROFILE</span> </label>
+        <label for="" class="features__hero__department">PIVOTING IN A PANDEMIC | <span>PROFILE</span> </label>
         <h1 class="features__hero__title">The Doctor Is In — and On the Air</h1>
       </div>
       </div>
     </section>
-    
-    <aside class="basic-story__aside">
+    <aside class="basic-story__aside basic-story__aside-small">
+      <div class="flex-reverse-row">
+      <div class="basic-story__social-share">
+        <p class="basic-story__social-share__title">Share this story</p>
+        <!-- [start] component: social icons -->
+        <div class="basic-story__social-share__social-icons">
+          <a href="https://www.facebook.com/EVMSedu" target="_blank"><span
+              class="basic-story__social-share__social-icons  fb">&nbsp;</span></a>
+          <a href="https://www.instagram.com/EVMSedu/" target="_blank"><span
+              class="basic-story__social-share__social-icons  ig">&nbsp;</span></a>
+          <a href="https://www.linkedin.com/school/eastern-virginia-medical-school/" target="_blank"><span
+              class="basic-story__social-share__social-icons  in">&nbsp;</span></a>
+          <a href="https://www.instagram.com/EVMSedu/" target="_blank"><span
+              class="basic-story__social-share__social-icons  tw">&nbsp;</span></a>
+        </div>
+      </div>
+      <div class="basic-story__by-line">
+        <div class="basic-story__by-line__line-wrapper">
+          <p class="basic-story__byline__label">Story:</p>
+          <p class="basic-story__byline__name">Nancy Champman</p>
+        </div>
+        <div class="basic-story__by-line__line-wrapper">
+          <p class="basic-story__byline__label">Photography:</p>
+          <p class="basic-story__byline__name">Doug Gardner</p>
+        </div>
+      </div>
+      </div>
+    </aside>
+    <aside class="basic-story__aside basic-story__aside__medium">
       <div class="basic-story__social-share">
         <p class="basic-story__social-share__title">Share this story</p>
         <!-- [start] component: social icons -->
@@ -123,9 +150,7 @@
           $20 million in grant funding, most of it from the Ryan
           White HIV/AIDS Program.</p>
       </div>
-
       <div class="basic-story__content__wrapper">
-
         <p class="basic-story__content__story__p">HIV/AIDS had barely emerged in 1981 when Dr.
           Oldfield launched his career as a Navy physician. He
           trained in the Navy’s first class of Infectious Disease fellows, and over his 22 years of active-duty service,
@@ -134,13 +159,7 @@
           infectious diseases to the Surgeon General of the Navy.
           When he retired as a captain in 1993, he returned to his
           hometown and joined EVMS.</p>
- <!--video went here-->
- <div class="video">
-  <iframe src="https://www.youtube.com/embed/fyvm1zGbH-U" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-</div>
-<!--end video link-->
+
 
         <p class="basic-story__content__story__p"><a href="https://www.evms.edu/directory/profiles/robert-m-palmer.php"
             target="_blank">Robert Palmer, MD, MPH,</a> Professor and Chair of
@@ -153,7 +172,16 @@
           curiosity builds upon his accumulated experiences to share
           new knowledge with his audiences in an authentic, yet
           humble, manner.” </p>
-        <p class="basic-story__content__story__p">For the Oldfields, medicine is a family affair. Dr.
+      </div>
+ <!--video went here-->
+ <div class="basic-story__video__wrapper">
+  <div class="basic-story__video">
+  <iframe  src="https://www.youtube.com/embed/fyvm1zGbH-U?rel=0" modestbranding="1" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+  </div>
+</div>
+<!--end video link-->
+<div class="basic-story__content__wrapper">
+          <p class="basic-story__content__story__p">For the Oldfields, medicine is a family affair. Dr.
           Oldfield’s wife, Stephanie, is a nurse practitioner specializing in urology; their son, Edward IV, earned
           his medical degree at EVMS in 2014 and is a gastroenterology fellow at the University of Virginia; and their
           daughter-in-law, Charlene, also a 2014 EVMS graduate,
