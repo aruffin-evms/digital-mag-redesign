@@ -834,12 +834,11 @@ and (max-device-width : 850px) {
   width: 80%;
 }
 }
-
 .square {
   width: 90%;
 }
-@media (min-width: 600px){
-.square {
-  width: 70%;
-}
+@media (min-width: 900px){
+  .square {
+    width: 70%;
+  }
 }

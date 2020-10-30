@@ -154,19 +154,20 @@
 }
 
 .fb{
-  background-image: url(../images/facebook.svg); 
+
+  background-image: url(https://www.evms.edu/uploads/social-icons/facebook.svg); 
 }
 
 .ig{
-  background-image: url(../images/instagram.svg); 
+  background-image: url(https://www.evms.edu/uploads/social-icons/instagram.svg); 
 }
 .in{
-  background-image: url(../images/LinkedIn.svg); 
+  background-image: url(https://www.evms.edu/uploads/social-icons/LinkedIn.svg); 
 }
 .tw{
-  background-image: url(../images/twitter.svg); 
-}
+  background-image: url(https://www.evms.edu/uploads/social-icons/twitter.svg); 
 
+}
 
 .basic-story__content__description {
   margin: 10px 0 45px;

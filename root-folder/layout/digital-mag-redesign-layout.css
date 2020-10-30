@@ -539,6 +539,7 @@ li {
   font-size: 42px;
   font-family: 'GT-Super-bold';
   text-align: left;
+  line-height: 1em;
 }
 
 .subscribe__description {
@@ -641,6 +642,11 @@ li {
 .stories-carousel__carousel-item__subtitle {
   font-family: 'Benton Sans Lt', sans-serif;
   font-size: 18px;
+  color: black!important;
+}
+
+.stories-carousel__carousel-item__subtitle:hover {
+  color: black!important;
 }
 
 .stories-carousel__carousel {
