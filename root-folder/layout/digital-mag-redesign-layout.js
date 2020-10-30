@@ -22,6 +22,19 @@ const pivotingMenu = document.getElementById('pivotingMenu')
 const categoryPivoting = document.getElementById('categoryPivoting')
 const expandPivotingList = document.getElementById('expandPivotingList')
 const pivotingList = document.getElementById('pivotingList')
+const prevThumbnail = document.getElementById('prevThumbnail')
+const nextThumbnail = document.getElementById('nextThumbnail')
+const storyCarousel = document.getElementById('storyCarousel')
+
+const scrollDistance = 500;
+nextThumbnail.addEventListener('click', function() {
+  storyCarousel.scrollLeft += scrollDistance
+})
+
+prevThumbnail.addEventListener('click', function() {
+  storyCarousel.scrollLeft -= scrollDistance
+})
+
 
 categoryFeatures.addEventListener('click', function() {
   if(expandList.innerHTML === 'expand_more') {

@@ -1,658 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="layout.css"> -->
+  <!-- <link rel="stylesheet" href="./digital-mag-redesign-layout.css"> -->
   <link href="https://cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="layout.js" defer></script>
   <style>
     * {
-  margin: 0;
-  padding: 0;
-}
+      margin: 0;
+      padding: 0;
+    }
 
-/* fonts for page */
-@font-face {
-  font-family: 'GT-Super';
-  src: url('https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Super.woff') format('woff');
-}
+    /* fonts for page */
+    @font-face {
+      font-family: 'GT-Super';
+      src: url('https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Super.woff') format('woff');
+    }
 
-@font-face {
-  font-family: "GT-Super-bold";
-  src: url('https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Bold.woff') format('woff');
-}
+    @font-face {
+      font-family: "GT-Super-bold";
+      src: url('https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Bold.woff') format('woff');
+    }
 
-@font-face {
-  font-family: 'Calluna';
-  src: url('https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff') format('woff');
-}
+    @font-face {
+      font-family: 'Calluna';
+      src: url('https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff') format('woff');
+    }
 
-#toggleSubnav, #toggleFeatureNav, #toggleDepartmentNav {
-  position: relative;
-  top: 5px;
-}
+    #toggleSubnav,
+    #toggleFeatureNav,
+    #toggleDepartmentNav {
+      position: relative;
+      top: 5px;
+    }
 
-.digital-mag__cta {
-  background-color: #000000;
-  padding: 10px 20px;
-  max-width: 120px;
-  margin: 0 auto;
-  text-align: center;
-  transition: 0.5s ease;
-  color: white;
-  text-decoration: none;
-  font-family: 'Benton Sans Reg', sans-serif;
-  transform: translateZ(0);
-  position: relative;
-  overflow: hidden;
-  font-size: 18px;
-}
+    .digital-mag__cta {
+      background-color: #000000;
+      padding: 10px 20px;
+      max-width: 120px;
+      margin: 0 auto;
+      text-align: center;
+      transition: 0.5s ease;
+      color: white;
+      text-decoration: none;
+      font-family: 'Benton Sans Reg', sans-serif;
+      transform: translateZ(0);
+      position: relative;
+      overflow: hidden;
+      font-size: 18px;
+    }
 
-.digital-mag__cta:before { 
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  background: #c7531e;
-  height: 6px;
-  transition: .5s all;
-}
+    .digital-mag__cta:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      background: #c7531e;
+      height: 6px;
+      transition: .5s all;
+    }
 
-.digital-mag__cta:hover:before {
-  right: 0;
-}
+    .digital-mag__cta:hover:before {
+      right: 0;
+    }
 
-.digital-mag__nav {
-  background-color: #fafafa;
-  width: 100vw;
-  position: sticky;
-  z-index: 11;
-  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
-}
+    .digital-mag__nav {
+      background-color: #fafafa;
+      width: 100vw;
+      position: sticky;
+      z-index: 11;
+      /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    }
 
-.digital-mag__nav--mobile {
-  display: flex;
-  height: 100%; 
-  
-  top: 0;
-}
+    .digital-mag__nav--mobile {
+      display: flex;
+      height: 100%;
 
-.digital-mag__nav--desktop {
-  display: none;
-}
+      top: 0;
+    }
 
-@media(min-width: 900px) {
-  .digital-mag__nav--mobile {
-    display: none;
-  }
+    .digital-mag__nav--desktop {
+      display: none;
+    }
 
-  .digital-mag__nav--desktop {
-    display: block;
-  }
-}
+    @media(min-width: 900px) {
+      .digital-mag__nav--mobile {
+        display: none;
+      }
 
-/* .digital-mag__mobile-menu__wrapper {
+      .digital-mag__nav--desktop {
+        display: block;
+      }
+    }
+
+    /* .digital-mag__mobile-menu__wrapper {
   height: 0;
   display: none;
   opacity: 0;
   transition: 1s opacity;
 } */
 
-.digital-mag__nav--mobile__wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-}
+    .digital-mag__nav--mobile__wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+    }
 
-.digital-mag__nav--mobile__logo-wrapper {
-  background-color: green;
-  width: 100px;
-  height: 90%;
-  display: flex;
-  justify-self: center;
-  align-self: center;
-}
+    .digital-mag__nav--mobile__logo-wrapper {
+      background-color: green;
+      width: 100px;
+      height: 90%;
+      display: flex;
+      justify-self: center;
+      align-self: center;
+    }
 
-.digital-mag__nav--mobile__suscribe-cta {
-  text-align: center;
-  border: solid 3px black;
-  background-color: #fafafa;
-  color: black;
-  font-family: 'Benton Sans Condensed', sans-serif;
-  padding-top: 10px 12px;
-}
+    .digital-mag__nav--mobile__suscribe-cta {
+      text-align: center;
+      border: solid 3px black;
+      background-color: #fafafa;
+      color: black;
+      font-family: 'Benton Sans Condensed', sans-serif;
+      padding-top: 10px 12px;
+    }
 
-.digital-mag__nav--mobile__suscribe-cta:hover {
-  background-color: black;
-  color: #fafafa;
-}
+    .digital-mag__nav--mobile__suscribe-cta:hover {
+      background-color: black;
+      color: #fafafa;
+    }
 
-.digital-mag__nav--mobile__icon {
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  top: 10px;
-}
+    .digital-mag__nav--mobile__icon {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      top: 10px;
+    }
 
-.digital-mag__nav--mobile__icon-bar1, .digital-mag__nav--mobile__icon-bar2, .digital-mag__nav--mobile__icon-bar3 {
-  width: 35px;
-  height: 2px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
+    .digital-mag__nav--mobile__icon-bar1,
+    .digital-mag__nav--mobile__icon-bar2,
+    .digital-mag__nav--mobile__icon-bar3 {
+      width: 35px;
+      height: 2px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
 
 
-.icon-transform .digital-mag__nav--mobile__icon-bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
+    .icon-transform .digital-mag__nav--mobile__icon-bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
 
-.icon-transform  .digital-mag__nav--mobile__icon-bar2 {
-  opacity: 0;
-}
+    .icon-transform .digital-mag__nav--mobile__icon-bar2 {
+      opacity: 0;
+    }
 
-.icon-transform .digital-mag__nav--mobile__icon-bar3 {
-  -webkit-transform: rotate(45deg) translate(-4px, -4px) ;
-  transform: rotate(45deg) translate(-4px, -4px) ;
-}
+    .icon-transform .digital-mag__nav--mobile__icon-bar3 {
+      -webkit-transform: rotate(45deg) translate(-4px, -4px);
+      transform: rotate(45deg) translate(-4px, -4px);
+    }
 
-.digital-mag__nav--mobile__sidenav {
-  height: 100vh;
-  width: 0; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  right: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s;
-  color: white;
-}
+    .digital-mag__nav--mobile__sidenav {
+      height: 100vh;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+      color: white;
+    }
 
-.digital-mag__nav--mobile__sidenav__wrapper {
-  display: flex;
-  flex-direction: column;
-}
+    .digital-mag__nav--mobile__sidenav__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
 
-.digital-mag__nav--mobile__sidenav__list-item {
-  width: 100%;
-}
+    .digital-mag__nav--mobile__sidenav__list-item {
+      width: 100%;
+    }
 
-.digital-mag__nav--mobile__sidenav__list-item--feature:before {
-  content: 'Pivoting in a Pandemic'
-}
+    .digital-mag__nav--mobile__sidenav__list-item--feature:before {
+      content: 'Pivoting in a Pandemic'
+    }
 
-.digital-mag__nav--desktop {
-  height: 80px;
-  width: 100vw;
-  border-bottom: solid 1px black;
-  position: relative;
-  z-index: 15;
-}
+    .digital-mag__nav--desktop {
+      height: 80px;
+      width: 100vw;
+      border-bottom: solid 1px black;
+      position: relative;
+      z-index: 15;
+    }
 
-.digital-mag__nav--desktop__wrapper {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+    .digital-mag__nav--desktop__wrapper {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
 
-.digital-mag__nav--desktop__suscribe-cta {
-  text-align: center;
-  border: solid 2px black;
-  background-color: #fafafa;
-  color: black;
-  font-family: 'Benton Sans Reg', sans-serif;
-  font-size: 16px;
-  padding: 4px 12px;
-  height: max-content;
-  align-self: center;
-  text-decoration: none !important;
-  transition: .4s all;
-}
+    .digital-mag__nav--desktop__suscribe-cta {
+      text-align: center;
+      border: solid 2px black;
+      background-color: #fafafa;
+      color: black;
+      font-family: 'Benton Sans Reg', sans-serif;
+      font-size: 16px;
+      padding: 4px 12px;
+      height: max-content;
+      align-self: center;
+      text-decoration: none !important;
+      transition: .4s all;
+    }
 
-.digital-mag__nav--desktop__suscribe-cta:hover {
-  background-color: black;
-  color: #fafafa;
-  text-decoration: none !important;
-}
+    .digital-mag__nav--desktop__suscribe-cta:hover {
+      background-color: black;
+      color: #fafafa;
+      text-decoration: none !important;
+    }
 
-.digital-mag__nav-desktop__archives-link {
-  margin: 0 30px;
-}
+    .digital-mag__nav-desktop__archives-link {
+      margin: 0 30px;
+    }
 
-.digital-mag__nav--desktop__magazine-cta {
-  margin-top: -4px;
-}
+    .digital-mag__nav--desktop__magazine-cta {
+      margin-top: -4px;
+    }
 
-.digital-mag__nav-desktop__archives-link, .digital-mag__nav--desktop__magazine-cta {
-  font-family: 'GT-Super', serif;
-  text-decoration: none;
-  color: black;
-  transition: .3s all;
-  cursor: pointer;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  height: max-content;
-}
+    .digital-mag__nav-desktop__archives-link,
+    .digital-mag__nav--desktop__magazine-cta {
+      font-family: 'GT-Super', serif;
+      text-decoration: none;
+      color: black;
+      transition: .3s all;
+      cursor: pointer;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      height: max-content;
+    }
 
-.digital-mag__nav-desktop__archives-link:hover, .digital-mag__nav--desktop__magazine-cta:hover {
-  color: #c7531e;
-}
+    .digital-mag__nav-desktop__archives-link:hover,
+    .digital-mag__nav--desktop__magazine-cta:hover {
+      color: #c7531e;
+    }
 
-.digital-mag__nav--desktop__magazine-cta {
-  font-family: 'GT-Super';
-}
+    .digital-mag__nav--desktop__magazine-cta {
+      font-family: 'GT-Super';
+    }
 
-.digital-mag__nav--desktop__logo {
-  width: 200px;
-  margin-right: 40%;
-  padding: 10px 0;
-}
+    .digital-mag__nav--desktop__logo {
+      width: 200px;
+      margin-right: 40%;
+      padding: 10px 0;
+    }
 
-.digital-mag__nav--desktop__subnav {
-  height: 0;
-  position: relative;
-  z-index: 9;
-  transition: .5s all;
-  overflow: hidden;
-  background-color: #fafafa;
-  border-bottom: solid .5px black;
-  border-top: solid .5px black;
-}
+    .digital-mag__nav--desktop__subnav {
+      height: 0;
+      position: relative;
+      z-index: 9;
+      transition: .5s all;
+      overflow: hidden;
+      background-color: #fafafa;
+      border-bottom: solid .5px black;
+      border-top: solid .5px black;
+    }
 
-.digital-mag__nav--desktop__subnav__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* align-content: flex-end; */
-  width: 250px;
-  margin-left: 59%;
-  padding: 9px 0;
-}
+    .digital-mag__nav--desktop__subnav__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /* align-content: flex-end; */
+      width: 250px;
+      margin-left: 59%;
+      padding: 9px 0;
+    }
 
-.digital-mag__nav--desktop__subnav-dropdown {
-  text-transform: uppercase;
-  height: max-content;
-  transition: .4s all; 
-  cursor: pointer;
-  min-width: 170px;
-}
+    .digital-mag__nav--desktop__subnav-dropdown {
+      text-transform: uppercase;
+      height: max-content;
+      transition: .4s all;
+      cursor: pointer;
+      min-width: 170px;
+    }
 
-.digital-mag__nav--desktop__subnav-dropdown:hover {
-  color: #c7531e;
-}
+    .digital-mag__nav--desktop__subnav-dropdown:hover {
+      color: #c7531e;
+    }
 
-.digital-mag__nav--desktop__features-subnav {
-  width: 300px;
-  height: auto;
-  background-color: #c7531e;
-  z-index: 6;
-  position: relative;
-  top: 0;
-  left: 55%;
-  color: #fafafa;
-  transition: 1s all;
-}
+    .digital-mag__nav--desktop__features-subnav {
+      width: 300px;
+      height: auto;
+      background-color: #c7531e;
+      z-index: 6;
+      position: relative;
+      top: 0;
+      left: 55%;
+      color: #fafafa;
+      transition: 1s all;
+    }
 
-.digital-mag__nav--desktop__departments-subnav {
-  width: 300px;
-  height: auto;
-  background-color: #c7531e;
-  z-index: 6;
-  position: relative;
-  top: 0;
-  left: 65%;
-  color: #fafafa;
-  transition: 1s all;
-}
+    .digital-mag__nav--desktop__departments-subnav {
+      width: 300px;
+      height: auto;
+      background-color: #c7531e;
+      z-index: 6;
+      position: relative;
+      top: 0;
+      left: 65%;
+      color: #fafafa;
+      transition: 1s all;
+    }
 
-.digital-mag__nav--desktop__features-subnav__list, .digital-mag__nav--desktop__departments-subnav__list {
-  transition: 1s all;
-  overflow: hidden;
-  font-family: 'Benton Sans Reg', sans-serif;
-  max-height: 0;
-  transition: max-height 0.6s ease-out;
-}
+    .digital-mag__nav--desktop__features-subnav__list,
+    .digital-mag__nav--desktop__departments-subnav__list {
+      transition: 1s all;
+      overflow: hidden;
+      font-family: 'Benton Sans Reg', sans-serif;
+      max-height: 0;
+      transition: max-height 0.6s ease-out;
+    }
 
-.digital-mag__nav--desktop__features-subnav__list:hover, .digital-mag__nav--desktop__departments-subnav__list:hover {
-  background-color: #c7531e;
-}
+    .digital-mag__nav--desktop__features-subnav__list:hover,
+    .digital-mag__nav--desktop__departments-subnav__list:hover {
+      background-color: #c7531e;
+    }
 
-.digital-mag__nav--desktop__features-subnav__list-item, .digital-mag__nav--desktop__departments-subnav__list-item {
-  border-bottom: solid 1px #fafafa;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.9);
-  transition: 1s left;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-}
+    .digital-mag__nav--desktop__features-subnav__list-item,
+    .digital-mag__nav--desktop__departments-subnav__list-item {
+      border-bottom: solid 1px #fafafa;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.9);
+      transition: 1s left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
 
-/* .digital-mag__nav--desktop__features-subnav__list-item:before {
+    /* .digital-mag__nav--desktop__features-subnav__list-item:before {
   background: #c7531e;
   border-bottom: 1px solid #fafafa;
 } */
 
-.digital-mag__nav--desktop__features-subnav__list-item:hover, .digital-mag__nav--desktop__departments-subnav__list-item:hover {
-  position: relative;
-  left: 30px;
-}
+    .digital-mag__nav--desktop__features-subnav__list-item:hover,
+    .digital-mag__nav--desktop__departments-subnav__list-item:hover {
+      position: relative;
+      left: 30px;
+    }
 
-.digital-mag__nav--desktop__features-subnav__list-item:before {
-  content: 'Pivoting in a Pandemic';
-  color: #c7531e;
-}
+    .digital-mag__nav--desktop__features-subnav__list-item:before {
+      content: 'Pivoting in a Pandemic';
+      color: #c7531e;
+    }
 
-.digital-mag__nav--desktop__features-subnav__list-item__link, .digital-mag__nav--desktop__departments-subnav__list-item__link {
-  color:#fafafa;
-  text-decoration: none;
-}
+    .digital-mag__nav--desktop__features-subnav__list-item__link,
+    .digital-mag__nav--desktop__departments-subnav__list-item__link {
+      color: #fafafa;
+      text-decoration: none;
+    }
 
-/* .digital-mag__nav--desktop__features-subnav__list-item:before {
+    /* .digital-mag__nav--desktop__features-subnav__list-item:before {
   position: relative;
   left: 30px;
   z-index: 13;
 } */
 
-li {
-  list-style-type: none;
-}
+    li {
+      list-style-type: none;
+    }
 
 
-.digital-mag__footer {
-  height: 100px;
-  width: 100vw;
-}
+    .digital-mag__footer {
+      height: 100px;
+      width: 100vw;
+    }
 
-.digital-mag__footer__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: max-content;
-  width: 90%;
-  margin: 30px auto;
-}
+    .digital-mag__footer__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      height: max-content;
+      width: 90%;
+      margin: 30px auto;
+    }
 
-@media(min-width: 900px) {
-  .digital-mag__footer__wrapper {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-}
+    @media(min-width: 900px) {
+      .digital-mag__footer__wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+    }
 
-.digital-mag__logo {
-  width: 150px;
-  height: auto;
-  margin: 0 auto;
-}
+    .digital-mag__logo {
+      width: 150px;
+      height: auto;
+      margin: 0 auto;
+    }
 
-@media(min-width: 900px) {
-  .digital-mag__logo {
-    margin: 0;
-  }
-}
+    @media(min-width: 900px) {
+      .digital-mag__logo {
+        margin: 0;
+      }
+    }
 
-.digital-mag__info {
-  height: max-content;
-  width: 300px;
-  text-align: center;
-  font-style: 14px;
-  font-family: 'Benton Sans Reg';
-  color: rgba(200, 200, 200, 0.7);
-  white-space: nowrap;
-}
+    .digital-mag__info {
+      height: max-content;
+      width: 300px;
+      text-align: center;
+      font-style: 14px;
+      font-family: 'Benton Sans Reg';
+      color: rgba(200, 200, 200, 0.7);
+      white-space: nowrap;
+    }
 
-@media(min-width : 900px) {
-  .digital-mag__info {
-    width: auto;
-  }
-}
+    @media(min-width : 900px) {
+      .digital-mag__info {
+        width: auto;
+      }
+    }
 
-.digital-mag__info a, .digital-mag__info p{
-  font-size: 14px;
-  color: rgba(180, 180, 180);
-}
+    .digital-mag__info a,
+    .digital-mag__info p {
+      font-size: 14px;
+      color: rgba(180, 180, 180);
+    }
 
-.digital-mag__info__line-two {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 16px;
-}
+    .digital-mag__info__line-two {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 16px;
+    }
 
 
-.digital-mag__social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-}
+    .digital-mag__social-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+    }
 
-.digital-mag__social-icon {
-  height: 30px;
-  margin: 5px;
-  align-self: flex-end;
-}
+    .digital-mag__social-icon {
+      height: 30px;
+      margin: 5px;
+      align-self: flex-end;
+    }
 
-.pulse {
-  transform: scale(2);
-}
+    .pulse {
+      transform: scale(2);
+    }
 
-.subscribe__wrapper {
-  display: flex;
-  flex: 0 1 100%;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  width: 90vw;
-  height: auto;
-  background-color: white;
-}
+    .subscribe__wrapper {
+      display: flex;
+      flex: 0 1 100%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      width: 90vw;
+      height: auto;
+      background-color: white;
+    }
 
-@media(min-width: 900px) {
-  .subscribe__wrapper {
-    width: 700px;
-    height: 500px;
-  }
-}
+    @media(min-width: 900px) {
+      .subscribe__wrapper {
+        width: 700px;
+        height: 500px;
+      }
+    }
 
-.subscribe__column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin: 30px 0;
-}
+    .subscribe__column {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin: 30px 0;
+    }
 
-@media(min-width: 900px) {
-  .subscribe__column {
-    width: 50%;
-    margin: 0;
-  }
-}
+    @media(min-width: 900px) {
+      .subscribe__column {
+        width: 50%;
+        margin: 0;
+      }
+    }
 
-.subscribe__content {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
+    .subscribe__content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
 
-.subscribe__poster-wrapper {
-  
-  height: 340px;
-  width: 300px;
-  margin: 0 auto;  
-}
+    .subscribe__poster-wrapper {
 
-.subscribe__poster {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
+      height: 340px;
+      width: 300px;
+      margin: 0 auto;
+    }
 
-.subscribe__title {
-  font-size: 42px;
-}
+    .subscribe__poster {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
 
-.subscribe__cta {
-  max-width: 120px;
-  text-align: center;
-  background-color: #000000;
-  padding: 10px 20px;
-  margin: 0 auto;
-  color: #fafafa;
-  text-decoration: none;
-  transition: 0.5s ease;
-  font-family: 'Benton Sans Reg', sans-serif;
-}
+    .subscribe__title {
+      font-size: 42px;
+    }
 
-.subscribe__cta:hover {
-  box-shadow: 0 5px 0 #c7531e inset;
-}
+    .subscribe__cta {
+      max-width: 120px;
+      text-align: center;
+      background-color: #000000;
+      padding: 10px 20px;
+      margin: 0 auto;
+      color: #fafafa;
+      text-decoration: none;
+      transition: 0.5s ease;
+      font-family: 'Benton Sans Reg', sans-serif;
+    }
 
-.subscribe__description {
-  padding-bottom: 20px;
-  font-family: 'Benton Sans Reg', sans-serif;
-}
+    .subscribe__cta:hover {
+      box-shadow: 0 5px 0 #c7531e inset;
+    }
 
-.subscribe__pdf-download {
-  color: #c7531e;
-  text-decoration: none;
-  padding-top: 20px;
-  font-family: 'Benton Sans Reg', sans-serif;
-}
+    .subscribe__description {
+      padding-bottom: 20px;
+      font-family: 'Benton Sans Reg', sans-serif;
+    }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(128, 128, 128, 0.7);
-  cursor: pointer;
-  padding: 20px;
-  display: none !important;
-}
+    .subscribe__pdf-download {
+      color: #c7531e;
+      text-decoration: none;
+      padding-top: 20px;
+      font-family: 'Benton Sans Reg', sans-serif;
+    }
 
-@media(min-width: 600px) {
-  .arrow {
-    display: inline-block !important;
-  }
-}
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(128, 128, 128, 0.7);
+      cursor: pointer;
+      padding: 20px;
+      display: none !important;
+    }
 
-.arrow__back {
-  left: 20%;
-}
+    @media(min-width: 600px) {
+      .arrow {
+        display: inline-block !important;
+      }
+    }
 
-.arrow__next {
-  right: 3%;
-}
+    .arrow__back {
+      left: 20%;
+    }
 
-@media(min-width: 900px) {
-  .arrow__next {
-    right: 10%;
-  }
-}
+    .arrow__next {
+      right: 3%;
+    }
 
-.stories-carousel {
-  padding: 64px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-}
+    @media(min-width: 900px) {
+      .arrow__next {
+        right: 10%;
+      }
+    }
 
-.stories-carousel__title-wrapper {
-  padding-top: 5px;
-}
+    .stories-carousel {
+      padding: 64px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+    }
 
-.stories-carousel__rust-bar {
-  width: 60px;
-  border-top: solid 4px #c7531e;
-  padding-bottom: 10px;
-}
-.stories-carousel__title {
-  font-size: 42px;
-  width: 100px;
-  margin: 0 15px 0 0;
-  font-family: 'GT-Super', serif;
-}
+    .stories-carousel__title-wrapper {
+      padding-top: 5px;
+    }
 
-.stories-carousel__carousel-item__title {
-  width: 100%;
-  font-size: 14px;
-  font-family: 'Benton Sans Lt', sans-serif;
-  color: #c7531e;
-  text-transform: uppercase;
-  margin: 5px 0;
-}
+    .stories-carousel__rust-bar {
+      width: 60px;
+      border-top: solid 4px #c7531e;
+      padding-bottom: 10px;
+    }
 
-.stories-carousel__carousel-item__subtitle {
-  font-family: 'Benton Sans Lt', sans-serif;
-  font-size: 18px;
-}
+    .stories-carousel__title {
+      font-size: 42px;
+      width: 100px;
+      margin: 0 15px 0 0;
+      font-family: 'GT-Super', serif;
+    }
 
-.stories-carousel__carousel {
-  width: 60%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow-x: scroll;
-  position: relative;
-  scroll-behavior: smooth;
-}
+    .stories-carousel__carousel-item__title {
+      width: 100%;
+      font-size: 14px;
+      font-family: 'Benton Sans Lt', sans-serif;
+      color: #c7531e;
+      text-transform: uppercase;
+      margin: 5px 0;
+    }
 
-@media(min-width: 600px) {
-  .stories-carousel__carousel {
-    overflow-x: hidden;
-  }
-}
+    .stories-carousel__carousel-item__subtitle {
+      font-family: 'Benton Sans Lt', sans-serif;
+      font-size: 18px;
+    }
 
-.stories-carousel__carousel-item {
-  width: 100%;
-  margin: 20px;
-  /* background: gray; */
-}
+    .stories-carousel__carousel {
+      width: 60%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      overflow-x: scroll;
+      position: relative;
+      scroll-behavior: smooth;
+    }
 
-.stories-carousel__thumbnail-wrapper {
-  min-height: 144px;
-  min-width: 208px;
-}
+    @media(min-width: 600px) {
+      .stories-carousel__carousel {
+        overflow-x: hidden;
+      }
+    }
 
-.stories-carousel__thumbnail {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border: solid 1px #b1b4b7;
-}
+    .stories-carousel__carousel-item {
+      width: 100%;
+      margin: 20px;
+      /* background: gray; */
+    }
 
-.digital-mag__hairline {
-  border-bottom: solid 1px rgba(128, 128, 128, 0.4);
-}
+    .stories-carousel__thumbnail-wrapper {
+      min-height: 144px;
+      min-width: 208px;
+    }
+
+    .stories-carousel__thumbnail {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border: solid 1px #b1b4b7;
+    }
+
+    .digital-mag__hairline {
+      border-bottom: solid 1px rgba(128, 128, 128, 0.4);
+    }
   </style>
   <title>Document</title>
 </head>
+
 <body>
   <nav class="digital-mag__nav digital-mag__nav--mobile">
     <div class="digital-mag__nav--mobile__wrapper">
       <figure class="digital-mag__nav--mobile__logo-wrapper">
-        <img src="https://www.evms.edu/uploads/13.1/assets/magazine-logo.svg" alt="" class="digital-mag__nav--mobile__logo">
+        <img src="https://www.evms.edu/uploads/13.1/assets/magazine-logo.svg" alt=""
+          class="digital-mag__nav--mobile__logo">
       </figure>
       <a href="" class="digital-mag__nav--mobile__suscribe-cta">Subscribe</a>
       <div id="mobileIcon" class="digital-mag__nav--mobile__icon">
@@ -663,70 +679,128 @@ li {
     </div>
     <div id="sideNav" class="digital-mag__nav--mobile__sidenav">
       <div class="digital-mag__nav--mobile__sidenav__wrapper">
-        <label id="categoryFeatures" for="" class="digital-mag__nav--mobile__sidenav__category">Features<span id="expandList" class="material-icons">expand_more</span></label>
+        <label id="categoryFeatures" for="" class="digital-mag__nav--mobile__sidenav__category">Features<span
+            id="expandList" class="material-icons">expand_more</span></label>
         <div id="featuresList" class="digital-mag__mobile-menu__wrapper">
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature">Community</div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature">First Person</div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature">Profile</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature">
+            Community</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature">
+            First Person</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__feature">
+            Profile</div>
         </div>
-        <label id="categoryDepartments" for="" class="digital-mag__nav--mobile__sidenav__category">Departments<span id="expandDeptList" class="material-icons">expand_less</span></label>
+        <label id="categoryDepartments" for="" class="digital-mag__nav--mobile__sidenav__category">Departments<span
+            id="expandDeptList" class="material-icons">expand_less</span></label>
         <div id="departmentsList" class="digital-mag__mobile-menu__wrapper">
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments"><span>Alumni Profile<span id="expandAlumniList" class="material-icons">expand_more</span></span></div>
-            <div id="alumniList" class="digital-mag__mobile-menu__wrapper">
-                <div class="digital-mag__nav--mobile__sidenav__list-item">Margaret Stowasser</div>
-                <div class="digital-mag__nav--mobile__sidenav__list-item">Maureen Kelleher</div>
-                <div class="digital-mag__nav--mobile__sidenav__list-item">Phillip Chang</div>
-              
-            </div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">Research</div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">Diversity & Inclusion</div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">Community & Outreach</div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">My Story</div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">Photo Essay</div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">Picture This</div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">From the President</div>
-          <div class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">Your Support</div>
-          <div id="archives" class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">Archives</div>
-          <div id="evmsHome" class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">EVMS Home</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            <span>Alumni Profile<span id="expandAlumniList" class="material-icons">expand_more</span></span></div>
+          <div id="alumniList" class="digital-mag__mobile-menu__wrapper">
+            <div class="digital-mag__nav--mobile__sidenav__list-item">Margaret Stowasser</div>
+            <div class="digital-mag__nav--mobile__sidenav__list-item">Maureen Kelleher</div>
+            <div class="digital-mag__nav--mobile__sidenav__list-item">Phillip Chang</div>
+
+          </div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            Research</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            Diversity & Inclusion</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            Community & Outreach</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            My Story</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            Photo Essay</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            Picture This</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            From the President</div>
+          <div
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            Your Support</div>
+          <div id="archives"
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            Archives</div>
+          <div id="evmsHome"
+            class="digital-mag__nav--mobile__sidenav__list-item digital-mag__nav--mobile__sidenav__list-item__departments">
+            EVMS Home</div>
         </div>
       </div>
     </div>
   </nav>
   <nav class="digital-mag__nav digital-mag__nav--desktop">
     <div class="digital-mag__nav--desktop__wrapper">
-      <img src="https://www.evms.edu/uploads/13.1/assets/magazine-logo.svg" alt="" class="digital-mag__nav--desktop__logo">
-      <p class="digital-mag__nav--desktop__magazine-cta">Issue 13.1<span id="toggleSubnav" class="material-icons">expand_more</span></p>
-      <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/13_1/previous_issues/" class="digital-mag__nav-desktop__archives-link">Archives</a>
-      <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/13_1/subscribe/" class="digital-mag__nav--desktop__suscribe-cta">Subscribe</a>
+      <img src="https://www.evms.edu/uploads/13.1/assets/magazine-logo.svg" alt=""
+        class="digital-mag__nav--desktop__logo">
+      <p class="digital-mag__nav--desktop__magazine-cta">Issue 13.1<span id="toggleSubnav"
+          class="material-icons">expand_more</span></p>
+      <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/13_1/previous_issues/"
+        class="digital-mag__nav-desktop__archives-link">Archives</a>
+      <a href="https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/13_1/subscribe/"
+        class="digital-mag__nav--desktop__suscribe-cta">Subscribe</a>
     </div>
     <div id="subnav" class="digital-mag__nav--desktop__subnav">
       <div class="digital-mag__nav--desktop__subnav__wrapper">
-        <div class="digital-mag__nav--desktop__subnav-dropdown">features<span id="toggleFeatureNav" class="material-icons">expand_more</span></div>
-        <div class="digital-mag__nav--desktop__subnav-dropdown">departments<span id="toggleDepartmentNav" class="material-icons">expand_more</span></div>
+        <div class="digital-mag__nav--desktop__subnav-dropdown">features<span id="toggleFeatureNav"
+            class="material-icons">expand_more</span></div>
+        <div class="digital-mag__nav--desktop__subnav-dropdown">departments<span id="toggleDepartmentNav"
+            class="material-icons">expand_more</span></div>
       </div>
     </div>
     <div class="digital-mag__nav--desktop__features-subnav">
       <ul id="featureMenu" class="digital-mag__nav--desktop__features-subnav__list">
-        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Education</a></li>
-        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Research</a></li>
-        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Patient Care</a></li>
+        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a
+            class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Education</a></li>
+        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a
+            class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Research</a></li>
+        <li class="digital-mag__nav--desktop__features-subnav__list-item"><a
+            class="digital-mag__nav--desktop__features-subnav__list-item__link" href="">Patient Care</a></li>
       </ul>
-  </div>
-  <div class="digital-mag__nav--desktop__departments-subnav">
-    <ul id="departmentMenu" class="digital-mag__nav--desktop__departments-subnav__list">
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/research/research.html">Research</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/diversity/diversity.html">Diversity & Inclusion</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/protection/provider_protection.html">Community & Outreach</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/my-story/my-story.html">My Story</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Alumni Profile</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../photo-essay/photo-essay.html">Photo Essay</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Picture This</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/ryans/ryans.html">Your Support</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">From the President</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="../stories/basic-story/toll/toll.html">Online Exclusive</a></li>
-      <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="https://www.evms.edu/">EVMS Home</a></li>
-    </ul>
-  </div>
+    </div>
+    <div class="digital-mag__nav--desktop__departments-subnav">
+      <ul id="departmentMenu" class="digital-mag__nav--desktop__departments-subnav__list">
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link"
+            href="../stories/basic-story/research/research.html">Research</a></li>
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link"
+            href="../stories/basic-story/diversity/diversity.html">Diversity & Inclusion</a></li>
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link"
+            href="../stories/basic-story/protection/provider_protection.html">Community & Outreach</a></li>
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link"
+            href="../stories/basic-story/my-story/my-story.html">My Story</a></li>
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Alumni Profile</a></li>
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link"
+            href="../photo-essay/photo-essay.html">Photo Essay</a></li>
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">Picture This</a></li>
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link"
+            href="../stories/basic-story/ryans/ryans.html">Your Support</a></li>
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="">From the President</a></li>
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link"
+            href="../stories/basic-story/toll/toll.html">Online Exclusive</a></li>
+        <li class="digital-mag__nav--desktop__departments-subnav__list-item"><a
+            class="digital-mag__nav--desktop__departments-subnav__list-item__link" href="https://www.evms.edu/">EVMS
+            Home</a></li>
+      </ul>
+    </div>
   </nav>
   <main>
     <!-- main content -->
@@ -741,88 +815,125 @@ li {
     <span id="nextThumbnail" class="arrow arrow__next material-icons">arrow_forward_ios</span>
     <div id="storyCarousel" class="stories-carousel__carousel">
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--tall">
-          <img src="../assets/stories-carousel-alumni-stowasser-208x288.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">Alumni</h3>
-        <p class="stories-carousel__carousel-item__subtitle">EVMS alumna battles COVID-19 in New York City</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--tall">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-alumni-stowasser-208x288.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">Alumni</h3>
+          <p class="stories-carousel__carousel-item__subtitle">EVMS alumna battles COVID-19 in New York City</p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
-          <img src="../assets/stories-carousel-myStory-208x144.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">my story</h3>
-        <p class="stories-carousel__carousel-item__subtitle">Former drummer, DJ refuses to let MS take his “happy”</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-myStory-208x144.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">my story</h3>
+          <p class="stories-carousel__carousel-item__subtitle">Former drummer, DJ refuses to let MS take his “happy”</p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
-          <img src="../assets/stories-carousel-diversity+inclusion-208x224.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">diversity & inclusion</h3>
-        <p class="stories-carousel__carousel-item__subtitle">Change for the better</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-diversity+inclusion-208x224.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">diversity & inclusion</h3>
+          <p class="stories-carousel__carousel-item__subtitle">Change for the better</p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
-          <img src="../assets/stories-carousel-oldfield-208x144.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">PIVOTING IN A PANDEMIC | PROFILE</h3>
-        <p class="stories-carousel__carousel-item__subtitle">The Doctor Is In &mdash; and On the Air</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-oldfield-208x144.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">PIVOTING IN A PANDEMIC | PROFILE</h3>
+          <p class="stories-carousel__carousel-item__subtitle">The Doctor Is In &mdash; and On the Air</p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--tall">
-          <img src="../assets/stories-carousel-community+Outreach-208x288.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">community & outreach</h3>
-        <p class="stories-carousel__carousel-item__subtitle">“How can we help?”</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--tall">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-community+Outreach-208x288.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">community & outreach</h3>
+          <p class="stories-carousel__carousel-item__subtitle">“How can we help?”</p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
-          <img src="../assets/stories-carousel-photoEssay-208x144.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">photo essay</h3>
-        <p class="stories-carousel__carousel-item__subtitle">Safety first</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-photoEssay-208x144.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">photo essay</h3>
+          <p class="stories-carousel__carousel-item__subtitle">Safety first</p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
-          <img src="../assets/stories-carousel-mazzurco-208x224.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">PIVOTING IN A PANDEMIC | FIRST PERSON</h3>
-        <p class="stories-carousel__carousel-item__subtitle">The heartbreaking toll of social distancing</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-mazzurco-208x224.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">PIVOTING IN A PANDEMIC | FIRST PERSON</h3>
+          <p class="stories-carousel__carousel-item__subtitle">The heartbreaking toll of social distancing</p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
-          <img src="../assets/stories-carousel-Q+A-208x144.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">Q&A</h3>
-        <p class="stories-carousel__carousel-item__subtitle">Military. Mother. Mentor.</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-Q+A-208x144.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">Q&A</h3>
+          <p class="stories-carousel__carousel-item__subtitle">Military. Mother. Mentor.</p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
-          <img src="../assets/stories-carousel-research-208x224.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">Research</h3>
-        <p class="stories-carousel__carousel-item__subtitle">NIH awards $3.1 million grant to EVMS social scientist</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--medium">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-research-208x224.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">Research</h3>
+          <p class="stories-carousel__carousel-item__subtitle">NIH awards $3.1 million grant to EVMS social scientist
+          </p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
-          <img src="../assets/stories-carousel-telehealth-208x144.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">Feature</h3>
-        <p class="stories-carousel__carousel-item__subtitle">Telehealth to the rescue</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-telehealth-208x144.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">Feature</h3>
+          <p class="stories-carousel__carousel-item__subtitle">Telehealth to the rescue</p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
-          <img src="../assets/stories-carousl-alumni-chang.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">ALUMNI FOCUS</h3>
-        <p class="stories-carousel__carousel-item__subtitle">EVMS training preps surgeon to lead pademic response</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousl-alumni-chang.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">ALUMNI FOCUS</h3>
+          <p class="stories-carousel__carousel-item__subtitle">EVMS training preps surgeon to lead pademic response</p>
+        </a>
       </div>
       <div class="stories-carousel__carousel-item">
-        <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
-          <img src="../assets/stories-carousel-yourSupport-208x144.jpg" alt="" class="stories-carousel__thumbnail">
-        </figure>
-        <h3 class="stories-carousel__carousel-item__title">YOUR SUPPORT</h3>
-        <p class="stories-carousel__carousel-item__subtitle">Ryan Translational Research Fund</p>
+        <a href="" class="stories-carousel__carousel-item__link">
+          <figure class="stories-carousel__thumbnail-wrapper basic-story__more-carousel__thumbnail-wrapper--short">
+            <img src="https://www.evms.edu/uploads/13.1/assets/stories-carousel-yourSupport-208x144.jpg" alt=""
+              class="stories-carousel__thumbnail">
+          </figure>
+          <h3 class="stories-carousel__carousel-item__title">YOUR SUPPORT</h3>
+          <p class="stories-carousel__carousel-item__subtitle">Ryan Translational Research Fund</p>
+        </a>
       </div>
     </div>
   </section>
@@ -832,13 +943,15 @@ li {
       <div class="subscribe__content">
         <figure class="subscribe__poster-wrapper">
           <img src="../assets/landing-page-mag-13.1-cover.png" alt="" class="subscribe__poster animate-vertical">
-        </figure> 
+        </figure>
       </div>
     </div>
     <div class="subscribe__column basic-story__subscribe__column-right">
       <div class="subscribe__content">
         <h3 class="subscribe__title">Never Miss a Story</h3>
-        <p class="subscribe__description">The award-winning EVMS Magazine is published four times a year. Subscribe to be notified when the next digital issue is published and/or to receive complimentary copies of the print version.</p>
+        <p class="subscribe__description">The award-winning EVMS Magazine is published four times a year. Subscribe to
+          be notified when the next digital issue is published and/or to receive complimentary copies of the print
+          version.</p>
         <a href="" class="subscribe__cta animate-vertical">Subscribe</a>
         <a href="" class="subscribe__pdf-download" download="">Download a PDF</a>
       </div>
@@ -847,121 +960,141 @@ li {
   <div class="digital-mag__hairline"></div>
   <footer class="digital-mag__footer">
     <div class="digital-mag__footer__wrapper">
-      <img src="https://www.evms.edu/media/evms_public/content/style_assets/refresh_2018_style_assets/images/evmsLogoBlue.svg" class="digital-mag__logo">
+      <a href="">
+      <img
+        src="https://www.evms.edu/media/evms_public/content/style_assets/refresh_2018_style_assets/images/evmsLogoBlue.svg"
+        class="digital-mag__logo">
+      </a>
       <div class="digital-mag__info">
-        <div class="digital-mag__info__line-one"><a>About</a>/<a>Contact</a></div>
-        <div class="digital-mag__info__line-two"><p>Copyright 2020 Eastern Virginia Medical School</p>/&nbsp;<a>Accessibility</a>&nbsp;/&nbsp;<a>Privacy</a>&nbsp;/&nbsp;<a>Terms of Use</a></div>
+        <div class="digital-mag__info__line-one"><a href="" class="footer-link">About</a>/<a href="" class="footer-link">Contact</a></div>
+        <div class="digital-mag__info__line-two">
+          <p>Copyright 2020 Eastern Virginia Medical School</p>
+          /&nbsp;<a href="" class="footer-link">Accessibility</a>&nbsp;/&nbsp;<a href="" class="footer-link">Privacy</a>&nbsp;/&nbsp;<a href="" class="footer-link">Terms of Use</a>
+        </div>
       </div>
       <div class="digital-mag__social-icons">
-        <img src="../assets/facebook-EVMS-blue.svg" alt="" class="digital-mag__social-icon">
-        <img src="../assets/instagram-EVMS-blue.svg" alt="" class="digital-mag__social-icon">
-        <img src="../assets/linkedIn-EVMS-blue.svg" alt="" class="digital-mag__social-icon">
-        <img src="../assets/twitter-EVMS-blue.svg" alt="" class="digital-mag__social-icon">
-        <img src="../assets/youTube-EVMS-blue.svg" alt="" class="digital-mag__social-icon">
-        <img src="../assets/pulse-icon.svg" alt="" class="digital-mag__social-icon pulse">
+        <a href="" class="social-link">
+          <img src="../assets/facebook-EVMS-blue.svg" alt="facebook social icon" class="digital-mag__social-icon">
+        </a>
+        <a href="" class="social-link">
+          <img src="../assets/instagram-EVMS-blue.svg" alt="instagram social icon" class="digital-mag__social-icon">
+        </a>
+        <a href="" class="social-link">
+          <img src="../assets/linkedIn-EVMS-blue.svg" alt="linkedin social icon" class="digital-mag__social-icon">
+        </a>
+        <a href="" class="social-link">
+          <img src="../assets/twitter-EVMS-blue.svg" alt="twitter social icon" class="digital-mag__social-icon">
+        </a>
+        <a href="" class="social-link">
+          <img src="../assets/youTube-EVMS-blue.svg" alt="youtube social icon" class="digital-mag__social-icon">
+        </a>
+        <a href="" class="social-link">
+          <img src="../assets/pulse-icon.svg" alt="pulse social icon" class="digital-mag__social-icon pulse">
+        </a>
       </div>
     </div>
   </footer>
   <script>
     const expandList = document.getElementById('expandList')
-const featuresList = document.getElementById('featuresList')
+    const featuresList = document.getElementById('featuresList')
 
-const toggleSubnav = document.getElementById('toggleSubnav')
-const subnav = document.getElementById('subnav')
+    const toggleSubnav = document.getElementById('toggleSubnav')
+    const subnav = document.getElementById('subnav')
 
-const toggleFeatureNav = document.getElementById('toggleFeatureNav')
-const toggleDepartmentNav = document.getElementById('toggleDepartmentNav')
-
-
-const featureMenu = document.getElementById('featureMenu')
-const departmentMenu = document.getElementById('departmentMenu')
-
-expandList.addEventListener('click', function() {
-  console.log(this.innerHTML)
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showList(featuresList)
-  } else {
-    this.innerHTML = 'expand_more'
-    hideList(featuresList)
-  }
-})
-
-function showList(list) {
-  list.style.display = 'block'
-  list.style.height = '200px'
-  list.style.opacity = '1'
-}
-
-function hideList(list) {
-  list.style.display = 'none'
-  list.style.height = '0px'
-}
+    const toggleFeatureNav = document.getElementById('toggleFeatureNav')
+    const toggleDepartmentNav = document.getElementById('toggleDepartmentNav')
 
 
-toggleSubnav.addEventListener('click', function() {
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showSubnav()
-  } else {
-    this.innerHTML = 'expand_more'
-    hideSubnav()
-  }
-})
+    const featureMenu = document.getElementById('featureMenu')
+    const departmentMenu = document.getElementById('departmentMenu')
 
-function showSubnav() {
-  subnav.style.height = '50px'
-}
+    expandList.addEventListener('click', function () {
+      console.log(this.innerHTML)
+      if (this.innerHTML === 'expand_more') {
+        this.innerHTML = 'expand_less'
+        showList(featuresList)
+      } else {
+        this.innerHTML = 'expand_more'
+        hideList(featuresList)
+      }
+    })
 
-function hideSubnav() {
-  subnav.style.height = '0'
-}
+    function showList(list) {
+      list.style.display = 'block'
+      list.style.height = '200px'
+      list.style.opacity = '1'
+    }
 
-toggleFeatureNav.addEventListener('click', function() {
-  hideMenu(departmentMenu)
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showMenu(featureMenu)
-  } else {
-    this.innerHTML = 'expand_more'
-    hideMenu(featureMenu)
-  }
-})
+    function hideList(list) {
+      list.style.display = 'none'
+      list.style.height = '0px'
+    }
 
-toggleDepartmentNav.addEventListener('click', function() {
-  hideMenu(featureMenu)
-  if(this.innerHTML === 'expand_more') {
-    this.innerHTML = 'expand_less'
-    showMenu(departmentMenu)
-  } else {
-    this.innerHTML = 'expand_more'
-    hideMenu(departmentMenu)
-  }
-})
 
-function showMenu(menu) {
- menu.style.maxHeight = '500px'
-  // featureMenu.style.transition = 'height 1s'
-  console.log('show feature')
-}
+    toggleSubnav.addEventListener('click', function () {
+      if (this.innerHTML === 'expand_more') {
+        this.innerHTML = 'expand_less'
+        showSubnav()
+      } else {
+        this.innerHTML = 'expand_more'
+        hideSubnav()
+      }
+    })
 
-function hideMenu(menu) {
-  menu.style.maxHeight = '0'
-}
+    function showSubnav() {
+      subnav.style.height = '50px'
+    }
 
-const scrollDistance = 500;
-const storyCarousel = document.getElementById('storyCarousel')
-const nextThumbnail = document.getElementById('nextThumbnail')
-const prevThumbnail = document.getElementById('prevThumbnail')
-const swipeDistance = 150
+    function hideSubnav() {
+      subnav.style.height = '0'
+    }
 
-nextThumbnail.addEventListener('click', function() {
-  storyCarousel.scrollLeft += scrollDistance
-})
+    toggleFeatureNav.addEventListener('click', function () {
+      hideMenu(departmentMenu)
+      if (this.innerHTML === 'expand_more') {
+        this.innerHTML = 'expand_less'
+        showMenu(featureMenu)
+      } else {
+        this.innerHTML = 'expand_more'
+        hideMenu(featureMenu)
+      }
+    })
 
-prevThumbnail.addEventListener('click', function() {
-  storyCarousel.scrollLeft -= scrollDistance
-})
+    toggleDepartmentNav.addEventListener('click', function () {
+      hideMenu(featureMenu)
+      if (this.innerHTML === 'expand_more') {
+        this.innerHTML = 'expand_less'
+        showMenu(departmentMenu)
+      } else {
+        this.innerHTML = 'expand_more'
+        hideMenu(departmentMenu)
+      }
+    })
+
+    function showMenu(menu) {
+      menu.style.maxHeight = '500px'
+      // featureMenu.style.transition = 'height 1s'
+      console.log('show feature')
+    }
+
+    function hideMenu(menu) {
+      menu.style.maxHeight = '0'
+    }
+
+    const scrollDistance = 500;
+    const storyCarousel = document.getElementById('storyCarousel')
+    const nextThumbnail = document.getElementById('nextThumbnail')
+    const prevThumbnail = document.getElementById('prevThumbnail')
+    const swipeDistance = 150
+
+    nextThumbnail.addEventListener('click', function () {
+      storyCarousel.scrollLeft += scrollDistance
+    })
+
+    prevThumbnail.addEventListener('click', function () {
+      storyCarousel.scrollLeft -= scrollDistance
+    })
   </script>
 </body>
+
 </html>
