@@ -93,6 +93,11 @@
   }
   }
 
+  .research .features__hero__overlay {
+    top: 8%;
+    left: 66%;
+}
+
 .features__hero__title {
     font-size: 1.5em;
 }
