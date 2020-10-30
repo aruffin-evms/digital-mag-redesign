@@ -197,13 +197,14 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin: 0 15% 0 0px;
   }
 }
 .basic-story__aside-small {
   width: 95%;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 @media(min-width: 900px)
 {
@@ -228,8 +229,6 @@ h1{
 .flex-reverse-row {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: initial;
-  align-items: flex-start;
 }
 
 .basic-story__content {
@@ -264,7 +263,7 @@ h1{
 
 .basic-story__social-share {
   height: 72px;
-  margin: 0 30px;
+  margin: 0 0 0 30px;
 }
 
 @media (min-width: 768px){
@@ -800,5 +799,10 @@ and (max-device-width : 850px) {
 }
 
 .square {
+  width: 90%;
+}
+@media (min-width: 600px){
+.square {
   width: 70%;
+}
 }
