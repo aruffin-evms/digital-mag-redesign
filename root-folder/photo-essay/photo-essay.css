@@ -10,18 +10,18 @@ body {
 
 /* fonts for page */
 @font-face {
-  font-family: 'GT-Super';
-  src: url('/root-folder/fonts/GT-Super-Display-Super.woff') format('woff');
+  font-family: "GT-Super";
+  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Super.woff");
 }
 
 @font-face {
   font-family: "GT-Super-bold";
-  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff') format('woff');
+  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Calluna';
-  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff') format('woff');
+  font-family: "Calluna";
+  src: url("https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff") format("woff");
 }
 
 @keyframes fadeIn {
@@ -37,22 +37,31 @@ body {
   animation: fadeIn 1s;
 }
 
-.arrow {
-  position: absolute;
+.photo-essay-arrow {
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
   color: white;
   font-size: 40px !important;
-  padding: 30px;
+  padding: 10px;
   cursor: pointer;
+  z-index: 10;
+  /* background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 50%; */
 }
 
-.arrow__next {
+@media (min-width: 600px) and (orientation: landscape) {
+  .photo-essay-arrow {
+    /* position: fixed; */
+  }
+}
+
+.photo-essay-arrow__next {
   right: 0;
   
 }
 
-.arrow__back {
+.photo-essay-arrow__back {
   left: 0;
   margin-left: 10px;
 }
@@ -60,13 +69,29 @@ body {
 .photo-essay {
   display: flex;
   flex-direction: row;
+  overflow-x: hidden;
 }
 
 .photo-essay__intro {
-  background-image: url(../assets/photo-essay-safetyFirst-1.jpg);
+  /* background-image: url(../assets/photo-essay-safetyFirst-1.jpg); */
+  background-image: url(./photo-essay-safetyFirst-1.jpg);
   background-size: cover;
+  background-position: 35%;
   height: 100vh;
   width: 100vw;
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .photo-essay__intro {
+    height: 600px;
+  }
+}
+
+@media(min-width: 900px)  {
+  .photo-essay__intro {
+    background-position: center;
+    height: 100vh;
+  }
 }
 
 .photo-essay__intro__content {
@@ -113,33 +138,51 @@ body {
 
 .photo-essay__step-one {
   position: relative;
-  bottom: -20%;
+  bottom: -39%;
   left: 30px;
 }
 
 @media(min-width: 900px) {
   .photo-essay__step-one {
     bottom: -30%;
-    left: 70%;
+    left: 60%;
   }
 }
 
 .photo-essay__step-two {
   position: relative;
-  bottom: -10%;
+  bottom: -15%;
   left: 30px;
+}
+
+@media(min-width: 900px) {
+  .photo-essay__step-two {
+    bottom: -10%;
+  }
 }
 
 .photo-essay__step-three {
   position: relative;
-  bottom: -60%;
-  left: 70%;
+  bottom: -68%;
+  left: 4%;
+}
+
+@media(min-width: 900px) {
+  .photo-essay__step-three {
+    bottom: -73%;
+  }
 }
 
 .photo-essay__step-four {
   position: relative;
-  bottom: -60%;
-  left: 70%;
+  bottom: -12%;
+  left: 5%;
+}
+
+@media(min-width: 900px) {
+  .photo-essay__step-four {
+    left: 56%;
+  }
 }
 
 .photo-essay__step-one__wrapper,
@@ -148,7 +191,7 @@ body {
 .photo-essay__step-four__wrapper {
   background-color: rgb(255, 255, 255, 0.8);
   width: 90%;
-  height: 300px;
+  height: max-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -162,6 +205,7 @@ body {
 .photo-essay__step-four__wrapper {
   width: 100%;
   max-width: 400px;
+  height: max-content;
  }
 }
 
@@ -190,6 +234,7 @@ body {
   align-self: center;
   color: #c7531e;
   padding: 10px 20px;
+  transform: translateY(-13%);
 }
 
 .photo-essay__step-one__copy,
@@ -204,23 +249,135 @@ body {
 }
 
 .photo-essay__slide-two {
-  height: 100vh;
+  height: auto;
   width: 100vw;
-  background-image: url(../assets/photo-essay-safetyFirst-2.jpg);
   background-size: cover;
 }
 
 
+@media(min-width: 900px) {
+  .photo-essay__slide-two {
+    height: 100vh;
+  }
+}
+
+.photo-essay__slide-two__wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media(min-width: 900px) {
+  .photo-essay__slide-two__wrapper {
+    flex-direction: row;
+  }
+}
+
+.photo-essay__content__wrapper {
+  /* background-image: url('../assets/photo-essay-safetyFirst-2.jpg'); */
+  background-image: url('./photo-essay-safetyFirst-2.jpg');
+  background-size: cover;
+  background-position: 70%;
+  height: 500px;
+  width: 100vw;
+}
+
+.photo-essay__slide-two__stats {
+  height: max-content;
+  padding: 30px 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: #fafafa;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+@media(min-width: 900px) {
+  .photo-essay__slide-two__stats {
+    width: 40vw;
+    height: 100%;
+    padding: 0;
+  }
+
+  .photo-essay__content__wrapper {
+    width: 60vw;
+    height: 100%;
+  }
+}
+
+.photo-essay__slide-two__stats__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-essay__slide-two__stats__title {
+  font-size: 48px;
+  font-family: 'GT-Super-bold';
+}
+
+.photo-essay__slide-two__stat-one {
+  padding: 50px 0 30px;
+  height: max-content;
+}
+
+.photo-essay__slide-two__stat-two {
+  height: max-content;
+  padding: 30px 0;
+}
+
+.photo-essay__slide-two__stat__p {
+  font-size: 18px;
+  font-family: 'Benton Sans Reg';
+}
+
+.photo-essay__slide-two__stat__number {
+  font-size: 80px;
+}
+
 .photo-essay__slide-three {
   height: 100vh;
   width: 100vw;
-  background-image: url(../assets/photo-essay-safetyFirst-3.jpg);
+  /* background-image: url(../assets/photo-essay-safetyFirst-3.jpg); */
+  background-image: url(./photo-essay-safetyFirst-3.jpg);
   background-size: cover;
+  background-position: 69%
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .photo-essay__slide-three {
+    height: 600px;
+  }
+}
+
+@media(min-width: 900px) {
+  .photo-essay__slide-three {
+    background-position: center;
+    height: 100vh;
+  }
 }
 
 .photo-essay__slide-four {
   height: 100vh;
   width: 100vw;
-  background-image: url(../assets/photo-essay-safetyFirst-4.jpg);
+  /* background-image: url(../assets/photo-essay-safetyFirst-4.jpg); */
+  background-image: url(./photo-essay-safetyFirst-4.jpg);
   background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .photo-essay__slide-four {
+    height: 600px;
+  }
+}
+
+@media(min-width: 900px) {
+  .photo-essay__slide-four {
+    height: 100vh;
+  }
 }
