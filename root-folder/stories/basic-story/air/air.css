@@ -157,6 +157,10 @@
     padding: 0 1em;
   }
 
+  .basic-story__story-qoute__qoutation-mark__horizontal-line--top{
+    width: 90%;
+  }
+
 }
 
 @media only screen and (min-device-width : 800px) and (max-device-width : 850px) {
@@ -237,7 +241,7 @@
 
 @media (max-width:899px) {
   .features__hero__overlay{
-    top: 5%;
+    top: 25%;
     width: 35%;
   }
 }
