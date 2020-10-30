@@ -589,8 +589,7 @@
 @media (max-width:480px) {
 .q-and-a__hero__overlay{
     width: 350px;
-    top: 0;
-    left: 1%;
+    width: 350px;    top: 80px;    left: 6%;
   }
   .q-and-a__hero__department{
     font-size: .7em;
@@ -641,6 +640,7 @@
   }
   .q-and-a__hero__overlay{
     width: 350px;
+    top: 80px;    left: 6%;
   }
 
   .q-and-a__aside{
@@ -663,3 +663,4 @@
       height: 250px;
     }
   }
+
