@@ -199,6 +199,7 @@ h1{
     justify-content: space-evenly;
     margin: 0 2%;
 }
+}
 
 @media (min-width: 1200px) {
 .basic-story__aside {
