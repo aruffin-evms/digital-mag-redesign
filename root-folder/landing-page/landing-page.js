@@ -42,31 +42,9 @@ const carousel = document.querySelector('.landing-page__stories-carousel__carous
 
 const scrollDistance = 200;
 
-// const iconBars = document.querySelectorAll('.digital-mag__nav--mobile__icon-bar')
-// const expandDeptList = document.getElementById('expandDeptList')
-// const expandAlumniList = document.getElementById('expandAlumniList')
-
-
-// let clickCount = 0;
-
-// let browserWidth = window.innerWidth
-
-// console.log('width: ' + window.innerWidth)
-
-
-
 // todo: create function that checks scroll position for looping carousel
 backArrow.addEventListener('click', function() {
   carousel.scrollLeft -= scrollDistance
-
-  clickCount--
-
-  console.log(clickCount)
-
-  // if(3 > clickCount > 0) {
-  //   backArrow.style.display = 'none'
-  //   forwardArrow.style.display = 'block'
-  // }
 })
 
 forwardArrow.addEventListener('click', function() {

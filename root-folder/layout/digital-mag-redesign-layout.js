@@ -23,6 +23,8 @@ const categoryPivoting = document.getElementById('categoryPivoting')
 const expandPivotingList = document.getElementById('expandPivotingList')
 const pivotingList = document.getElementById('pivotingList')
 
+
+
 categoryFeatures.addEventListener('click', function() {
   if(expandList.innerHTML === 'expand_more') {
     expandList.innerHTML = 'expand_less'
