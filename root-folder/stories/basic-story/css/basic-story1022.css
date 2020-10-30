@@ -43,7 +43,7 @@ h1{
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
-  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Super.woff");
+  src: url("https://www.evms.edu/uploads/13.1/fonts/GT-Super-Display-Super.woff") format("woff");
 }
 
 @font-face {
@@ -107,14 +107,7 @@ h1{
   margin: 0 auto;
 }
   .basic-story__hero-wrapper {
-  height: 30vh;
   width: 100%;
-}
-
-@media(min-width: 900px) {
-  .basic-story__hero-wrapper {
-    height: 60vh;
-  }
 }
 
 .basic-story__hero__image {
@@ -123,19 +116,20 @@ h1{
   object-fit: cover;
 }
 
-.basic-story__hero__overlay {
+.basic-story__hero__overlay.textbook {
     display: flex;
     flex-wrap: nowrap;
 }
 
 
-.basic-story__hero__department {
+.basic-story__hero__department.textbook {
   text-transform: uppercase;
 }
 
 @media (min-width: 900px) {
-  .basic-story__hero__department {
-    font-size: 28px;
+.basic-story__hero__department.textbook {
+  font-size: 0.85em;
+  font-family: 'Benton Sans Reg', serif;
   }
 }
 
@@ -162,7 +156,31 @@ h1{
   }
 }
 
+.basic-story__content {
+ width: 95%
+}
+@media (min-width: 900px) {
+  .basic-story__content {
+    width: 100%
+  }
+}
 
+
+@media (min-width: 640px) {
+  .basic-story__content {
+    width: 90%;
+  }
+}
+@media(min-width: 900px){
+    .basic-story__content {
+    margin: 40px auto;
+     width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: 80px auto;
+  }
+  
+}
 .basic-story__lead-in {
   color: #c7531e;
   text-transform: uppercase;
@@ -218,24 +236,7 @@ h1{
     flex-direction: column;
   }
 }
-.basic-story__content {
-  max-width: 1440px;
-  width: 100%;
-  height: 100%;
-  margin: 80px auto;
-}
-@media (min-width: 640px) {
-  .basic-story__content {
-    width: 90%;
-  }
-}
 
-@media(min-width: 900px){
-    .basic-story__content {
-      margin: 40px auto;
-      width: 100%;
-  }
-}
 
 .basic-story__content__wrapper {
   max-width: 608px;
@@ -293,7 +294,7 @@ h1{
   width: 90%;
   font-family: 'Benton Sans Reg', sans-serif;
   line-height: 32px;
-  font-size: 1.2em;
+  font-size: 1.2em; 
 }
 
 .basic-story__content__department-label {
@@ -418,21 +419,21 @@ h1{
 }
 
 .basic-story__content__image-caption {
-      border-left: solid 1px gray;
-      margin: 15px auto 20px;
-      padding-left: 10px;
-      position: relative;
-      font-style: italic;
-      font-size: .9em;
-  }
+  border-left: solid 1px gray;
+  margin: 15px auto 20px;
+  padding-left: 10px;
+  position: relative;
+  font-style: italic;
+  font-size: .9em;
+}
 
 .basic-story__content__image-caption br{
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .basic-story__content__image-caption i {
-    font-size: .9em;
-    padding-top: 8px;
+  font-size: .9em;
+  padding-top: 8px;
 }
 
 .middle{
@@ -738,7 +739,7 @@ and (max-device-width : 850px) {
 .feature__hero__image {
   width: 100%;
   }
-  .basic-story__hero {
+  .basic-story__hero.textbook {
   display: flex;
   flex-direction: row;
   max-width: 1200px;
