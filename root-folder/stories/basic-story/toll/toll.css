@@ -1,252 +1,288 @@
 .feature__faculty-spotlight {
-    margin: 40px 0;
-    background-color: rgba(128, 128, 128, 0.2);
-  }
+  margin: 40px 0;
+  background-color: rgba(128, 128, 128, 0.2);
+}
 
-  .basic-story{
-    overflow: hidden;
-  }
-  .feature__faculty-spotlight__wrapper {
-    min-height: 300px;
-    max-width: 708px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    text-align: center;
-  }
-  
-  .feature__faculty-spotlight__item {
-    width: 70%;
-    height: auto;
-  }
+.basic-story {
+  overflow: hidden;
+}
 
-  .feature__faculty-spotlight__item p{
-      text-align:left;
-      font-size: .9em;
-  }
-  
-  .feature__faculty-spotlight__image-wrapper {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: gray;
-    margin: 0 8% 0 0;
-    float: left;
-  }
-  
-  .heroCaption {
-    margin: 0;
-  }
-  .heroCaption  span{
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .feature__faculty-spotlight__name {
-    font-weight: bold;
-    margin: 15px 0;
-  }
+.feature__faculty-spotlight__wrapper {
+  min-height: 300px;
+  max-width: 708px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+}
 
-  .feature__faculty-spotlight__image-wrapper img{
-    height: 180px;
-    margin-top: -25px;
-  }
+.feature__faculty-spotlight__item {
+  width: 70%;
+  height: auto;
+}
 
-  .basic-story__hero{
-    display: inline-block;
-    position: relative;
+.feature__faculty-spotlight__item p {
+  text-align: left;
+  font-size: .9em;
+}
+
+.feature__faculty-spotlight__image-wrapper {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 8% 0 0;
+  float: left;
+}
+
+.heroCaption {
+  margin: 0;
+}
+
+.heroCaption span {
+  font-weight: 800;
+  font-style: normal;
+}
+
+.feature__faculty-spotlight__name {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.feature__faculty-spotlight__image-wrapper img {
+  height: 180px;
+  margin-top: -25px;
+}
+
+.basic-story__hero {
+  display: inline-block;
+  position: relative;
+}
+
+.features__hero__title {
+  font-family: "GT-Super";
+  margin: 10px 0;
+}
+
+.features__hero__overlay {
+  width: 40%;
+  color: #000;
+  position: absolute;
+  right: 10%;
+}
+
+
+
+.features__hero__overlay p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.basic-story__content__department-label {
+  color: #000;
+  font-size: 1em;
+}
+
+.topText {
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+
+
+@media (max-width:800px) {
+
+  .basic-story__aside {
+    display: block;
+    padding: 4% 2% 0;
   }
 
   .features__hero__title {
-    font-family: "GT-Super";
-    margin: 10px 0;
+    font-size: 1.5em;
   }
 
   .features__hero__overlay {
-    width: 40%;
-    color: #000;
-    position: absolute;
-    right: 10%;
+    width: 65%;
+    top: 10%;
+    left: 40%;
+    right: 0
   }
 
-
-
-  .features__hero__overlay p{
-    font-size:1.2em;
-    font-style: italic;
+  .basic-story__by-line {
+    float: none;
+    height: auto;
   }
 
-  .basic-story__content__department-label{
-    color:#000;
-    font-size:1em;
-  }
-
-  .topText{
-      font-size: 1.5em;
-      line-height:1.4em;
-  }
-
-
-  @media (max-width:800px){
-    
-    .basic-story__aside{
-      display: block;
-      padding: 4% 2% 0;
-    }
-    .features__hero__title{
-        font-size: 1.5em;
-    }
-    .features__hero__overlay {
-      width: 65%;
-      top: 10%;
-      left: 40%;
-      right: 0
-      }
-      .basic-story__by-line{
-        float: none;
-        height: auto;
-      }
-  .basic-story__social-share{
+  .basic-story__social-share {
     margin: 5% 0 8%;
-    float:none;
-      }
-      .topText {
-        font-size: 1.2em;
-        line-height: 1.4em;
-        padding: 2em .5em;
-    }
-
-      .basic-story__content__department-label {
-        font-size: .7em;
-    }
-    .feature__faculty-spotlight__item {
-        width: 85%;
-    }
-    .features__hero__overlay {
-      bottom: 20%;
+    float: none;
   }
+
+  .topText {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding: 2em .5em;
+  }
+
+  .basic-story__content__department-label {
+    font-size: .7em;
+  }
+
+  .feature__faculty-spotlight__item {
+    width: 95%;
+  }
+
+  .feature__faculty-spotlight__image-wrapper img{
+    height: 160px;
+  }
+
+  .feature__faculty-spotlight__image-wrapper {
+    margin: 17% 4% 14% 0;
+  }
+
+  .features__hero__overlay {
+    bottom: 20%;
+  }
+
   .basic-story__content__department-label {
     font-size: .6em;
   }
-    .features__hero__title{
-      font-size: .9em;
-      width: 100%;
+
+  .features__hero__title {
+    font-size: .9em;
+    width: 95%;
   }
 
-  .basic-story__content__wrapper{
+  .basic-story__content__wrapper {
     padding: 0 1em;
   }
-  .basic-story__hero-wrapper{
+
+  .basic-story__hero-wrapper {
     height: auto;
   }
+
   .features__hero__overlay p {
     font-size: 1em;
   }
-  .heroCaption{
+
+  .heroCaption {
     font-size: .8em;
   }
 
-  .basic-story__story-qoute__qoutation-mark__horizontal-line--top{
+  .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
     width: 90%;
+  }
+
 }
+
+@media (max-width:480px) {}
+
+@media only screen and (min-width : 500px) and (max-width : 900px) {
  
+
+  .basic-story__hero__image {
+    height: auto;
   }
 
-  @media (max-width:480px){
-   
+  .features__hero__overlay {
+    bottom: 0;
   }
 
-  @media only screen 
-and (min-width : 500px) 
-and (max-width : 900px) {
-  body{
-    font-size:.8em;
+  .basic-story__aside {
+    display: flex;
+    padding: 2%;
   }
-    .basic-story__hero__image {
-        height: auto;
-    }
 
-    .features__hero__overlay{
-      bottom: 0;
-    }
-
-    .basic-story__aside{
-      display: flex;
-      padding: 2%;
-    }
-    .basic-story__content{
-      padding: 0 .5em;
+  .basic-story__content {
+    padding: 0 .5em;
     width: 90%;
     margin: 0 auto;
-    }
-
-   
-
-    .basic-story__content__story__p{
-      padding: .8em 0;
-    }
-    .features__hero__overlay {
-      bottom: -17%;
   }
 
-  .basic-story__social-share{
+
+
+  .basic-story__content__story__p {
+    padding: .8em 0;
+  }
+
+  .features__hero__overlay {
+    bottom: -17%;
+  }
+
+  .basic-story__social-share {
     float: none;
     margin: 0;
   }
 
   .heroCaption {
     height: 20px;
-}
-   
+  }
+
 }
 
-  @media (min-width:900px){
-    .basic-story__content__department-label {
-      font-size: .9em;
-    }
-      .features__hero__title{
-        font-size: 3em;
-    }
-    .features__hero__overlay{font-size: 1em;}
-    .basic-story__story-qoute__qoute {
-      font-size: 2em;
-  
+@media (min-width:900px) {
+  .basic-story__content__department-label {
+    font-size: .9em;
   }
+
+  .features__hero__title {
+    font-size: 3em;
+  }
+
+  .features__hero__overlay {
+    font-size: 1em;
+  }
+
+  .basic-story__story-qoute__qoute {
+    font-size: 2em;
+
+  }
+
   .features__hero__overlay {
     bottom: 20%;
-}
-  }
- @media only screen 
-and (min-device-width : 600px) 
-and (max-device-width : 858px) {
-    .features__hero__title{
-        font-size: 1em;
-    }
-    .features__hero__overlay {
-      bottom: 20%;
-  }
-  .basic-story__story-qoute__qoutation-mark__horizontal-line--top{
-        width: 90%;
   }
 }
-@media only screen 
-and (min-width : 900px) {
-  .features__hero__title{font-size: 2em;}
-    .features__hero__overlay {
-      bottom: 20%;
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 858px) {
+  .features__hero__title {
+    font-size: 1em;
+  }
+
+  .features__hero__overlay {
+    bottom: -75%;
+  }
+
+  .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
+    width: 90%;
+  }
+
+  .basic-story__content__department-label{
+    font-size: .8em;
   }
 }
-@media only screen 
-and (min-width : 1600px) {
-    .features__hero__overlay{font-size: 1em;}
-    .features__hero__overlay {
-      bottom: 50%;
+
+@media only screen and (min-width : 900px) {
+  .features__hero__title {
+    font-size: 2em;
   }
-  .features__hero__title{
+
+  .features__hero__overlay {
+    bottom: 20%;
+  }
+}
+
+@media only screen and (min-width : 1600px) {
+  .features__hero__overlay {
+    font-size: 1em;
+  }
+
+  .features__hero__overlay {
+    bottom: 50%;
+  }
+
+  .features__hero__title {
     font-size: 3em;
-}
+  }
 }
