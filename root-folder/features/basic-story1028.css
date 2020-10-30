@@ -197,7 +197,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 0 11% 0 0;
+    margin: 0 15% 0 0px;
   }
 }
 .basic-story__aside-small {
@@ -229,8 +229,6 @@ h1{
 .flex-reverse-row {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: initial;
-  align-items: flex-start;
 }
 
 .basic-story__content {
