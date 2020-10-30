@@ -689,3 +689,11 @@ li {
 .digital-mag__hairline {
   border-bottom: solid 1px rgba(128, 128, 128, 0.4);
 }
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
