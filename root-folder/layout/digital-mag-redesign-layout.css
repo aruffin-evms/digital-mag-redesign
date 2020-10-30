@@ -539,6 +539,7 @@ li {
   font-size: 42px;
   font-family: 'GT-Super-bold';
   text-align: left;
+  line-height: 1em;
 }
 
 .subscribe__description {
