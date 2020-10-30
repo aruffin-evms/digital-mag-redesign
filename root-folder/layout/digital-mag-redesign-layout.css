@@ -665,6 +665,15 @@ li {
   margin: 20px;
 }
 
+.stories-carousel__carousel-item__link {
+  color: black !important;
+  text-decoration: none;
+}
+
+.stories-carousel__carousel-item__link:hover {
+  text-decoration: underline;
+}
+
 .stories-carousel__thumbnail-wrapper {
   min-height: 144px;
   min-width: 208px;
