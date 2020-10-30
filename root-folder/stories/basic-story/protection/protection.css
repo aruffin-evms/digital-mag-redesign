@@ -248,9 +248,9 @@ and (max-device-width : 850px) {
     width: 85%;
   }
 
-} */
+}
 
-.arrow {
+/* .arrow {
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
@@ -265,7 +265,7 @@ left: 0;
 
 .arrow__next, .arrow__next--slide {
 right: 0;
-}
+} */
 
 .arrow__back--slide, .arrow__next--slide {
 color: white;
@@ -290,6 +290,7 @@ color: white;
   justify-content: space-between;
   max-width: 300px;
   padding: 10px 0 20px;
+  font-family: 'Calluna', serif;
 }
 
 .basic-story__mask-steps__image-wrapper {
@@ -338,8 +339,8 @@ color: white;
 
 .modal__slides {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
   margin: 8% auto;
 }
@@ -351,11 +352,10 @@ color: white;
   margin: 8% auto;
 }
 
-
-
 .modal__slides__image-wrapper {
   width: 50%;
   height: auto;
+  margin: 0 auto;
 }
 
 .modal__slides__image {
