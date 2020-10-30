@@ -72,6 +72,11 @@
     left: 30%;
 }
 }
+@media(min-width:1200px){
+   .features__hero__overlay {
+    top: 25%;
+  }
+  }
 
 .education .features__hero__overlay {
   top: 8%;
@@ -82,7 +87,11 @@
 }
 }
 
-
+@media (min-width: 1200px) {
+  .education .features__hero__overlay {
+    width: 35%;
+  }
+  }
 
 .features__hero__title {
     font-size: 1.5em;
