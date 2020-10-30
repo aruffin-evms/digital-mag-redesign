@@ -60,7 +60,6 @@
   top: 13%;
   left: 50%;
 }
-
 @media (min-width: 600px) {
   .features__hero__overlay {
     width: 70%;
@@ -74,11 +73,22 @@
 }
 }
 
+.education .features__hero__overlay {
+  top: 8%;
+}
+@media(min-width:600px){
+.education .features__hero__overlay {
+  top: 15%;
+}
+}
+
+
+
 .features__hero__title {
     font-size: 1.5em;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .features__hero__title {
     font-size: 2.5em;
   }
