@@ -295,7 +295,7 @@ width:100%;
 .basic-story__social-share {
   float: none;
   width: 95%;
-  margin: 3em 0;
+  margin: 3em 0 4em;
   display: block;
 }
 .heroCaption{
@@ -315,6 +315,11 @@ width:100%;
 .desktop{
   display:none;
 }
+
+.basic-story__byline__label{
+  width: 9%;
+  float: left;
+}
 }
 
 
@@ -333,10 +338,6 @@ and (max-device-width : 850px) {
   .basic-story__story-qoute{
     width: 100%;
   }
-
-  .basic-story__story-qoute__qoute {
-    
-}
 
   .features__hero__overlay{
     width: 100%;
