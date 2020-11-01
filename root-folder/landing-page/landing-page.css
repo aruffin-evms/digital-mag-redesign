@@ -16,22 +16,6 @@ canvas {
   z-index: -1;
 }
 
-/* fonts for page */
-@font-face {
-  font-family: 'GT-Super';
-  src: url('/root-folder/fonts/GT-Super-Display-Super.woff') format('woff');
-}
-
-@font-face {
-  font-family: "GT-Super-bold";
-  src: url('/root-folder/fonts/GT-Super-Display-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Calluna';
-  src: url('/root-folder/fonts/Calluna-Regular-webfont.woff') format('woff');
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -192,7 +176,7 @@ li {
 
 .landing-page__hero__title {
   font-size: 60px;
-  color: #c7531e;
+  color: #1f7f9b;
   font-family: 'GT-Super-bold';
 }
 
@@ -206,7 +190,7 @@ li {
   font-size: 30px;
   font-style: italic;
   padding: 20px 0 30px;
-  color: #1f7f9b;
+  color: #c7531e;
   font-family: 'Calluna'
 }
 
