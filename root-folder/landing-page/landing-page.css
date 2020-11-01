@@ -355,12 +355,6 @@ li {
   width: 100vw;
 }
 
-@media(min-width: 900px) {
-  .landing-page__stretched-image {
-    
-  }
-}
-
 .landing-page__stretched-image__image-wrapper {
   background-color: gray;
   height: 100%;
