@@ -81,6 +81,11 @@ body {
     flex-wrap: nowrap;
   }
 }
+@media (min-width: 1800px) {
+  .pandemic-landing__wrapper {
+    width: 70%;
+  }
+}
 
 .pandemic-landing__intro {
   height: auto;
