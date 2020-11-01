@@ -35,7 +35,6 @@ body {
 }
 
 .pandemic-landing__virus {
-  /* position: absolute; */
   height: 100px;
   width: 100px;
   margin: 0 auto 30px;
@@ -71,33 +70,33 @@ body {
   align-self: center;
   height: auto;
   width: 100%;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .pandemic-landing__wrapper {
     height: min-content;
-    width: 80%;
+    width: 90%;
     margin: 0;
+    flex-wrap: nowrap;
   }
 }
 
 .pandemic-landing__intro {
   height: auto;
-  width: 90%;
-  min-width: 380px;
-  text-align: left;
+  width: 95%;
+  min-width: 300px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-left: 15px;
+  margin: 15px auto
 }
-
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
   .pandemic-landing__intro {
+    text-align: left;
+    margin: 0 0 0 15px;
     width: 40%;
-    text-align: center;
-    margin-left: 0;
   }
 }
 
@@ -105,7 +104,7 @@ body {
   text-transform: uppercase;
   font-size: 1.5em;
   color: #c7531e;
-  font-family: 'Calluna', sans-serif;
+  font-family: 'Benton Sans Reg', sans-serif;
   font-weight: bold;
 }
 
@@ -114,36 +113,52 @@ body {
   font-size: 3em;
   font-family: "GT-Super", serif;
   color: #1f7f9b;
-  line-height: 110%;
+  line-height: 1.10em;
+  margin: 0 auto;
 }
 
 @media (min-width: 900px) {
+  .pandemic-landing__intro__title {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 1800px) {
   .pandemic-landing__intro__title {
     font-size: 5em;
   }
 }
 
 .pandemic-landing__content {
-  height: 80%;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-self: center;
   align-self: center;
   margin: 40px 0 0 0;
+  flex-wrap:wrap;
 }
 
 @media (min-width: 900px) {
   .pandemic-landing__content {
-    width: 60%;
-    margin: 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 80%;
+    flex-direction: row;
+    width: 85%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pandemic-landing__content {
+    justify-content: space-between;
+    height: 80%;
+    flex-direction: row;
+    width: 85%;
   }
 }
 
 .pandemic-landing__content-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   height: auto;
 }
@@ -151,6 +166,7 @@ body {
 @media(min-width: 900px) {
   .pandemic-landing__content-wrapper {
     margin-left: 15px;
+    flex-direction: row;
   }
 }
 
@@ -163,7 +179,12 @@ body {
 .pandemic-landing__column {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .pandemic-landing__column {
+    width: 50%;
+  }
 }
 
 .pandemic-landing__rust-bar {
@@ -186,22 +207,35 @@ body {
 
 .pandemic-landing__ctas {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  margin: 20px 0 0;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+  align-items:center;
 }
 
-@media (min-width: 1200px) {
-  .pandemic-landing__ctas {
-      width: 80%;
-      margin: 0 auto;
-  }
+@media (min-width: 600px) {
+.pandemic-landing__ctas {
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
 }
+}
+
+@media (min-width: 900px) {
+  .pandemic-landing__ctas {
+    width: 80%;
+  }
+  }
+@media (min-width: 1800px) {
+  .pandemic-landing__ctas {
+    width: 60%;
+  }
+  }
 
 .pandemic-landing__cta {
-  padding: 6px 10px;
+  padding: 10px 16px;
   text-decoration: none !important;
   color: black;
   cursor: pointer;
@@ -210,13 +244,8 @@ body {
   transition: 1s all;
   font-weight: bold;
   text-align: center;
-}
-
-@media (min-width: 600px) {
-  .pandemic-landing__cta {
-    padding: 15px 40px;
-    margin: 30px auto;
-  }
+  min-width: 110px;
+  margin: 20px auto;
 }
 
 .pandemic-landing__cta--education {
