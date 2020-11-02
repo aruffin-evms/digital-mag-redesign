@@ -1,7 +1,7 @@
+
 .basic-story__content{
   padding:0 1%;
 }
-
   .feature__faculty-spotlight__name {
     font-weight: bold;
     margin: 15px 0;
@@ -336,6 +336,7 @@
     align-content: center;
     background-color: rgba(0, 0, 0, 1);
     z-index: 8;
+    margin: 40px auto;
   }
   
   .modal__close {
@@ -356,9 +357,15 @@
     justify-self: center;
     align-self: center;
     margin: 0 auto;
+    overflow-y: scroll;
     /* z-index: 8; */
   }
   
+  @media(min-width: 900px) {
+    .modal {
+      overflow: hidden;
+    }
+  }
   .modal__slides {
     display: flex;
     flex-direction: column;
@@ -375,11 +382,16 @@
   }
   
   .modal__slides__image-wrapper {
-    width: 50%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
   }
   
+  @media(min-width: 900px) {
+    .modal__slides__image-wrapper {
+      width: 40%;
+    }
+  }
   .modal__slides__image {
     width: 100%;
     height: auto;
@@ -387,14 +399,22 @@
   }
   
   .modal__slides__description {
-    width: 50%;
+    width: 100%;
     color: white;
     margin: 30px;
     font-size: 18px;
     font-family: "Benton Sans Reg";
     height: max-content;
     display: flex;
+    flex-direction: column;
     align-self: center;
+  }
+
+  @media(min-width: 900px) {
+    .modal__slides__description {
+      width: 50%;
+      flex-direction: row;
+    }
   }
   
   .mask-step {
