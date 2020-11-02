@@ -1,5 +1,7 @@
 
-
+.basic-story__content{
+  padding:0 1%;
+}
   .feature__faculty-spotlight__name {
     font-weight: bold;
     margin: 15px 0;
@@ -56,11 +58,11 @@
   line-height: 3em;
   font-size: .7em;
   }
+
+
   
   @media (max-width:640px) {
-    body{
-      font-size:.9em;
-    }
+   
     .basic-story__hero__image {
       width: 100%;
       height:auto;
@@ -85,9 +87,8 @@
   
     .basic-story__aside{
       display: table-column;
-      width: 90%;
+      width: 95%;
       float: right;
-      margin-top: -9em;
       padding: 1em;
       font-size: .9em;
     }
@@ -124,12 +125,77 @@
     .feature__faculty-spotlight__item {
       width: 85%;
     }
+
+    .basic-story__social-share{
+      margin: 0;
+    }
   }
+
+  @media (max-width:375px) {
+    .basic-story__aside {
+      margin-top: -20%;
+    }
+  }
+
+
+  @media and (min-width:361px)
+  and (max-device-width : 445px) {
+    .basic-story__aside {
+      margin-top: -30%;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width : 490px) 
+  and (max-device-width : 545px) {
+    .basic-story__aside {
+      margin-top: -5%;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width : 400px) 
+  and (max-device-width : 480px) {
+    .basic-story__aside {
+      margin-top: -20%;
+    }
+  }
+
+
+  @media only screen 
+  and (min-device-width : 550px) 
+  and (max-device-width : 750px) {
+  .basic-story__aside{
+    display: block;
+    margin: 24% 0 0;
+    padding: 0 2%;
+  }
+
+  .basic-story__social-share{
+    margin: 0;
+  }
+
+  .basic-story__hero__image{
+    height: auto;
+  }
+  .basic-story__content__wrapper{
+    width: 95%;
+  }
+
+  }
+
+  @media (max-width:768px) {
+  .basic-story__aside{
   
-  
+  }
+
+  .basic-story__content__wrapper {
+    width: 100%;
+}
+}
   
   @media only screen 
-  and (min-device-width : 800px) 
+  and (min-device-width : 770px) 
   and (max-device-width : 850px) {
     body{
       font-size:.9em;
@@ -160,12 +226,11 @@
       display: table-column;
       width: 90%;
       float: right;
-      margin-top: -9em;
+      margin-top: 21%;
       padding: 1em;
-      font-size: .9em;
     }
     .basic-story__content{
-      margin: 5em auto;
+      margin: 0 auto;
       display: inline-block;
     }
   
@@ -196,6 +261,10 @@
   
     .feature__faculty-spotlight__item {
       width: 85%;
+    }
+
+    .basic-story__social-share{
+      margin: 0;
     }
   
   }
