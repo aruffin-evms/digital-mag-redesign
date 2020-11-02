@@ -28,6 +28,7 @@
 .feature__faculty-spotlight__item p {
   text-align: left;
   font-size: .9em;
+  margin: -1% 0;
 }
 
 .feature__faculty-spotlight__image-wrapper {
@@ -72,6 +73,11 @@
   color: #000;
   position: absolute;
   right: 10%;
+  bottom: 50%;
+}
+
+.features__hero__overlay h1{
+  font-size: 3em;
 }
 
 
@@ -87,8 +93,9 @@
 }
 
 .topText {
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.4em;
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 
 
@@ -104,30 +111,28 @@
   }
 
   .features__hero__overlay {
-    width: 65%;
+    width: 75%;
     top: 10%;
-    left: 40%;
-    right: 0
+    left: 38%;
+    right: 0;
+    bottom: 20%;
   }
 
   .basic-story__by-line {
     float: none;
     height: auto;
+    margin: 5% 0;
   }
 
   .basic-story__social-share {
     margin: 5% 0 8%;
-    float: none;
+    float: right;
   }
 
   .topText {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.4em;
     padding: 2em .5em;
-  }
-
-  .basic-story__content__department-label {
-    font-size: .7em;
   }
 
   .feature__faculty-spotlight__item {
@@ -139,11 +144,7 @@
   }
 
   .feature__faculty-spotlight__image-wrapper {
-    margin: 17% 4% 14% 0;
-  }
-
-  .features__hero__overlay {
-    bottom: 20%;
+    margin: 17% 4% 25% 0;
   }
 
   .basic-story__content__department-label {
@@ -151,8 +152,8 @@
   }
 
   .features__hero__title {
-    font-size: .9em;
-    width: 95%;
+    font-size: .8em;
+    width: 85%;
   }
 
   .basic-story__content__wrapper {
@@ -164,7 +165,7 @@
   }
 
   .features__hero__overlay p {
-    font-size: 1em;
+    font-size: .8em;
   }
 
   .heroCaption {
@@ -175,6 +176,18 @@
     width: 90%;
   }
 
+  .features__hero__title {
+    margin: 0;
+}
+
+.feature__faculty-spotlight__item p {
+  margin: 17% 0;
+
+}
+
+.features__hero__overlay h1 {
+  font-size: 1em;
+}
 }
 
 @media (max-width:480px) {}
@@ -191,8 +204,9 @@
   }
 
   .basic-story__aside {
-    display: flex;
+    display: inline-block;
     padding: 2%;
+    width: 100%;
   }
 
   .basic-story__content {
@@ -212,13 +226,22 @@
   }
 
   .basic-story__social-share {
-    float: none;
+    float: right;
     margin: 0;
+    padding: 4%;
   }
 
   .heroCaption {
     height: 20px;
   }
+
+  .features__hero__overlay h1 {
+    font-size: 1.2em;
+}
+
+.basic-story__by-line{
+  margin: 5% 0;
+}
 
 }
 
