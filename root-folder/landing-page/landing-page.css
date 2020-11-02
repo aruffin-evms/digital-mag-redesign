@@ -551,7 +551,7 @@ li {
   height: 70%;
   width: 180px;
   text-align: center;
-  margin: 0 25px;
+  margin: 0 10px;
 }
 
 @media(min-width: 900px) {
@@ -673,7 +673,7 @@ li {
 
 .landing-page__story-qoute__qoute {
   width: 100%;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   font-family: 'GT-Super-bold';
 }
@@ -713,7 +713,7 @@ li {
 }
 
 .landing-page__my-story__image-wrapper {
-  height: 400px;
+  height: 364px;
   width: 100vw;
 }
 
@@ -736,7 +736,7 @@ li {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
   position: relative;
-  top: -173px;
+  top: -201px;
   margin-bottom: -180px;
 }
 
@@ -750,7 +750,7 @@ li {
 }
 
 .landing-page__my-story__callout__wrapper {
-  padding: 25px;
+  padding: 24px;
 }
 
 .landing-page__my-story__category {

@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
@@ -92,9 +96,18 @@ label {
 }
 
 .digital-mag__nav--mobile__logo-wrapper {
-  height: 100%;
-  width: 90px;
+  width: 100px;
   padding: 10px 0;
+}
+
+@media (max-width: 899px) {
+  .digital-mag__footer__logo__link {
+    margin: 0 auto;
+  }
+}
+
+.digital-mag__nav--mobile__logo__link {
+width: 120px;
 }
 
 .digital-mag__nav--mobile__logo {
@@ -284,10 +297,10 @@ label {
   color: #c7531e;
 }
 
-.digital-mag__nav--desktop__logo {
-  width: 200px;
+.digital-mag__nav-desktop__logo__link {
+  width: 163px;
   margin-right: 40%;
-  padding: 8px 0;
+  padding: 4px 0;
 }
 
 .digital-mag__nav--desktop__subnav {
