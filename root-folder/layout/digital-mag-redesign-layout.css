@@ -14,6 +14,11 @@
   src: url("https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff") format("woff");
 }
 
+label {
+  position: unset !important;
+  margin-top: 0 !important;
+}
+
 /* css for header and footer */
 .digital-mag__cta {
   background-color: #000000;
