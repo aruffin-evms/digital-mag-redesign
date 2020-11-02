@@ -1,5 +1,7 @@
 
-
+.basic-story__content{
+  padding:0 1%;
+}
   .feature__faculty-spotlight__name {
     font-weight: bold;
     margin: 15px 0;
