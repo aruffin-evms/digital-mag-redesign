@@ -96,7 +96,7 @@ label {
 }
 
 .digital-mag__nav--mobile__logo-wrapper {
-  width: 100px;
+  width: 100%;
   padding: 10px 0;
 }
 
@@ -107,7 +107,7 @@ label {
 }
 
 .digital-mag__nav--mobile__logo__link {
-width: 120px;
+  width: 90px;
 }
 
 .digital-mag__nav--mobile__logo {
@@ -298,7 +298,7 @@ width: 120px;
 }
 
 .digital-mag__nav-desktop__logo__link {
-  width: 163px;
+  width: 186px;
   margin-right: 40%;
   padding: 4px 0;
 }
@@ -642,10 +642,16 @@ li {
 
 .stories-carousel__title {
   font-size: 1.5em;
-  width: 100px;
+  width: 70px;
   margin: 0 15px 0 0;
   font-family: 'GT-Super';
   line-height: 1.25em;
+}
+
+@media(min-width: 900px) {
+  .stories-carousel__title {
+    width: 100px;
+  }
 }
 
 .stories-carousel__carousel-item__title {
@@ -668,7 +674,7 @@ li {
 }
 
 .stories-carousel__carousel {
-  width: 60%;
+  width: 70%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -681,14 +687,20 @@ li {
 @media(min-width: 600px) {
   .stories-carousel__carousel {
     overflow-x: hidden;
+    width: 60%;
   }
 }
 
 .stories-carousel__carousel-item {
   width: 100%;
-  margin: 20px;
+  margin: 6px;
 }
 
+@media(min-width: 900px) {
+ .stories-carousel__carousel-item {
+  margin: 20px;
+ }
+}
 .stories-carousel__carousel-item__link {
   color: black !important;
   text-decoration: none;

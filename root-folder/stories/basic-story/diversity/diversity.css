@@ -102,16 +102,17 @@
 
 @media (max-width:640px){
   body{
-    padding: 0 .5em;
+    /* you should never add padding or margins to the body or html elements */
+    /* padding: 0 .5em; */
   }
 
   .features__hero__title{
       font-size: 1.5em;
   }
   .features__hero__overlay {
-    width: 95%;
-    top: 1%;
-    left: 3%;
+    width: 46%;
+top: 80px;
+left: 3%;
     }
 
     .basic-story__content__wrapper{
@@ -203,4 +204,26 @@ height:auto;
   width:70%;
   font-size: .9em;
 }
+}
+
+.styles-for-mobile {
+
+}
+
+@media(min-width: 600px) {
+  .styles-for-tablet-and-mobile-landscape-if-needed {
+
+  }
+}
+
+@media(min-width: 900px) {
+  .styles-for-desktop-and-tablet-landscape {
+
+  }
+}
+
+@media(min-width: 1800px) {
+  .styles-for-large-desktop-displays {
+    
+  }
 }
