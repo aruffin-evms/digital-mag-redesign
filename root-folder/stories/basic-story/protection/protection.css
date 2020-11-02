@@ -267,6 +267,7 @@
     align-content: center;
     background-color: rgba(0, 0, 0, 1);
     z-index: 8;
+    margin: 40px auto;
   }
   
   .modal__close {
@@ -287,9 +288,15 @@
     justify-self: center;
     align-self: center;
     margin: 0 auto;
+    overflow-y: scroll;
     /* z-index: 8; */
   }
   
+  @media(min-width: 900px) {
+    .modal {
+      overflow: hidden;
+    }
+  }
   .modal__slides {
     display: flex;
     flex-direction: column;
