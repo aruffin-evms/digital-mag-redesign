@@ -112,6 +112,10 @@
     font-size: 1.5em;
 }
 
+.basic-story__hero__image{
+  height: auto;
+}
+
 @media (max-width:640px){
   body{
     /* you should never add padding or margins to the body or html elements */
@@ -154,6 +158,7 @@ left: 3%;
 
   .basic-story__aside{
     display: block;
+    margin: 16% 5% 2% 2%;
   }
 }
 
@@ -172,10 +177,29 @@ left: 3%;
 
 .features__hero__overlay{
   width: 75%;
-  top: 60px;
+  top: 124px; 
+}
+
+.basic-story__hero__image {
+  height: 100%;
 }
 }
 
+
+
+
+.styles-for-mobile {
+
+}
+
+@media(min-width: 600px) {
+  .basic-story__hero__image{
+    height: auto;
+  }
+  .basic-story__aside {
+    margin: 17% 5% 2% 2%;
+}
+}
 
 @media only screen 
 and (min-width : 641px) 
@@ -195,12 +219,12 @@ font-size: 1em;
 
 .features__hero__overlay{
   width: 45%;
-  top:2%;
+  top: 15%;
 }
 .basic-story__social-share {
-  margin: 2em .8em 0;
-  float: left;
-  height: auto;
+  margin: 0 .8em;
+    float: right;
+    height: auto;
 }
 
 .basic-story__hero__image {
@@ -208,7 +232,7 @@ height:auto;
 }
 
 .basic-story__by-line {
-  margin: 2.2em 1em;
+ 
   float: none;
 }
 
@@ -225,25 +249,20 @@ height:auto;
   width:70%;
   font-size: .9em;
 }
-}
 
-.styles-for-mobile {
-
-}
-
-@media(min-width: 600px) {
-  .basic-story__hero__image{
-    height: auto;
-  }
-  .basic-story__aside {
-    margin: 17% 5% 2% 2%;
+.basic-story__aside {
+  margin: 0% 5% 2% 2%;
 }
 }
 
 @media(min-width: 900px) {
-  .styles-for-desktop-and-tablet-landscape {
+  .basic-story__aside {
+    margin: 1% 5% 2% 2%;
+}
 
-  }
+.basic-story__hero-wrapper{
+  height:auto;
+}
 }
 
 @media(min-width: 1800px) {
