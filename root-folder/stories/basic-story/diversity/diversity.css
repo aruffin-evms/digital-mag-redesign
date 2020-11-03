@@ -28,7 +28,7 @@
 }
 
 .basic-story__dropcap{
-  padding-top: 8px;
+  padding-top: 23px;
 }
 
 .orange{
@@ -172,7 +172,7 @@ left: 3%;
 
 .features__hero__overlay{
   width: 75%;
-  top: -1px;
+  top: 60px;
 }
 }
 
@@ -232,9 +232,12 @@ height:auto;
 }
 
 @media(min-width: 600px) {
-  .styles-for-tablet-and-mobile-landscape-if-needed {
-
+  .basic-story__hero__image{
+    height: auto;
   }
+  .basic-story__aside {
+    margin: 17% 5% 2% 2%;
+}
 }
 
 @media(min-width: 900px) {
