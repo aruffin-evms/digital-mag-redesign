@@ -18,11 +18,25 @@
   font-family: "Calluna";
   src: url("https://www.evms.edu/uploads/13.1/fonts/Calluna-Regular-webfont.woff") format("woff");
 }
+canvas{
+  visibility: hidden;
+}
 
+@media (min-width: 900px){
+  canvas{
+  visibility: visible;
+}
+}
 body {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Calluna', sans-serif;
   line-height: 1.5em;
+}
+
+@media (min-width: 600px){
+  body {
+    font-size: 18px;
+}
 }
 
 .background {
@@ -89,7 +103,7 @@ body {
 
 .pandemic-landing__intro {
   height: auto;
-  width: 95%;
+  width: 90%;
   min-width: 300px;
   text-align: center;
   display: flex;
@@ -107,18 +121,26 @@ body {
 
 .pandemic-landing__intro__department {
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.25em;
+  line-height: 1.5em;
   color: #c7531e;
   font-family: 'Benton Sans Reg', sans-serif;
   font-weight: bold;
+  padding: 8px
+}
+@media (min-width: 900px){
+  .pandemic-landing__intro__department {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  }
 }
 
 
 .pandemic-landing__intro__title {
-  font-size: 3em;
+  font-size: 4em;
   font-family: "GT-Super", serif;
   color: #1f7f9b;
-  line-height: 1.10em;
+  line-height: 1.125em;
   margin: 0 auto;
 }
 
@@ -133,14 +155,19 @@ body {
     font-size: 5em;
   }
 }
-
 .pandemic-landing__content {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-self: center;
-  margin: 40px 0 0 0;
+  margin: 16px 0 0 0;
   flex-wrap:wrap;
+}
+
+@media (min-width: 600px){
+.pandemic-landing__content {
+  margin: 40px 0 0 0;
+  }
 }
 
 @media (min-width: 900px) {
@@ -166,6 +193,8 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   height: auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media(min-width: 900px) {
@@ -184,7 +213,6 @@ body {
 .pandemic-landing__column {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 @media (min-width: 1200px) {
   .pandemic-landing__column {
@@ -195,19 +223,25 @@ body {
 .pandemic-landing__rust-bar {
   border-top: solid 6px #c7531e;
   width: 100px;
-  margin-left: 15px;
+  margin: 16px 0;
 }
 
 .pandemic-landing__content__headline {
-  font-size: 20px;
-  margin: 15px;
+  font-size: 1.25em;
   font-family: 'Benton Sans Lt';
   font-weight: 100;
+  margin: 16px auto;
+  line-height: 1.5em;
+}
+@media (min-width: 600px){
+.pandemic-landing__content__headline {
+  font-size: 1.25em;
+}
 }
 
 .pandemic-landing__content__p {
-  margin: 15px;
   font-family: 'Benton Sans Lt';
+  margin: 16px 0;
 }
 
 .pandemic-landing__ctas {
@@ -225,6 +259,7 @@ body {
   justify-content: space-between;
   flex-direction: row;
   width: 90%;
+  margin: 32px auto;
 }
 }
 
