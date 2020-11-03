@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+main{
+  margin: 0 0 2em;
+}
+
 /* aside section */
 aside {
   width: 25%;
@@ -19,7 +23,7 @@ aside {
 }
 
 .imageSide {
-  width: 50%;
+  width: 55%;
 }
 
 .imageSide img {
@@ -49,7 +53,7 @@ aside {
 
 .basic-story__by-line{
   float: none;
-    height: 2.5em;
+    height: auto;
     margin-top: -3em;
 }
 
@@ -123,10 +127,9 @@ aside {
 
 @media (max-width:640px) {
 
-  body{
-    font-size: .9em;
+  .mbHide{
+    display: none;
   }
-
   .basic-story__content__title{
     font-size: 1.2em;
   }
@@ -142,7 +145,7 @@ aside {
   }
 
   .basic-story__content__image-caption {
-    font-size: 1em;
+    font-size: .8em;
   }
 
   .hero-wrapper img:nth-child(2) {
@@ -151,6 +154,8 @@ aside {
 
   .basic-story__content__department-label {
     font-size: .7em;
+    display: block;
+    margin-top: -11% !important;
   }
 
   .basic-story__content__wrapper {
@@ -170,7 +175,9 @@ aside {
   margin: 0 auto;
   float:none;
 }
-
+.imageSide {
+  width: 65%;
+}
 
 }
 
@@ -179,6 +186,10 @@ aside {
 
   .features__hero__title {
     font-size: 1em;
+  }
+
+  .basic-story__content__department-label {
+    margin-top: -17% !important;
   }
 }
 @media only screen 
@@ -245,4 +256,10 @@ aside {
   position: relative;
     left: -31.5em;
 }
+}
+
+@media(min-width: 900px) {
+  .mbReveal{
+    display: none;
+  }
 }
