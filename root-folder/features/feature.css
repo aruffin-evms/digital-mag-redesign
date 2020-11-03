@@ -57,7 +57,7 @@
   color: #000;
   margin: 0 auto;
   transform: translateX(-50%);
-  top: 13%;
+  top: 8%;
   left: 50%;
 }
 @media (min-width: 600px) {
@@ -73,55 +73,7 @@
     top: 25%;
 }
 }
-@media(min-width:1200px){
-   .features__hero__overlay {
-    top: 25%;
-  }
-  }
 
-.education .features__hero__overlay {
-  top: 8%;
-}
-@media(min-width:600px){
-.education .features__hero__overlay {
-  top: 15%;
-}
-}
-
-@media (min-width: 1200px) {
-  .education .features__hero__overlay {
-    width: 30%;
-  }
-  }
-
-  .research .features__hero__overlay {
-    top: 8%;
-    left: 66%;
-}
-
-@media(min-width:600px){
-.research .features__hero__overlay {
-  top: 15%;
-  left: 27%;
-  width: 35%
-}
-}
-
-@media(min-width:1200px){
-  .research .features__hero__overlay {
-    width: 30%
-  }
-  }
-
-.features__hero__title {
-    font-size: 1.5em;
-}
-
-@media (min-width: 1200px) {
-  .features__hero__title {
-    font-size: 2.5em;
-  }
-}
 .feature-story__content {
   width: 95%;
   margin: 0 auto;
@@ -211,7 +163,7 @@
   line-height: 32px;
 }
 .features__hero__department {
-  font-size: 0.85em;
+  font-size: 0.9em;
   font-family: 'Benton Sans Reg', serif;
 }
 
