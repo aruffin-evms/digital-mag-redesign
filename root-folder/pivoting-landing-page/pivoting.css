@@ -193,14 +193,15 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   height: auto;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 @media(min-width: 900px) {
   .pandemic-landing__content-wrapper {
-    margin-left: 15px;
     flex-direction: row;
+    justify-content: space-evenly;
+   
   }
 }
 
@@ -217,7 +218,13 @@ body {
 @media (min-width: 1200px) {
   .pandemic-landing__column {
     width: 50%;
+    margin: 0 30px;
   }
+}
+@media (min-width: 1200px){
+.pandemic-landing__column-right {
+    margin-top: 38px;
+}
 }
 
 .pandemic-landing__rust-bar {
