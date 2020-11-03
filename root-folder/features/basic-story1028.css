@@ -11,7 +11,7 @@ body{
   line-height: 1.5em;
   overflow-x: hidden;
 }
-@media (min-width:768px){
+@media (min-width:900px){
   body{
     font-size: 18px;
   }
@@ -236,6 +236,8 @@ h1{
 .flex-reverse-row {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .basic-story__content {
