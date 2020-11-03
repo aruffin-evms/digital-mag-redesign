@@ -138,7 +138,7 @@ body {
 
 .photo-essay__step-one {
   position: relative;
-  bottom: -39%;
+  bottom: -44%;
   left: 30px;
 }
 
@@ -152,7 +152,7 @@ body {
 .photo-essay__step-two {
   position: relative;
   bottom: -15%;
-  left: 30px;
+  left: 18px;
 }
 
 @media(min-width: 900px) {
@@ -175,7 +175,7 @@ body {
 
 .photo-essay__step-four {
   position: relative;
-  bottom: -12%;
+  bottom: -9%;
   left: 5%;
 }
 
@@ -189,7 +189,7 @@ body {
 .photo-essay__step-two__wrapper,
 .photo-essay__step-three__wrapper,
 .photo-essay__step-four__wrapper {
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.6);
   width: 90%;
   height: max-content;
   display: flex;
@@ -215,7 +215,7 @@ body {
 .photo-essay__step-four__label {
   padding: 10px 25px;
   background-color: #c7531e;
-  position: absolute;
+  position: absolute !important;
   bottom: 100%;
   font-size: 30px;
   font-family: 'Benton Sans Reg';

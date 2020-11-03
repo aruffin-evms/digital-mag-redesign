@@ -90,6 +90,14 @@
   top: -50px;
 }
 
+@media(max-width: 599px) {
+  .q-and-a__qoutation-mark {
+    height: 27px !important;
+    position: absolute;
+    top: -35px;
+  }
+}
+
 .q-and-a__wrapper {
   max-width: 1182px;
   margin: 0 auto;
@@ -300,7 +308,7 @@
   width: 100%;
   max-width: 90vw;
   height: auto;
-  margin: 48px auto 16px;
+  margin: 27px auto 11px;
 }
 
 @media (min-width: 900px) {
@@ -350,7 +358,7 @@
 .q-and-a__content__image-caption {
   border-left: solid 1px gray;
   width: 100%;
-  margin: 15px auto 48px;
+  margin: 15px auto;
   padding-left: 10px;
 }
 
