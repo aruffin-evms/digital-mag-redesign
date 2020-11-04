@@ -92,8 +92,8 @@ canvas {
 
 .animate-qoute {
   animation: slideLeft 1.5s;
-  /* animation-delay: 1s; */
 }
+
 .material-icons {
   cursor: pointer;
 }
@@ -104,6 +104,12 @@ li {
 
 .landing-page {
   overflow-x: hidden;
+}
+
+.landing-page__photo-credit {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
 }
 
 .landing-page__virus {
@@ -409,6 +415,7 @@ li {
   font-family: 'Benton Sans Reg', sans-serif;
   text-align: center;
   display: none;
+  font-size: .9em;
 }
 
 .landing-page__subscribe__wrapper {
