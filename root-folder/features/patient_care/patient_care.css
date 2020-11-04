@@ -1,76 +1,16 @@
-.feature__faculty-spotlight__image-wrapper img{
-  height: 125px;
-}
-
-.topPiece{
-  margin: 6em auto 0;
-}
-
-.features__hero__title {
-  font-family: "GT-Super";
-  margin: 10px 0;
-}
-
-.feature__faculty-spotlight__wrapper{
-  max-width: 700px;
-}
-
-.feature__faculty-spotlight__item{
-  width: 50%;
-}
-
-@media (max-width:640px){
-
-  .feature__content__story{
-    width: 100%;
-  }
-  .features__hero__overlay {
-    margin: 0 0 0 9%;
-    width: 90%;
-}
-.hero-wrapper{
-  height:3em;
-}
-
-.feature__hero__image {
-  width: 100%;
-}
-
-.hero-wrapper img:first-child{
-  display: none;
-}
-
-.feature__faculty-spotlight__item {
-  width: 100%;
-  margin: 7%;
-}
-}
-
-@media (max-height:411px){
 .features__hero__overlay {
-  top: 0%;
+  width: 80%;
+  position: absolute;
+  color: #000;
+  margin: 0 auto;
+  transform: translateX(-50%);
+  top: 13%;
+  left: 50%;
 }
-}
-
-@media only screen 
-and (min-device-width : 800px) 
-and (max-device-width : 850px) {
-    .features__hero__department{
-        font-size: .6em;
-    }
-    h1{
-      font-size: 1.3em;
-    }
-    .features__hero__overlay{
-      font-size: .8em;
-    }
-
-    .feature__content__story{
-      width:100%;
-    }
-    .feature__content__story{
-    
-      right: 100px;
-      bottom: 50px;
-    }
+@media(min-width:900px){
+  .features__hero__overlay {
+    width: 35%;
+    top: 25%;
+    left: 30%;
   }
+}
