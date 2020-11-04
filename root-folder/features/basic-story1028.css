@@ -8,12 +8,13 @@ body{
   font-family: 'Calluna', serif;
   margin: 0 auto;
   width: 100%;
-  line-height: 1.5em;
+  line-height: 1.75em;
   overflow-x: hidden;
 }
 @media (min-width:600px){
   body{
     font-size: 18px;
+    line-height: 1.5em;
   }
 }
 
@@ -214,7 +215,7 @@ h1{
   width: 95%;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 5px;
+  margin: 0 15px;
 }
 @media(min-width: 900px)
 {
@@ -223,7 +224,7 @@ h1{
   }
 }
 
-.basic-story__aside-medium{
+.basic-story__aside-medium {
   display: none;
 }
 
@@ -590,14 +591,15 @@ h1{
 
 .basic-story__story-qoute__qoute {
   width: 100%;
-  line-height: 1.5em;
   text-align: center;
   font-family: 'GT-Super-bold', serif;
+  font-size: 1.25em;
 }
 
 @media(min-width: 640px) {
   .basic-story__story-qoute__qoute {
     font-size: 1.75em;
+    line-height: 1.5em;
   }
 }
 

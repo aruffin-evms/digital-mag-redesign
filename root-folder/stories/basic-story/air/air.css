@@ -1,56 +1,90 @@
 .features__hero__overlay {
-  top: 4%;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  margin: 15px;
 }
-@media(min-width:1200px){
-  .features__hero__overlay {
-  width: 25%;
-  left:25%;
-  }
+
+.features__hero__overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  margin: 15px;
 }
 
 @media(min-width:1200px){
+  .features__hero__overlay {
+    width: 32%;
+    position: absolute;
+    color: #000;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    top: 7%;
+    left: 23%;
+}
+}
+@media(min-width:1800px){
+.features__hero__overlay {
+  width: 23%;
+  top: 13%;
+  left: 30%;
+}
+}
+
+
+@media(min-width:1200px){
   .features__hero__title {
-  font-size: 3em;
+    font-size: 3.5em;
 }
 }
+@media(min-width:1200px){
+.basic-story__aside {
+  width: 20%;
+  margin: 1.2em 0;
+}
+}
+
 .basic-story__dropcap {
-  color: #c7531e;
-  float: left;
-  font-size: 3.5em;
-  line-height: 0.7em;
-  padding-top: 6px;
-  padding-right: 3px;
-  padding-left: 3px;
+  font-size: 90px;
+  padding-top: 12px;
 }
+@media(min-width:600px){
+  .basic-story__dropcap {
+    font-size: 100px;
+    padding-top: 16px;
+  }
+}
+
+.basic-story__content {
+  margin: 0 auto;
+  width: 95%;
+}
+
 @media(min-width:900px){
 .basic-story__content {
   margin: 0 auto;
 }
 }
-@media(min-width:900px){
- .basic-story__content__wrapper {
-  max-width: 708px;
-  margin: 0 auto;
-}
-}
-@media(min-width:900px){
-.basic-story__story-qoute__qoute {
-  font-size:1.5em;
-}
-}
+
 .basic-story__content__story__p.intro {
-  font-family: 'benton-sans-reg',sans-serif;
+  font-family: 'Benton Sans Reg',sans-serif;
   font-size: 1.5em;
   line-height: 1.5em;
-  padding: 0;
+  padding: 1em 0;
 }
-@media (min-width: 900px){
-  .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
-  width: 90%;
-  }
+.feature__hero__image {
+  width: 200%;
+  margin-bottom: 0;
+  transform: translateX(-50%);
+  margin-left: 45%;
 }
-@media (min-width: 900px){
-.basic-story__story-qoute__content {
-  width: 80%;
+@media(min-width:900px){
+.feature__hero__image {
+  width: 100%;
+  margin-bottom: 0;
+  transform: none;
+  margin-left: 0;
 }
 }
