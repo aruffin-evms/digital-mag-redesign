@@ -30,6 +30,10 @@
   line-height: 0.7em;
 }
 
+.basic-story__social-share {
+  height: 72px;
+  margin: 0 0 9%;
+}
 
 .basic-story__video__wrapper{
   width:80%;
@@ -198,14 +202,13 @@
 }
 
 .heroCaption{
-  font-family: 'Benton Sans Reg';
     font-size: .8em;
-    margin: -3% 0 5% 0;
+    margin: 0 0 14%;
 }
 
 .basic-story__content__image-caption, .heroCaption {
   border-left: solid 1px gray;
-  margin: -2px auto 20px;
+  margin: 0 0 20px;
   padding-left: 10px;
   position: relative;
   font-style: italic;
@@ -222,7 +225,8 @@
 }
 @media (min-width: 900px){
 .basic-story__aside {
-  margin: 4% 10% 2% 2%;
+  margin: 4% 2%;
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 }
 
