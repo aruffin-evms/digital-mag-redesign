@@ -4,10 +4,6 @@
   object-fit: cover;
 }
 
-.basic-story__aside{
-  font-family: 'Benton Sans Reg', sans-serif;
-}
-
 .feature__hero{
   position: relative;
 }
