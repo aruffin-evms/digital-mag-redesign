@@ -14,3 +14,10 @@
     left: 30%;
   }
 }
+@media(min-width:1800px){
+.features__hero__overlay {
+  width: 30%;
+  top: 25%;
+  left: 28%;
+}
+}

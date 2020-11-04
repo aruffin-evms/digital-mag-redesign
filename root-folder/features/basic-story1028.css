@@ -852,3 +852,8 @@ and (max-device-width : 850px) {
     width: 70%;
   }
 }
+@media (min-width: 1200px){
+.square {
+  width: 45%;
+}
+}
