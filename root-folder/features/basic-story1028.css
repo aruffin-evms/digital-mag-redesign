@@ -11,7 +11,7 @@ body{
   line-height: 1.5em;
   overflow-x: hidden;
 }
-@media (min-width:900px){
+@media (min-width:600px){
   body{
     font-size: 18px;
   }
@@ -188,6 +188,8 @@ h1{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /*! max-width: 608px; */
+  /*! margin: 0 auto; */
 }
 
 @media (min-width: 900px) {
@@ -465,13 +467,13 @@ h1{
 }
 
 .basic-story__content__image-caption {
-      border-left: solid 1px gray;
-      margin: 15px auto 20px;
-      padding-left: 10px;
-      position: relative;
-      font-style: italic;
-      font-size: .9em;
-  }
+  border-left: solid 1px gray;
+  margin: 15px auto 20px 0px;
+  padding-left: 10px;
+  position: relative;
+  font-style: italic;
+  font-size: .9em;
+}
 
 .basic-story__content__image-caption br{
     margin-bottom: 16px;
@@ -577,7 +579,12 @@ h1{
 
 @media(min-width: 900px) {
   .basic-story__story-qoute__content {
-    width: 864px;
+    width: 70%;
+  }
+}
+@media(min-width: 1800px) {
+  .basic-story__story-qoute__content {
+    width: 60%;
   }
 }
 
@@ -605,6 +612,7 @@ h1{
     width: 70%;
   }
 }
+
 /* [end] story pull qoute  */
 
 .basic-story__horizontal-rule {
@@ -829,7 +837,7 @@ and (max-device-width : 850px) {
 }
 
 .landscape{
-  width: 90%;
+  width: 95%;
 }
 @media (min-width: 600px){
 .landscape{

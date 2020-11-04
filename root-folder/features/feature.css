@@ -24,7 +24,7 @@
   }
 }
 .features__hero__department {
-  font-family: "benton-sans-reg",sans-serif;
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 
 .features__hero__title {
@@ -32,9 +32,24 @@
   margin: 10px 0;
   font-size: 1.5em;
 }
-@media (min-width: 900px){
+@media (min-width: 600px){
   .features__hero__title {
   font-size: 3em;
+  }
+}
+@media (min-width: 900px){
+  .features__hero__title {
+  font-size: 2em;
+  }
+}
+@media (min-width: 1200px){
+  .features__hero__title {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1800px){
+  .features__hero__title {
+    font-size: 3em;
   }
 }
 
@@ -52,28 +67,42 @@
 }
 }
 .features__hero__overlay {
-  width: 90%;
+  width: 72%;
   position: absolute;
   color: #000;
   margin: 0 auto;
   transform: translateX(-50%);
   top: 8%;
-  left: 50%;
+  left: 60%;
 }
 @media (min-width: 600px) {
   .features__hero__overlay {
     width: 70%;
   }
 }
-
 @media (min-width: 900px) {
-  .features__hero__overlay {
-    width: 30%;
-    left: 30%;
-    top: 25%;
+.features__hero__overlay {
+  width: 35%;
+  left: 27%;
+  top: 20%;
 }
 }
 
+@media (min-width: 1200px) {
+  .research .features__hero__overlay {
+    width: 35%;
+    left: 28%;
+    top: 15%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .research .features__hero__overlay {
+    width: 30%;
+    left: 28%;
+    top: 18%;
+  }
+}
 .feature-story__content {
   width: 95%;
   margin: 0 auto;
@@ -127,10 +156,11 @@
 }
 @media (min-width: 768px) {
   .feature__dropcap.patient_care {
-    font-size: 140px;
-    line-height: 0.7em;
-    padding-top: 15px;
-}
+      font-size: 140px;
+      line-height: 0.7em;
+      padding-top: 15px;
+      padding-right: 10px;
+  }
 }
 
 .heroCaption {
@@ -168,7 +198,7 @@
 }
 
 .quote {
-  width: 50%;
+  width: 55%;
   text-align: center;
   margin: 0 auto;
   font-size: 1em;
