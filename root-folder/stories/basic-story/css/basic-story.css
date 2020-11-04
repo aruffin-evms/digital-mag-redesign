@@ -254,7 +254,7 @@ h1{
   float: right;
   height: 50px;
   /* width: 140px; */
-  margin: 40px 0;
+  margin: 40px 0 40px 0;
 }
 
 .basic-story__social-share__title {
