@@ -323,7 +323,7 @@ h1{
 .basic-story__byline__label {
   font-weight: bold;
   font-style: italic;
-  padding: 0 8px 0 10px;
+  padding: 0 8px 0 0;
   font-size: 0.8em;
 }
 
