@@ -24,7 +24,7 @@
   }
 }
 .features__hero__department {
-  font-family: "benton-sans-reg",sans-serif;
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 
 .features__hero__title {
@@ -32,9 +32,24 @@
   margin: 10px 0;
   font-size: 1.5em;
 }
-@media (min-width: 900px){
+@media (min-width: 600px){
   .features__hero__title {
   font-size: 3em;
+  }
+}
+@media (min-width: 900px){
+  .features__hero__title {
+  font-size: 2em;
+  }
+}
+@media (min-width: 1200px){
+  .features__hero__title {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1800px){
+  .features__hero__title {
+    font-size: 3em;
   }
 }
 
@@ -52,74 +67,40 @@
 }
 }
 .features__hero__overlay {
-  width: 90%;
+  width: 72%;
   position: absolute;
   color: #000;
   margin: 0 auto;
   transform: translateX(-50%);
-  top: 13%;
-  left: 50%;
+  top: 8%;
+  left: 60%;
 }
 @media (min-width: 600px) {
   .features__hero__overlay {
     width: 70%;
   }
 }
-
 @media (min-width: 900px) {
-  .features__hero__overlay {
-    width: 30%;
-    left: 30%;
-    top: 25%;
-}
-}
-@media(min-width:1200px){
-   .features__hero__overlay {
-    top: 25%;
-  }
-  }
-
-.education .features__hero__overlay {
-  top: 8%;
-}
-@media(min-width:600px){
-.education .features__hero__overlay {
-  top: 15%;
-}
-}
-
-@media (min-width: 1200px) {
-  .education .features__hero__overlay {
-    width: 30%;
-  }
-  }
-
-  .research .features__hero__overlay {
-    top: 8%;
-    left: 66%;
-}
-
-@media(min-width:600px){
-.research .features__hero__overlay {
-  top: 15%;
+.features__hero__overlay {
+  width: 35%;
   left: 27%;
-  width: 35%
+  top: 20%;
 }
-}
-
-@media(min-width:1200px){
-  .research .features__hero__overlay {
-    width: 30%
-  }
-  }
-
-.features__hero__title {
-    font-size: 1.5em;
 }
 
 @media (min-width: 1200px) {
-  .features__hero__title {
-    font-size: 2.5em;
+  .research .features__hero__overlay {
+    width: 35%;
+    left: 28%;
+    top: 15%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .research .features__hero__overlay {
+    width: 30%;
+    left: 28%;
+    top: 18%;
   }
 }
 .feature-story__content {
@@ -175,10 +156,11 @@
 }
 @media (min-width: 768px) {
   .feature__dropcap.patient_care {
-    font-size: 140px;
-    line-height: 0.7em;
-    padding-top: 15px;
-}
+      font-size: 140px;
+      line-height: 0.7em;
+      padding-top: 15px;
+      padding-right: 10px;
+  }
 }
 
 .heroCaption {
@@ -211,12 +193,12 @@
   line-height: 32px;
 }
 .features__hero__department {
-  font-size: 0.85em;
+  font-size: 0.9em;
   font-family: 'Benton Sans Reg', serif;
 }
 
 .quote {
-  width: 50%;
+  width: 55%;
   text-align: center;
   margin: 0 auto;
   font-size: 1em;
@@ -487,4 +469,78 @@ and (max-device-width : 850px) {
     margin: 1em auto 0;
     width: 90%
   }
+}
+
+.pandemic-landing__ctas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+  align-items:center;
+}
+
+@media (min-width: 600px) {
+.pandemic-landing__ctas {
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+  margin: 32px auto;
+}
+}
+
+@media (min-width: 900px) {
+  .pandemic-landing__ctas {
+    width: 80%;
+  }
+  }
+@media (min-width: 1800px) {
+  .pandemic-landing__ctas {
+    width: 60%;
+  }
+  }
+
+.pandemic-landing__cta {
+  padding: 10px 16px;
+  text-decoration: none !important;
+  color: black;
+  cursor: pointer;
+  font-family: 'Benton Sans Reg', sans-serif;
+  background: #fafafa;
+  transition: 1s all;
+  font-weight: bold;
+  text-align: center;
+  min-width: 110px;
+  margin: 20px auto;
+}
+
+.pandemic-landing__cta--pivoting {
+  border: #002539 solid 4px;
+}
+.pandemic-landing__cta--pivoting:hover {
+  background-color: rgb(0, 37, 57, 0.4);
+}
+
+.pandemic-landing__cta--education {
+  border: #05c3de solid 4px;
+}
+.pandemic-landing__cta--education:hover {
+  background-color: rgb(5, 195, 222, 0.4);
+}
+
+.pandemic-landing__cta--research {
+  border: rgb(118, 106, 98) solid 4px;
+
+}
+.pandemic-landing__cta--research:hover {
+  background-color: rgb(118, 106, 98, 0.4);
+
+}
+.pandemic-landing__cta--patient-care {
+  border: #cbc46d solid 4px;
+}
+.pandemic-landing__cta--patient-care:hover {
+  background-color: rgb(203, 196, 109, 0.4);
+
 }
