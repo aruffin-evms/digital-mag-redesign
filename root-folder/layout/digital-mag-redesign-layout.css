@@ -603,7 +603,7 @@ li {
 
 @media(min-width: 600px) {
   .arrow {
-    display: inline-block !important;
+    display: block !important;
   }
 }
 

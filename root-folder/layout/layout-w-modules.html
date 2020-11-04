@@ -523,18 +523,47 @@
       menu.style.maxHeight = '0'
     }
 
+    // updated
     const scrollDistance = 500;
     const storyCarousel = document.getElementById('storyCarousel')
     const nextThumbnail = document.getElementById('nextThumbnail')
     const prevThumbnail = document.getElementById('prevThumbnail')
     const swipeDistance = 150
 
+    function hideArrows(slider) {
+      if(slider.scrollLeft >= 1900) {
+        prevThumbnail.style.visibility = 'visible'
+        nextThumbnail.style.visibility = 'hidden'
+      } 
+      
+      if(slider.scrollLeft <= 200) {
+        prevThumbnail.style.visibility = 'hidden'
+        nextThumbnail.style.visibility = 'visible'
+      }
+    }
+
+    hideArrows(storyCarousel)
+    
     nextThumbnail.addEventListener('click', function () {
       storyCarousel.scrollLeft += scrollDistance
+
+      console.log('forward position ' + storyCarousel.scrollLeft)
+      if(carousel.scrollLeft >= 1900) {
+        nextThumbnail.style.visibility = 'hidden'
+      } else {
+        prevThumbnail.style.visibility = 'visible'
+      }
     })
 
     prevThumbnail.addEventListener('click', function () {
       storyCarousel.scrollLeft -= scrollDistance
+
+      console.log('backward position ' + storyCarousel.scrollLeft)
+      if(storyCarousel.scrollLeft <= 200) {
+        prevThumbnail.style.visibility = 'hidden'
+      } else {
+        nextThumbnail.style.visibility = 'visible'
+      }
     })
   </script>
 </body>
