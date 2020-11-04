@@ -30,15 +30,11 @@ aside {
   width: 100%;
 }
 
-.basic-story__social-share__title {
-  font-size:.3em;
-}
-
 .basic-story__social-share {
   float: none;
   height: auto;
   width: auto;
-  margin: 0;
+  margin: 11% 0 2%;
 }
 
 .diySection {
@@ -182,8 +178,6 @@ aside {
 }
 
 @media (max-width:480px) {
-
-
   .features__hero__title {
     font-size: 1em;
   }
