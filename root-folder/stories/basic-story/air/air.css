@@ -1,6 +1,8 @@
 
+
 .features__hero__title {
   font-family: 'GT-Super-bold', sans-serif;
+
 }
 
 .feature__hero__image {
@@ -11,14 +13,10 @@
 }
 
 .basic-story__dropcap {
-  color: #c7531e;
-  float: left;
-  font-size: 3.5em;
-  line-height: 0.7em;
-  padding-top: 6px;
-  padding-right: 3px;
-  padding-left: 3px;
+  font-size: 90px;
+  padding-top: 12px;
 }
+
 
 
 
@@ -27,6 +25,7 @@
   font-size: 1.5em;
   line-height: 1.5em;
   padding: 0;
+
 }
 
 .feature__faculty-spotlight {
@@ -34,10 +33,14 @@
   margin: 40px 0px;
 }
 
+
+
 .feature__faculty-spotlight__wrapper {
   min-height: 300px;
   max-width: 708px;
   width: 100%;
+
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -55,6 +58,7 @@
 .feature__faculty-spotlight__item {
   width: 70%;
   height: auto;
+
 }
 
 .feature__faculty-spotlight__image-wrapper {
@@ -186,6 +190,7 @@
       width: 23%;
 
   }
+
 
 
 }

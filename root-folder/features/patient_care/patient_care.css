@@ -7,13 +7,19 @@
   top: 13%;
   left: 50%;
 }
+
 @media(min-width:900px){
   .features__hero__overlay {
     width: 35%;
     top: 25%;
     left: 30%;
   }
+
+  .feature__hero__image {
+    width: 50% !important;
+  }
 }
+
 @media(min-width:1800px){
 .features__hero__overlay {
   width: 30%;
