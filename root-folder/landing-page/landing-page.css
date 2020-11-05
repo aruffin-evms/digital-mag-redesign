@@ -197,7 +197,8 @@ li {
   font-style: italic;
   padding: 20px 0 30px;
   color: #c7531e;
-  font-family: 'Calluna'
+  font-family: 'Calluna';
+  word-wrap: none;
 }
 
 @media(min-width: 900px) {
@@ -559,6 +560,16 @@ li {
   width: 180px;
   text-align: center;
   margin: 0 10px;
+}
+
+.landing-page__stories-carousel__carousel-item:nth-child(7) {
+  padding-right: 15px;
+}
+
+@media(min-width: 900px) {
+  .landing-page__stories-carousel__carousel-item:nth-child(7) {
+    padding-right: 50px;
+  }
 }
 
 @media(min-width: 900px) {

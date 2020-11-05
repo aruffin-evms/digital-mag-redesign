@@ -103,9 +103,10 @@
     top: 18%;
   }
 }
-.feature-story__content {
-  width: 95%;
-  margin: 0 auto;
+.basic-story__content__wrapper {
+  max-width: 608px !important;
+  width: 95% !important;
+  margin: 0 auto !important;
 }
 
 @media (min-width: 900px) {
