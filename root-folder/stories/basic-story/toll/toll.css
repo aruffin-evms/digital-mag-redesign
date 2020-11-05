@@ -7,6 +7,10 @@
   overflow: hidden;
 }
 
+.quote {
+  width: 60%;
+}
+
 .feature__faculty-spotlight__wrapper {
   min-height: 300px;
   max-width: 708px;
@@ -133,16 +137,27 @@
     line-height: 1.4em;
   }
 
-  .feature__faculty-spotlight__item {
-    width: 95%;
-  }
+  .feature__faculty-spotlight__image-wrapper img {
+    margin-top: 3%;
+    margin-left: -4%;
+}
 
-  .feature__faculty-spotlight__image-wrapper img{
-    height: 160px;
-  }
+
 
   .feature__faculty-spotlight__image-wrapper {
-    margin: 17% 4% 42% 0;
+    height: 150px;
+    width: 95%;
+    border-radius: 50%;
+    margin: 0 8% 0 0;
+    float: left;
+  }
+  
+  .feature__faculty-spotlight__item {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  
   }
 
   .basic-story__content__department-label {
@@ -179,13 +194,15 @@
 }
 
 .feature__faculty-spotlight__item p {
-  margin: 17% 0;
+  margin: 17% 0 7%;
 
 }
 
 .features__hero__overlay h1 {
   font-size: .8em;
 }
+
+
 }
 
 @media (max-width:480px) {}
