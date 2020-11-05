@@ -43,11 +43,6 @@
   margin: 0;
 }
 
-.heroCaption span {
-  font-weight: 800;
-  font-style: normal;
-}
-
 .feature__faculty-spotlight__name {
   font-weight: bold;
   margin: 15px 0;
@@ -80,10 +75,8 @@
   font-size: 3em;
 }
 
-
-
 .features__hero__overlay p {
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-style: italic;
 }
 
@@ -99,7 +92,13 @@
 }
 
 
-@media (max-width:800px) {
+@media (max-width:900px) {
+
+  .features__hero__overlay{
+    position: unset;
+    width: 70%;
+    margin: 3% auto;
+  }
 
   .basic-story__aside {
     display: block;
@@ -132,7 +131,6 @@
   .topText {
     font-size: 1.1em;
     line-height: 1.4em;
-    padding: 2em .5em;
   }
 
   .feature__faculty-spotlight__item {
@@ -144,7 +142,7 @@
   }
 
   .feature__faculty-spotlight__image-wrapper {
-    margin: 17% 4% 25% 0;
+    margin: 17% 4% 42% 0;
   }
 
   .basic-story__content__department-label {
@@ -157,7 +155,7 @@
   }
 
   .basic-story__content__wrapper {
-    padding: 0 1em;
+    width: 95%;
   }
 
   .basic-story__hero-wrapper {
@@ -165,8 +163,8 @@
   }
 
   .features__hero__overlay p {
-    font-size: .8em;
-  }
+    font-size: 1.2em;
+}
 
   .heroCaption {
     font-size: .8em;
@@ -186,7 +184,7 @@
 }
 
 .features__hero__overlay h1 {
-  font-size: 1em;
+  font-size: .8em;
 }
 }
 
@@ -210,11 +208,8 @@
   }
 
   .basic-story__content {
-    padding: 0 .5em;
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
   }
-
 
 
   .basic-story__content__story__p {
@@ -222,7 +217,7 @@
   }
 
   .features__hero__overlay {
-    bottom: -17%;
+    width: 85%;
   }
 
   .basic-story__social-share {
@@ -236,7 +231,7 @@
   }
 
   .features__hero__overlay h1 {
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .basic-story__by-line{
@@ -302,10 +297,20 @@
   }
 
   .features__hero__overlay {
-    bottom: 50%;
+    bottom: 40%;
   }
 
   .features__hero__title {
     font-size: 3em;
   }
+}
+
+@media (max-width:640px) {
+  .features__hero__overlay h1 {
+    font-size: 1.5em;
+}
+
+.features__hero__overlay p {
+  font-size: 1em;
+}
 }
