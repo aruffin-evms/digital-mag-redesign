@@ -1,21 +1,22 @@
 .basic-story__hero__title{
     font-size:2em;
-    margin: 1em 0;
-    text-align: right;
+    margin: 1em 0 0;
+    text-align: left;
     margin-right: 17%;
 }
 
 .basic-story__content{
     position: relative;
 }
+
 h2{
     font-family: 'Benton Sans Reg', sans-serif;
     margin: 0 0 1em;
 }
 
 .presidentWrap{
-    float: left;
-    margin: 0 2% 2% 0;
+    float: right;
+    margin: 8px;
     width:42%;
 }
 
@@ -90,5 +91,6 @@ h2{
     }
 }
 
-
-
+.president__last-line {
+    margin-top: -1.5em !important;
+}
