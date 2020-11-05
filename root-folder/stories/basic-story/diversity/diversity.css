@@ -17,7 +17,6 @@
 
 .basic-story__by-line{
   border-left: solid 1px gray;
-  padding-left: 10px;
   position: relative;
   font-style: italic;
   font-size: .9em;
@@ -59,11 +58,14 @@
   float: left;
 }
 
-/* .feature__faculty-spotlight__image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-} */
+.noWrap{
+  white-space: nowrap;
+}
+
+.basic-story__social-share__social-icons{
+  height: 45px;
+  overflow: hidden;
+}
 
 .feature__faculty-spotlight__name {
   font-weight: bold;
@@ -140,8 +142,8 @@ left: 3%;
     margin: 0;
     }
     .features__hero__overlay h2{
-      font-size: .8em;
-    line-height: 1em;
+      font-size: 1.1em;
+      line-height: 1.2em;
     }
 
     .basic-story__content__department-label {
@@ -164,11 +166,10 @@ left: 3%;
 
 @media (max-width:480px){
   .basic-story__content__department-label {
-      font-size: .5em;
+    font-size: .8em;
+    color: #000;
   }
-    .features__hero__title{
-      font-size: .9em;
-  }
+ 
 
   .basic-story__aside {
     display: block;
@@ -176,8 +177,10 @@ left: 3%;
 }
 
 .features__hero__overlay{
-  width: 75%;
-  top: 124px; 
+  width: 95%; 
+  margin:0 auto;
+  position: unset;
+  color: #000;
 }
 
 .basic-story__hero__image {
@@ -218,8 +221,24 @@ font-size: 1em;
 }
 
 .features__hero__overlay{
-  width: 45%;
-  top: 15%;
+  width: 608px;
+  margin:0 auto;
+  position: unset;
+  color: #000;
+}
+
+.features__hero__title{
+  font-size: 1.5em;
+}
+
+.basic-story__content__department-label {
+  font-size: .8em;
+  color: #000;
+}
+
+.features__hero__overlay h2 {
+  font-size: 1.1em;
+  line-height: 1.2em;
 }
 .basic-story__social-share {
   margin: 0 .8em;
@@ -251,7 +270,9 @@ height:auto;
 }
 
 .basic-story__aside {
-  margin: 0% 5% 2% 2%;
+  margin: 0% auto;
+    width: 608px;
+}
 }
 }
 
@@ -269,4 +290,10 @@ height:auto;
   .styles-for-large-desktop-displays {
     
   }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 300px){
+.basic-story__content {
+    width: 100%;
+}
 }
