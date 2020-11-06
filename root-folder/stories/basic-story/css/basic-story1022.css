@@ -252,9 +252,12 @@ h1{
   height: 72px;
 }
 
+
+
 .basic-story__social-share__title {
   text-transform: uppercase;
   font-size: .8em;
+  font-family: 'Benton Sans Reg';
 }
 
 /* taken from different stylesheet */
@@ -324,6 +327,7 @@ h1{
   font-style: italic;
   padding: 0 8px 0 0;
   font-size: 0.8em;
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 
   @media (min-width: 900px){
