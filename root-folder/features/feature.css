@@ -123,7 +123,7 @@
 .feature__dropcap {
   color: #c7531e;
   float: left;
-  font-size: 100px;
+  font-size: 70px;
   line-height: 0.5em;
   padding-right: 5px;
   padding-top: 20px;
@@ -139,12 +139,12 @@
   padding-top: 20px;
   }
 }
+
 .feature__dropcap.patient_care {
-  font-size: 1em;
-  line-height: 1.5em;
-  padding-top: 0;
-  padding-right: 0;
-  color: #000;
+  color: #c7531e;
+  font-size: 60px;
+  line-height: 0.8em;
+  padding-top: 10px;
 }
 
 @media (min-width:500px) {
@@ -478,7 +478,7 @@ and (max-device-width : 850px) {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   align-items:center;
 }
 
