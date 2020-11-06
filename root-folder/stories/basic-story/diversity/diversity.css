@@ -3,9 +3,7 @@
   background-color: rgba(128, 128, 128, 0.2);
 }
 
-.reportMobile{
-display: block;
-}
+
 
 .reportHide{
   display: none !important;
@@ -141,6 +139,10 @@ display: block;
 .basic-story__hero__image{
   height: auto;
 }
+
+.reportMobile{
+  margin: 0 0 2em;
+  }
 
 @media (max-width:640px){
 
