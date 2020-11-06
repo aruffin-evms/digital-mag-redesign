@@ -25,6 +25,29 @@ label{
 }
 
 
+
+@media (max-width:640px){
+body{
+  background-size: 0;
+}
+
+.basic-story__by-line {
+  margin: 0;
+}
+}
+
+@media (max-width:740px){
+  body{
+    background-size: 0;
+  }
+  
+  .basic-story__by-line {
+    margin: 0;
+  }
+  }
+  
+
+
 @media(min-width: 900px){
 .basic-story__content {
   margin: 0 auto;

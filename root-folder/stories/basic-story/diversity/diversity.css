@@ -3,9 +3,7 @@
   background-color: rgba(128, 128, 128, 0.2);
 }
 
-.reportMobile {
-  display: block;
-}
+
 
 .reportHide {
   display: none !important;
@@ -139,9 +137,17 @@
   height: auto;
 }
 
-@media (max-width: 640px) {
-  .features__hero__title {
-    font-size: 1.5em;
+
+.reportMobile{
+  margin: 0 0 2em;
+  }
+
+@media (max-width:640px){
+
+
+  .features__hero__title{
+      font-size: 1.5em;
+
   }
   .basic-story__content__description {
     width: 80%;
