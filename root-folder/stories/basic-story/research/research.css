@@ -581,9 +581,6 @@ main {
   .basic-story__story-qoute__content {
     width: 630px;
   }
-
- 
-
   .pushup {
     margin-top: -14%;
   }
@@ -616,11 +613,11 @@ main {
 
   .basic-story__social-share {
     float: right;
-    width: 39%;
+    width: 44%
   }
 
   .basic-story__by-line {
-    width: 51%;
+    width: 49%;
   }
 
   .basic-story__aside {
@@ -635,6 +632,21 @@ main {
 
 }
 
+@media (max-width:415px) {
+  .basic-story__hero__overlay {
+    top: 10%;
+  }
+}
+
+@media (min-width:560px) and (max-width:570px) {
+  .basic-story__hero__overlay {
+    width: 50%;
+    top: 23%;
+  }
+
+}
+
+
 @media (min-width:768px) and (max-width:810px) {
   .basic-story__hero__overlay {
     top: 8%;
@@ -642,8 +654,6 @@ main {
   }
 
 }
-
-
 
 @media (min-width:800px) and (max-width:1229px) {
   .basic-story__hero__title {
@@ -655,14 +665,26 @@ main {
 }
 }
 
+
+@media (min-width:800px) and (max-width:1023px) {
+
+.basic-story__hero__overlay {
+  top: 18%;
+  width: 60%;
+}
+}
+
+@media (min-width:1024px) and (max-width:1100px) {
+
+  .basic-story__hero__overlay {
+    top: 11%;
+    width: 45%;
+  }
+  }
+
   @media (min-width:1230px) and (max-width:1389px) {
     .basic-story__hero__title {
       font-size: 3em;
     }
   }
 
-  @media (max-width:600px) {
-    .basic-story__hero__overlay {
-      top: 4%;
-    }
-  }

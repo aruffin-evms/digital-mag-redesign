@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-body {
-  font-size: 18px;
-  overflow-x: hidden;
-}
-
 /* fonts for page */
 @font-face {
   font-family: "GT-Super";
@@ -85,25 +80,8 @@ body {
   animation: slideRight 1.5s;
 }
 
-@media(min-width: 600px) and (max-width: 899px) {
-  .basic-story__social-share {
-    float: right;
-    height: 50px;
-    width: 140px;
-    margin: 10px 0 70px;
-  }
-}
-
-/* @media(min-width: ) {
-
-} */
-
-.quote {
-  width: 100%
-}
-
-.bottom-spacer {
-  padding-top: 30px;
+.basic-story__social-share {
+  float: none;
 }
 
 .q-and-a__qoutation-mark {
@@ -127,7 +105,6 @@ body {
 
 .q-and-a__hero-wrapper {
   width: 100%;
-  height: 250px;
 }
 
 @media (min-width: 900px) {
@@ -137,46 +114,33 @@ body {
 }
 
 .q-and-a__hero__image {
-  height: 100%;
+  height: auto;
   width: 100%;
   object-fit: cover;
-  object-position: 64%;
 }
 
 .q-and-a__hero__overlay {
   position: absolute;
-  top: -3%;
-  left: -3%;
+  top: 1%;
+  left: 4%;
   height: auto;
-  width: 250px;
+  width: 300px;
   color: white;
   margin: 30px 0 0 30px;
 }
 
-@media(min-width: 600px) {
-  .q-and-a__hero__overlay {
-    top: 4%;
-    left: 104px;
-    width: 400px;
-  }
-}
-
 @media (min-width: 900px) {
   .q-and-a__hero__overlay {
-    top: 5%;
+    top: 18%;
     left: 23%;
     width: 400px;
     margin: 0;
   }
 }
 
-.q-and-a__hero__department {
-  font-family: 'Benton Sans Reg';
-}
-
 @media (min-width: 900px) {
   .q-and-a__hero__department {
-    font-size: .9em;
+    font-size: 28px;
   }
 }
 
@@ -187,7 +151,7 @@ body {
 
 @media (min-width: 900px) {
   .q-and-a__hero__title {
-    font-size: 3em;
+    font-size: 4em;
   }
 }
 
@@ -195,23 +159,34 @@ body {
   width: 60%;
 }
 
+@media (max-width: 850px) {
+  .q-and-a__hero__subtitle {
+    font-size: .8em;
+    width: 100%;
+    height: auto;
+  }
+  h1{
+    font-size:1em;
+  }
+  .q-and-a__hero__overlay{
+    top: -2%;
+    left: 0;
+  }
+
+}
+
+
 
 .q-and-a__content {
   max-width: 1440px;
   width: 95%;
   height: 100%;
-  margin: 30px auto 0;
+  margin: 0 auto;
 }
 
 .q-and-a__content__wrapper {
-  max-width: 608px;
-  margin: 45px auto 0;
-}
-
-@media(min-width: 900px) {
-  .q-and-a__content__wrapper {
-    margin: 32px auto;
-  }
+  max-width: 704px;
+  margin: 32px auto 0;
 }
 
 .q-and-a__content__title {
@@ -231,18 +206,15 @@ body {
 }
 
 .q-and-a__aside {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  /* float: right; */
+  width: 300px;
+  margin: 0 auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .q-and-a__aside {
     float: right;
-    flex-direction: column;
     padding-left: 40px;
-    width: 30%;
   }
 }
 @media (min-width: 900px) {
@@ -278,16 +250,10 @@ body {
 
 .q-and-a__content__description {
   margin: 10px 0 15px;
-  width: 100%;
+  width: 90%;
   font-family: "Benton Sans Reg";
-  line-height: 1.5em;
-  font-size: 1.1em;
-}
-
-@media(min-width: 900px) {
-  .q-and-a__content__description {
-    font-size: 1.5em;
-  }
+  line-height: 32px;
+  font-size: 20px;
 }
 
 .q-and-a__content__department-label {
@@ -304,7 +270,6 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  font-size: .9em !important;
 }
 
 .q-and-a__by-line__line-wrapper {
@@ -328,7 +293,7 @@ body {
 .q-and-a__content__story {
   margin: 10px 0 0;
   line-height: 32px;
-  width: 100%;
+  width: 90%;
 }
 
 .q-and-a__content__story__p {
@@ -360,22 +325,21 @@ body {
 
 .q-and-a__content__caption {
   position: relative;
-  top: 31px;
-  width: 180px;
-  color: black;
-  width: 100%;
-  font-size: 1em;
-  line-height: 1.5em;
-  font-family: "Benton Sans Reg", sans-serif;
+  top: -217px;
+  margin-bottom: -200px;
+  width: 120px;
+  color: white;
+  font-size: 12px;
+  margin-left: 20px;
+  font-family: 'Calluna', serif;
 }
 
 @media (min-width: 600px) {
   .q-and-a__content__caption {
-    position: relative;
     top: -326px;
-    margin-bottom: -250px;
+    margin-bottom: -213px;
     width: 231px;
-    font-size: 1.2em;
+    font-size: 18px;
   }
 }
 
@@ -385,24 +349,17 @@ body {
     margin-bottom: -213px;
     margin-left: 40px;
     width: 450px;
-    font-size: 1.75em;
-    line-height: 1.5em;
-    transform: scaleX(0.85);
-    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.1em;
   }
 }
 .q-and-a__content__image-caption {
   border-left: solid 1px gray;
-  width: 92%;
-  margin: -10px auto;
+  width: 100%;
+  margin: 15px auto;
   padding-left: 10px;
 }
 
-@media(min-width: 600px) {
-  .q-and-a__content__image-caption {
-    width: 93%;
-  }
-}
 @media (min-width: 900px) {
   .q-and-a__content__image-caption {
     width: 100%;
@@ -412,7 +369,7 @@ body {
 /* [end] image with caption */
 
 .q-and-a__story-qoute__wrapper {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -634,3 +591,100 @@ body {
   font-family: "Benton Sans Reg";
 }
 /* [end] subscribe module */
+
+@media (max-width:480px) {
+.q-and-a__hero__overlay{
+    width: 350px;
+    width: 350px;        
+    top: 65px;
+    left: 6%;
+  }
+  .q-and-a__hero__department{
+    font-size: .7em;
+  }
+
+  .q-and-a__hero__overlay{
+    margin:0;
+  }
+
+  .q-and-a__hero__title{
+    margin: 0;
+    font-size: .9em;
+  }    
+
+  .q-and-a__aside{
+    margin: 8% 0;
+    width: auto;
+  }
+  .basic-story__social-share {
+    float: right;
+    margin:0; 
+
+}
+  .q-and-a__content__description{
+    width: 100%;
+    font-size: 1em;
+  }
+  .q-and-a__content__caption{
+    width: 150px;
+    line-height: 1.3em;
+  }
+  .q-and-a__content__story{
+    width: 100%;
+  }
+
+  .q-and-a__hero__subtitle{
+    font-size: .9em;
+    width: 60%;
+  }
+  .q-and-a__hero-wrapper{
+    height: auto;
+  }
+  .q-and-a__hero__image{
+    height: 200px;
+  }
+
+}
+
+
+@media only screen and (min-device-width : 800px) and (max-device-width : 868px) {
+
+  .q-and-a__hero__image {
+    height: auto;
+  }
+  .q-and-a__hero__overlay{
+    width: 350px;
+    top: 71px;    
+    left: 6%;
+  }
+
+  .q-and-a__aside{
+    margin: 5% auto 0;
+    width: auto;
+  }
+  .basic-story__social-share {
+    float: right;
+}
+
+.basic-story__social-share {
+  float: right;
+  margin: 0;
+}
+  .q-and-a__content__description{
+    width: 100%;
+    font-size: 1em;
+  }
+  .q-and-a__content__caption{
+    width: 250px;
+    line-height: 1.3em;
+  }
+  .q-and-a__content__story{
+    width: 100%;
+  }
+  }
+  @media only screen and (min-device-width : 650px) and (max-device-width : 799px) {
+    .q-and-a__hero__image {
+      height: 250px;
+    }
+  }
+
