@@ -23,7 +23,7 @@ const forwardArrow = document.getElementById('forwardArrow')
 
 const carousel = document.querySelector('.landing-page__stories-carousel__carousel__wrapper')
 
-const scrollDistance = 200;
+const scrollDistance = 250;
 
 function hideArrows(slider) {
   if(slider.scrollLeft >= 370) {

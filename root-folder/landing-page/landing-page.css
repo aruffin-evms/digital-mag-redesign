@@ -870,7 +870,6 @@ li {
   }
 
   .landing-page__more-stories__story figure, .landing-page__additional-stories__story figure {
-    width: 70vw;
     height: 300px;
     margin: 0 auto;
   }
@@ -1136,7 +1135,6 @@ li {
 .landing-page__additional-stories__wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 750px;
   margin: 0 auto;

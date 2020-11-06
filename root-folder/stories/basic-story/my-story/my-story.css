@@ -1,6 +1,16 @@
+body {
+  font-size: 16px;
+}
+
+@media(min-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 #captionMobile {
   display: block !important;
-  width: 90%;
+  width: 91%;
   margin: 0 auto;
 }
 
@@ -22,13 +32,14 @@
   .basic-story__aside {
     display: flex !important;
     flex-direction: row-reverse !important;
-    justify-content: space-around !important;
-    margin: 30px 0;
-    width: 90%;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 92%;
   }
 
   .basic-story__by-line {
     height: max-content !important;
+    font-size: .9em !important;
   }
 
   .basic-story__social-share {
@@ -38,4 +49,27 @@
   .basic-story__dropcap {
     padding-top: 15px !important;
   }
+}
+
+.basic-story__content__image-wrapper {
+  margin-bottom: 0 !important;
+  width: 100% !important;
+}
+
+@media(min-width: 900px) {
+  .basic-story__social-share {
+    margin: 0 0 30px 0 !important;
+  }
+}
+
+.my-story__attribution {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1em;
+  font-family: 'Benton Sans Reg'
+}
+
+.bottom-space {
+  padding-bottom: 40px;
 }
