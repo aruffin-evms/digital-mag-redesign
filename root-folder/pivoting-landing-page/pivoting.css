@@ -83,7 +83,7 @@ body {
   justify-self: center;
   align-self: center;
   height: auto;
-  width: 100%;
+  width: 95%;
   margin: 20px 0;
 }
 
@@ -92,6 +92,7 @@ body {
     height: min-content;
     width: 90%;
     margin: 0;
+    padding: 60px;
     flex-wrap: nowrap;
   }
 }

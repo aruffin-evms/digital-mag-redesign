@@ -1,47 +1,89 @@
 .basic-story__aside {
-    margin: 3% 8% 2% 2%;
+  margin: 10px 0 0 !important;
 }
 
 .feature__hero__image {
-    width: 300px;
+  width: 300px;
 }
 
+.basic-story__content {
+  width: 95% !important;
+  margin: 0 auto !important;
+}
 .basic-story__content__image-caption {
-    border-left: solid 1px gray;
-    margin: 15px auto 20px;
-    padding-left: 10px;
-    position: relative;
-    font-style: italic;
-    font-size: .9em;
+  border-left: solid 1px gray;
+  margin: 15px auto 20px;
+  padding-left: 10px;
+  position: relative;
+  font-style: italic;
+  font-size: 0.9em;
 }
 
 .basic-story__by-line {
-    margin: 20px 0 0 0;
-}
-
-@media (max-width:899px){
-.basic-story__social-share a{
-   font-size: 2.5em;
-}
+  margin: 10px 0 0 0;
 }
 
 
-@media (max-width:640px){
-    .feature__hero__image {
-        width: 250px;
-    }
+@media(max-width: 599px) {
+  .basic-story__hero {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .basic-story__hero__title {
-        line-height: 1em;
-    }
-    .basic-story__hero {
-        margin: 0 auto;
-    }
-
-    .basic-story__hero__overlay-title{
-        margin-right: 3%;
-        margin-left: 13%;
-        font-size:1em;
-    }
+  .basic-story__hero__title {
+    margin-left: 0 !important;
+    width: 70% !important;
+  }
 }
 
+@media (min-width: 899px) {
+  .basic-story__by-line__label {
+    padding: 0 8px !important;
+  }
+  .basic-story__social-share a {
+    /* font-size: 2.5em; */
+  }
+  .feature__hero__image {
+    width: 250px;
+  }
+
+  .basic-story__hero__title {
+    line-height: 1em;
+  }
+  .basic-story__hero {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .basic-story__hero__overlay-title {
+    margin-right: 3%;
+    margin-left: 13%;
+    font-size: 1em;
+    margin-top: 30px;
+    display: flex;
+    align-self: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .basic-story__by-line__label {
+    padding: 0 8px !important;
+  }
+  .basic-story__hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0 0;
+  }
+
+  .basic-story__hero__overlay-title {
+    align-self: center;
+    margin-left: 0;
+    width: 400px;
+  }
+
+  .basic-story__content__image-wrapper {
+    width: auto !important;
+    margin: 0;
+  }
+}
