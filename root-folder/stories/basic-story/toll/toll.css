@@ -3,14 +3,16 @@
   background-color: rgba(128, 128, 128, 0.2);
 }
 
+.basic-story__social-share__title, .basic-story__byline__name, .basic-story__byline__label {
+  font-size: 14px;
+}
 .basic-story {
   overflow: hidden;
 }
 
 .hideCap{
   display: block;
-  margin: 0 0 3%;
-  font-size: .8em;
+  margin: 0px 0 5%;
 }
 
 .hideCap2{
@@ -21,10 +23,7 @@
   white-space: nowrap;
 }
 
-.basic-story__byline__name {
-  font-family: 'Benton Sans Reg', sans-serif;
-  font-size: 0.9em;
-}
+
 
 .quote {
   width: 60%;
@@ -104,13 +103,9 @@
   font-size: 2.5em;
 }
 
-.features__hero__overlay p {
-  
-}
-
 .basic-story__content__department-label {
   color: #000;
-  font-size: 1em;
+
 }
 
 .topText {
@@ -126,14 +121,10 @@
     position: unset;
     width: 95%;
     margin: 1% auto;
+    max-width: 608px;
   }
 
-  .basic-story__aside {
-    display: block;
-    padding: 4% 2% 0;
-    position: relative;
-  }
-
+ 
   .features__hero__title {
     font-size: 1.5em;
   }
@@ -146,7 +137,7 @@
   }
 
   .basic-story__social-share {
-    margin: 5% 0 8%;
+    margin: 0 0 8%;
     float: right;
   }
 
@@ -180,10 +171,7 @@
   
   }
 
-  .basic-story__content__department-label {
-    font-size: .7em;
-  }
-
+  
   .features__hero__title {
     font-size: .8em;
     width: 85%;
@@ -217,14 +205,9 @@
 }
 }
 
-
-
 @media (min-width:731px) {
   .features__hero__overlay {
     width: 85%;
-}
-.basic-story__by-line{
-  margin-left: 7%;
 }
 
 }
@@ -234,19 +217,11 @@
     width: 75%;
 }
 .basic-story__by-line {
-  margin-left: 13%;
+  margin-left: 0;
 }
 }
 
-@media (max-width:670px) {
-  .features__hero__overlay {
-    width: 90%;
-}
-.basic-story__by-line{
-  margin-left: 3%;
-}
 
-}
 
 @media only screen and (min-width : 500px) and (max-width : 900px) {
  
@@ -259,11 +234,6 @@
     bottom: 0;
   }
 
-  .basic-story__aside {
-    display: inline-block;
-    padding: 2%;
-    width: 87%;
-  }
 
   .basic-story__content {
     width: 95%;
@@ -286,21 +256,11 @@
   .basic-story__story-qoute__qoute{
     font-size: 1.7em;
   }
-  .features__hero__overlay {
-    
-}
 
   .features__hero__overlay h1 {
     font-size: 2em;
 }
 
-.basic-story__by-line{
-  
-}
-
-.features__hero__overlay {
-  
-}
 
 }
 
@@ -317,9 +277,7 @@
     font-size: 3em;
   }
 
-  .features__hero__overlay {
-    font-size: 1em;
-  }
+ 
 
   .basic-story__story-qoute__qoute {
     font-size: 2em;
@@ -328,6 +286,8 @@
 
   .features__hero__overlay {
     bottom: 20%;
+    left: 40%;
+    font-size: 1em;
   }
 
 
@@ -338,13 +298,6 @@
     font-size: 1em;
   }
 
-  .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
-    width: 90%;
-  }
-
-  .basic-story__content__department-label{
-    font-size: .8em;
-  }
 }
 
 @media only screen and (min-width : 900px) {
@@ -353,7 +306,8 @@
   }
 
   .features__hero__overlay {
-    bottom: 20%;
+    top: 20%;
+    width: 50%;
   }
   .hideCap2{
     display: block;
@@ -382,18 +336,11 @@ margin:0;
 
 @media (max-width:640px) {
   .features__hero__overlay h1 {
-    font-size: 1.1em;
+    font-size: 1.5em;
+}
 }
 
-.features__hero__overlay p {
- 
-}
 
-.heroCaption {
-  
-}
-
-}
 
 @media only screen and (max-width: 640px) and (min-width: 300px){
 .basic-story__content {
@@ -406,3 +353,13 @@ margin:0;
     right: -10%;
   }
 }
+
+
+@media (max-width: 900px){
+  .basic-story__aside {
+    display: block;
+    margin: 3% auto;
+    max-width: 608px;
+    width: 95%;
+  }
+  }
