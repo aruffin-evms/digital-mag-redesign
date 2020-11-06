@@ -8,12 +8,13 @@ body{
   font-family: 'Calluna', serif;
   margin: 0 auto;
   width: 100%;
-  line-height: 1.5em;
+  line-height: 1.75em;
   overflow-x: hidden;
 }
 @media (min-width:600px){
   body{
     font-size: 18px;
+    line-height: 1.5em;
   }
 }
 
@@ -177,7 +178,7 @@ h1{
 .basic-story__dropcap {
   color: #c7531e;
   float: left;
-  font-size: 75px;
+  font-size: 100px;
   line-height: 60px;
   padding-top: 4px;
   padding-right: 8px;
@@ -188,8 +189,7 @@ h1{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /*! max-width: 608px; */
-  /*! margin: 0 auto; */
+  font-family: 'Benton Sans Reg', sans-serif !important;
 }
 
 @media (min-width: 900px) {
@@ -214,7 +214,7 @@ h1{
   width: 95%;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 5px;
+  margin: 0 15px;
 }
 @media(min-width: 900px)
 {
@@ -223,7 +223,7 @@ h1{
   }
 }
 
-.basic-story__aside-medium{
+.basic-story__aside-medium {
   display: none;
 }
 
@@ -264,13 +264,6 @@ h1{
 .basic-story__content__wrapper {
   max-width: 608px;
   margin: 0 auto;
-}
-
-@media(min-width: 900px){
-.basic-story__content__wrapper {
-  max-width: 708px;
-  margin: 0 2%;
-}
 }
 
 @media(min-width: 1200px){
@@ -355,12 +348,13 @@ h1{
   flex-direction: column;
   align-content: flex-start;
   justify-content: flex-start;
-  height: 45px;
+  height: max-content;
+  font-size: .9em;
 }
 
 @media(min-width: 768px){
 .basic-story__by-line {
-  margin: 15px 0 20px 0;
+  margin: 0 0 20px 0;
 }
 }
 .basic-story__by-line__line-wrapper {
@@ -372,22 +366,12 @@ h1{
   font-weight: bold;
   font-style: italic;
   padding: 0 8px 0 10px;
-  font-size: 0.8em;
-}
-
-  @media (min-width: 900px){
-    .basic-story__byline__label {
-    font-size: 0.9em;
-  }
-}
-.basic-story__byline__name {
-  font-family: 'Benton Sans Reg', sans-serif;
-  font-size: 0.8em;
-}
-@media (min-width: 900px){
-  .basic-story__byline__name {
   font-size: 0.9em;
 }
+
+.basic-story__byline__name {
+  font-family: 'Benton Sans Reg', sans-serif;
+  font-size: 0.9em;
 }
 /* [end] bylines */
 
@@ -590,14 +574,15 @@ h1{
 
 .basic-story__story-qoute__qoute {
   width: 100%;
-  line-height: 1.5em;
   text-align: center;
   font-family: 'GT-Super-bold', serif;
+  font-size: 1.25em;
 }
 
 @media(min-width: 640px) {
   .basic-story__story-qoute__qoute {
     font-size: 1.75em;
+    line-height: 1.5em;
   }
 }
 
@@ -856,4 +841,79 @@ and (max-device-width : 850px) {
 .square {
   width: 45%;
 }
+}
+
+
+.pandemic-landing__ctas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+  align-items:center;
+}
+
+@media (min-width: 600px) {
+.pandemic-landing__ctas {
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+  margin: 32px auto;
+}
+}
+
+@media (min-width: 900px) {
+  .pandemic-landing__ctas {
+    width: 80%;
+  }
+  }
+@media (min-width: 1800px) {
+  .pandemic-landing__ctas {
+    width: 60%;
+  }
+  }
+
+.pandemic-landing__cta {
+  padding: 10px 16px;
+  text-decoration: none !important;
+  color: black;
+  cursor: pointer;
+  font-family: 'Benton Sans Reg', sans-serif;
+  background: #fafafa;
+  transition: 1s all;
+  font-weight: bold;
+  text-align: center;
+  min-width: 110px;
+  margin: 20px auto;
+}
+
+.pandemic-landing__cta--pivoting {
+  border: #002539 solid 4px;
+}
+.pandemic-landing__cta--pivoting:hover {
+  background-color: rgb(0, 37, 57, 0.4);
+}
+
+.pandemic-landing__cta--education {
+  border: #05c3de solid 4px;
+}
+.pandemic-landing__cta--education:hover {
+  background-color: rgb(5, 195, 222, 0.4);
+}
+
+.pandemic-landing__cta--research {
+  border: rgb(118, 106, 98) solid 4px;
+
+}
+.pandemic-landing__cta--research:hover {
+  background-color: rgb(118, 106, 98, 0.4);
+
+}
+.pandemic-landing__cta--patient-care {
+  border: #cbc46d solid 4px;
+}
+.pandemic-landing__cta--patient-care:hover {
+  background-color: rgb(203, 196, 109, 0.4);
+
 }

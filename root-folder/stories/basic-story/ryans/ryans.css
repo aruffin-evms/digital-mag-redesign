@@ -62,6 +62,10 @@ aside {
   width:100%
 }
 
+.basic-story__by-line__wrapper {
+  border-left: 1px solid grey !important;
+}
+
 .basic-story__by-line{
   float: none;
     height: auto;

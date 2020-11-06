@@ -571,7 +571,7 @@ li {
 
 @media(min-width: 900px) {
   .subscribe__title {
-    font-size: 2.5em;
+    font-size: 2em;
     padding-left: 0;
   }
 }
