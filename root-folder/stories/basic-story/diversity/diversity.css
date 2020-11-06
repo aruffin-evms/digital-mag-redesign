@@ -2,6 +2,30 @@
   margin: 40px 0;
   background-color: rgba(128, 128, 128, 0.2);
 }
+
+.reportMobile{
+display: block;
+}
+
+.reportHide{
+  display: none !important;
+}
+
+.basic-story__content__wrapper {
+  margin: 3% auto;
+}
+
+.basic-story__content__description {
+  margin: 0;
+  width: 100%;
+  font-family: 'Benton Sans Reg', sans-serif;
+  line-height: 1.25em;
+  font-size: 1.5em;
+}
+
+.basic-story__horizontal-rule--first {
+  padding-top: 0;
+}
 .feature__faculty-spotlight__wrapper {
   min-height: 300px;
   max-width: 708px;
@@ -17,7 +41,6 @@
 
 .basic-story__by-line{
   border-left: solid 1px gray;
-  padding-left: 10px;
   position: relative;
   font-style: italic;
   font-size: .9em;
@@ -59,11 +82,14 @@
   float: left;
 }
 
-/* .feature__faculty-spotlight__image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-} */
+.noWrap{
+  white-space: nowrap;
+}
+
+.basic-story__social-share__social-icons{
+  height: 45px;
+  overflow: hidden;
+}
 
 .feature__faculty-spotlight__name {
   font-weight: bold;
@@ -82,11 +108,13 @@
 }
 
 .features__hero__overlay {
-  width: 35%;
-    color: #FFF;
-    position: absolute;
-    top: 10%;
-    left: 10%;
+  width: 33%;
+  color: #000;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  background: rgb(255 255 255 / 40%);
+  padding: 2%;
 }
 
 .heroCaption {
@@ -100,13 +128,11 @@
 }
 
 .basic-story__content__department-label{
-  color:#fff;
+  color: #000;
   font-size:1em;
 }
 
-.basic-story__content{
-  margin: 1em auto;
-}
+
 
 .topText{
     font-size: 1.5em;
@@ -117,19 +143,14 @@
 }
 
 @media (max-width:640px){
-  body{
-    /* you should never add padding or margins to the body or html elements */
-    /* padding: 0 .5em; */
-  }
+
 
   .features__hero__title{
       font-size: 1.5em;
   }
-  .features__hero__overlay {
-    width: 46%;
-top: 60px;
-left: 3%;
-    }
+  .basic-story__content__description {
+    width: 80%;
+  }
 
     .basic-story__content__wrapper{
       width: 95%;
@@ -140,8 +161,9 @@ left: 3%;
     margin: 0;
     }
     .features__hero__overlay h2{
-      font-size: .8em;
-    line-height: 1em;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      width: 52%;
     }
 
     .basic-story__content__department-label {
@@ -162,13 +184,12 @@ left: 3%;
   }
 }
 
-@media (max-width:480px){
+@media (max-width:640px){
   .basic-story__content__department-label {
-      font-size: .5em;
+    font-size: .8em;
+    color: #c7531e;
   }
-    .features__hero__title{
-      font-size: .9em;
-  }
+ 
 
   .basic-story__aside {
     display: block;
@@ -176,8 +197,10 @@ left: 3%;
 }
 
 .features__hero__overlay{
-  width: 75%;
-  top: 124px; 
+  width: 95%; 
+  margin: 5em auto 0;
+  position: unset;
+  color: #000;
 }
 
 .basic-story__hero__image {
@@ -185,20 +208,11 @@ left: 3%;
 }
 }
 
-
-
-
-.styles-for-mobile {
-
-}
-
 @media(min-width: 600px) {
   .basic-story__hero__image{
     height: auto;
   }
-  .basic-story__aside {
-    margin: 17% 5% 2% 2%;
-}
+
 }
 
 @media only screen 
@@ -216,15 +230,34 @@ width: 90%;
 line-height: 1em;
 font-size: 1em;
 }
+.basic-story__aside {
+  margin: 17% 5% 2% 2%;
+}
 
 .features__hero__overlay{
-  width: 45%;
-  top: 15%;
+  width: 608px;
+  margin:0 auto;
+  position: unset;
+  color: #000;
+}
+
+.features__hero__title{
+  font-size: 1.5em;
+}
+
+.basic-story__content__department-label {
+  font-size: .8em;
+  color: #c7531e;
+}
+
+.features__hero__overlay h2 {
+  font-size: 1.1em;
+  line-height: 1.2em;
 }
 .basic-story__social-share {
   margin: 0 .8em;
     float: right;
-    height: auto;
+    height: 50px;
 }
 
 .basic-story__hero__image {
@@ -251,22 +284,74 @@ height:auto;
 }
 
 .basic-story__aside {
-  margin: 0% 5% 2% 2%;
+  margin: 0% auto;
+    width: 608px;
 }
+
+.basic-story__content {
+  margin: 3% auto 0;
 }
+
+}
+
 
 @media(min-width: 900px) {
   .basic-story__aside {
     margin: 1% 5% 2% 2%;
 }
 
+.reportMobile{
+  display: none;
+  }
+
+  .reportHide{
+    display: block !important;
+  }
+
 .basic-story__hero-wrapper{
   height:auto;
 }
 }
 
-@media(min-width: 1800px) {
-  .styles-for-large-desktop-displays {
-    
+
+@media only screen and (max-width: 640px) and (min-width: 300px){
+.basic-story__content {
+    width: 100%;
+}
+}
+@media(max-width : 1024px) {
+  .features__hero__overlay{
+    width: 608px;
+    margin:0 auto;
+    position: unset;
+    color: #000;
   }
+
+  .basic-story__content__department-label {
+    color: #c7531e;
+  }
+}
+@media (min-width : 800px) 
+and(max-width: 1100px){
+  .features__hero__overlay{
+    width: 608px;
+    margin:0 auto;
+    position: unset;
+    color: #000;
+  }
+  .features__hero__overlay{
+  margin-top: 4.5em;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 665px){
+  .features__hero__overlay {
+    width: 608px;
+    margin: 15% auto 0;
+    position: unset;}
+
+    .features__hero__overlay h2 {
+    
+      width: 95%;
+}
 }
