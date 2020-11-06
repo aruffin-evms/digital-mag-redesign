@@ -7,6 +7,25 @@
   overflow: hidden;
 }
 
+.hideCap{
+  display: block;
+  margin: 0 0 3%;
+  font-size: .8em;
+}
+
+.hideCap2{
+  display: none;
+}
+
+.noWrap{
+  white-space: nowrap;
+}
+
+.basic-story__byline__name {
+  font-family: 'Benton Sans Reg', sans-serif;
+  font-size: 0.9em;
+}
+
 .quote {
   width: 60%;
 }
@@ -51,9 +70,7 @@
   width: 870px;
 }
 
-.heroCaption {
-  margin: 0;
-}
+
 
 .feature__faculty-spotlight__name {
   font-weight: bold;
@@ -84,12 +101,11 @@
 }
 
 .features__hero__overlay h1{
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .features__hero__overlay p {
-  font-size: 1.6em;
-  font-style: italic;
+  
 }
 
 .basic-story__content__department-label {
@@ -109,7 +125,7 @@
   .features__hero__overlay{
     position: unset;
     width: 95%;
-    margin: 13% auto 1%;
+    margin: 1% auto;
   }
 
   .basic-story__aside {
@@ -127,7 +143,6 @@
   .basic-story__by-line {
     float: none;
     height: auto;
-    margin: 5% 0;
   }
 
   .basic-story__social-share {
@@ -166,7 +181,7 @@
   }
 
   .basic-story__content__department-label {
-    font-size: .6em;
+    font-size: .7em;
   }
 
   .features__hero__title {
@@ -182,9 +197,6 @@
     height: auto;
   }
 
-  .features__hero__overlay p {
-    font-size: 1.2em;
-}
 
  
   .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
@@ -203,11 +215,38 @@
 .features__hero__overlay h1 {
   font-size: .8em;
 }
+}
 
+
+
+@media (min-width:731px) {
+  .features__hero__overlay {
+    width: 85%;
+}
+.basic-story__by-line{
+  margin-left: 7%;
+}
 
 }
 
-@media (max-width:480px) {}
+@media (min-width:800px) {
+  .features__hero__overlay {
+    width: 75%;
+}
+.basic-story__by-line {
+  margin-left: 13%;
+}
+}
+
+@media (max-width:670px) {
+  .features__hero__overlay {
+    width: 90%;
+}
+.basic-story__by-line{
+  margin-left: 3%;
+}
+
+}
 
 @media only screen and (min-width : 500px) and (max-width : 900px) {
  
@@ -235,30 +274,20 @@
     padding: .8em 0;
   }
 
-  .features__hero__overlay {
-    width: 85%;
-  }
+ 
 
   .basic-story__social-share {
     float: right;
     margin: 0;
-    padding: 2% 3% 0;
   }
 
-  .heroCaption {
-    height: 20px;
-    font-size: .8em;
-    position: absolute;
-    bottom: 263%;
-    left: 14.5%;
-  }
+  
 
   .basic-story__story-qoute__qoute{
     font-size: 1.7em;
   }
   .features__hero__overlay {
-    width: 95%;
-    margin: 20% 0 3% 3%;
+    
 }
 
   .features__hero__overlay h1 {
@@ -266,12 +295,11 @@
 }
 
 .basic-story__by-line{
-  margin: 3% 0 0 13%;
+  
 }
 
 .features__hero__overlay {
-  width: 80%;
-  margin: 7% 0 0 13%;
+  
 }
 
 }
@@ -279,6 +307,10 @@
 @media (min-width:900px) {
   .basic-story__content__department-label {
     font-size: .9em;
+  }
+
+  .hideCap{
+    display: none;
   }
 
   .features__hero__title {
@@ -306,10 +338,6 @@
     font-size: 1em;
   }
 
-  .features__hero__overlay {
-    bottom: -75%;
-  }
-
   .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
     width: 90%;
   }
@@ -327,16 +355,25 @@
   .features__hero__overlay {
     bottom: 20%;
   }
+  .hideCap2{
+    display: block;
+    margin: 0;
+  }
 }
 
-@media only screen and (min-width : 1600px) {
+@media only screen and (min-width : 1300px) {
   .features__hero__overlay {
     font-size: 1em;
   }
 
   .features__hero__overlay {
     bottom: 40%;
-  }
+    left: 40%;
+    width: 40%;
+}
+.basic-story__by-line {
+margin:0;
+}
 
   .features__hero__title {
     font-size: 3em;
@@ -345,17 +382,15 @@
 
 @media (max-width:640px) {
   .features__hero__overlay h1 {
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 .features__hero__overlay p {
-  font-size: 1em;
+ 
 }
 
 .heroCaption {
-  font-size: .8em;
-  position: absolute;
-  bottom: 261%;
+  
 }
 
 }
@@ -364,4 +399,10 @@
 .basic-story__content {
     width: 100%;
 }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 1000px){
+  .features__hero__overlay {
+    right: -10%;
+  }
 }

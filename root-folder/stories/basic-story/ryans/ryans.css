@@ -11,6 +11,10 @@
   margin: 2% 0;
 }
 
+.noWrap{
+  white-space: nowrap;
+}
+
 main{
   margin: 0 0 2em;
 }
@@ -21,11 +25,7 @@ aside {
   float:left;
 }
 
-hr{
-  width:95%;
-  height: 1px;
-  background-color:red
-}
+
 
 .basic-story__social-share__social-icons {
   line-height: 1.1em;
@@ -37,7 +37,7 @@ hr{
 }
 
 .imageSide {
-  width: 55%;
+  width: 60%;
 }
 
 .imageSide img {
@@ -59,6 +59,7 @@ hr{
   font-size: .8em;
   left: 0;
   margin: 0;
+  width:100%
 }
 
 .basic-story__by-line{
@@ -89,7 +90,7 @@ hr{
 }
 
 .basic-story__content__title {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .subText {
@@ -239,20 +240,35 @@ aside {
 and (min-width : 641px) 
 and (max-width : 799px) {
   .hero-wrapper img {
-    width: 672px;
+    width: 100%;
   }
   .hero-wrapper img:nth-child(2) {
     border-left: none;
   }
   aside {
-    width: 100%;
+    width: 608px;
     float: none;
+    margin: 0 auto;
 }
 
 .basic-story__content__wrapper {
   width: 100%;
   float: none;
   padding-right: 0;
+  margin-top: 60px;
+}
+
+.topHidden{
+  width: 608px;
+    margin: 0 auto;
+}
+
+.mbHide{
+  display: none;
+}
+
+.imageSide {
+  margin: 0 auto 20%;
 }
 
 .center_content {
@@ -260,16 +276,22 @@ and (max-width : 799px) {
 }
 
 .basic-story__social-share {
-  float: left;
-    width: 50%;
-}
-.imageSide img {
-  width: 50%;
+  float: right;
+  margin: 0;
 }
 
-.basic-story__content__image-caption {
-  margin: 0 0 0 50%;
+.basic-story__byline__label {
+font-size: .9em;
+ }
+.mbReveal2 {
+  display: inline-flex;
+
 }
+.imageSide img {
+  margin: 0 auto;
+}
+
+
 }
 
 @media only screen 
