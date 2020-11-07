@@ -379,13 +379,9 @@ main {
   width:80%;
 } */
 
-
-
 .basic-story__hero-wrapper {
   height: auto;
 }
-
-
 
 .basic-story__social-share {
   margin-left: 0;
@@ -442,7 +438,7 @@ main {
   }
 
   .basic-story__rust-bar {
-    top: -330px;
+    top: 0;
   }
 
   .basic-story__hero__overlay {
@@ -496,7 +492,7 @@ main {
   }
 
   .basic-story__rust-bar {
-    top: -405px;
+    top: 0;
     left: 14px;
   }
 
@@ -514,7 +510,9 @@ main {
     font-size: 2.1em;
   }
 
-
+  .pushup{
+    margin-top: 200px;
+  }
 
 }
 
@@ -543,6 +541,8 @@ main {
     left: 4%;
     top: 15%;
   }
+
+  
 
   .basic-story__hero__title {
     font-size: 1.5em;
@@ -576,22 +576,38 @@ main {
 }
 
 
+@media (min-width: 900px){
+.basic-story__content__caption{
+  position: relative;
+  top: 9px;
+  width: 180px;
+  color: black;
+  width: 100%;
+
+}
+
+}
+
 
 @media (max-width: 480px) {
   .basic-story__story-qoute__content {
     width: 630px;
   }
-  .pushup {
-    margin-top: -14%;
+  .pushup{
+    margin-top: 172px;
   }
-
   .basic-story__content__caption {
-    top: -263px;
-    width: 200px;
-  }
+    top: 9px;
+    width: 90%;
+    color: #000;
+    font-size: .9em;
+    line-height: 1.3em;
+}
+
+
 
   .basic-story__rust-bar {
-    top: -258px;
+    top: 0;
     left: 20px;
   }
 
