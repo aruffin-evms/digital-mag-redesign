@@ -50,10 +50,56 @@
   font-size: 90px;
   padding-top: 12px;
 }
-@media(min-width:600px){
-  .basic-story__dropcap {
-    font-size: 100px;
-    padding-top: 16px;
+
+
+@media (min-width: 900px) {
+  .small_title {
+    display: block;
+    top: 4%;
+    margin: 1% auto 4%;
+  }
+
+  .small_hide,
+  .side_show {
+    display: none;
+  }
+
+  .feature__hero__image {
+    width: 100%;
+    margin-bottom: 0px;
+    transform: none;
+    margin-left: 0px;
+  }
+
+  .features__hero__department {
+    font-size: 0.8em;
+    font-family: "Benton Sans Reg";
+  }
+  .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom,
+  .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
+    width: 90%;
+  }
+  .basic-story__story-qoute__content {
+    width: 55% !important;
+  }
+  .basic-story__story-qoute__qoute {
+    font-size: 1.5em;
+    line-height: 1.5em !important;
+  }
+
+  @media (min-width: 900px) {
+    .basic-story__story-qoute__qoute {
+      font-size: 2.1em;
+    }
+  }
+  .basic-story__content__wrapper {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  .basic-story__content {
+    margin: 0 auto;
+
   }
 }
 
