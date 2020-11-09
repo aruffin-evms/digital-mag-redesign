@@ -6,11 +6,99 @@
 main {
   margin: 0 0 2em;
 }
-
+/* overlay edit */
 .basic-story__hero__title {
-  font-size: 1.5em;
+  font-size:1em;
 }
 
+
+.basic-story__hero{
+  position: relative;
+}
+
+
+.basic-story__hero__overlay{
+  height: auto;
+  position: absolute;
+  width: 64%;
+  margin: 0;
+  left: 6%;
+  top: unset; 
+  bottom: 12px;
+
+}
+
+.basic-story__hero__title {
+  margin: 0;
+}
+
+.basic-story__hero__department {
+  font-size: .9em;
+}
+
+@media(min-width: 600px) {
+  
+
+  .basic-story__hero__department {
+    font-size: 1.1em;
+}
+
+.basic-story__hero__overlay {
+  top: unset;
+
+}
+
+.basic-story__hero__department {
+  font-size: 1.2em;
+}
+
+.basic-story__hero__title {
+  margin: 0;
+  font-size: 2em;
+}
+}
+@media(min-width:900px){
+  .basic-story__hero__title {
+    font-size: 3em;
+}
+
+.basic-story__hero__overlay {
+  width: 85%;
+  bottom: 20px;
+  margin: 0;
+}
+
+.basic-story__hero__title {
+  width: 45%;
+}
+
+
+}
+
+@media(min-width: 1300px) {
+  .basic-story__hero__title {
+    font-size: 3.25em;
+}
+
+.basic-story__hero__overlay {
+  left: 435px;
+}
+}
+
+
+@media(min-width: 1600px) {
+  .basic-story__hero__overlay {
+    left: 490px;
+}
+  
+  .basic-story__hero__title {
+    font-size: 4em;
+    width: 50%;
+}
+}
+
+
+/* end overlay edit */
 .slide-up {
   animation: slideUp 1.5s;
 }
@@ -35,10 +123,7 @@ main {
   text-transform: uppercase;
 }
 
-.basic-story__rust-bar {
-  top: -221px;
-  left: 24px;
-}
+
 
 .basic-story__dropcap {
   color: #c7531e;
@@ -127,11 +212,7 @@ main {
 
 }
 
-.basic-story__hero__overlay {
-  width: 53%;
-  left: 7%;
-  top: 11%;
-}
+
 
 .basic-story__content__description {
   margin: 10px 0 45px;
@@ -177,30 +258,54 @@ main {
 }
 
 /* [start] image with caption */
+
+
 .basic-story__content__image-wrapper {
   width: 1182px;
   height: 784px;
-  margin: 1em auto 0;
+  margin: 1em auto;
 }
 
 .basic-story__content__image {
   height: 100%;
-  width: 100%;
+  width: 203%;
   object-fit: cover;
+  position: relative;
+  top: 15px;
+  right: 400px;
 }
 
-.basic-story__content__image-caption {
-  border-left: solid 1px gray;
-  width: 60%;
-  margin: 15px auto 48px;
-  padding-left: 10px;
-}
 
 .basic-story__content__caption {
-  display: inline-flex;
-  font-family: 'Benton Sans Lt';
-  width: 300px;
+  top: 9px;
+    width: 95% !important;
+    color: #000;
+    font-size: .9em;
+    line-height: 1.3em;
+    margin: 0 auto;
+    font-family: 'Benton Sans Reg';
 }
+.basic-story__rust-bar {
+  top: 0;
+  left:0;
+  margin-bottom: 10px;
+}
+
+.basic-story__content__image-wrapper {
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media(min-width:900px){
+
+}
+
+.pushup{
+  margin-top: 2.5em;
+}
+
+
 
 /* [end] image with caption */
 
@@ -396,10 +501,7 @@ main {
   padding: 15px 0;
 }
 
-.basic-story__content__image-wrapper {
-  width: auto;
-  height: auto;
-}
+
 
 .basic-story__aside {
   margin: 20px 0;
@@ -416,7 +518,7 @@ main {
 
 
 .basic-story__hero__department {
-  font-size: 1.2em;
+  font-family: 'Benton Sans Reg', sans-serif;
 }
 
 @media only screen and (max-width: 897px) and (min-width: 641px) {
@@ -442,14 +544,11 @@ main {
   }
 
   .basic-story__hero__overlay {
-    width: 65%;
-    margin: 0;
-    left: 4%;
-    top: 15%;
+   
   }
 
   .basic-story__hero__title {
-    font-size: 1.8em;
+
     margin: 0;
   }
 
@@ -480,21 +579,7 @@ main {
     width: 25%;
   }
 
-  .basic-story__content__caption {
-    top: -397px;
-    margin-left: 2%;
-    font-size: 1.4em;
-  }
 
-  .basic-story__hero__title {
-    font-size: 4em;
-    width: 75%;
-  }
-
-  .basic-story__rust-bar {
-    top: 0;
-    left: 14px;
-  }
 
   .basic-story__story-qoute {
     width: 60%;
@@ -510,20 +595,16 @@ main {
     font-size: 2.1em;
   }
 
-  .pushup{
-    margin-top: 200px;
-  }
+ 
 
 }
 
 @media  (max-width:884px) {
   .basic-story__hero__title {
-    font-size: 2em;
+ 
   }
 
-  .basic-story__hero__overlay {
-    top: 12%;
-  }
+
 }
 
 @media (max-width:900px) {
@@ -531,26 +612,18 @@ main {
     width: 630px;
   }
 
-  .basic-story__rust-bar {
-    top: -330px;
-  }
 
-  .basic-story__hero__overlay {
-    width: 65%;
-    margin: 0;
-    left: 4%;
-    top: 15%;
-  }
+
+
 
   
 
   .basic-story__hero__title {
-    font-size: 1.5em;
     margin: 0;
   }
 
   .basic-story__hero__department {
-    font-size: .9em;
+    
   }
 
   .basic-story__social-share {
@@ -593,38 +666,13 @@ main {
   .basic-story__story-qoute__content {
     width: 630px;
   }
-  .pushup{
-    margin-top: 172px;
-  }
-  .basic-story__content__caption {
-    top: 9px;
-    width: 90%;
-    color: #000;
-    font-size: .9em;
-    line-height: 1.3em;
-}
 
 
 
-  .basic-story__rust-bar {
-    top: 0;
-    left: 20px;
-  }
 
-  .basic-story__hero__overlay {
-    width: 65%;
-    margin: 0;
-    left: 4%;
-    top: 3%;
-  }
-
-  .basic-story__hero__title {
-    font-size: .8em;
-    margin: 0;
-  }
 
   .basic-story__hero__department {
-    font-size: .7em;
+
   }
 
   .basic-story__social-share {
@@ -648,16 +696,11 @@ main {
 
 }
 
-@media (max-width:415px) {
-  .basic-story__hero__overlay {
-    top: 10%;
-  }
-}
+
 
 @media (min-width:560px) and (max-width:570px) {
   .basic-story__hero__overlay {
-    width: 50%;
-    top: 23%;
+   
   }
 
 }
@@ -665,19 +708,18 @@ main {
 
 @media (min-width:768px) and (max-width:810px) {
   .basic-story__hero__overlay {
-    top: 8%;
-    /* check ipad 768 if this changes */
+  
   }
 
 }
 
 @media (min-width:800px) and (max-width:1229px) {
   .basic-story__hero__title {
-    font-size: 2.5em;
+    
   }
   
 .basic-story__hero__overlay {
-  top: 8%;
+
 }
 }
 
@@ -685,22 +727,20 @@ main {
 @media (min-width:800px) and (max-width:1023px) {
 
 .basic-story__hero__overlay {
-  top: 18%;
-  width: 60%;
+
 }
 }
 
 @media (min-width:1024px) and (max-width:1100px) {
 
   .basic-story__hero__overlay {
-    top: 11%;
-    width: 45%;
+  
   }
   }
 
   @media (min-width:1230px) and (max-width:1389px) {
     .basic-story__hero__title {
-      font-size: 3em;
+     
     }
   }
 
