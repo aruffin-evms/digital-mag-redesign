@@ -34,9 +34,15 @@
     margin-left: 0 !important;
     width: 70% !important;
   }
+
+  .basic-story__hero__overlay-title {
+    width: 100% !important;
+    margin-top: 30px;
+    margin-left: 32% !important;
+  }
 }
 
-@media (min-width: 899px) {
+@media (max-width: 899px) {
   .basic-story__by-line__label {
     padding: 0 8px !important;
   }
@@ -62,6 +68,17 @@
     margin-top: 30px;
     display: flex;
     align-self: center;
+    width: 100% !important;
+  }
+}
+
+@media(min-width: 600px) and (max-width: 899px) {
+  .basic-story__hero {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .basic-story__hero__overlay-title {
+    margin-top: 50px !important;
   }
 }
 
