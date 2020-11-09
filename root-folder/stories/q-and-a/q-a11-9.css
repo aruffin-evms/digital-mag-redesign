@@ -1,0 +1,17 @@
+@media (min-width: 1200px){
+.q-and-a__hero__overlay {
+  top: 15%;
+  left: 27%;
+}
+  
+  .q-and-a__hero__department {
+    font-size: 2em;
+}
+  
+  .q-and-a__hero__subtitle {
+    font-family: 'Benton Sans Reg', sans-serif;
+    font-size: 1.5em;
+    width: 80%;
+    line-height: 1.5em;
+}
+  }
