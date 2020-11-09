@@ -271,7 +271,7 @@ body {
 
 @media(min-width: 900px) {
   .q-and-a__content__description {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 
@@ -366,11 +366,11 @@ body {
   .q-and-a__content__caption {
     top: -80%;
     margin-bottom: -213px;
-    margin-left: 40px;
+    margin-left: 90px;
     width: 450px;
-    font-size: 1.5em;
-    line-height: 1.1em;
-  }
+    font-size: 2em;
+    line-height: 1.5em;
+}
 }
 .q-and-a__content__image-caption {
   border-left: solid 1px gray;
