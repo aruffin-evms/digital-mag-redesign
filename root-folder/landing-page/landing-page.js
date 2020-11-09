@@ -1,6 +1,3 @@
-// const mobileIcon = document.getElementById('mobileIcon')
-// const sideNav = document.getElementById('sideNav')
-
 const qouteDrawer = document.getElementById('qouteDrawer')
 const qouteDrawerInitialHeight = qouteDrawer.style.height;
 const qouteText = document.getElementById('qouteText')
@@ -15,20 +12,6 @@ const gridItemContent = document.querySelector('.landing-page__featured-stories_
 
 const additionalStories = document.querySelectorAll('.landing-page__story-block')
 
-// const expandList = document.getElementById('expandList')
-// const featuresList = document.getElementById('featuresList')
-// const departmentsList = document.getElementById('departmentsList')
-
-// const toggleSubnav = document.getElementById('toggleSubnav')
-// const subnav = document.getElementById('subnav')
-
-// const toggleFeatureNav = document.getElementById('toggleFeatureNav')
-// const toggleDepartmentNav = document.getElementById('toggleDepartmentNav')
-
-
-// const featureMenu = document.getElementById('featureMenu')
-// const departmentMenu = document.getElementById('departmentMenu')
-
 const animationVideo = document.getElementById('animationVideo')
 
 const colors = {
@@ -40,27 +23,40 @@ const forwardArrow = document.getElementById('forwardArrow')
 
 const carousel = document.querySelector('.landing-page__stories-carousel__carousel__wrapper')
 
-const scrollDistance = 200;
+const scrollDistance = 250;
 
-// todo: create function that checks scroll position for looping carousel
+function hideArrows(slider) {
+  if(slider.scrollLeft >= 370) {
+    backArrow.style.visibility = 'visible'
+    forwardArrow.style.visibility = 'hidden'
+  } 
+  
+  if(slider.scrollLeft <= 10) {
+    backArrow.style.visibility = 'hidden'
+    forwardArrow.style.visibility = 'visible'
+  }
+}
+
+hideArrows(carousel)
+
 backArrow.addEventListener('click', function() {
   carousel.scrollLeft -= scrollDistance
+
+  if(carousel.scrollLeft <= 20) {
+    backArrow.style.visibility = 'hidden'
+  } else {
+    forwardArrow.style.visibility = 'visible'
+  }
 })
 
 forwardArrow.addEventListener('click', function() {
   carousel.scrollLeft += scrollDistance
 
-  clickCount++ 
-
-  console.log(clickCount)
-
-  // if(clickCount == 3) {
-  //   forwardArrow.style.display = 'none'
-  // }
-
-  // if(clickCount > 0) {
-
-  // }
+  if(carousel.scrollLeft >= 350) {
+    forwardArrow.style.visibility = 'hidden'
+  } else {
+    backArrow.style.visibility = 'visible'
+  }
 })
 
 qouteDrawer.addEventListener('click', function() {
@@ -126,10 +122,6 @@ observer = new IntersectionObserver((entries) => {
       setTimeout(() => {
         animationVideo.play()
       }, 4100);
-      console.log('intersection ratio ' + entry.intersectionRatio)
-      console.log('intersection rect ' + entry.intersectionRect)
-    } else {
-      // entry.target.classList.remove('slide-up');
     }
   });
 });
@@ -144,10 +136,6 @@ observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('slide-left');
-      console.log('intersection ratio ' + entry.intersectionRatio)
-      console.log('intersection rect ' + entry.intersectionRect)
-    } else {
-      // entry.target.classList.remove('slide-up');
     }
   });
 });
@@ -162,10 +150,6 @@ observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('slide-right');
-      console.log('intersection ratio ' + entry.intersectionRatio)
-      console.log('intersection rect ' + entry.intersectionRect)
-    } else {
-      // entry.target.classList.remove('slide-up');
     }
   });
 });
@@ -180,124 +164,11 @@ const slideQoute = document.querySelector('.animate-qoute-left');
 observer = new IntersectionObserver(entry => {
   if(entry.isIntersecting) {
     entry.target.classList.add('animate-qoute')
-    console.log('qoute')
   }
 });
 
 
 observer.observe(slideQoute)
-
-// function changeIconColor(color) {
-//   iconBars.forEach(function(bar) {
-//     bar.style.backgroundColor = color
-//   })
-// }
-
-// mobileIcon.addEventListener('click', function() {
-//   this.classList.toggle('icon-transform')
-//   sideNav.style.width = "300px";
-//   changeIconColor('white')
-  
-  
-//   if(!this.classList.contains('icon-transform')) {
-//     sideNav.style.width = 0
-//     changeIconColor('#333')
-//   }
-// })
-
-// expandList.addEventListener('click', function() {
-//   console.log(this.innerHTML)
-//   if(this.innerHTML === 'expand_more') {
-//     this.innerHTML = 'expand_less'
-//     showList(featuresList)
-//   } else {
-//     this.innerHTML = 'expand_more'
-//     hideList(featuresList)
-//   }
-// })
-
-// expandDeptList.addEventListener('click', function() {
-//   if(this.innerHTML === 'expand_more') {
-//     this.innerHTML = 'expand_less'
-//     showList(departmentsList)
-//   } else {
-//     this.innerHTML = 'expand_more'
-//     hideList(departmentsList)
-//   }
-// })
-
-// expandAlumniList.addEventListener('click', function() {
-//   if(this.innerHTML === 'expand_more') {
-//     this.innerHTML = 'expand_less'
-//     showList(alumniList)
-//   } else {
-//     this.innerHTML = 'expand_more'
-//     hideList(alumniList)
-//   }
-// })
-
-// function showList(list) {
-//   list.style.display = 'block'
-//   list.style.maxHeight = '200px'
-//   list.style.transition ='max-height 1s'
-//   list.style.opacity = '1'
-// }
-
-// function hideList(list) {
-//   list.style.display = 'none'
-//   list.style.maxHeight = '0px'
-//   list.style.transition ='max-height 1s'
-// }
-
-
-// toggleSubnav.addEventListener('click', function() {
-//   if(this.innerHTML === 'expand_more') {
-//     this.innerHTML = 'expand_less'
-//     showSubnav()
-//   } else {
-//     this.innerHTML = 'expand_more'
-//     hideSubnav()
-//   }
-// })
-
-// function showSubnav() {
-//   subnav.style.height = '50px'
-// }
-
-// function hideSubnav() {
-//   subnav.style.height = '0'
-// }
-
-// toggleFeatureNav.addEventListener('click', function() {
-//   hideMenu(departmentMenu)
-//   if(this.innerHTML === 'expand_more') {
-//     this.innerHTML = 'expand_less'
-//     showMenu(featureMenu)
-//   } else {
-//     this.innerHTML = 'expand_more'
-//     hideMenu(featureMenu)
-//   }
-// })
-
-// toggleDepartmentNav.addEventListener('click', function() {
-//   hideMenu(featureMenu)
-//   if(this.innerHTML === 'expand_more') {
-//     this.innerHTML = 'expand_less'
-//     showMenu(departmentMenu)
-//   } else {
-//     this.innerHTML = 'expand_more'
-//     hideMenu(departmentMenu)
-//   }
-// })
-
-// function showMenu(menu) {
-//  menu.style.maxHeight = '500px'
-// }
-
-// function hideMenu(menu) {
-//   menu.style.maxHeight = '0'
-// }
-
 
 window.onload = function() {
   Particles.init({

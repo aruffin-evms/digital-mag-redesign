@@ -2,4 +2,8 @@
   .features__hero__title {
     margin:10px 0;
   }
+
+  .feature__hero__image {
+    width: 50% !important;
+  }
 }

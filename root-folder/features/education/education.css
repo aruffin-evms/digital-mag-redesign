@@ -5,9 +5,17 @@
   .features__hero__department {
     margin-left: 0px;
   }
+  .feature__hero__image {
+    width: 50% !important;
+  }
 }
+
 @media (min-width:900px){
   .features__hero__overlay {
     left: 30%;
   }
+}
+
+.basic-story__by-line {
+  height: auto !important;
 }

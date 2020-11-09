@@ -3,9 +3,12 @@
   padding: 0
 }
 
+main {
+  margin: 0 0 2em;
+}
 
 .basic-story__hero__title {
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 .slide-up {
@@ -13,7 +16,7 @@
 }
 
 .slide-left {
-  animation: slideLeft 1.5s; 
+  animation: slideLeft 1.5s;
 }
 
 .slide-right {
@@ -25,15 +28,16 @@
   width: 100%;
 }
 
-.basic-story__hero__image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+
 
 .basic-story__lead-in {
   color: #c7531e;
   text-transform: uppercase;
+}
+
+.basic-story__rust-bar {
+  top: -221px;
+  left: 24px;
 }
 
 .basic-story__dropcap {
@@ -47,15 +51,16 @@
 }
 
 .basic-story__content {
-  max-width: 1440px;
-  width: 100%;
+  max-width: 608px;
+  width: 95%;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 .basic-story__content__wrapper {
   max-width: 704px;
-  margin: 32px auto 0;
+  margin: 0 auto;
 }
 
 .basic-story__content__title {
@@ -71,10 +76,7 @@
   margin-left: 15%;
 }
 
-.basic-story__social-share__title {
-  text-transform: uppercase;
-  font-size: 12px;
-}
+
 
 /* [start] social icons */
 .basic-story__social-share__social-icons {
@@ -87,6 +89,7 @@
 .basic-story__social-share__social-icon {
   font-size: 28px !important;
 }
+
 /* [end] social icons */
 
 /* taken from different stylesheet */
@@ -106,31 +109,36 @@
   margin: 0;
 }
 
-.fb{
+.fb {
 
-  background-image: url(https://www.evms.edu/uploads/social-icons/facebook.svg); 
-}
-
-.ig{
-  background-image: url(https://www.evms.edu/uploads/social-icons/instagram.svg); 
-}
-.in{
-  background-image: url(https://www.evms.edu/uploads/social-icons/LinkedIn.svg); 
-}
-.tw{
-  background-image: url(https://www.evms.edu/uploads/social-icons/twitter.svg); 
-
+  background-image: url(https://www.evms.edu/uploads/social-icons/facebook.svg);
 }
 
-.basic-story__hero__overlay{
-  width: 470px;
-  top: 18%;
+.ig {
+  background-image: url(https://www.evms.edu/uploads/social-icons/instagram.svg);
 }
+
+.in {
+  background-image: url(https://www.evms.edu/uploads/social-icons/LinkedIn.svg);
+}
+
+.tw {
+  background-image: url(https://www.evms.edu/uploads/social-icons/twitter.svg);
+
+}
+
+.basic-story__hero__overlay {
+  width: 53%;
+  left: 7%;
+  top: 11%;
+}
+
 .basic-story__content__description {
   margin: 10px 0 45px;
-  width: 90%;
+  width: 100%;
   font-family: 'Benton Sans Reg';
   line-height: 32px;
+  font-size: 1.1em;
 }
 
 .basic-story__content__department-label {
@@ -142,8 +150,7 @@
 
 /* [start] by lines */
 .basic-story__by-line {
-  float: right;
-  height: 100px;
+  height: auto;
   width: auto;
   border-left: 1px solid rgba(128, 128, 128, 0.8);
   margin: 20px 0 0 50px;
@@ -158,30 +165,22 @@
   flex-direction: row;
 }
 
-.basic-story__byline__label {
-  font-family: 'Calluna';
-  font-weight: bold;
-  font-style: italic;
-  font-size: 16px;
-  padding: 0 10px 0 16px;
-}
 
-.basic-story__byline__name {
-  font-family: 'Benton Sans Reg';
-  font-size: 16px;
+.basic-story__iframe-wrapper {
+  margin: 1em auto;
 }
 
 /* [end] by lines */
 
-.underCaption{
-  margin-top:-5%;
+.underCaption {
+  margin-top: -5%;
 }
 
 /* [start] image with caption */
 .basic-story__content__image-wrapper {
   width: 1182px;
   height: 784px;
-  margin: 48px auto 16px;
+  margin: 1em auto 0;
 }
 
 .basic-story__content__image {
@@ -197,15 +196,16 @@
   padding-left: 10px;
 }
 
-.basic-story__content__caption{
+.basic-story__content__caption {
   display: inline-flex;
   font-family: 'Benton Sans Lt';
-  width: 400px;
+  width: 300px;
 }
+
 /* [end] image with caption */
 
 .basic-story__story-qoute__wrapper {
-  margin: 64px auto;
+  margin: 0 auto;
 }
 
 .basic-story__story-qoute__qoutation-mark {
@@ -215,7 +215,7 @@
 }
 
 .qoutation-mark--top {
-  font-size: 100px !important; 
+  font-size: 100px !important;
   transform: rotate(180deg);
 }
 
@@ -235,7 +235,7 @@
 .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom {
   border-bottom: 1px solid gray;
   margin: 0 auto;
-  width: 976px;
+  width: auto;
   position: relative;
   top: -5px;
   z-index: -1;
@@ -244,7 +244,7 @@
 .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
   border-top: 1px solid gray;
   margin: 0 auto;
-  width: 976px;
+  width: auto;
   position: relative;
   top: 5px;
   z-index: -1;
@@ -258,12 +258,13 @@
 }
 
 .basic-story__story-qoute__qoute {
-  width: 100%;
-  font-size: 40px;
-  line-height: 42px;
+  width: 90%;
+  font-size: 1.2em;
+  line-height: 1.5em;
   text-align: center;
   font-family: 'GT-Super-bold';
 }
+
 /* [end] story pull qoute  */
 
 .basic-story__horizontal-rule {
@@ -295,6 +296,7 @@
   width: 60%;
   height: 300px;
 }
+
 /* [end] more stories carousel */
 
 /* [start] subscribe module */
@@ -367,7 +369,8 @@
   padding-top: 20px;
   font-family: 'Benton Sans Reg';
 }
-/* [end] subscribe module */  
+
+/* [end] subscribe module */
 
 /* sidebar start */
 /* main{
@@ -375,152 +378,329 @@
 
   width:80%;
 } */
-aside{
 
-  width:15%;
-}
-
-@media (max-width:480px) {
-  .basic-story__hero-wrapper{
-    height:auto;
-  }
-
-  .basic-story__content{
-    width: 95%;
-  }
-
-  .basic-story__hero__overlay {
-    width: 250px;
-    font-size: .7em;
-}
-aside {
-  width: 90%;
-  padding: 2%;
-}
-.basic-story__social-share{
-  margin-left:0;
-}
-
-.basic-story__by-line{
-  margin: 20px 0 0 5%;
-}
-.basic-story__story-qoute__content{
-  width: 400px;
-    padding: 15px 0;
-}
-
-.basic-story__content__image-wrapper{
-  width: auto;
+.basic-story__hero-wrapper {
   height: auto;
 }
+
+.basic-story__social-share {
+  margin-left: 0;
 }
 
-@media (max-width : 900px) {
-  .basic-story__hero-wrapper{
-    height:auto;
-  }
-
-  .basic-story__content{
-    width: 95%;
-  }
-
-  .basic-story__hero__overlay {
-    width: 250px;
-    font-size: .7em;
-    top: 4%;
-}
-aside {
-  width: 90%;
-  padding: 2%;
-}
-.basic-story__social-share{
-  margin-left:0;
+.basic-story__by-line {
+  margin: 0;
 }
 
-.basic-story__by-line{
-  margin: 20px 0 0 5%;
-}
-.basic-story__story-qoute__content{
-  width: 400px;
+.basic-story__story-qoute__content {
+  width: 350px;
   padding: 15px 0;
 }
 
-.basic-story__story-qoute__qoute {
-  width: 90%;
-  font-size: 1em;
-}
-
-.basic-story__rust-bar{
-  top: -224px;
-  left: 22px;
-}
-
-.basic-story__content__image-wrapper{
+.basic-story__content__image-wrapper {
   width: auto;
   height: auto;
 }
-.basic-story__hero__title {
-  font-size: 2.5em;
+
+.basic-story__aside {
+  margin: 20px 0;
+  float: none;
+  display: block
 }
 
-.basic-story__hero-wrapper{
-  height:auto;
-}
-
-.basic-story__content{
-  width: 95%;
-}
-
-.basic-story__hero__overlay {
-  width: 250px;
-  font-size: .7em;
-}
-aside {
-width: 90%;
-padding: 2%;
-}
-.basic-story__social-share{
-margin-left:0;
-}
-
-.basic-story__by-line{
-margin: 20px 0 0 5%;
-}
-.basic-story__story-qoute__content {
-width: 800px;
-}
-
-.basic-story__rust-bar {
-top: -340px;
-left: 22px;
-}
-
-.basic-story__story-qoute__qoute {
-width: 90%;
-font-size: 1em;
+.basic-story__social-share {
+  margin: 32px 10px;
+  float: none;
+  width: auto;
 }
 
 
-.basic-story__content__image-wrapper{
-width: auto;
-height: auto;
-}
-.basic-story__hero__title {
-font-size: 2.5em;
-}
+
+.basic-story__hero__department {
+  font-size: 1.2em;
 }
 
-@media (max-width : 825px) {
-  .basic-story__hero__overlay {
-  top: -2%;
-  width: 250px;
+@media only screen and (max-width: 897px) and (min-width: 641px) {
+  .basic-story__aside {
+    margin: 0% auto;
+    width: 608px;
   }
 }
 
-@media (max-width : 600px) {
+
+
+@media(min-width: 812px) and (max-width:899px) {
+  .basic-story__aside {
+    width: 72%;
+  }
+
+  .basic-story__story-qoute__content {
+    width: 630px;
+  }
+
+  .basic-story__rust-bar {
+    top: 0;
+  }
+
+  .basic-story__hero__overlay {
+    width: 65%;
+    margin: 0;
+    left: 4%;
+    top: 15%;
+  }
+
+  .basic-story__hero__title {
+    font-size: 1.8em;
+    margin: 0;
+  }
+
+  .basic-story__hero__department {
+    font-size: .9em;
+  }
+
+  .basic-story__social-share {
+    float: right;
+    width: 45%;
+    margin-top: 0;
+  }
+
+  .basic-story__by-line {
+    width: 50%;
+  }
+
+}
+
+@media (min-width : 900px) {
+
+  .basic-story__aside {
+    float: right;
+    margin: -7px 0 0 3%;
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    width: 25%;
+  }
+
+  .basic-story__content__caption {
+    top: -397px;
+    margin-left: 2%;
+    font-size: 1.4em;
+  }
+
+  .basic-story__hero__title {
+    font-size: 4em;
+    width: 75%;
+  }
+
+  .basic-story__rust-bar {
+    top: 0;
+    left: 14px;
+  }
+
+  .basic-story__story-qoute {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .basic-story__story-qoute__wrapper {
+    width: 80%;
+  }
+
+  .basic-story__story-qoute__qoute {
+    width: 100%;
+    font-size: 2.1em;
+  }
+
+  .pushup{
+    margin-top: 200px;
+  }
+
+}
+
+@media  (max-width:884px) {
+  .basic-story__hero__title {
+    font-size: 2em;
+  }
+
+  .basic-story__hero__overlay {
+    top: 12%;
+  }
+}
+
+@media (max-width:900px) {
+  .basic-story__story-qoute__content {
+    width: 630px;
+  }
+
+  .basic-story__rust-bar {
+    top: -330px;
+  }
+
+  .basic-story__hero__overlay {
+    width: 65%;
+    margin: 0;
+    left: 4%;
+    top: 15%;
+  }
+
+  
+
   .basic-story__hero__title {
     font-size: 1.5em;
+    margin: 0;
+  }
+
+  .basic-story__hero__department {
+    font-size: .9em;
+  }
+
+  .basic-story__social-share {
+    float: right;
+    width: 45%;
+    margin-top: 0;
+  }
+
+  .basic-story__by-line {
+    width: 50%;
+  }
+
+
+
+  /* .basic-story__aside {
+  display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 94%;
+} */
+
+}
+
+
+@media (min-width: 900px){
+.basic-story__content__caption{
+  position: relative;
+  top: 9px;
+  width: 180px;
+  color: black;
+  width: 100%;
+
+}
+
+}
+
+
+@media (max-width: 480px) {
+  .basic-story__story-qoute__content {
+    width: 630px;
+  }
+  .pushup{
+    margin-top: 172px;
+  }
+  .basic-story__content__caption {
+    top: 9px;
+    width: 90%;
+    color: #000;
+    font-size: .9em;
+    line-height: 1.3em;
+}
+
+
+
+  .basic-story__rust-bar {
+    top: 0;
+    left: 20px;
+  }
+
+  .basic-story__hero__overlay {
+    width: 65%;
+    margin: 0;
+    left: 4%;
+    top: 3%;
+  }
+
+  .basic-story__hero__title {
+    font-size: .8em;
+    margin: 0;
+  }
+
+  .basic-story__hero__department {
+    font-size: .7em;
+  }
+
+  .basic-story__social-share {
+    float: right;
+    width: 44%
+  }
+
+  .basic-story__by-line {
+    width: 49%;
+  }
+
+  .basic-story__aside {
+    display: block;
+    padding: 0 2%;
+  }
+
+  .basic-story__byline__label,
+  .basic-story__byline__name {
+    font-size: 0.8em;
+  }
+
+}
+
+@media (max-width:415px) {
+  .basic-story__hero__overlay {
+    top: 10%;
   }
 }
 
+@media (min-width:560px) and (max-width:570px) {
+  .basic-story__hero__overlay {
+    width: 50%;
+    top: 23%;
+  }
+
+}
+
+
+@media (min-width:768px) and (max-width:810px) {
+  .basic-story__hero__overlay {
+    top: 8%;
+    /* check ipad 768 if this changes */
+  }
+
+}
+
+@media (min-width:800px) and (max-width:1229px) {
+  .basic-story__hero__title {
+    font-size: 2.5em;
+  }
+  
+.basic-story__hero__overlay {
+  top: 8%;
+}
+}
+
+
+@media (min-width:800px) and (max-width:1023px) {
+
+.basic-story__hero__overlay {
+  top: 18%;
+  width: 60%;
+}
+}
+
+@media (min-width:1024px) and (max-width:1100px) {
+
+  .basic-story__hero__overlay {
+    top: 11%;
+    width: 45%;
+  }
+  }
+
+  @media (min-width:1230px) and (max-width:1389px) {
+    .basic-story__hero__title {
+      font-size: 3em;
+    }
+  }
 

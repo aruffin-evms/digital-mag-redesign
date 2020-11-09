@@ -90,6 +90,14 @@
   top: -50px;
 }
 
+@media(max-width: 599px) {
+  .q-and-a__qoutation-mark {
+    height: 27px !important;
+    position: absolute;
+    top: -35px;
+  }
+}
+
 .q-and-a__wrapper {
   max-width: 1182px;
   margin: 0 auto;
@@ -143,7 +151,7 @@
 
 @media (min-width: 900px) {
   .q-and-a__hero__title {
-    font-size: 2em;
+    font-size: 4em;
   }
 }
 
@@ -171,7 +179,7 @@
 
 .q-and-a__content {
   max-width: 1440px;
-  width: 90%;
+  width: 95%;
   height: 100%;
   margin: 0 auto;
 }
@@ -270,7 +278,6 @@
 }
 
 .q-and-a__byline__label {
-  font-family: 'Calluna', serif;
   font-weight: bold;
   font-style: italic;
   font-size: 16px;
@@ -278,7 +285,6 @@
 }
 
 .q-and-a__byline__name {
-  font-family: "Benton Sans Reg";
   font-size: 16px;
 }
 
@@ -300,7 +306,7 @@
   width: 100%;
   max-width: 90vw;
   height: auto;
-  margin: 48px auto 16px;
+  margin: 27px auto 11px;
 }
 
 @media (min-width: 900px) {
@@ -350,7 +356,7 @@
 .q-and-a__content__image-caption {
   border-left: solid 1px gray;
   width: 100%;
-  margin: 15px auto 48px;
+  margin: 15px auto;
   padding-left: 10px;
 }
 
@@ -589,8 +595,9 @@
 @media (max-width:480px) {
 .q-and-a__hero__overlay{
     width: 350px;
-    top: 0;
-    left: 1%;
+    width: 350px;        
+    top: 65px;
+    left: 6%;
   }
   .q-and-a__hero__department{
     font-size: .7em;
@@ -606,8 +613,14 @@
   }    
 
   .q-and-a__aside{
-    margin: 5% auto 0
+    margin: 8% 0;
+    width: auto;
   }
+  .basic-story__social-share {
+    float: right;
+    margin:0; 
+
+}
   .q-and-a__content__description{
     width: 100%;
     font-size: 1em;
@@ -641,11 +654,22 @@
   }
   .q-and-a__hero__overlay{
     width: 350px;
+    top: 71px;    
+    left: 6%;
   }
 
   .q-and-a__aside{
-    margin: 5% auto 0
+    margin: 5% auto 0;
+    width: auto;
   }
+  .basic-story__social-share {
+    float: right;
+}
+
+.basic-story__social-share {
+  float: right;
+  margin: 0;
+}
   .q-and-a__content__description{
     width: 100%;
     font-size: 1em;
@@ -663,3 +687,4 @@
       height: 250px;
     }
   }
+

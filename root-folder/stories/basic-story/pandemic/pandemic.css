@@ -24,6 +24,44 @@ label{
   width:95%;
 }
 
+
+
+@media (max-width:640px){
+body{
+  background-size: 0;
+}
+
+.basic-story__by-line {
+  margin: 0;
+}
+}
+
+@media (max-width:740px){
+  body{
+    background-size: 0;
+  }
+  
+  .basic-story__by-line {
+    margin: 0;
+  }
+  }
+  
+
+
+@media(min-width: 900px){
+.basic-story__content {
+  margin: 0 auto;
+}
+
+.basic-story__aside {
+margin: 1.8% 8% 2% 2%;
+}
+
+.top{
+  margin-top:33px;
+}
+}
+
 @media(max-width: 750px){
   .basic-story__content {
     margin: 0 auto;
