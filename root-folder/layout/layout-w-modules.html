@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="./digital-mag-redesign-layout.css"> -->
+  <link rel="stylesheet" href="./digital-mag-redesign-layout.css">
   <link href="https://cloud.typenetwork.com/projects/4178/fontface.css/" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <t4 type="media" formatter="css/*" id="149345" />
@@ -486,7 +486,6 @@
     </div>
   </footer>
   <script>
-    // updated
     const scrollDistance = 500;
     const storyCarousel = document.getElementById('storyCarousel')
     const nextThumbnail = document.getElementById('nextThumbnail')
@@ -512,8 +511,8 @@
     nextThumbnail.addEventListener('click', function () {
       storyCarousel.scrollLeft += scrollDistance
 
-      console.log('forward position ' + storyCarousel.scrollLeft)
-      if (storyCarousel.scrollLeft >= 2000) {
+      console.log('scrolling ' + storyCarousel.scrollLeft);
+      if (storyCarousel.scrollLeft >= 1900) {
         nextThumbnail.style.visibility = 'hidden'
       } else {
         prevThumbnail.style.visibility = 'visible'
@@ -523,7 +522,6 @@
     prevThumbnail.addEventListener('click', function () {
       storyCarousel.scrollLeft -= scrollDistance
 
-      console.log('backward position ' + storyCarousel.scrollLeft)
       if (storyCarousel.scrollLeft <= 200) {
         prevThumbnail.style.visibility = 'hidden'
       } else {

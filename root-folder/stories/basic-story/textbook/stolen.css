@@ -1,3 +1,21 @@
+#mobileCaption {
+  display: block;
+}
+
+#desktopCaption {
+  display: none;
+}
+
+@media(min-width: 900px) {
+  #mobileCaption {
+    display: none;
+  }
+  
+  #desktopCaption {
+    display: flex;
+  }
+}
+
 .feature__faculty-spotlight {
   margin: 40px 0;
   background-color: rgba(128, 128, 128, 0.2);

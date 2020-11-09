@@ -18,6 +18,11 @@
   #desktopCaption {
     display: block;
   }
+
+  .basic-story__story-qoute__wrapper {
+    margin: 0 auto;
+    max-width: 65vw !important;
+  }
 }
 
 .feature__hero__image {
@@ -305,7 +310,7 @@
   }
 
   .telehealth__names-overlay__grid__box-two p {
-    left: -2px;
+    right: 5px;
     bottom: 0.2%;
   }
 
@@ -314,7 +319,7 @@
   }
 
   .telehealth__names-overlay__grid__box-four p{
-    right: 6px;
+    right: 5px;
     bottom: 9%;
   }
 

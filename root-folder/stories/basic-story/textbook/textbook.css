@@ -1,5 +1,39 @@
+#mobileCaption {
+  display: block;
+}
+
+#desktopCaption {
+  display: none;
+}
+
+@media(min-width: 900px) {
+  #mobileCaption {
+    display: none;
+  }
+  
+  #desktopCaption {
+    display: block;
+  }
+
+  .feature__hero__image {
+    width: 420px !important;
+  }
+
+  .basic-story__content__wrapper {
+    margin: 20px auto 0 !important;
+  }
+
+  .basic-story__hero__title {
+    font-size: 3em !important;
+  }
+
+  .basic-story__aside {
+    margin: 10px 8% 0 0 !important;
+  }
+}
+
 .basic-story__aside {
-  margin: 10px 0 0 !important;
+  margin: 10px 0 0;
 }
 
 .feature__hero__image {
@@ -10,6 +44,7 @@
   width: 95% !important;
   margin: 0 auto !important;
 }
+
 .basic-story__content__image-caption {
   border-left: solid 1px gray;
   margin: 15px auto 20px;

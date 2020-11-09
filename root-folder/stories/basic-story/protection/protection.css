@@ -18,6 +18,10 @@
   .basic-story__by-line {
     margin: 20px 0;
   }
+
+  .basic-story__hero__image {
+    object-position: top !important;
+  }
 }
 .feature__faculty-spotlight__name {
   font-weight: bold;
@@ -376,7 +380,9 @@
 @media (min-width: 900px) {
   .modal__slides__image-wrapper {
     width: 40%;
+    position: relative;
   }
+
 }
 .modal__slides__image {
   width: 100%;
@@ -398,8 +404,17 @@
 
 @media (min-width: 900px) {
   .modal__slides__description {
-    width: 50%;
+    width: 40%;
     flex-direction: row;
+    
+  }
+
+  .mask-step {
+    position: absolute !important;
+    bottom: 28% !important;
+    left: 29% !important;
+    background-color: white !important;
+    padding: 10px !important;
   }
 }
 
