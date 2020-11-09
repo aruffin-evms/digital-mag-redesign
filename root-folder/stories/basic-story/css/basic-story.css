@@ -207,7 +207,7 @@ h1{
 
 .basic-story__dropcap.four-lines {
   font-size: 130px;
-  line-height: 0.7em;
+  line-height: 0.6em;
 }
 
 /* hack for mobile 
@@ -315,7 +315,7 @@ h1{
   width: 90%;
   font-family: 'Benton Sans Reg', sans-serif;
   line-height: 32px;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .basic-story__content__department-label {
@@ -335,6 +335,7 @@ h1{
   align-content: center;
   justify-content: center;
   height: auto;
+  font-family: 'Benton Sans Reg', sans-serif !important;
 }
 
 .basic-story__by-line__line-wrapper {
@@ -346,7 +347,7 @@ h1{
   font-weight: bold;
   font-style: italic;
   padding: 0 8px 0 10px;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .basic-story__aside, .mbReveal{
@@ -355,7 +356,7 @@ h1{
 
 .basic-story__byline__name {
   font-family: 'Benton Sans Reg', sans-serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 /* [end] by lines */
@@ -373,7 +374,9 @@ h1{
   text-align: center;
   margin: 0 auto;
   font-size: 1em;
-  font-family: 'Benton Sans Reg';
+  font-family: 'Benton Sans Reg', sans-serif;
+  transform: scaleX(0.85);
+  padding: 0 0 1em;
 }
 
 /* [start] image with caption */
@@ -502,14 +505,14 @@ h1{
 
 @media(min-width: 900px) {
   .basic-story__story-qoute__qoutation-mark__horizontal-line--bottom, .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
-    width: 900px
+    max-width: 900px
   }
 }
 
 .basic-story__story-qoute__qoutation-mark__horizontal-line--top {
   border-top: 1px solid gray;
   margin: 0 auto;
-  width: 64%;
+  width: 90%;
   position: relative;
   top: 5px;
   z-index: -1;
@@ -530,7 +533,7 @@ h1{
 
 .basic-story__story-qoute__qoute {
   width: 100%;
-  line-height: 42px;
+  line-height: 1.5em;
   text-align: center;
   font-family: 'GT-Super-bold', serif;
 }
@@ -745,8 +748,14 @@ h1{
 
 
 .basic-story__video__wrapper{
-  width:80%;
+  width: 100%;
   margin: 1em auto;
+}
+
+@media(min-width: 900px) {
+  .basic-story__video__wrapper {
+    width: 80%;
+  }
 }
 
 .basic-story__video {

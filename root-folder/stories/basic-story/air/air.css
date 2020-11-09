@@ -151,7 +151,7 @@
     width: 90%;
   }
   .basic-story__story-qoute__content {
-    width: 80%;
+    width: 55% !important;
   }
   .basic-story__story-qoute__qoute {
     font-size: 1.5em;

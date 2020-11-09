@@ -10,8 +10,6 @@ body {
 }
 }
 
-
-
 .top {
   margin-top: 33px;
 }
@@ -26,9 +24,11 @@ body {
 
 @media (min-width: 900px) {
   .basic-story__content__image {
-    width: 60%;
+    width: 608px;
 }
 }
+
+
 
 .basic-story__content {
   margin: 1em auto;
@@ -95,13 +95,13 @@ body {
   .basic-story__content__image-wrapper {
     margin: 1em auto;
     text-align: center;
-    max-width: 70%;
+    max-width: 100%;
   }
 
   .basic-story__content__image-caption,
 .heroCaption {
   margin: 15px auto 0;
-  width: 59%;
+  width: 597px;
     text-align: left;
 }
 }
