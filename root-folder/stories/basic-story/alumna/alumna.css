@@ -1,3 +1,6 @@
+
+
+@media(min-width:900px){
 body {
   background-image: url("https://www.evms.edu/uploads/13.1/pandemic/Alumni-Headline-NetworkVirusGrid-BG@2x.png");
   background-repeat: no-repeat;
@@ -5,10 +8,15 @@ body {
   background-position-x: center;
   background-position-y: -55px;
 }
+}
+
+
 
 .top {
   margin-top: 33px;
 }
+
+
 
 @media (max-width:480px) {
   body {
@@ -17,9 +25,9 @@ body {
 }
 
 @media (min-width: 900px) {
-  .basic-story__content__image-wrapper {
-    width: 70%;
-  }
+  .basic-story__content__image {
+    width: 60%;
+}
 }
 
 .basic-story__content {
@@ -66,12 +74,34 @@ body {
 .basic-story__content__image-caption,
 .heroCaption {
   margin: 15px auto 0;
+  width: 95%;
+    text-align: left;
 }
 
-.portrait {
-  max-width: 99%;
-}
+
+
 
 .basic-story__content__image-wrapper {
   margin: 1em auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+
+@media (min-width:900px){
+  .portrait {
+    max-width: 50%;
+  }
+  .basic-story__content__image-wrapper {
+    margin: 1em auto;
+    text-align: center;
+    max-width: 70%;
+  }
+
+  .basic-story__content__image-caption,
+.heroCaption {
+  margin: 15px auto 0;
+  width: 59%;
+    text-align: left;
+}
 }
