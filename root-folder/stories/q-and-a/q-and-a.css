@@ -100,6 +100,11 @@ body {
     width: 50%;
   }
 }
+@media (min-width: 1800px) {
+.q-and-a__hero__overlay {
+  width: 25%;
+}
+}
 
 .q-and-a__hero__department {
   font-family: 'Benton Sans Reg';
@@ -339,13 +344,18 @@ position: relative;
 }
 @media (min-width: 900px) {
 .q-and-a__content__caption {
-  font-size: 2em;
+  font-size: 1.75em;
   line-height: 1.5em;
   font-family: 'Benton Sans Comp Bd';
   width: 45%;
   margin: 0 5%;
 }
 }
+@media (min-width: 1800px) {
+  .q-and-a__content__caption {
+    font-size: 2em;
+  }
+  }
 
 @media (min-width: 900px) {
 .q-and-a__content__image-caption {
