@@ -12,93 +12,6 @@ body {
   font-size: 18px;
 }
 }
-/* fonts for page */
-@font-face {
-  font-family: "GT-Super";
-  src: url("../../fonts/GT-Super-Display-Super.woff") format("woff");
-}
-
-@font-face {
-  font-family: "GT-Super-bold";
-  src: url("../../fonts/GT-Super-Display-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Calluna";
-  src: url("../../fonts/Calluna-Regular-webfont.woff") format("woff");
-}
-
-.fb{
-
-  background-image: url(https://www.evms.edu/uploads/social-icons/facebook.svg); 
-}
-
-.ig{
-  background-image: url(https://www.evms.edu/uploads/social-icons/instagram.svg); 
-}
-.in{
-  background-image: url(https://www.evms.edu/uploads/social-icons/LinkedIn.svg); 
-}
-.tw{
-  background-image: url(https://www.evms.edu/uploads/social-icons/twitter.svg); 
-
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    margin-top: 20%;
-  }
-  to {
-    opacity: 1;
-    margin-top: 0;
-  }
-}
-
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    margin-left: -20%;
-  }
-  to {
-    opacity: 1;
-    margin-left: 0;
-  }
-}
-
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    margin-right: -20%;
-  }
-  to {
-    opacity: 1;
-    margin-right: 0;
-  }
-}
-
-.slide-up {
-  animation: slideUp 1.5s;
-}
-
-.slide-left {
-  animation: slideLeft 1.5s;
-}
-
-.slide-right {
-  animation: slideRight 1.5s;
-}
-
-@media(min-width: 600px) and (max-width: 899px) {
-  .basic-story__social-share {
-    float: right;
-    height: 50px;
-    width: 140px;
-    margin: 10px 0 70px;
-  }
-}
-
-
 .bottom-spacer {
   padding-top: 30px;
 }
@@ -148,7 +61,7 @@ body {
     width: 120%;
     right: 20px;
   }
-
+}
 @media(min-width: 1800px) {
   .q-and-a__hero__image {
     height: auto;
@@ -387,9 +300,9 @@ position: relative;
 }
 @media (min-width: 900px) {
   .q-and-a__content__image-wrapper {
-    max-width: 1182px;
-    width: 100%;
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
+
   }
 }
 
@@ -400,8 +313,8 @@ position: relative;
 }
 @media (min-width: 900px) {
   .q-and-a__content__image {
-    max-width: 1182px;
     width: 100%;
+    right: 0
   }
 }
 
@@ -419,31 +332,26 @@ position: relative;
 
 @media (min-width: 600px) {
   .q-and-a__content__caption {
-    top: 97px;
     font-size: 1.5em;
-    line-height: 1.5em;
-    left: 40px;
-    width: 45%;
+    line-height: 1.25em;
+    width: 50%;
 }
 }
 
+.q-and-a__content__caption {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-family: 'Benton Sans Comp Bd';
+  width: 45%;
+  margin: 0 5%;
+}
 @media (min-width: 900px) {
-  .q-and-a__content__caption {
-    top: -80%;
-    margin-bottom: -213px;
-    margin-left: 90px;
-    width: 450px;
-    font-size: 2em;
-    line-height: 1.5em;
-    font-family: 'Benton Sans Comp Bd';
-  }
-}
-
 .q-and-a__content__image-caption {
   border-left: solid 1px gray;
   width: 100%;
   margin: 15px auto;
   padding-left: 10px;
+}
 }
 
 @media(min-width: 600px) {
