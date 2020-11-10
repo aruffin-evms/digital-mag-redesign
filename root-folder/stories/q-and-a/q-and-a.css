@@ -337,7 +337,7 @@ position: relative;
     width: 50%;
 }
 }
-
+@media (min-width: 900px) {
 .q-and-a__content__caption {
   font-size: 2em;
   line-height: 1.5em;
@@ -345,6 +345,8 @@ position: relative;
   width: 45%;
   margin: 0 5%;
 }
+}
+
 @media (min-width: 900px) {
 .q-and-a__content__image-caption {
   border-left: solid 1px gray;
