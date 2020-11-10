@@ -1,17 +1,63 @@
-@media (min-width: 1200px){
-.q-and-a__hero__overlay {
-  top: 15%;
-  left: 27%;
-}
-  
-  .q-and-a__hero__department {
-    font-size: 2em;
-}
-  
-  .q-and-a__hero__subtitle {
-    font-family: 'Benton Sans Reg', sans-serif;
-    font-size: 1.5em;
-    width: 80%;
-    line-height: 1.5em;
-}
+
+
+
+  @media (min-width:900px){
+    .basic-story__story-qoute__wrapper {
+      margin: 0 auto;
+      max-width: 65vw;
   }
+  }
+  .basic-story__aside {
+    font-family: 'Benton Sans Reg', sans-serif !important;
+    margin: 2% auto;
+}
+
+@media (min-width:900px){
+  .basic-story__aside{
+    margin: 0 0 0 15px;
+    width: 16%;
+}
+}
+@media (min-width:1200px){
+.basic-story__aside {
+  width: 20%;
+}
+}
+
+.basic-story__by-line {
+  margin: 0 0;
+}
+
+.basic-story__byline__label {
+  font-weight: bold;
+  font-style: italic;
+  padding: 0 8px;
+  font-size: 0.9em;
+}
+@media (min-width:900px){
+  .basic-story__by-line__line-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+}
+@media (min-width:1200px){
+.basic-story__by-line__line-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+}
+@media (min-width:900px){
+.basic-story__byline__label {
+  padding: 0 5px;
+  font-size: 0.8em;
+}
+.basic-story__byline__name {
+  font-size: 0.8em;
+  margin: 0 0 0 15px;
+}
+}
+
+.basic-story__content__image-wrapper {
+  margin: 16px auto;
+  width:100%;
+}
