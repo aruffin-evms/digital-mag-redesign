@@ -23,7 +23,9 @@
   white-space: nowrap;
 }
 
-
+.basic-story__hero__image {
+  width: 95%;
+}
 
 .quote {
   width: 60%;
